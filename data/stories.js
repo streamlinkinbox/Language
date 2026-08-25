@@ -777,5 +777,346 @@ const STORIES = [
         why: "He bought apples and bread, and got milk as a gift — all three!"
       }
     ]
+  },
+
+  /* ═══════════ STORY 3 — A Rainy Day ═══════════ */
+  {
+    id: "rainy-day",
+    title_ar: "يَوْمٌ مُمْطِرٌ",
+    title_en: "A Rainy Day",
+    level: "Beginner · A1",
+    cover: "assets/img/rainy-day/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/rainy-day/p01.jpg",
+        audio: "p01",
+        ar: "نَظَرَتْ لَيْلى مِنَ النّافِذَةِ في الصَّباحِ.",
+        tr: "naẓarat laylā mina n-nāfidhati fī ṣ-ṣabāḥi.",
+        en: "Layla looked out of the window in the morning.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "نَظَرَتْ", tr: "naẓarat", en: "looked (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla (name)" },
+          { ar: "مِنَ", tr: "mina", en: "from / out of" },
+          { ar: "النّافِذَةِ", tr: "an-nāfidhati", en: "the window" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p02.jpg",
+        audio: "p02",
+        ar: "كانَتِ السَّماءُ رَمادِيَّةً وَالمَطَرُ يَنْزِلُ.",
+        tr: "kānati s-samāʾu ramādiyyatan wa-l-maṭaru yanzilu.",
+        en: "The sky was grey and the rain was falling.",
+        tense: "Past description + present verb",
+        words: [
+          { ar: "كانَتِ", tr: "kānati", en: "was (she/it f.)" },
+          { ar: "السَّماءُ", tr: "as-samāʾu", en: "the sky" },
+          { ar: "رَمادِيَّةً", tr: "ramādiyyatan", en: "grey" },
+          { ar: "وَالمَطَرُ", tr: "wa-l-maṭaru", en: "and the rain" },
+          { ar: "يَنْزِلُ", tr: "yanzilu", en: "falls / is falling" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p03.jpg",
+        audio: "p03",
+        ar: "حَزِنَتْ لَيْلى لِأَنَّها لا تَسْتَطيعُ اللَّعِبَ في الخارِجِ.",
+        tr: "ḥazinat laylā li-annahā lā tastaṭīʿu l-laʿiba fī l-khāriji.",
+        en: "Layla was sad because she cannot play outside.",
+        tense: "Negation — لا + present",
+        words: [
+          { ar: "حَزِنَتْ", tr: "ḥazinat", en: "became sad (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "لِأَنَّها", tr: "li-annahā", en: "because she" },
+          { ar: "لا", tr: "lā", en: "not / cannot" },
+          { ar: "تَسْتَطيعُ", tr: "tastaṭīʿu", en: "is able to" },
+          { ar: "اللَّعِبَ", tr: "al-laʿiba", en: "playing / to play" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الخارِجِ", tr: "al-khāriji", en: "outside" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p04.jpg",
+        audio: "p04",
+        ar: "قالَتِ الجَدَّةُ: تَعالَيْ يا لَيْلى، عِنْدي فِكْرَةٌ.",
+        tr: "qālati l-jaddatu: taʿālay yā laylā, ʿindī fikratun.",
+        en: "The grandmother said: Come, Layla, I have an idea.",
+        tense: "Command (feminine) — الأَمْر",
+        words: [
+          { ar: "قالَتِ", tr: "qālati", en: "said (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "تَعالَيْ", tr: "taʿālay", en: "come! (to a girl)" },
+          { ar: "يا", tr: "yā", en: "O / hey (calling)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "عِنْدي", tr: "ʿindī", en: "I have" },
+          { ar: "فِكْرَةٌ", tr: "fikratun", en: "an idea" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p05.jpg",
+        audio: "p05",
+        ar: "فَتَحَتِ الجَدَّةُ صُنْدوقًا قَديمًا مَليئًا بِالأَوْراقِ المُلَوَّنَةِ.",
+        tr: "fataḥati l-jaddatu ṣundūqan qadīman malīʾan bi-l-awrāqi l-mulawwanati.",
+        en: "The grandmother opened an old box full of colored papers.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "فَتَحَتِ", tr: "fataḥati", en: "opened (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "صُنْدوقًا", tr: "ṣundūqan", en: "a box" },
+          { ar: "قَديمًا", tr: "qadīman", en: "old" },
+          { ar: "مَليئًا", tr: "malīʾan", en: "full" },
+          { ar: "بِالأَوْراقِ", tr: "bi-l-awrāqi", en: "of papers" },
+          { ar: "المُلَوَّنَةِ", tr: "al-mulawwanati", en: "colored" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p06.jpg",
+        audio: "p06",
+        ar: "صَنَعَتا مَعًا طائِرَةً وَرَقِيَّةً جَميلَةً.",
+        tr: "ṣanaʿatā maʿan ṭāʾiratan waraqiyyatan jamīlatan.",
+        en: "They (both) made a beautiful kite together.",
+        tense: "Past — dual (two people)",
+        words: [
+          { ar: "صَنَعَتا", tr: "ṣanaʿatā", en: "they two made (f.)" },
+          { ar: "مَعًا", tr: "maʿan", en: "together" },
+          { ar: "طائِرَةً", tr: "ṭāʾiratan", en: "a kite (lit. plane)" },
+          { ar: "وَرَقِيَّةً", tr: "waraqiyyatan", en: "paper (adj.)" },
+          { ar: "جَميلَةً", tr: "jamīlatan", en: "beautiful" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p07.jpg",
+        audio: "p07",
+        ar: "شَرِبَتا الشّايَ وَأَكَلَتا كَعْكًا بِالتَّمْرِ.",
+        tr: "sharibatā sh-shāya wa-akalatā kaʿkan bi-t-tamri.",
+        en: "They drank tea and ate date cookies.",
+        tense: "Past — dual verbs",
+        words: [
+          { ar: "شَرِبَتا", tr: "sharibatā", en: "they two drank (f.)" },
+          { ar: "الشّايَ", tr: "ash-shāya", en: "the tea" },
+          { ar: "وَأَكَلَتا", tr: "wa-akalatā", en: "and they two ate" },
+          { ar: "كَعْكًا", tr: "kaʿkan", en: "cookies / cake" },
+          { ar: "بِالتَّمْرِ", tr: "bi-t-tamri", en: "with dates" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p08.jpg",
+        audio: "p08",
+        ar: "بَعْدَ ساعَةٍ، تَوَقَّفَ المَطَرُ وَظَهَرَتِ الشَّمْسُ.",
+        tr: "baʿda sāʿatin, tawaqqafa l-maṭaru wa-ẓaharati sh-shamsu.",
+        en: "After an hour, the rain stopped and the sun appeared.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "ساعَةٍ", tr: "sāʿatin", en: "an hour" },
+          { ar: "تَوَقَّفَ", tr: "tawaqqafa", en: "stopped" },
+          { ar: "المَطَرُ", tr: "al-maṭaru", en: "the rain" },
+          { ar: "وَظَهَرَتِ", tr: "wa-ẓaharati", en: "and appeared" },
+          { ar: "الشَّمْسُ", tr: "ash-shamsu", en: "the sun" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p09.jpg",
+        audio: "p09",
+        ar: "قالَتْ لَيْلى: هَيّا نُطَيِّرُ الطّائِرَةَ الوَرَقِيَّةَ!",
+        tr: "qālat laylā: hayyā nuṭayyiru ṭ-ṭāʾirata l-waraqiyyata!",
+        en: "Layla said: Let's fly the kite!",
+        tense: "هَيّا + present = let's…",
+        words: [
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "هَيّا", tr: "hayyā", en: "come on / let's" },
+          { ar: "نُطَيِّرُ", tr: "nuṭayyiru", en: "we fly (it)" },
+          { ar: "الطّائِرَةَ", tr: "aṭ-ṭāʾirata", en: "the kite" },
+          { ar: "الوَرَقِيَّةَ", tr: "al-waraqiyyata", en: "paper (adj.)" }
+        ]
+      },
+      {
+        img: "assets/img/rainy-day/p10.jpg",
+        audio: "p10",
+        ar: "في اللَّيْلِ، نامَتْ لَيْلى وَالطّائِرَةُ فَوْقَ سَريرِها.",
+        tr: "fī l-layli, nāmat laylā wa-ṭ-ṭāʾiratu fawqa sarīrihā.",
+        en: "At night, Layla slept with the kite above her bed.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in / at" },
+          { ar: "اللَّيْلِ", tr: "al-layli", en: "the night" },
+          { ar: "نامَتْ", tr: "nāmat", en: "slept (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "وَالطّائِرَةُ", tr: "wa-ṭ-ṭāʾiratu", en: "and the kite" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "above" },
+          { ar: "سَريرِها", tr: "sarīrihā", en: "her bed" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "كَيْفَ كانَتِ السَّماءُ في الصَّباحِ؟",
+        q_en: "What was the sky like in the morning?",
+        options: [
+          { ar: "زَرْقاءَ وَصافِيَةً", en: "Blue and clear" },
+          { ar: "رَمادِيَّةً", en: "Grey" },
+          { ar: "حَمْراءَ", en: "Red" }
+        ],
+        correct: 1,
+        why: "كانَتِ السَّماءُ رَمادِيَّةً — the sky was grey."
+      },
+      {
+        q_ar: "لِماذا حَزِنَتْ لَيْلى؟",
+        q_en: "Why was Layla sad?",
+        options: [
+          { ar: "لِأَنَّها لا تَسْتَطيعُ اللَّعِبَ في الخارِجِ", en: "Because she can't play outside" },
+          { ar: "لِأَنَّها جائِعَةٌ", en: "Because she is hungry" },
+          { ar: "لِأَنَّ القِطَّةَ هَرَبَتْ", en: "Because the cat ran away" }
+        ],
+        correct: 0,
+        why: "حَزِنَتْ لِأَنَّها لا تَسْتَطيعُ اللَّعِبَ في الخارِجِ — the rain kept her inside."
+      },
+      {
+        q_ar: "مَنْ كانَ عِنْدَهُ فِكْرَةٌ؟",
+        q_en: "Who had an idea?",
+        options: [
+          { ar: "لَيْلى", en: "Layla" },
+          { ar: "الأُمُّ", en: "The mother" },
+          { ar: "الجَدَّةُ", en: "The grandmother" }
+        ],
+        correct: 2,
+        why: "قالَتِ الجَدَّةُ: عِنْدي فِكْرَةٌ — grandma said: I have an idea."
+      },
+      {
+        q_ar: "«تَعالَيْ» — ما نَوْعُ هٰذِهِ الكَلِمَةِ؟",
+        q_en: "\"taʿālay\" (come!) — what kind of word is this?",
+        options: [
+          { ar: "أَمْرٌ لِبِنْتٍ", en: "A command to a girl" },
+          { ar: "فِعْلٌ ماضٍ", en: "A past verb" },
+          { ar: "اِسْمٌ", en: "A noun" }
+        ],
+        correct: 0,
+        why: "تَعالَيْ is the feminine command 'come!'. To a boy you'd say تَعالَ."
+      },
+      {
+        q_ar: "ماذا كانَ في الصُّنْدوقِ القَديمِ؟",
+        q_en: "What was in the old box?",
+        options: [
+          { ar: "نُقودٌ", en: "Money" },
+          { ar: "أَوْراقٌ مُلَوَّنَةٌ", en: "Colored papers" },
+          { ar: "كُتُبٌ", en: "Books" }
+        ],
+        correct: 1,
+        why: "صُنْدوقًا مَليئًا بِالأَوْراقِ المُلَوَّنَةِ — full of colored papers."
+      },
+      {
+        q_ar: "ماذا صَنَعَتا مَعًا؟",
+        q_en: "What did they make together?",
+        options: [
+          { ar: "كَعْكًا", en: "A cake" },
+          { ar: "بَيْتًا صَغيرًا", en: "A small house" },
+          { ar: "طائِرَةً وَرَقِيَّةً", en: "A paper kite" }
+        ],
+        correct: 2,
+        why: "صَنَعَتا مَعًا طائِرَةً وَرَقِيَّةً — they made a paper kite together."
+      },
+      {
+        q_ar: "«صَنَعَتا» — لِماذا تَنْتَهي بِـ «تا»؟",
+        q_en: "\"ṣanaʿatā\" — why does it end with \"-tā\"?",
+        options: [
+          { ar: "لِأَنَّهُما اِثْنَتانِ", en: "Because they are two (dual)" },
+          { ar: "لِأَنَّهُ جَمْعٌ", en: "Because it's plural" },
+          { ar: "لِأَنَّهُ مُسْتَقْبَلٌ", en: "Because it's future" }
+        ],
+        correct: 0,
+        why: "Arabic has a special dual form: صَنَعَتا = they TWO (feminine) made. Layla + grandma."
+      },
+      {
+        q_ar: "ماذا شَرِبَتا مَعَ الكَعْكِ؟",
+        q_en: "What did they drink with the cookies?",
+        options: [
+          { ar: "الشّايَ", en: "Tea" },
+          { ar: "الحَليبَ", en: "Milk" },
+          { ar: "العَصيرَ", en: "Juice" }
+        ],
+        correct: 0,
+        why: "شَرِبَتا الشّايَ — they drank tea, with date cookies (كَعْك بِالتَّمْر)."
+      },
+      {
+        q_ar: "ماذا حَدَثَ بَعْدَ ساعَةٍ؟",
+        q_en: "What happened after an hour?",
+        options: [
+          { ar: "نَزَلَ ثَلْجٌ", en: "It snowed" },
+          { ar: "تَوَقَّفَ المَطَرُ وَظَهَرَتِ الشَّمْسُ", en: "The rain stopped and the sun appeared" },
+          { ar: "جاءَ الأَبُ", en: "The father came" }
+        ],
+        correct: 1,
+        why: "تَوَقَّفَ المَطَرُ وَظَهَرَتِ الشَّمْسُ — rain stopped, sun appeared."
+      },
+      {
+        q_ar: "«هَيّا نُطَيِّرُ» — ماذا تَعْني؟",
+        q_en: "\"hayyā nuṭayyiru\" — what does it mean?",
+        options: [
+          { ar: "لا تُطَيِّرْ — don't fly", en: "Don't fly" },
+          { ar: "طارَتْ — it flew", en: "It flew" },
+          { ar: "هَيّا نُطَيِّرُ — let's fly", en: "Let's fly" }
+        ],
+        correct: 2,
+        why: "هَيّا + we-verb = let's! هَيّا نُطَيِّرُ = come on, let's fly (it)!"
+      },
+      {
+        q_ar: "أَيْنَ طَيَّرَتا الطّائِرَةَ الوَرَقِيَّةَ؟",
+        q_en: "Where did they fly the kite?",
+        options: [
+          { ar: "فَوْقَ التَّلِّ", en: "On the hilltop" },
+          { ar: "في البَيْتِ", en: "In the house" },
+          { ar: "في السّوقِ", en: "At the market" }
+        ],
+        correct: 0,
+        why: "They flew it outside on the grassy hill above the town after the rain stopped."
+      },
+      {
+        q_ar: "أَيْنَ كانَتِ الطّائِرَةُ في اللَّيْلِ؟",
+        q_en: "Where was the kite at night?",
+        options: [
+          { ar: "في الحَديقَةِ", en: "In the garden" },
+          { ar: "فَوْقَ سَريرِ لَيْلى", en: "Above Layla's bed" },
+          { ar: "عِنْدَ الجَدَّةِ", en: "With grandma" }
+        ],
+        correct: 1,
+        why: "نامَتْ لَيْلى وَالطّائِرَةُ فَوْقَ سَريرِها — the kite hung above her bed."
+      },
+      {
+        q_ar: "ما مَعْنى «مُمْطِر»؟",
+        q_en: "What does \"mumṭir\" mean?",
+        options: [
+          { ar: "مُشْمِس — sunny", en: "Sunny" },
+          { ar: "مُمْطِر — rainy", en: "Rainy" },
+          { ar: "بارِد — cold", en: "Cold" }
+        ],
+        correct: 1,
+        why: "مُمْطِر = rainy (from مَطَر = rain). The title: يَوْمٌ مُمْطِرٌ = a rainy day."
+      },
+      {
+        q_ar: "ما عَكْسُ «الخارِج»؟",
+        q_en: "What is the opposite of \"al-khārij\" (outside)?",
+        options: [
+          { ar: "الدّاخِل", en: "Inside" },
+          { ar: "الفَوْق", en: "Above" },
+          { ar: "البَعيد", en: "Far" }
+        ],
+        correct: 0,
+        why: "الخارِج (outside) ↔ الدّاخِل (inside)."
+      },
+      {
+        q_ar: "«لا تَسْتَطيعُ» — ماذا تَفْعَلُ «لا» هُنا؟",
+        q_en: "\"lā tastaṭīʿu\" — what does \"lā\" do here?",
+        options: [
+          { ar: "تَنْفي الفِعْلَ — makes it negative", en: "Makes the verb negative" },
+          { ar: "تَجْعَلُهُ سُؤالًا", en: "Makes it a question" },
+          { ar: "تَجْعَلُهُ ماضِيًا", en: "Makes it past" }
+        ],
+        correct: 0,
+        why: "لا + present verb = negation: تَسْتَطيعُ (she can) → لا تَسْتَطيعُ (she cannot)."
+      }
+    ]
   }
 ];
