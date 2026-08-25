@@ -1118,5 +1118,313 @@ const STORIES = [
         why: "لا + present verb = negation: تَسْتَطيعُ (she can) → لا تَسْتَطيعُ (she cannot)."
       }
     ]
+  },
+
+  /* ═══════════ STORY 4 — The Lost Key ═══════════ */
+  {
+    id: "lost-key",
+    title_ar: "المِفْتاحُ الضّائِعُ",
+    title_en: "The Lost Key",
+    level: "Beginner · A1",
+    cover: "assets/img/lost-key/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/lost-key/p01.jpg",
+        audio: "p01",
+        ar: "فَقَدَ الجَدُّ مِفْتاحَ البَيْتِ.",
+        tr: "faqada l-jaddu miftāḥa l-bayti.",
+        en: "The grandfather lost the house key.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "فَقَدَ", tr: "faqada", en: "lost" },
+          { ar: "الجَدُّ", tr: "al-jaddu", en: "the grandfather" },
+          { ar: "مِفْتاحَ", tr: "miftāḥa", en: "key (of)" },
+          { ar: "البَيْتِ", tr: "al-bayti", en: "the house" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p02.jpg",
+        audio: "p02",
+        ar: "بَحَثَ تَحْتَ الكُرْسِيِّ، فَلَمْ يَجِدْهُ.",
+        tr: "baḥatha taḥta l-kursiyyi, fa-lam yajidhu.",
+        en: "He searched under the chair, but did not find it.",
+        tense: "Past + negation — لَمْ",
+        words: [
+          { ar: "بَحَثَ", tr: "baḥatha", en: "searched" },
+          { ar: "تَحْتَ", tr: "taḥta", en: "under" },
+          { ar: "الكُرْسِيِّ", tr: "al-kursiyyi", en: "the chair" },
+          { ar: "فَلَمْ", tr: "fa-lam", en: "but… did not" },
+          { ar: "يَجِدْهُ", tr: "yajidhu", en: "find it" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p03.jpg",
+        audio: "p03",
+        ar: "سَأَلَ الجَدَّةَ: هَلْ رَأَيْتِ مِفْتاحي؟",
+        tr: "saʾala l-jaddata: hal raʾayti miftāḥī?",
+        en: "He asked the grandmother: Did you see my key?",
+        tense: "Question — هَلْ",
+        words: [
+          { ar: "سَأَلَ", tr: "saʾala", en: "asked" },
+          { ar: "الجَدَّةَ", tr: "al-jaddata", en: "the grandmother" },
+          { ar: "هَلْ", tr: "hal", en: "did…? (question word)" },
+          { ar: "رَأَيْتِ", tr: "raʾayti", en: "you saw (to a woman)" },
+          { ar: "مِفْتاحي", tr: "miftāḥī", en: "my key" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p04.jpg",
+        audio: "p04",
+        ar: "قالَتِ الجَدَّةُ: لا، ما رَأَيْتُهُ اليَوْمَ.",
+        tr: "qālati l-jaddatu: lā, mā raʾaytuhu l-yawma.",
+        en: "The grandmother said: No, I haven't seen it today.",
+        tense: "Past negation — ما",
+        words: [
+          { ar: "قالَتِ", tr: "qālati", en: "said (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "لا", tr: "lā", en: "no" },
+          { ar: "ما", tr: "mā", en: "not (past)" },
+          { ar: "رَأَيْتُهُ", tr: "raʾaytuhu", en: "I saw it" },
+          { ar: "اليَوْمَ", tr: "al-yawma", en: "today" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p05.jpg",
+        audio: "p05",
+        ar: "بَحَثَ الجَدُّ في المَطْبَخِ وَفي الحَديقَةِ.",
+        tr: "baḥatha l-jaddu fī l-maṭbakhi wa-fī l-ḥadīqati.",
+        en: "The grandfather searched in the kitchen and in the garden.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "بَحَثَ", tr: "baḥatha", en: "searched" },
+          { ar: "الجَدُّ", tr: "al-jaddu", en: "the grandfather" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَطْبَخِ", tr: "al-maṭbakhi", en: "the kitchen" },
+          { ar: "وَفي", tr: "wa-fī", en: "and in" },
+          { ar: "الحَديقَةِ", tr: "al-ḥadīqati", en: "the garden" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p06.jpg",
+        audio: "p06",
+        ar: "جاءَتْ حَفيدَتُهُ الصَّغيرَةُ وَضَحِكَتْ.",
+        tr: "jāʾat ḥafīdatuhu ṣ-ṣaghīratu wa-ḍaḥikat.",
+        en: "His little granddaughter came and laughed.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "جاءَتْ", tr: "jāʾat", en: "came (she)" },
+          { ar: "حَفيدَتُهُ", tr: "ḥafīdatuhu", en: "his granddaughter" },
+          { ar: "الصَّغيرَةُ", tr: "aṣ-ṣaghīratu", en: "the little" },
+          { ar: "وَضَحِكَتْ", tr: "wa-ḍaḥikat", en: "and laughed" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p07.jpg",
+        audio: "p07",
+        ar: "قالَتْ: يا جَدّي، اُنْظُرْ فَوْقَ رَأْسِكَ!",
+        tr: "qālat: yā jaddī, unẓur fawqa raʾsika!",
+        en: "She said: Grandpa, look above your head!",
+        tense: "Command — الأَمْر",
+        words: [
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "جَدّي", tr: "jaddī", en: "my grandpa" },
+          { ar: "اُنْظُرْ", tr: "unẓur", en: "look! (command)" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "above" },
+          { ar: "رَأْسِكَ", tr: "raʾsika", en: "your head" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p08.jpg",
+        audio: "p08",
+        ar: "كانَ المِفْتاحُ في قُبَّعَتِهِ!",
+        tr: "kāna l-miftāḥu fī qubbaʿatihi!",
+        en: "The key was in his hat!",
+        tense: "Past — كانَ",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "المِفْتاحُ", tr: "al-miftāḥu", en: "the key" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "قُبَّعَتِهِ", tr: "qubbaʿatihi", en: "his hat" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p09.jpg",
+        audio: "p09",
+        ar: "ضَحِكَ الجَميعُ في البَيْتِ.",
+        tr: "ḍaḥika l-jamīʿu fī l-bayti.",
+        en: "Everyone in the house laughed.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "ضَحِكَ", tr: "ḍaḥika", en: "laughed" },
+          { ar: "الجَميعُ", tr: "al-jamīʿu", en: "everyone" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "البَيْتِ", tr: "al-bayti", en: "the house" }
+        ]
+      },
+      {
+        img: "assets/img/lost-key/p10.jpg",
+        audio: "p10",
+        ar: "الآنَ يَضَعُ الجَدُّ المِفْتاحَ دائِمًا بِجانِبِ البابِ.",
+        tr: "al-āna yaḍaʿu l-jaddu l-miftāḥa dāʾiman bi-jānibi l-bābi.",
+        en: "Now the grandfather always puts the key next to the door.",
+        tense: "Present habit — المضارع + دائِمًا",
+        words: [
+          { ar: "الآنَ", tr: "al-āna", en: "now" },
+          { ar: "يَضَعُ", tr: "yaḍaʿu", en: "puts" },
+          { ar: "الجَدُّ", tr: "al-jaddu", en: "the grandfather" },
+          { ar: "المِفْتاحَ", tr: "al-miftāḥa", en: "the key" },
+          { ar: "دائِمًا", tr: "dāʾiman", en: "always" },
+          { ar: "بِجانِبِ", tr: "bi-jānibi", en: "next to" },
+          { ar: "البابِ", tr: "al-bābi", en: "the door" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا فَقَدَ الجَدُّ؟",
+        q_en: "What did the grandfather lose?",
+        options: [
+          { ar: "نَظّارَتَهُ", en: "His glasses" },
+          { ar: "مِفْتاحَ البَيْتِ", en: "The house key" },
+          { ar: "قُبَّعَتَهُ", en: "His hat" }
+        ],
+        correct: 1,
+        why: "فَقَدَ الجَدُّ مِفْتاحَ البَيْتِ — he lost the house key."
+      },
+      {
+        q_ar: "أَيْنَ بَحَثَ الجَدُّ أَوَّلًا؟",
+        q_en: "Where did the grandfather search first?",
+        options: [
+          { ar: "تَحْتَ الكُرْسِيِّ", en: "Under the chair" },
+          { ar: "في السَّيّارَةِ", en: "In the car" },
+          { ar: "في قُبَّعَتِهِ", en: "In his hat" }
+        ],
+        correct: 0,
+        why: "بَحَثَ تَحْتَ الكُرْسِيِّ — he searched under the chair (but didn't find it)."
+      },
+      {
+        q_ar: "«فَلَمْ يَجِدْهُ» — ماذا تَعْني؟",
+        q_en: "\"fa-lam yajidhu\" — what does it mean?",
+        options: [
+          { ar: "فَوَجَدَهُ — so he found it", en: "So he found it" },
+          { ar: "فَلَمْ يَجِدْهُ — he didn't find it", en: "He did not find it" },
+          { ar: "سَيَجِدُهُ — he will find it", en: "He will find it" }
+        ],
+        correct: 1,
+        why: "لَمْ + present verb = past negation: lam yajid = he did not find."
+      },
+      {
+        q_ar: "ماذا سَأَلَ الجَدُّ الجَدَّةَ؟",
+        q_en: "What did the grandfather ask the grandmother?",
+        options: [
+          { ar: "هَلْ رَأَيْتِ مِفْتاحي؟", en: "Did you see my key?" },
+          { ar: "أَيْنَ الشّايُ؟", en: "Where is the tea?" },
+          { ar: "ما الوَقْتُ؟", en: "What time is it?" }
+        ],
+        correct: 0,
+        why: "سَأَلَ: هَلْ رَأَيْتِ مِفْتاحي؟ — hal turns a sentence into a yes/no question."
+      },
+      {
+        q_ar: "هَلْ رَأَتِ الجَدَّةُ المِفْتاحَ؟",
+        q_en: "Did the grandmother see the key?",
+        options: [
+          { ar: "نَعَمْ، رَأَتْهُ", en: "Yes, she saw it" },
+          { ar: "لا، ما رَأَتْهُ", en: "No, she didn't see it" },
+          { ar: "كانَ مَعَها", en: "She had it" }
+        ],
+        correct: 1,
+        why: "قالَتْ: لا، ما رَأَيْتُهُ اليَوْمَ — mā + past = didn't."
+      },
+      {
+        q_ar: "أَيْنَ بَحَثَ الجَدُّ بَعْدَ ذٰلِكَ؟",
+        q_en: "Where did the grandfather search after that?",
+        options: [
+          { ar: "في المَطْبَخِ وَالحَديقَةِ", en: "In the kitchen and the garden" },
+          { ar: "في السُّوقِ", en: "At the market" },
+          { ar: "عِنْدَ الجيرانِ", en: "At the neighbors'" }
+        ],
+        correct: 0,
+        why: "بَحَثَ في المَطْبَخِ وَفي الحَديقَةِ — kitchen and garden."
+      },
+      {
+        q_ar: "مَنْ عَرَفَ أَيْنَ المِفْتاحُ؟",
+        q_en: "Who knew where the key was?",
+        options: [
+          { ar: "الجَدَّةُ", en: "The grandmother" },
+          { ar: "الجارُ", en: "The neighbor" },
+          { ar: "الحَفيدَةُ الصَّغيرَةُ", en: "The little granddaughter" }
+        ],
+        correct: 2,
+        why: "The little granddaughter saw it and laughed — جاءَتْ حَفيدَتُهُ وَضَحِكَتْ."
+      },
+      {
+        q_ar: "«اُنْظُرْ» — ما نَوْعُ هٰذا الفِعْلِ؟",
+        q_en: "\"unẓur\" (look!) — what kind of verb is this?",
+        options: [
+          { ar: "الأَمْر — command", en: "Command" },
+          { ar: "الماضي — past", en: "Past" },
+          { ar: "المُسْتَقْبَل — future", en: "Future" }
+        ],
+        correct: 0,
+        why: "اُنْظُرْ is the command form of نَظَرَ (to look) — Look!"
+      },
+      {
+        q_ar: "أَيْنَ كانَ المِفْتاحُ؟",
+        q_en: "Where was the key?",
+        options: [
+          { ar: "تَحْتَ الكُرْسِيِّ", en: "Under the chair" },
+          { ar: "في قُبَّعَةِ الجَدِّ", en: "In the grandfather's hat" },
+          { ar: "في المَطْبَخِ", en: "In the kitchen" }
+        ],
+        correct: 1,
+        why: "كانَ المِفْتاحُ في قُبَّعَتِهِ — in his hat, on his own head the whole time!"
+      },
+      {
+        q_ar: "ماذا فَعَلَ الجَميعُ عِنْدَما وَجَدَ الجَدُّ المِفْتاحَ؟",
+        q_en: "What did everyone do when the grandfather found the key?",
+        options: [
+          { ar: "ضَحِكوا", en: "They laughed" },
+          { ar: "غَضِبوا", en: "They got angry" },
+          { ar: "ناموا", en: "They slept" }
+        ],
+        correct: 0,
+        why: "ضَحِكَ الجَميعُ — everyone laughed."
+      },
+      {
+        q_ar: "أَيْنَ يَضَعُ الجَدُّ المِفْتاحَ الآنَ؟",
+        q_en: "Where does the grandfather put the key now?",
+        options: [
+          { ar: "في قُبَّعَتِهِ", en: "In his hat" },
+          { ar: "تَحْتَ الكُرْسِيِّ", en: "Under the chair" },
+          { ar: "بِجانِبِ البابِ", en: "Next to the door" }
+        ],
+        correct: 2,
+        why: "يَضَعُ المِفْتاحَ دائِمًا بِجانِبِ البابِ — always next to the door. Lesson learned!"
+      },
+      {
+        q_ar: "«دائِمًا» — ما مَعْناها؟",
+        q_en: "\"dāʾiman\" — what does it mean?",
+        options: [
+          { ar: "أَحْيانًا — sometimes", en: "Sometimes" },
+          { ar: "دائِمًا — always", en: "Always" },
+          { ar: "أَبَدًا — never", en: "Never" }
+        ],
+        correct: 1,
+        why: "دائِمًا = always. أَحْيانًا = sometimes, أَبَدًا = never."
+      },
+      {
+        q_ar: "ما عَكْسُ «فَقَدَ»؟",
+        q_en: "What is the opposite of \"faqada\" (lost)?",
+        options: [
+          { ar: "وَجَدَ — found", en: "Found" },
+          { ar: "بَحَثَ — searched", en: "Searched" },
+          { ar: "أَخَذَ — took", en: "Took" }
+        ],
+        correct: 0,
+        why: "فَقَدَ (lost) ↔ وَجَدَ (found)."
+      }
+    ]
   }
 ];
