@@ -440,5 +440,342 @@ const STORIES = [
         why: "تَحْتَ (under) ↔ فَوْقَ (above). The dog sat taḥta the tree; the cat was fawqa."
       }
     ]
+  },
+
+  /* ═══════════ STORY 2 — The Market ═══════════ */
+  {
+    id: "market",
+    title_ar: "سامي في السُّوقِ",
+    title_en: "Sami at the Market",
+    level: "Beginner · A1",
+    cover: "assets/img/market/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/market/p01.jpg",
+        audio: "p01",
+        ar: "اِسْتَيْقَظَ سامي في الصَّباحِ الباكِرِ.",
+        tr: "istayqaẓa sāmī fī ṣ-ṣabāḥi l-bākiri.",
+        en: "Sami woke up early in the morning.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "اِسْتَيْقَظَ", tr: "istayqaẓa", en: "woke up" },
+          { ar: "سامي", tr: "sāmī", en: "Sami (name)" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" },
+          { ar: "الباكِرِ", tr: "al-bākiri", en: "early" }
+        ]
+      },
+      {
+        img: "assets/img/market/p02.jpg",
+        audio: "p02",
+        ar: "قالَتِ الأُمُّ: اِذْهَبْ إِلى السُّوقِ يا سامي.",
+        tr: "qālati l-ummu: idhhab ilā s-sūqi yā sāmī.",
+        en: "The mother said: Go to the market, Sami.",
+        tense: "Past + command — الماضي وَالأَمْر",
+        words: [
+          { ar: "قالَتِ", tr: "qālati", en: "said (she)" },
+          { ar: "الأُمُّ", tr: "al-ummu", en: "the mother" },
+          { ar: "اِذْهَبْ", tr: "idhhab", en: "go! (command)" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "السُّوقِ", tr: "as-sūqi", en: "the market" },
+          { ar: "يا", tr: "yā", en: "O / hey (calling)" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" }
+        ]
+      },
+      {
+        img: "assets/img/market/p03.jpg",
+        audio: "p03",
+        ar: "أَخَذَ سامي السَّلَّةَ وَمَشى إِلى السُّوقِ.",
+        tr: "akhadha sāmī s-sallata wa-mashā ilā s-sūqi.",
+        en: "Sami took the basket and walked to the market.",
+        tense: "Simple past — two actions",
+        words: [
+          { ar: "أَخَذَ", tr: "akhadha", en: "took" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "السَّلَّةَ", tr: "as-sallata", en: "the basket" },
+          { ar: "وَمَشى", tr: "wa-mashā", en: "and walked" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "السُّوقِ", tr: "as-sūqi", en: "the market" }
+        ]
+      },
+      {
+        img: "assets/img/market/p04.jpg",
+        audio: "p04",
+        ar: "كانَ السُّوقُ كَبيرًا وَمُزْدَحِمًا.",
+        tr: "kāna s-sūqu kabīran wa-muzdaḥiman.",
+        en: "The market was big and crowded.",
+        tense: "Past description — كانَ + adjectives",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "السُّوقُ", tr: "as-sūqu", en: "the market" },
+          { ar: "كَبيرًا", tr: "kabīran", en: "big" },
+          { ar: "وَمُزْدَحِمًا", tr: "wa-muzdaḥiman", en: "and crowded" }
+        ]
+      },
+      {
+        img: "assets/img/market/p05.jpg",
+        audio: "p05",
+        ar: "اِشْتَرى سامي تُفّاحًا أَحْمَرَ مِنَ البائِعِ.",
+        tr: "ishtarā sāmī tuffāḥan aḥmara mina l-bāʾiʿi.",
+        en: "Sami bought red apples from the seller.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "اِشْتَرى", tr: "ishtarā", en: "bought" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "تُفّاحًا", tr: "tuffāḥan", en: "apples" },
+          { ar: "أَحْمَرَ", tr: "aḥmara", en: "red" },
+          { ar: "مِنَ", tr: "mina", en: "from" },
+          { ar: "البائِعِ", tr: "al-bāʾiʿi", en: "the seller" }
+        ]
+      },
+      {
+        img: "assets/img/market/p06.jpg",
+        audio: "p06",
+        ar: "ثُمَّ اِشْتَرى خُبْزًا طازَجًا مِنَ الخَبّازَةِ.",
+        tr: "thumma shtarā khubzan ṭāzajan mina l-khabbāzati.",
+        en: "Then he bought fresh bread from the baker (woman).",
+        tense: "Simple past — ثُمَّ = then",
+        words: [
+          { ar: "ثُمَّ", tr: "thumma", en: "then / after that" },
+          { ar: "اِشْتَرى", tr: "ishtarā", en: "he bought" },
+          { ar: "خُبْزًا", tr: "khubzan", en: "bread" },
+          { ar: "طازَجًا", tr: "ṭāzajan", en: "fresh" },
+          { ar: "مِنَ", tr: "mina", en: "from" },
+          { ar: "الخَبّازَةِ", tr: "al-khabbāzati", en: "the baker (f.)" }
+        ]
+      },
+      {
+        img: "assets/img/market/p07.jpg",
+        audio: "p07",
+        ar: "أَرادَ حَليبًا، لٰكِنَّ النُّقودَ اِنْتَهَتْ.",
+        tr: "arāda ḥalīban, lākinna n-nuqūda intahat.",
+        en: "He wanted milk, but the money ran out.",
+        tense: "Past — لٰكِنَّ = but",
+        words: [
+          { ar: "أَرادَ", tr: "arāda", en: "he wanted" },
+          { ar: "حَليبًا", tr: "ḥalīban", en: "milk" },
+          { ar: "لٰكِنَّ", tr: "lākinna", en: "but" },
+          { ar: "النُّقودَ", tr: "an-nuqūda", en: "the money" },
+          { ar: "اِنْتَهَتْ", tr: "intahat", en: "ran out / finished" }
+        ]
+      },
+      {
+        img: "assets/img/market/p08.jpg",
+        audio: "p08",
+        ar: "أَعْطاهُ البائِعُ الطَّيِّبُ زُجاجَةَ حَليبٍ هَدِيَّةً.",
+        tr: "aʿṭāhu l-bāʾiʿu ṭ-ṭayyibu zujājata ḥalībin hadiyyatan.",
+        en: "The kind seller gave him a bottle of milk as a gift.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "أَعْطاهُ", tr: "aʿṭāhu", en: "gave him" },
+          { ar: "البائِعُ", tr: "al-bāʾiʿu", en: "the seller" },
+          { ar: "الطَّيِّبُ", tr: "aṭ-ṭayyibu", en: "the kind" },
+          { ar: "زُجاجَةَ", tr: "zujājata", en: "a bottle (of)" },
+          { ar: "حَليبٍ", tr: "ḥalībin", en: "milk" },
+          { ar: "هَدِيَّةً", tr: "hadiyyatan", en: "as a gift" }
+        ]
+      },
+      {
+        img: "assets/img/market/p09.jpg",
+        audio: "p09",
+        ar: "شَكَرَهُ سامي وَرَجَعَ إِلى البَيْتِ سَعيدًا.",
+        tr: "shakarahu sāmī wa-rajaʿa ilā l-bayti saʿīdan.",
+        en: "Sami thanked him and returned home happy.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "شَكَرَهُ", tr: "shakarahu", en: "thanked him" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "وَرَجَعَ", tr: "wa-rajaʿa", en: "and returned" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "البَيْتِ", tr: "al-bayti", en: "the house / home" },
+          { ar: "سَعيدًا", tr: "saʿīdan", en: "happy" }
+        ]
+      },
+      {
+        img: "assets/img/market/p10.jpg",
+        audio: "p10",
+        ar: "غَدًا سَيَذْهَبُ سامي إِلى السُّوقِ مَرَّةً أُخْرى.",
+        tr: "ghadan sa-yadhhabu sāmī ilā s-sūqi marratan ukhrā.",
+        en: "Tomorrow Sami will go to the market again.",
+        tense: "Future — سَـ + المضارع",
+        words: [
+          { ar: "غَدًا", tr: "ghadan", en: "tomorrow" },
+          { ar: "سَيَذْهَبُ", tr: "sa-yadhhabu", en: "will go" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "السُّوقِ", tr: "as-sūqi", en: "the market" },
+          { ar: "مَرَّةً", tr: "marratan", en: "a time / once" },
+          { ar: "أُخْرى", tr: "ukhrā", en: "another / again" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "مَتى اِسْتَيْقَظَ سامي؟",
+        q_en: "When did Sami wake up?",
+        options: [
+          { ar: "في اللَّيْلِ", en: "At night" },
+          { ar: "في الصَّباحِ الباكِرِ", en: "Early in the morning" },
+          { ar: "في الظُّهْرِ", en: "At noon" }
+        ],
+        correct: 1,
+        why: "اِسْتَيْقَظَ سامي في الصَّباحِ الباكِرِ — early in the morning."
+      },
+      {
+        q_ar: "مَنْ قالَ لِسامي أَنْ يَذْهَبَ إِلى السُّوقِ؟",
+        q_en: "Who told Sami to go to the market?",
+        options: [
+          { ar: "أَبوهُ", en: "His father" },
+          { ar: "البائِعُ", en: "The seller" },
+          { ar: "أُمُّهُ", en: "His mother" }
+        ],
+        correct: 2,
+        why: "قالَتِ الأُمُّ: اِذْهَبْ إِلى السُّوقِ — the mother said: go!"
+      },
+      {
+        q_ar: "«اِذْهَبْ» — ما نَوْعُ هٰذا الفِعْلِ؟",
+        q_en: "\"idhhab\" (go!) — what kind of verb is this?",
+        options: [
+          { ar: "الأَمْر — command", en: "Command" },
+          { ar: "الماضي — past", en: "Past" },
+          { ar: "المُضارِع — present", en: "Present" }
+        ],
+        correct: 0,
+        why: "اِذْهَبْ is the command form (al-amr) of ذَهَبَ — 'Go!'"
+      },
+      {
+        q_ar: "ماذا أَخَذَ سامي مَعَهُ؟",
+        q_en: "What did Sami take with him?",
+        options: [
+          { ar: "السَّلَّةَ", en: "The basket" },
+          { ar: "الكَلْبَ", en: "The dog" },
+          { ar: "الكِتابَ", en: "The book" }
+        ],
+        correct: 0,
+        why: "أَخَذَ سامي السَّلَّةَ — he took the basket."
+      },
+      {
+        q_ar: "كَيْفَ كانَ السُّوقُ؟",
+        q_en: "What was the market like?",
+        options: [
+          { ar: "صَغيرًا وَهادِئًا", en: "Small and quiet" },
+          { ar: "كَبيرًا وَمُزْدَحِمًا", en: "Big and crowded" },
+          { ar: "مُغْلَقًا", en: "Closed" }
+        ],
+        correct: 1,
+        why: "كانَ السُّوقُ كَبيرًا وَمُزْدَحِمًا — big and crowded."
+      },
+      {
+        q_ar: "ماذا اِشْتَرى سامي أَوَّلًا؟",
+        q_en: "What did Sami buy first?",
+        options: [
+          { ar: "خُبْزًا", en: "Bread" },
+          { ar: "حَليبًا", en: "Milk" },
+          { ar: "تُفّاحًا أَحْمَرَ", en: "Red apples" }
+        ],
+        correct: 2,
+        why: "First he bought red apples — اِشْتَرى تُفّاحًا أَحْمَرَ — then bread (ثُمَّ = then)."
+      },
+      {
+        q_ar: "مِمَّنْ اِشْتَرى الخُبْزَ؟",
+        q_en: "From whom did he buy the bread?",
+        options: [
+          { ar: "مِنَ الخَبّازَةِ", en: "From the baker (woman)" },
+          { ar: "مِنَ البائِعِ", en: "From the fruit seller" },
+          { ar: "مِنْ أُمِّهِ", en: "From his mother" }
+        ],
+        correct: 0,
+        why: "اِشْتَرى خُبْزًا طازَجًا مِنَ الخَبّازَةِ — from the woman baker (ـة = feminine)."
+      },
+      {
+        q_ar: "لِماذا لَمْ يَشْتَرِ سامي الحَليبَ؟",
+        q_en: "Why didn't Sami buy the milk?",
+        options: [
+          { ar: "لَمْ يَجِدْ حَليبًا", en: "He didn't find milk" },
+          { ar: "لِأَنَّ النُّقودَ اِنْتَهَتْ", en: "Because the money ran out" },
+          { ar: "لا يُحِبُّ الحَليبَ", en: "He doesn't like milk" }
+        ],
+        correct: 1,
+        why: "أَرادَ حَليبًا لٰكِنَّ النُّقودَ اِنْتَهَتْ — he wanted milk but the money ran out."
+      },
+      {
+        q_ar: "ماذا فَعَلَ البائِعُ الطَّيِّبُ؟",
+        q_en: "What did the kind seller do?",
+        options: [
+          { ar: "أَعْطاهُ حَليبًا هَدِيَّةً", en: "Gave him milk as a gift" },
+          { ar: "طَلَبَ نُقودًا أَكْثَرَ", en: "Asked for more money" },
+          { ar: "أَغْلَقَ الدُّكّانَ", en: "Closed the shop" }
+        ],
+        correct: 0,
+        why: "أَعْطاهُ زُجاجَةَ حَليبٍ هَدِيَّةً — a bottle of milk as a gift."
+      },
+      {
+        q_ar: "كَيْفَ رَجَعَ سامي إِلى البَيْتِ؟",
+        q_en: "How did Sami return home?",
+        options: [
+          { ar: "حَزينًا", en: "Sad" },
+          { ar: "غاضِبًا", en: "Angry" },
+          { ar: "سَعيدًا", en: "Happy" }
+        ],
+        correct: 2,
+        why: "رَجَعَ إِلى البَيْتِ سَعيدًا — he returned home happy."
+      },
+      {
+        q_ar: "«سَيَذْهَبُ» — ما زَمَنُ هٰذا الفِعْلِ؟",
+        q_en: "\"sa-yadhhabu\" (will go) — what tense is this?",
+        options: [
+          { ar: "المُسْتَقْبَل", en: "Future" },
+          { ar: "الماضي", en: "Past" },
+          { ar: "الأَمْر", en: "Command" }
+        ],
+        correct: 0,
+        why: "سَـ + يَذْهَبُ = future. The سَـ prefix means 'will'."
+      },
+      {
+        q_ar: "مَتى سَيَذْهَبُ سامي إِلى السُّوقِ مَرَّةً أُخْرى؟",
+        q_en: "When will Sami go to the market again?",
+        options: [
+          { ar: "اليَوْمَ", en: "Today" },
+          { ar: "غَدًا", en: "Tomorrow" },
+          { ar: "الأُسْبوعَ القادِمَ", en: "Next week" }
+        ],
+        correct: 1,
+        why: "غَدًا سَيَذْهَبُ — tomorrow (ghadan) he will go."
+      },
+      {
+        q_ar: "ما مَعْنى «مُزْدَحِم»؟",
+        q_en: "What does \"muzdaḥim\" mean?",
+        options: [
+          { ar: "فارِغ — empty", en: "Empty" },
+          { ar: "مُزْدَحِم — crowded", en: "Crowded" },
+          { ar: "جَميل — beautiful", en: "Beautiful" }
+        ],
+        correct: 1,
+        why: "مُزْدَحِم = crowded, full of people — the opposite of فارِغ (empty)."
+      },
+      {
+        q_ar: "ما عَكْسُ «اِشْتَرى»؟",
+        q_en: "What is the opposite of \"ishtarā\" (bought)?",
+        options: [
+          { ar: "باعَ — sold", en: "Sold" },
+          { ar: "أَخَذَ — took", en: "Took" },
+          { ar: "وَجَدَ — found", en: "Found" }
+        ],
+        correct: 0,
+        why: "اِشْتَرى (bought) ↔ باعَ (sold). That's why a seller is بائِع."
+      },
+      {
+        q_ar: "ماذا كانَ في سَلَّةِ سامي في النِّهايَةِ؟",
+        q_en: "What was in Sami's basket at the end?",
+        options: [
+          { ar: "تُفّاحٌ وَخُبْزٌ وَحَليبٌ", en: "Apples, bread and milk" },
+          { ar: "تُفّاحٌ فَقَطْ", en: "Only apples" },
+          { ar: "سَمَكٌ وَأُرْزٌ", en: "Fish and rice" }
+        ],
+        correct: 0,
+        why: "He bought apples and bread, and got milk as a gift — all three!"
+      }
+    ]
   }
 ];

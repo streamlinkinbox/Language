@@ -223,7 +223,11 @@
       audio.playbackRate = S.speed / 100;
       if ("preservesPitch" in audio) audio.preservesPitch = true;
       audio.addEventListener("ended", () => { $("audio-icon").textContent = "volume_up"; });
-      audio.play().catch(() => { $("audio-icon").textContent = "volume_up"; });
+      audio.play().catch(() => {
+        // last resort: browser TTS reads the sentence
+        $("audio-icon").textContent = "volume_up";
+        speakFallback(story.pages[pageIdx].ar);
+      });
     });
   }
   function stopAudio() {
