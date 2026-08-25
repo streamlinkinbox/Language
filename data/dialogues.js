@@ -1,0 +1,92 @@
+// ─────────────────────────────────────────────────────────────
+// Hikaya — Dialogue data (Set 2)
+// Two speakers: a = left bubble (male voice), b = right bubble (female voice).
+// audio: clip id under assets/audio/dialogues/<id>/  (null = TTS fallback)
+// scene: switches the header illustration as the drama progresses.
+// ─────────────────────────────────────────────────────────────
+const DIALOGUES = [
+  {
+    id: "hanli",
+    title_ar: "هانْلي وَقَبائِلُ مولان",
+    title_en: "Hanli and the Mulan Tribes",
+    level: "Beginner+ · A2",
+    cover: "assets/img/dialogues/hanli/scene2.jpg",
+    minutes: 6,
+    speakers: {
+      a: { name_ar: "هانْلي", name_en: "Hanli", role: "Guardian cultivator" },
+      b: { name_ar: "ياشا", name_en: "Yasha", role: "Priestess of the Mulan tribes" }
+    },
+    scenes: [
+      "assets/img/dialogues/hanli/scene1.jpg",
+      "assets/img/dialogues/hanli/scene2.jpg",
+      "assets/img/dialogues/hanli/scene3.jpg",
+      "assets/img/dialogues/hanli/scene4.jpg"
+    ],
+    lines: [
+      { s: "a", scene: 0, audio: "l01",
+        ar: "مَنْ يَقِفُ عِنْدَ البَوّابَةِ؟ أَنا هانْلي، حارِسُ المَمَرِّ الجَنوبِيِّ.",
+        tr: "man yaqifu ʿinda l-bawwābati? anā hānlī, ḥārisu l-mamarri l-janūbiyyi.",
+        en: "Who stands at the gate? I am Hanli, guardian of the southern pass." },
+      { s: "b", scene: 0, audio: "l02",
+        ar: "أَنا ياشا، كاهِنَةُ قَبائِلِ مولان. اِبْتَعِدْ عَنْ طَريقِنا يا فَتى.",
+        tr: "anā yāshā, kāhinatu qabāʾili mūlān. ibtaʿid ʿan ṭarīqinā yā fatā.",
+        en: "I am Yasha, priestess of the Mulan tribes. Step out of our way, boy." },
+      { s: "a", scene: 0, audio: "l03",
+        ar: "لَنْ أَبْتَعِدَ. خَلْفي قُرًى وَأَطْفالٌ وَنِساءٌ.",
+        tr: "lan abtaʿida. khalfī quran wa-aṭfālun wa-nisāʾun.",
+        en: "I will not step aside. Behind me are villages, children and women." },
+      { s: "b", scene: 0, audio: "l04",
+        ar: "مَعي أَلْفُ مُحارِبٍ، وَأَنْتَ وَحيدٌ. هَلْ تُريدُ المَوْتَ؟",
+        tr: "maʿī alfu muḥāribin, wa-anta waḥīdun. hal turīdu l-mawta?",
+        en: "I have a thousand warriors, and you are alone. Do you want death?" },
+      { s: "a", scene: 1, audio: "l05",
+        ar: "الوَحيدُ الَّذي يَحْمي بَيْتَهُ أَقْوى مِنْ أَلْفٍ يُهاجِمونَ.",
+        tr: "al-waḥīdu lladhī yaḥmī baytahu aqwā min alfin yuhājimūna.",
+        en: "One who protects his home is stronger than a thousand who attack." },
+      { s: "b", scene: 1, audio: "l06",
+        ar: "كَلامٌ جَميلٌ. لٰكِنَّ السُّيوفَ لا تَسْمَعُ الكَلامَ.",
+        tr: "kalāmun jamīlun. lākinna s-suyūfa lā tasmaʿu l-kalāma.",
+        en: "Beautiful words. But swords do not hear words." },
+      { s: "a", scene: 1, audio: "l07",
+        ar: "وَلا النّارُ تَسْمَعُ. اُنْظُري إِلى يَدي.",
+        tr: "wa-lā n-nāru tasmaʿu. unẓurī ilā yadī.",
+        en: "Nor does fire hear. Look at my hand." },
+      { s: "b", scene: 1, audio: "l08",
+        ar: "نارٌ زَرْقاءُ؟! مِنْ أَيْنَ لَكَ هٰذِهِ القُوَّةُ؟",
+        tr: "nārun zarqāʾu?! min ayna laka hādhihi l-qūwatu?",
+        en: "Blue fire?! From where do you have this power?" },
+      { s: "a", scene: 1, audio: "l09",
+        ar: "مِنْ سَنَواتِ صَبْرٍ وَتَدْريبٍ في الجِبالِ.",
+        tr: "min sanawāti ṣabrin wa-tadrībin fī l-jibāli.",
+        en: "From years of patience and training in the mountains." },
+      { s: "b", scene: 2, audio: "l10",
+        ar: "عِنْدَنا سِحْرُ الأَرْواحِ، وَسَنَكْسِرُ نارَكَ.",
+        tr: "ʿindanā siḥru l-arwāḥi, wa-sa-naksiru nāraka.",
+        en: "We have spirit magic, and we will break your fire." },
+      { s: "a", scene: 2, audio: null,
+        ar: "جَرِّبي. لٰكِنْ اِعْلَمي: أَنا لا أُهاجِمُ، أَنا أَحْمي فَقَطْ.",
+        tr: "jarribī. lākin iʿlamī: anā lā uhājimu, anā aḥmī faqaṭ.",
+        en: "Try. But know this: I do not attack, I only protect." },
+      { s: "b", scene: 2, audio: null,
+        ar: "لِماذا تُقاتِلُ وَحْدَكَ؟ أَيْنَ جَيْشُكَ؟",
+        tr: "limādhā tuqātilu waḥdaka? ayna jayshuka?",
+        en: "Why do you fight alone? Where is your army?" },
+      { s: "a", scene: 2, audio: null,
+        ar: "الجَيْشُ في الحُقولِ، يَزْرَعونَ الأَرُزَّ. الحَرْبُ لا تُطْعِمُ النّاسَ.",
+        tr: "al-jayshu fī l-ḥuqūli, yazraʿūna l-aruzza. al-ḥarbu lā tuṭʿimu n-nāsa.",
+        en: "The army is in the fields, planting rice. War does not feed people." },
+      { s: "b", scene: 3, audio: null,
+        ar: "أَنْتَ غَريبٌ يا هانْلي... قَوِيٌّ وَلا تُحِبُّ القِتالَ.",
+        tr: "anta gharībun yā hānlī... qawiyyun wa-lā tuḥibbu l-qitāla.",
+        en: "You are strange, Hanli... strong, yet you don't love fighting." },
+      { s: "a", scene: 3, audio: null,
+        ar: "القَوِيُّ الحَقيقِيُّ لا يَحْتاجُ إِلى القِتالِ. تَعالَيْ، نَشْرَبُ الشّايَ وَنَتَكَلَّمُ.",
+        tr: "al-qawiyyu l-ḥaqīqiyyu lā yaḥtāju ilā l-qitāli. taʿālay, nashrabu sh-shāya wa-natakallamu.",
+        en: "The truly strong need no fighting. Come, let us drink tea and talk." },
+      { s: "b", scene: 3, audio: null,
+        ar: "حَسَنًا يا حارِسَ المَمَرِّ. اليَوْمَ نَشْرَبُ الشّايَ... وَغَدًا نُصْبِحُ جيرانًا.",
+        tr: "ḥasanan yā ḥārisa l-mamarri. al-yawma nashrabu sh-shāya... wa-ghadan nuṣbiḥu jīrānan.",
+        en: "Very well, guardian of the pass. Today we drink tea... and tomorrow we become neighbors." }
+    ]
+  }
+];

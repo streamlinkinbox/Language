@@ -9,7 +9,7 @@
     arrow_back: 0xe5c4, arrow_forward: 0xe5c8, auto_stories: 0xe666,
     bookmark: 0xe8e7, cancel: 0xe888, celebration: 0xea65,
     check_circle: 0xf0be, chevron_left: 0xe5cb, chevron_right: 0xe5cc,
-    close: 0xe5cd, dark_mode: 0xe51c, graphic_eq: 0xe1b8,
+    close: 0xe5cd, forum: 0xe8af, dark_mode: 0xe51c, graphic_eq: 0xe1b8,
     light_mode: 0xe518, menu_book: 0xea19, quiz: 0xf04c,
     radio_button_unchecked: 0xe836, record_voice_over: 0xe91f,
     replay: 0xe042, schedule: 0xefd6, settings: 0xe8b8,

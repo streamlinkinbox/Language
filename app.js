@@ -44,7 +44,7 @@
   };
 
   const $ = (id) => document.getElementById(id);
-  const screens = { library: $("screen-library"), reader: $("screen-reader"), quiz: $("screen-quiz") };
+  const screens = { library: $("screen-library"), reader: $("screen-reader"), quiz: $("screen-quiz"), dialogue: $("screen-dialogue") };
 
   let story = null;
   let pageIdx = 0;
@@ -123,6 +123,172 @@
       list.appendChild(card);
     });
   }
+
+  // ═══════ library tabs carousel ═══════
+  let curTab = "stories";
+  function setTab(name, animate = true) {
+    curTab = name;
+    document.querySelectorAll("#lib-tabs .tab").forEach(t => t.classList.toggle("on", t.dataset.tab === name));
+    const track = $("tab-track");
+    if (!animate) track.style.transition = "none";
+    track.style.transform = name === "stories" ? "translateX(0)" : "translateX(-50%)";
+    if (!animate) requestAnimationFrame(() => { track.style.transition = ""; });
+  }
+  $("lib-tabs").addEventListener("click", (e) => {
+    const t = e.target.closest(".tab");
+    if (t) setTab(t.dataset.tab);
+  });
+  // swipe left/right on the carousel
+  let tcX = null, tcY = null;
+  $("tab-carousel").addEventListener("touchstart", (e) => {
+    tcX = e.touches[0].clientX; tcY = e.touches[0].clientY;
+  }, { passive: true });
+  $("tab-carousel").addEventListener("touchend", (e) => {
+    if (tcX == null) return;
+    const dx = e.changedTouches[0].clientX - tcX;
+    const dy = e.changedTouches[0].clientY - tcY;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      if (dx < 0 && curTab === "stories") setTab("dialogues");
+      else if (dx > 0 && curTab === "dialogues") setTab("stories");
+    }
+    tcX = tcY = null;
+  }, { passive: true });
+
+  // ═══════ dialogues ═══════
+  let dlg = null;
+  let dlgIdx = -1;          // index of last revealed line
+  let dlgAudio = null;
+
+  function renderDialogueLibrary() {
+    const list = $("dialogue-list");
+    if (!list || typeof DIALOGUES === "undefined") return;
+    list.innerHTML = "";
+    DIALOGUES.forEach(d => {
+      const pr = progress.get("dlg-" + d.id);
+      const card = document.createElement("button");
+      card.className = "story-card";
+      card.innerHTML = `
+        <img class="story-thumb" src="${d.cover}" alt="">
+        <div class="story-meta">
+          <div class="t-ar">${d.title_ar}</div>
+          <div class="t-en">${d.title_en}</div>
+          <div class="story-badges">
+            <span class="badge"><span class="msr">signal_cellular_alt</span>${d.level}</span>
+            <span class="badge"><span class="msr">forum</span>${d.lines.length} lines</span>
+            ${pr.line != null ? `<span class="badge"><span class="msr">bookmark</span>Line ${pr.line + 1}</span>` : ""}
+          </div>
+        </div>
+        <span class="msr go">arrow_forward</span>`;
+      card.addEventListener("click", () => openDialogue(d));
+      list.appendChild(card);
+    });
+  }
+
+  function openDialogue(d) {
+    dlg = d;
+    dlgIdx = -1;
+    $("dlg-title").textContent = d.title_ar;
+    $("dlg-chat").innerHTML = "";
+    $("dlg-scene-img").src = d.scenes[0];
+    show("dialogue");
+    updateDlgHud();
+    // reveal first line automatically
+    nextDlgLine();
+  }
+
+  function updateDlgHud() {
+    const total = dlg.lines.length;
+    const done = dlgIdx + 1;
+    $("dlg-progress-label").textContent = done >= total
+      ? "Scene complete"
+      : `Line ${Math.max(done, 0)} of ${total}`;
+    $("dlg-progress-fill").style.width = (done / total * 100) + "%";
+    $("dlg-next-icon").textContent = done >= total ? "replay" : "chevron_right";
+    $("dlg-speed-label").textContent = (S.speed / 100).toFixed(2).replace(/0$/, "") + "×";
+  }
+
+  function bubbleFor(line, idx) {
+    const sp = dlg.speakers[line.s];
+    const el = document.createElement("div");
+    el.className = "bubble " + (line.s === "a" ? "left" : "right");
+    el.innerHTML = `
+      <div class="b-name">${line.s === "a" ? `<span class="msr" style="font-size:14px">record_voice_over</span>` : ""}${sp.name_ar} · ${sp.name_en}${line.s === "b" ? `<span class="msr" style="font-size:14px">voice_selection</span>` : ""}</div>
+      <div class="b-ar" lang="ar">${line.ar}</div>
+      <div class="b-tr">${line.tr}</div>
+      <div class="b-en">${line.en}</div>`;
+    el.addEventListener("click", () => playDlgLine(idx));
+    return el;
+  }
+
+  function nextDlgLine() {
+    const total = dlg.lines.length;
+    if (dlgIdx + 1 >= total) {
+      // replay from start
+      dlgIdx = -1;
+      $("dlg-chat").innerHTML = "";
+      $("dlg-scene-img").src = dlg.scenes[0];
+    }
+    dlgIdx++;
+    const line = dlg.lines[dlgIdx];
+    const chat = $("dlg-chat");
+    chat.appendChild(bubbleFor(line, dlgIdx));
+    chat.scrollTop = chat.scrollHeight;
+    if (dlg.scenes[line.scene] && $("dlg-scene-img").getAttribute("src") !== dlg.scenes[line.scene]) {
+      const img = $("dlg-scene-img");
+      img.style.opacity = 0;
+      setTimeout(() => { img.src = dlg.scenes[line.scene]; img.style.opacity = 1; }, 250);
+    }
+    progress.set("dlg-" + dlg.id, { line: dlgIdx });
+    updateDlgHud();
+    playDlgLine(dlgIdx);
+  }
+
+  function prevDlgLine() {
+    if (dlgIdx <= 0) return;
+    const chat = $("dlg-chat");
+    chat.removeChild(chat.lastElementChild);
+    dlgIdx--;
+    const line = dlg.lines[dlgIdx];
+    if (dlg.scenes[line.scene]) $("dlg-scene-img").src = dlg.scenes[line.scene];
+    progress.set("dlg-" + dlg.id, { line: dlgIdx });
+    updateDlgHud();
+    playDlgLine(dlgIdx);
+  }
+
+  function playDlgLine(idx) {
+    stopAudio();
+    if (dlgAudio) { dlgAudio.pause(); dlgAudio = null; }
+    document.querySelectorAll(".bubble.speaking").forEach(b => b.classList.remove("speaking"));
+    const bubbles = $("dlg-chat").children;
+    const el = bubbles[idx];
+    if (el) el.classList.add("speaking");
+    const line = dlg.lines[idx];
+    const done = () => { if (el) el.classList.remove("speaking"); };
+    if (line.audio) {
+      dlgAudio = new Audio(`assets/audio/dialogues/${dlg.id}/${line.audio}.mp3`);
+      dlgAudio.playbackRate = S.speed / 100;
+      if ("preservesPitch" in dlgAudio) dlgAudio.preservesPitch = true;
+      dlgAudio.addEventListener("ended", done);
+      dlgAudio.play().catch(() => { speakFallback(line.ar); setTimeout(done, 4000); });
+    } else {
+      speakFallback(line.ar);
+      setTimeout(done, 4000);
+    }
+  }
+
+  $("btn-dlg-back").addEventListener("click", () => {
+    if (dlgAudio) { dlgAudio.pause(); dlgAudio = null; }
+    renderDialogueLibrary(); show("library"); setTab("dialogues", false);
+  });
+  $("btn-dlg-next").addEventListener("click", nextDlgLine);
+  $("btn-dlg-prev").addEventListener("click", prevDlgLine);
+  $("btn-dlg-replay").addEventListener("click", () => { if (dlgIdx >= 0) playDlgLine(dlgIdx); });
+  $("btn-dlg-speed").addEventListener("click", () => { cycleSpeed(); updateDlgHud(); });
+  $("btn-dlg-en").addEventListener("click", () => {
+    document.body.classList.toggle("dlg-no-en");
+    $("dlg-en-icon").textContent = document.body.classList.contains("dlg-no-en") ? "visibility_off" : "translate";
+  });
+  $("btn-settings-3").addEventListener("click", openSettings);
 
   function openStory(st) {
     story = st;
@@ -292,6 +458,7 @@
   function stopAudio() {
     if (audio) { audio.pause(); audio = null; }
     if (typeof wordAudio !== "undefined" && wordAudio) { wordAudio.pause(); wordAudio = null; }
+    if (typeof dlgAudio !== "undefined" && dlgAudio) { dlgAudio.pause(); dlgAudio = null; }
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     const ic = $("audio-icon");
     if (ic) ic.textContent = "volume_up";
@@ -470,7 +637,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v18";
+  const APP_VERSION = "v19";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
@@ -491,4 +658,5 @@
   // ═══════ boot ═══════
   applySettings();
   renderLibrary();
+  renderDialogueLibrary();
 })();

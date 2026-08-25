@@ -24,19 +24,78 @@
     </button>
   </header>
 
-  <div class="library-body">
-    <p class="section-label">Your library</p>
-    <div id="story-list" class="story-list"></div>
+  <nav class="tabs" id="lib-tabs">
+    <button class="tab on" data-tab="stories"><span class="msr">auto_stories</span> Stories</button>
+    <button class="tab" data-tab="dialogues"><span class="msr">forum</span> Dialogues</button>
+  </nav>
 
-    <p class="section-label">Coming soon</p>
-    <div class="story-card ghost">
-      <div class="ghost-thumb"><span class="msr">auto_stories</span></div>
-      <div class="story-meta">
-        <h3>More stories on the way</h3>
-        <p>Story Set 2 — coming soon</p>
+  <div class="tab-carousel" id="tab-carousel">
+    <div class="tab-track" id="tab-track">
+      <div class="tab-page" data-page="stories">
+        <div class="library-body">
+          <p class="section-label">Story Set 1 · Tales</p>
+          <div id="story-list" class="story-list"></div>
+        </div>
+      </div>
+      <div class="tab-page" data-page="dialogues">
+        <div class="library-body">
+          <p class="section-label">Story Set 2 · Dialogues</p>
+          <div id="dialogue-list" class="story-list"></div>
+          <p class="section-label">Coming soon</p>
+          <div class="story-card ghost">
+            <div class="ghost-thumb"><span class="msr">forum</span></div>
+            <div class="story-meta">
+              <h3>More dialogues on the way</h3>
+              <p>At the tea house · The spirit market</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ══════════ DIALOGUE READER ══════════ -->
+<section id="screen-dialogue" class="screen">
+  <header class="topbar reader-top">
+    <button class="icon-btn" id="btn-dlg-back" aria-label="Back to library">
+      <span class="msr">arrow_back</span>
+    </button>
+    <div class="reader-title">
+      <span id="dlg-title" class="reader-title-ar"></span>
+      <span id="dlg-progress-label" class="reader-title-sub"></span>
+    </div>
+    <button class="icon-btn" id="btn-settings-3" aria-label="Settings">
+      <span class="msr">settings</span>
+    </button>
+  </header>
+
+  <div class="progress-track"><div id="dlg-progress-fill" class="progress-fill"></div></div>
+
+  <div class="dlg-scene">
+    <img id="dlg-scene-img" alt="Scene illustration" draggable="false">
+    <div class="dlg-scene-fade"></div>
+  </div>
+
+  <div id="dlg-chat" class="dlg-chat"></div>
+
+  <footer class="reader-controls">
+    <button class="ctrl-btn" id="btn-dlg-prev" aria-label="Previous line">
+      <span class="msr">chevron_left</span>
+    </button>
+    <button class="ctrl-btn" id="btn-dlg-replay" aria-label="Replay line">
+      <span class="msr">replay</span>
+    </button>
+    <button class="ctrl-btn primary" id="btn-dlg-next" aria-label="Next line">
+      <span class="msr" id="dlg-next-icon">chevron_right</span>
+    </button>
+    <button class="ctrl-btn" id="btn-dlg-speed" aria-label="Audio speed">
+      <span id="dlg-speed-label" class="speed-label">1×</span>
+    </button>
+    <button class="ctrl-btn" id="btn-dlg-en" aria-label="Show or hide English">
+      <span class="msr" id="dlg-en-icon">translate</span>
+    </button>
+  </footer>
 </section>
 
 <!-- ══════════ READER ══════════ -->
@@ -182,10 +241,11 @@
   </div>
 </div>
 
-<script src="icons.js?v=18"></script>
-<script src="data/wordaudio.js?v=18"></script>
-<script src="data/wordbank.js?v=18"></script>
-<script src="data/stories.js?v=18"></script>
-<script src="app.js?v=18"></script>
+<script src="icons.js?v=19"></script>
+<script src="data/wordaudio.js?v=19"></script>
+<script src="data/wordbank.js?v=19"></script>
+<script src="data/stories.js?v=19"></script>
+<script src="data/dialogues.js?v=19"></script>
+<script src="app.js?v=19"></script>
 </body>
 </html>
