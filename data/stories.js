@@ -2855,5 +2855,233 @@ const STORIES = [
         why: "بِبُطْءٍ (slowly) ↔ بِسُرْعَةٍ (quickly). You've now seen the whole بِ+noun adverb family!"
       }
     ]
+  },
+
+  /* ═══════════ STORY 11 — The Two Stubborn Goats ═══════════ */
+  {
+    id: "two-goats",
+    title_ar: "العَنْزَتانِ العَنيدَتانِ",
+    title_en: "The Two Stubborn Goats",
+    level: "Beginner · A1",
+    cover: "assets/img/two-goats/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/two-goats/s1.jpg",
+        audio: "s1",
+        ar: "كانَ هُناكَ جِسْرٌ ضَيِّقٌ فَوْقَ النَّهْرِ. جاءَتْ عَنْزَةٌ بَيْضاءُ مِنْ هُنا، وَعَنْزَةٌ بُنِّيَّةٌ مِنْ هُناكَ.",
+        tr: "kāna hunāka jisrun ḍayyiqun fawqa n-nahri. jāʾat ʿanzatun bayḍāʾu min hunā, wa-ʿanzatun bunniyyatun min hunāka.",
+        en: "There was a narrow bridge over the river. A white goat came from here, and a brown goat from there.",
+        tense: "كانَ هُناكَ = there was",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "هُناكَ", tr: "hunāka", en: "there / there was" },
+          { ar: "جِسْرٌ", tr: "jisrun", en: "a bridge" },
+          { ar: "ضَيِّقٌ", tr: "ḍayyiqun", en: "narrow" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "over / above" },
+          { ar: "النَّهْرِ", tr: "an-nahri", en: "the river" },
+          { ar: "جاءَتْ", tr: "jāʾat", en: "came (she)" },
+          { ar: "عَنْزَةٌ", tr: "ʿanzatun", en: "a goat" },
+          { ar: "بَيْضاءُ", tr: "bayḍāʾu", en: "white (f.)" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "هُنا", tr: "hunā", en: "here" },
+          { ar: "وَعَنْزَةٌ", tr: "wa-ʿanzatun", en: "and a goat" },
+          { ar: "بُنِّيَّةٌ", tr: "bunniyyatun", en: "brown (f.)" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "هُناكَ", tr: "hunāka", en: "there" }
+        ]
+      },
+      {
+        img: "assets/img/two-goats/s2.jpg",
+        audio: "s2",
+        ar: "اِلْتَقَتا في وَسَطِ الجِسْرِ. قالَتِ البَيْضاءُ: اِرْجِعي أَنْتِ! قالَتِ البُنِّيَّةُ: لا، اِرْجِعي أَنْتِ!",
+        tr: "iltaqatā fī wasaṭi l-jisri. qālati l-bayḍāʾu: irjiʿī anti! qālati l-bunniyyatu: lā, irjiʿī anti!",
+        en: "They met in the middle of the bridge. The white one said: You go back! The brown one said: No, YOU go back!",
+        tense: "Dual past + feminine command",
+        words: [
+          { ar: "اِلْتَقَتا", tr: "iltaqatā", en: "they two met" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "وَسَطِ", tr: "wasaṭi", en: "middle (of)" },
+          { ar: "الجِسْرِ", tr: "al-jisri", en: "the bridge" },
+          { ar: "قالَتِ", tr: "qālati", en: "said (she)" },
+          { ar: "البَيْضاءُ", tr: "al-bayḍāʾu", en: "the white one" },
+          { ar: "اِرْجِعي", tr: "irjiʿī", en: "go back! (to a female)" },
+          { ar: "أَنْتِ", tr: "anti", en: "you (f.)" },
+          { ar: "البُنِّيَّةُ", tr: "al-bunniyyatu", en: "the brown one" },
+          { ar: "لا", tr: "lā", en: "no" }
+        ]
+      },
+      {
+        img: "assets/img/two-goats/s3.jpg",
+        audio: "s3",
+        ar: "وَقَفَتا طَويلًا وَلَمْ تَتَحَرَّكا. جاءَ المَساءُ وَهُما غاضِبَتانِ وَجائِعَتانِ.",
+        tr: "waqafatā ṭawīlan wa-lam tataḥarrakā. jāʾa l-masāʾu wa-humā ghāḍibatāni wa-jāʾiʿatāni.",
+        en: "They stood for a long time and did not move. Evening came while they were both angry and hungry.",
+        tense: "Dual + لَمْ negation",
+        words: [
+          { ar: "وَقَفَتا", tr: "waqafatā", en: "they two stood" },
+          { ar: "طَويلًا", tr: "ṭawīlan", en: "for a long time" },
+          { ar: "وَلَمْ", tr: "wa-lam", en: "and did not" },
+          { ar: "تَتَحَرَّكا", tr: "tataḥarrakā", en: "move (they two)" },
+          { ar: "جاءَ", tr: "jāʾa", en: "came" },
+          { ar: "المَساءُ", tr: "al-masāʾu", en: "the evening" },
+          { ar: "وَهُما", tr: "wa-humā", en: "while they two" },
+          { ar: "غاضِبَتانِ", tr: "ghāḍibatāni", en: "angry (both, f.)" },
+          { ar: "وَجائِعَتانِ", tr: "wa-jāʾiʿatāni", en: "and hungry (both, f.)" }
+        ]
+      },
+      {
+        img: "assets/img/two-goats/s4.jpg",
+        audio: "s4",
+        ar: "أَخيرًا قالَتِ البَيْضاءُ: عِنْدي فِكْرَةٌ. سَأَجْلِسُ، وَتَمُرّينَ أَنْتِ مِنْ فَوْقي.",
+        tr: "akhīran qālati l-bayḍāʾu: ʿindī fikratun. sa-ajlisu, wa-tamurrīna anti min fawqī.",
+        en: "Finally the white one said: I have an idea. I will sit down, and you pass over me.",
+        tense: "Future سَـ + present",
+        words: [
+          { ar: "أَخيرًا", tr: "akhīran", en: "finally" },
+          { ar: "قالَتِ", tr: "qālati", en: "said (she)" },
+          { ar: "البَيْضاءُ", tr: "al-bayḍāʾu", en: "the white one" },
+          { ar: "عِنْدي", tr: "ʿindī", en: "I have" },
+          { ar: "فِكْرَةٌ", tr: "fikratun", en: "an idea" },
+          { ar: "سَأَجْلِسُ", tr: "sa-ajlisu", en: "I will sit" },
+          { ar: "وَتَمُرّينَ", tr: "wa-tamurrīna", en: "and you pass (f.)" },
+          { ar: "أَنْتِ", tr: "anti", en: "you (f.)" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "فَوْقي", tr: "fawqī", en: "over me" }
+        ]
+      },
+      {
+        img: "assets/img/two-goats/s5.jpg",
+        audio: "s5",
+        ar: "مَرَّتِ البُنِّيَّةُ بِحَذَرٍ، وَعَبَرَتِ الاِثْنَتانِ الجِسْرَ. التَّعاوُنُ خَيْرٌ مِنَ العِنادِ.",
+        tr: "marrati l-bunniyyatu bi-ḥadharin, wa-ʿabarati l-ithnatāni l-jisra. at-taʿāwunu khayrun mina l-ʿinādi.",
+        en: "The brown one passed carefully, and both crossed the bridge. Cooperation is better than stubbornness.",
+        tense: "Past + proverb (خَيْرٌ مِنْ = better than)",
+        words: [
+          { ar: "مَرَّتِ", tr: "marrati", en: "passed (she)" },
+          { ar: "البُنِّيَّةُ", tr: "al-bunniyyatu", en: "the brown one" },
+          { ar: "بِحَذَرٍ", tr: "bi-ḥadharin", en: "carefully" },
+          { ar: "وَعَبَرَتِ", tr: "wa-ʿabarati", en: "and crossed" },
+          { ar: "الاِثْنَتانِ", tr: "al-ithnatāni", en: "the two (f.)" },
+          { ar: "الجِسْرَ", tr: "al-jisra", en: "the bridge" },
+          { ar: "التَّعاوُنُ", tr: "at-taʿāwunu", en: "cooperation" },
+          { ar: "خَيْرٌ", tr: "khayrun", en: "better / good" },
+          { ar: "مِنَ", tr: "mina", en: "than" },
+          { ar: "العِنادِ", tr: "al-ʿinādi", en: "stubbornness" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "كَيْفَ كانَ الجِسْرُ؟",
+        q_en: "What was the bridge like?",
+        options: [
+          { ar: "واسِعًا وَكَبيرًا", en: "Wide and big" },
+          { ar: "ضَيِّقًا", en: "Narrow" },
+          { ar: "مَكْسورًا", en: "Broken" }
+        ],
+        correct: 1,
+        why: "جِسْرٌ ضَيِّقٌ — a narrow bridge. That's the whole problem!"
+      },
+      {
+        q_ar: "أَيْنَ اِلْتَقَتِ العَنْزَتانِ؟",
+        q_en: "Where did the two goats meet?",
+        options: [
+          { ar: "في وَسَطِ الجِسْرِ", en: "In the middle of the bridge" },
+          { ar: "عِنْدَ النَّهْرِ", en: "By the river" },
+          { ar: "عَلى الجَبَلِ", en: "On the mountain" }
+        ],
+        correct: 0,
+        why: "اِلْتَقَتا في وَسَطِ الجِسْرِ — right in the middle, face to face."
+      },
+      {
+        q_ar: "«اِرْجِعي» — لِمَنْ يُقالُ هٰذا الأَمْرُ؟",
+        q_en: "\"irjiʿī\" (go back!) — to whom is this command said?",
+        options: [
+          { ar: "لِوَلَدٍ", en: "To a boy" },
+          { ar: "لِبِنْتٍ / أُنْثى", en: "To a girl / female" },
+          { ar: "لِجَماعَةٍ", en: "To a group" }
+        ],
+        correct: 1,
+        why: "The ـي ending makes it feminine: irjiʿī (to a female) vs irjiʿ (to a male)."
+      },
+      {
+        q_ar: "ماذا فَعَلَتا طولَ النَّهارِ؟",
+        q_en: "What did they both do all day?",
+        options: [
+          { ar: "وَقَفَتا وَلَمْ تَتَحَرَّكا", en: "They stood and didn't move" },
+          { ar: "أَكَلَتا العُشْبَ", en: "They ate grass" },
+          { ar: "سَبَحَتا في النَّهْرِ", en: "They swam in the river" }
+        ],
+        correct: 0,
+        why: "وَقَفَتا طَويلًا وَلَمْ تَتَحَرَّكا — stubborn standoff till evening."
+      },
+      {
+        q_ar: "كَيْفَ كانَتا عِنْدَما جاءَ المَساءُ؟",
+        q_en: "How were they when evening came?",
+        options: [
+          { ar: "سَعيدَتَيْنِ", en: "Happy" },
+          { ar: "نائِمَتَيْنِ", en: "Asleep" },
+          { ar: "غاضِبَتَيْنِ وَجائِعَتَيْنِ", en: "Angry and hungry" }
+        ],
+        correct: 2,
+        why: "غاضِبَتانِ وَجائِعَتانِ — angry and hungry. Stubbornness has a price!"
+      },
+      {
+        q_ar: "ما كانَتْ فِكْرَةُ العَنْزَةِ البَيْضاءِ؟",
+        q_en: "What was the white goat's idea?",
+        options: [
+          { ar: "أَنْ تَقْفِزَ في النَّهْرِ", en: "To jump into the river" },
+          { ar: "أَنْ تَجْلِسَ وَتَمُرَّ الأُخْرى مِنْ فَوْقِها", en: "To sit down so the other passes over her" },
+          { ar: "أَنْ تَرْجِعَ إِلى البَيْتِ", en: "To go back home" }
+        ],
+        correct: 1,
+        why: "سَأَجْلِسُ وَتَمُرّينَ أَنْتِ مِنْ فَوْقي — humble and clever."
+      },
+      {
+        q_ar: "«سَأَجْلِسُ» — ما زَمَنُ هٰذا الفِعْلِ؟",
+        q_en: "\"sa-ajlisu\" — what tense is this verb?",
+        options: [
+          { ar: "المُسْتَقْبَل — future", en: "Future" },
+          { ar: "الماضي — past", en: "Past" },
+          { ar: "الأَمْر — command", en: "Command" }
+        ],
+        correct: 0,
+        why: "سَـ + أَجْلِسُ = I will sit. And the أ prefix means 'I' — sa-ajlisu = I will sit."
+      },
+      {
+        q_ar: "كَيْفَ مَرَّتِ العَنْزَةُ البُنِّيَّةُ؟",
+        q_en: "How did the brown goat pass?",
+        options: [
+          { ar: "بِسُرْعَةٍ", en: "Quickly" },
+          { ar: "بِحَذَرٍ", en: "Carefully" },
+          { ar: "بِغَضَبٍ", en: "Angrily" }
+        ],
+        correct: 1,
+        why: "مَرَّتْ بِحَذَرٍ — with caution. Another بِ+noun adverb for your collection!"
+      },
+      {
+        q_ar: "«التَّعاوُنُ خَيْرٌ مِنَ العِنادِ» — ماذا تَعْني؟",
+        q_en: "\"at-taʿāwunu khayrun mina l-ʿinādi\" — what does it mean?",
+        options: [
+          { ar: "العِنادُ يَرْبَحُ دائِمًا", en: "Stubbornness always wins" },
+          { ar: "التَّعاوُنُ أَفْضَلُ مِنَ العِنادِ", en: "Cooperation is better than stubbornness" },
+          { ar: "الجِسْرُ خَطيرٌ", en: "The bridge is dangerous" }
+        ],
+        correct: 1,
+        why: "خَيْرٌ مِنْ = better than. The story's moral in one line."
+      },
+      {
+        q_ar: "«هُنا» وَ«هُناكَ» — ما الفَرْقُ؟",
+        q_en: "\"hunā\" vs \"hunāka\" — what's the difference?",
+        options: [
+          { ar: "هُنا = here، هُناكَ = there", en: "Here vs there" },
+          { ar: "هُما نَفْسُ الشَّيْءِ", en: "They're the same" },
+          { ar: "هُنا = there، هُناكَ = here", en: "There vs here" }
+        ],
+        correct: 0,
+        why: "هُنا here, هُناكَ there. And كانَ هُناكَ = 'there was' — how Arabic starts fables!"
+      }
+    ]
   }
 ];
