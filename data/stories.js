@@ -3083,5 +3083,234 @@ const STORIES = [
         why: "هُنا here, هُناكَ there. And كانَ هُناكَ = 'there was' — how Arabic starts fables!"
       }
     ]
+  },
+
+  /* ═══════════ STORY 12 — The Old Man and the Tree ═══════════ */
+  {
+    id: "old-man-tree",
+    title_ar: "العَجوزُ وَالشَّجَرَةُ",
+    title_en: "The Old Man and the Tree",
+    level: "Beginner · A1",
+    cover: "assets/img/old-man-tree/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/old-man-tree/s1.jpg",
+        audio: "s1",
+        ar: "كانَ رَجُلٌ عَجوزٌ يَزْرَعُ شَجَرَةَ تينٍ صَغيرَةً في الحَقْلِ.",
+        tr: "kāna rajulun ʿajūzun yazraʿu shajarata tīnin ṣaghīratan fī l-ḥaqli.",
+        en: "An old man was planting a small fig tree in the field.",
+        tense: "Past continuous — كانَ + يَفْعَلُ",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "رَجُلٌ", tr: "rajulun", en: "a man" },
+          { ar: "عَجوزٌ", tr: "ʿajūzun", en: "old (person)" },
+          { ar: "يَزْرَعُ", tr: "yazraʿu", en: "planting / plants" },
+          { ar: "شَجَرَةَ", tr: "shajarata", en: "tree (of)" },
+          { ar: "تينٍ", tr: "tīnin", en: "fig" },
+          { ar: "صَغيرَةً", tr: "ṣaghīratan", en: "small" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الحَقْلِ", tr: "al-ḥaqli", en: "the field" }
+        ]
+      },
+      {
+        img: "assets/img/old-man-tree/s2.jpg",
+        audio: "s2",
+        ar: "مَرَّ شابٌّ وَضَحِكَ: يا جَدّي، أَنْتَ عَجوزٌ. لَنْ تَأْكُلَ مِنْ هٰذِهِ الشَّجَرَةِ أَبَدًا!",
+        tr: "marra shābbun wa-ḍaḥika: yā jaddī, anta ʿajūzun. lan taʾkula min hādhihi sh-shajarati abadan!",
+        en: "A young man passed by and laughed: Grandpa, you are old. You will never eat from this tree!",
+        tense: "Future negation — لَنْ",
+        words: [
+          { ar: "مَرَّ", tr: "marra", en: "passed by" },
+          { ar: "شابٌّ", tr: "shābbun", en: "a young man" },
+          { ar: "وَضَحِكَ", tr: "wa-ḍaḥika", en: "and laughed" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "جَدّي", tr: "jaddī", en: "my grandpa" },
+          { ar: "أَنْتَ", tr: "anta", en: "you (m.)" },
+          { ar: "عَجوزٌ", tr: "ʿajūzun", en: "old" },
+          { ar: "لَنْ", tr: "lan", en: "will never / won't" },
+          { ar: "تَأْكُلَ", tr: "taʾkula", en: "eat (you)" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "هٰذِهِ", tr: "hādhihi", en: "this (f.)" },
+          { ar: "الشَّجَرَةِ", tr: "ash-shajarati", en: "the tree" },
+          { ar: "أَبَدًا", tr: "abadan", en: "ever / never" }
+        ]
+      },
+      {
+        img: "assets/img/old-man-tree/s3.jpg",
+        audio: "s3",
+        ar: "اِبْتَسَمَ العَجوزُ وَقالَ: زَرَعَ النّاسُ قَبْلَنا، فَأَكَلْنا. وَنَزْرَعُ نَحْنُ، فَيَأْكُلُ مَنْ بَعْدَنا.",
+        tr: "ibtasama l-ʿajūzu wa-qāla: zaraʿa n-nāsu qablanā, fa-akalnā. wa-nazraʿu naḥnu, fa-yaʾkulu man baʿdanā.",
+        en: "The old man smiled and said: People planted before us, so we ate. And we plant, so those after us will eat.",
+        tense: "Past + present — wisdom saying",
+        words: [
+          { ar: "اِبْتَسَمَ", tr: "ibtasama", en: "smiled" },
+          { ar: "العَجوزُ", tr: "al-ʿajūzu", en: "the old man" },
+          { ar: "وَقالَ", tr: "wa-qāla", en: "and said" },
+          { ar: "زَرَعَ", tr: "zaraʿa", en: "planted" },
+          { ar: "النّاسُ", tr: "an-nāsu", en: "the people" },
+          { ar: "قَبْلَنا", tr: "qablanā", en: "before us" },
+          { ar: "فَأَكَلْنا", tr: "fa-akalnā", en: "so we ate" },
+          { ar: "وَنَزْرَعُ", tr: "wa-nazraʿu", en: "and we plant" },
+          { ar: "نَحْنُ", tr: "naḥnu", en: "we" },
+          { ar: "فَيَأْكُلُ", tr: "fa-yaʾkulu", en: "so eats" },
+          { ar: "مَنْ", tr: "man", en: "who(ever)" },
+          { ar: "بَعْدَنا", tr: "baʿdanā", en: "after us" }
+        ]
+      },
+      {
+        img: "assets/img/old-man-tree/s4.jpg",
+        audio: "s4",
+        ar: "مَرَّتِ السَّنَواتُ، وَكَبُرَتِ الشَّجَرَةُ. صارَتْ كَبيرَةً وَمَليئَةً بِالتّينِ الحُلْوِ.",
+        tr: "marrati s-sanawātu, wa-kaburati sh-shajaratu. ṣārat kabīratan wa-malīʾatan bi-t-tīni l-ḥulwi.",
+        en: "The years passed, and the tree grew. It became big and full of sweet figs.",
+        tense: "Past + صارَتْ (became)",
+        words: [
+          { ar: "مَرَّتِ", tr: "marrati", en: "passed" },
+          { ar: "السَّنَواتُ", tr: "as-sanawātu", en: "the years" },
+          { ar: "وَكَبُرَتِ", tr: "wa-kaburati", en: "and grew" },
+          { ar: "الشَّجَرَةُ", tr: "ash-shajaratu", en: "the tree" },
+          { ar: "صارَتْ", tr: "ṣārat", en: "became (she/it)" },
+          { ar: "كَبيرَةً", tr: "kabīratan", en: "big" },
+          { ar: "وَمَليئَةً", tr: "wa-malīʾatan", en: "and full" },
+          { ar: "بِالتّينِ", tr: "bi-t-tīni", en: "of figs" },
+          { ar: "الحُلْوِ", tr: "al-ḥulwi", en: "sweet" }
+        ]
+      },
+      {
+        img: "assets/img/old-man-tree/s5.jpg",
+        audio: "s5",
+        ar: "جَلَسَ الشّابُّ مَعَ أَوْلادِهِ تَحْتَ الشَّجَرَةِ. أَكَلوا التّينَ وَتَذَكَّرَ كَلامَ العَجوزِ الحَكيمِ.",
+        tr: "jalasa sh-shābbu maʿa awlādihi taḥta sh-shajarati. akalū t-tīna wa-tadhakkara kalāma l-ʿajūzi l-ḥakīmi.",
+        en: "The (once) young man sat with his children under the tree. They ate the figs, and he remembered the wise old man's words.",
+        tense: "Past — plural أَكَلوا",
+        words: [
+          { ar: "جَلَسَ", tr: "jalasa", en: "sat" },
+          { ar: "الشّابُّ", tr: "ash-shābbu", en: "the young man" },
+          { ar: "مَعَ", tr: "maʿa", en: "with" },
+          { ar: "أَوْلادِهِ", tr: "awlādihi", en: "his children" },
+          { ar: "تَحْتَ", tr: "taḥta", en: "under" },
+          { ar: "الشَّجَرَةِ", tr: "ash-shajarati", en: "the tree" },
+          { ar: "أَكَلوا", tr: "akalū", en: "they ate" },
+          { ar: "التّينَ", tr: "at-tīna", en: "the figs" },
+          { ar: "وَتَذَكَّرَ", tr: "wa-tadhakkara", en: "and he remembered" },
+          { ar: "كَلامَ", tr: "kalāma", en: "words (of)" },
+          { ar: "العَجوزِ", tr: "al-ʿajūzi", en: "the old man" },
+          { ar: "الحَكيمِ", tr: "al-ḥakīmi", en: "the wise" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا كانَ يَزْرَعُ العَجوزُ؟",
+        q_en: "What was the old man planting?",
+        options: [
+          { ar: "شَجَرَةَ تينٍ", en: "A fig tree" },
+          { ar: "شَجَرَةَ زَيْتونٍ", en: "An olive tree" },
+          { ar: "وَرْدًا", en: "Roses" }
+        ],
+        correct: 0,
+        why: "كانَ يَزْرَعُ شَجَرَةَ تينٍ صَغيرَةً — a small fig tree."
+      },
+      {
+        q_ar: "لِماذا ضَحِكَ الشّابُّ؟",
+        q_en: "Why did the young man laugh?",
+        options: [
+          { ar: "لِأَنَّ الشَّجَرَةَ جَميلَةٌ", en: "Because the tree was beautiful" },
+          { ar: "لِأَنَّهُ ظَنَّ أَنَّ العَجوزَ لَنْ يَأْكُلَ مِنْها", en: "Because he thought the old man would never eat from it" },
+          { ar: "لِأَنَّهُ سَمِعَ نُكْتَةً", en: "Because he heard a joke" }
+        ],
+        correct: 1,
+        why: "He mocked: لَنْ تَأْكُلَ مِنْ هٰذِهِ الشَّجَرَةِ أَبَدًا — you'll never eat from it!"
+      },
+      {
+        q_ar: "«لَنْ تَأْكُلَ» — ما زَمَنُ هٰذِهِ الجُمْلَةِ؟",
+        q_en: "\"lan taʾkula\" — what tense is this?",
+        options: [
+          { ar: "نَفْيُ الماضي", en: "Negated past" },
+          { ar: "نَفْيُ المُسْتَقْبَلِ — will never", en: "Negated future — will never" },
+          { ar: "أَمْرٌ", en: "Command" }
+        ],
+        correct: 1,
+        why: "لَنْ + present verb = will never. Your third negation: ما (past), لا (present), لَنْ (future)!"
+      },
+      {
+        q_ar: "ماذا أَجابَ العَجوزُ؟",
+        q_en: "What did the old man reply?",
+        options: [
+          { ar: "زَرَعوا قَبْلَنا فَأَكَلْنا، وَنَزْرَعُ فَيَأْكُلُ مَنْ بَعْدَنا", en: "They planted before us so we ate; we plant so those after us eat" },
+          { ar: "أَنا سَآكُلُ مِنْها غَدًا", en: "I will eat from it tomorrow" },
+          { ar: "اُتْرُكْني وَحْدي", en: "Leave me alone" }
+        ],
+        correct: 0,
+        why: "The famous wisdom: we plant for the next generation, as others planted for us."
+      },
+      {
+        q_ar: "ماذا حَدَثَ بَعْدَ سَنَواتٍ؟",
+        q_en: "What happened after years?",
+        options: [
+          { ar: "ماتَتِ الشَّجَرَةُ", en: "The tree died" },
+          { ar: "كَبُرَتِ الشَّجَرَةُ وَامْتَلَأَتْ بِالتّينِ", en: "The tree grew and filled with figs" },
+          { ar: "قَطَعوا الشَّجَرَةَ", en: "They cut the tree down" }
+        ],
+        correct: 1,
+        why: "كَبُرَتِ الشَّجَرَةُ... مَليئَةً بِالتّينِ الحُلْوِ — big and full of sweet figs."
+      },
+      {
+        q_ar: "مَنْ أَكَلَ مِنَ الشَّجَرَةِ في النِّهايَةِ؟",
+        q_en: "Who ate from the tree in the end?",
+        options: [
+          { ar: "العَجوزُ نَفْسُهُ", en: "The old man himself" },
+          { ar: "لا أَحَدَ", en: "Nobody" },
+          { ar: "الشّابُّ وَأَوْلادُهُ", en: "The (once) young man and his children" }
+        ],
+        correct: 2,
+        why: "جَلَسَ الشّابُّ مَعَ أَوْلادِهِ... أَكَلوا التّينَ — exactly as the old man foretold."
+      },
+      {
+        q_ar: "«أَكَلوا» — مَنِ الَّذي أَكَلَ؟",
+        q_en: "\"akalū\" — who ate?",
+        options: [
+          { ar: "واحِدٌ", en: "One person" },
+          { ar: "اِثْنانِ", en: "Two people" },
+          { ar: "جَماعَةٌ — ثَلاثَةٌ أَوْ أَكْثَرُ", en: "A group — three or more" }
+        ],
+        correct: 2,
+        why: "The ـوا ending = they (3+). One أَكَلَ, two أَكَلا, group أَكَلوا."
+      },
+      {
+        q_ar: "«الحَكيم» — ما مَعْناها؟",
+        q_en: "\"al-ḥakīm\" — what does it mean?",
+        options: [
+          { ar: "الغَنِيّ — rich", en: "Rich" },
+          { ar: "الحَكيم — wise", en: "Wise" },
+          { ar: "القَوِيّ — strong", en: "Strong" }
+        ],
+        correct: 1,
+        why: "حَكيم = wise. From the same root as حِكْمَة (wisdom)."
+      },
+      {
+        q_ar: "ما عَكْسُ «عَجوز»؟",
+        q_en: "What is the opposite of \"ʿajūz\" (old person)?",
+        options: [
+          { ar: "شابّ — young", en: "Young (person)" },
+          { ar: "طَويل — tall", en: "Tall" },
+          { ar: "حَكيم — wise", en: "Wise" }
+        ],
+        correct: 0,
+        why: "عَجوز (old) ↔ شابّ (young). Both key characters of this story!"
+      },
+      {
+        q_ar: "ما هِيَ رِسالَةُ القِصَّةِ؟",
+        q_en: "What is the story's message?",
+        options: [
+          { ar: "اِعْمَلْ لِمَنْ يَأْتي بَعْدَكَ", en: "Work for those who come after you" },
+          { ar: "لا تَزْرَعْ وَأَنْتَ عَجوزٌ", en: "Don't plant when you're old" },
+          { ar: "التّينُ أَحْلى الفَواكِهِ", en: "Figs are the sweetest fruit" }
+        ],
+        correct: 0,
+        why: "Plant seeds whose shade you may never sit in — generosity across generations."
+      }
+    ]
   }
 ];
