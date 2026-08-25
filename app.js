@@ -196,10 +196,10 @@
       return;
     }
     // word bank: verified single-word clips shared across stories
-    const key = stripTashkeel(w.ar).replace(/^وَ?|^و/, m => m); // keep as-is first
     const bare = stripTashkeel(w.ar);
     const noWaw = bare.startsWith("و") ? bare.slice(1) : null;
-    const id = BANK[bare] || (noWaw && BANK[noWaw]);
+    const noFa = bare.startsWith("ف") ? bare.slice(1) : null;
+    const id = BANK[bare] || (noWaw && BANK[noWaw]) || (noFa && BANK[noFa]);
     if (id) { playClip(`assets/audio/bank/${id}.mp3`, w.ar); return; }
     speakFallback(w.ar);
   }
@@ -242,7 +242,6 @@
       speechSynthesis.speak(u);
       // Chrome sometimes starts paused
       if (speechSynthesis.paused) speechSynthesis.resume();
-      if (!arVoice) toast("Tip: install an Arabic voice for word audio");
     }, 80);
   }
   // small non-blocking notice
@@ -471,7 +470,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v9";
+  const APP_VERSION = "v10";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
