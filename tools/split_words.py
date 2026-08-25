@@ -16,9 +16,14 @@ OUT = ROOT / "assets/audio" / STORY / "w"
 OUT.mkdir(parents=True, exist_ok=True)
 
 # expected word counts per page, parsed from data/stories.js
+# scope to THIS story's block only (page ids repeat across stories!)
 js = (ROOT / "data/stories.js").read_text(encoding="utf-8")
-pages = re.findall(r'"audio":\s*"(p\d+)".*?words:\s*\[(.*?)\]\s*\}', js, re.S) or \
-        re.findall(r'audio:\s*"(p\d+)".*?words:\s*\[(.*?)\]\s*(?:\},|\}\s*\])', js, re.S)
+story_start = js.find(f'id: "{STORY}"')
+if story_start == -1:
+    sys.exit(f"story '{STORY}' not found in stories.js")
+story_end = js.find('id: "', story_start + 10)
+block_js = js[story_start: story_end if story_end != -1 else len(js)]
+pages = re.findall(r'audio:\s*"([ps]\d+)".*?words:\s*\[(.*?)\]\s*(?:\},|\}\s*\])', block_js, re.S)
 expected = {pid: len(re.findall(r'\{\s*ar:', block)) for pid, block in pages}
 
 def silences(path, noise=-35, d=0.28):

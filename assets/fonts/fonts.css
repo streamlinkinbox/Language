@@ -1,12 +1,14 @@
 /* Self-hosted fonts — no network dependency, works offline */
 
-/* Material Symbols Rounded (icons) */
+/* Material Symbols Rounded (icons) — 36KB codepoint subset.
+   Icons are rendered by codepoint (JS shim maps names → codepoints),
+   so no ligatures are needed and nothing can ever show as raw text. */
 @font-face {
   font-family: 'Material Symbols Rounded';
   font-style: normal;
   font-weight: 100 700;
-  font-display: block; /* never show raw ligature text */
-  src: url('material-symbols-rounded.woff2') format('woff2');
+  font-display: block;
+  src: url('msr-subset.woff2') format('woff2');
 }
 
 /* Noto Naskh Arabic */

@@ -177,11 +177,16 @@
   }
 
   // ── per-word audio ──
+  // Stories with VERIFIED per-word clips (each clip checked to match its word).
+  // Stories not listed use speech synthesis of the exact tapped word instead —
+  // never a clip from the wrong position.
+  const WORD_AUDIO_READY = ["dog-cat", "market"];
   let lastPeek = null;
   let wordAudio = null;
   function playWord(wordIdx, w) {
     stopAudio();
     if (wordAudio) { wordAudio.pause(); wordAudio = null; }
+    if (!WORD_AUDIO_READY.includes(story.id)) { speakFallback(w.ar); return; }
     const p = story.pages[pageIdx];
     const n = String(wordIdx + 1).padStart(2, "0");
     wordAudio = new Audio(`assets/audio/${story.id}/w/${p.audio}-${n}.mp3`);
@@ -411,7 +416,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v6";
+  const APP_VERSION = "v7";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
