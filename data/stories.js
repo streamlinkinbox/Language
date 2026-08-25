@@ -3312,5 +3312,455 @@ const STORIES = [
         why: "Plant seeds whose shade you may never sit in — generosity across generations."
       }
     ]
+  },
+
+  /* ═══════════ STORY 13 — The Clever Crow ═══════════ */
+  {
+    id: "clever-crow",
+    title_ar: "الغُرابُ الذَّكِيُّ",
+    title_en: "The Clever Crow",
+    level: "Beginner · A1",
+    cover: "assets/img/clever-crow/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/clever-crow/s1.jpg",
+        audio: "s1",
+        ar: "كانَ الجَوُّ حارًّا جِدًّا. طارَ غُرابٌ عَطْشانُ يَبْحَثُ عَنِ الماءِ.",
+        tr: "kāna l-jawwu ḥārran jiddan. ṭāra ghurābun ʿaṭshānu yabḥathu ʿani l-māʾi.",
+        en: "The weather was very hot. A thirsty crow flew, searching for water.",
+        tense: "Past + يَبْحَثُ عَنْ (searching for)",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "الجَوُّ", tr: "al-jawwu", en: "the weather" },
+          { ar: "حارًّا", tr: "ḥārran", en: "hot" },
+          { ar: "جِدًّا", tr: "jiddan", en: "very" },
+          { ar: "طارَ", tr: "ṭāra", en: "flew" },
+          { ar: "غُرابٌ", tr: "ghurābun", en: "a crow" },
+          { ar: "عَطْشانُ", tr: "ʿaṭshānu", en: "thirsty" },
+          { ar: "يَبْحَثُ", tr: "yabḥathu", en: "searching" },
+          { ar: "عَنِ", tr: "ʿani", en: "for / about" },
+          { ar: "الماءِ", tr: "al-māʾi", en: "the water" }
+        ]
+      },
+      {
+        img: "assets/img/clever-crow/s2.jpg",
+        audio: "s2",
+        ar: "وَجَدَ جَرَّةً فيها قَليلٌ مِنَ الماءِ، لٰكِنَّ مِنْقارَهُ لا يَصِلُ إِلَيْهِ. فَكَّرَ الغُرابُ، ثُمَّ حَمَلَ الحَصى وَرَماها في الجَرَّةِ.",
+        tr: "wajada jarratan fīhā qalīlun mina l-māʾi, lākinna minqārahu lā yaṣilu ilayhi. fakkara l-ghurābu, thumma ḥamala l-ḥaṣā wa-ramāhā fī l-jarrati.",
+        en: "He found a jug with a little water in it, but his beak could not reach it. The crow thought, then carried pebbles and threw them into the jug.",
+        tense: "Past + لٰكِنَّ + لا",
+        words: [
+          { ar: "وَجَدَ", tr: "wajada", en: "found" },
+          { ar: "جَرَّةً", tr: "jarratan", en: "a jug" },
+          { ar: "فيها", tr: "fīhā", en: "in it" },
+          { ar: "قَليلٌ", tr: "qalīlun", en: "a little" },
+          { ar: "مِنَ", tr: "mina", en: "of" },
+          { ar: "الماءِ", tr: "al-māʾi", en: "the water" },
+          { ar: "لٰكِنَّ", tr: "lākinna", en: "but" },
+          { ar: "مِنْقارَهُ", tr: "minqārahu", en: "his beak" },
+          { ar: "لا", tr: "lā", en: "not" },
+          { ar: "يَصِلُ", tr: "yaṣilu", en: "reaches" },
+          { ar: "إِلَيْهِ", tr: "ilayhi", en: "to it" },
+          { ar: "فَكَّرَ", tr: "fakkara", en: "thought" },
+          { ar: "الغُرابُ", tr: "al-ghurābu", en: "the crow" },
+          { ar: "ثُمَّ", tr: "thumma", en: "then" },
+          { ar: "حَمَلَ", tr: "ḥamala", en: "carried" },
+          { ar: "الحَصى", tr: "al-ḥaṣā", en: "the pebbles" },
+          { ar: "وَرَماها", tr: "wa-ramāhā", en: "and threw them" },
+          { ar: "في", tr: "fī", en: "into" },
+          { ar: "الجَرَّةِ", tr: "al-jarrati", en: "the jug" }
+        ]
+      },
+      {
+        img: "assets/img/clever-crow/s3.jpg",
+        audio: "s3",
+        ar: "اِرْتَفَعَ الماءُ قَليلًا قَليلًا. شَرِبَ الغُرابُ وَطارَ سَعيدًا. مَنْ فَكَّرَ، وَجَدَ الحَلَّ.",
+        tr: "irtafaʿa l-māʾu qalīlan qalīlan. shariba l-ghurābu wa-ṭāra saʿīdan. man fakkara, wajada l-ḥalla.",
+        en: "The water rose little by little. The crow drank and flew away happy. Whoever thinks, finds the solution.",
+        tense: "Past + proverb (مَنْ = whoever)",
+        words: [
+          { ar: "اِرْتَفَعَ", tr: "irtafaʿa", en: "rose" },
+          { ar: "الماءُ", tr: "al-māʾu", en: "the water" },
+          { ar: "قَليلًا", tr: "qalīlan", en: "little" },
+          { ar: "قَليلًا", tr: "qalīlan", en: "by little" },
+          { ar: "شَرِبَ", tr: "shariba", en: "drank" },
+          { ar: "الغُرابُ", tr: "al-ghurābu", en: "the crow" },
+          { ar: "وَطارَ", tr: "wa-ṭāra", en: "and flew" },
+          { ar: "سَعيدًا", tr: "saʿīdan", en: "happy" },
+          { ar: "مَنْ", tr: "man", en: "whoever" },
+          { ar: "فَكَّرَ", tr: "fakkara", en: "thinks / thought" },
+          { ar: "وَجَدَ", tr: "wajada", en: "finds / found" },
+          { ar: "الحَلَّ", tr: "al-ḥalla", en: "the solution" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "لِماذا كانَ الغُرابُ يَبْحَثُ عَنِ الماءِ؟",
+        q_en: "Why was the crow searching for water?",
+        options: [
+          { ar: "لِأَنَّهُ كانَ عَطْشانَ وَالجَوُّ حارٌّ", en: "Because it was thirsty and the weather was hot" },
+          { ar: "لِيَسْبَحَ", en: "To swim" },
+          { ar: "لِيَغْسِلَ ريشَهُ", en: "To wash its feathers" }
+        ],
+        correct: 0,
+        why: "الجَوُّ حارٌّ جِدًّا + غُرابٌ عَطْشانُ — very hot day, thirsty crow."
+      },
+      {
+        q_ar: "ما كانَتِ المُشْكِلَةُ مَعَ الجَرَّةِ؟",
+        q_en: "What was the problem with the jug?",
+        options: [
+          { ar: "كانَتْ فارِغَةً", en: "It was empty" },
+          { ar: "مِنْقارُهُ لا يَصِلُ إِلى الماءِ", en: "His beak couldn't reach the water" },
+          { ar: "كانَتْ مَكْسورَةً", en: "It was broken" }
+        ],
+        correct: 1,
+        why: "The water was too low — مِنْقارُهُ لا يَصِلُ إِلَيْهِ."
+      },
+      {
+        q_ar: "ماذا فَعَلَ الغُرابُ لِيَشْرَبَ؟",
+        q_en: "What did the crow do to drink?",
+        options: [
+          { ar: "كَسَرَ الجَرَّةَ", en: "It broke the jug" },
+          { ar: "اِنْتَظَرَ المَطَرَ", en: "It waited for rain" },
+          { ar: "رَمى الحَصى في الجَرَّةِ", en: "It threw pebbles into the jug" }
+        ],
+        correct: 2,
+        why: "حَمَلَ الحَصى وَرَماها في الجَرَّةِ — the pebbles pushed the water up."
+      },
+      {
+        q_ar: "كَيْفَ اِرْتَفَعَ الماءُ؟",
+        q_en: "How did the water rise?",
+        options: [
+          { ar: "قَليلًا قَليلًا", en: "Little by little" },
+          { ar: "بِسُرْعَةٍ", en: "Quickly" },
+          { ar: "لَمْ يَرْتَفِعْ", en: "It didn't rise" }
+        ],
+        correct: 0,
+        why: "قَليلًا قَليلًا — repeating a word = 'bit by bit'. A handy pattern!"
+      },
+      {
+        q_ar: "«مَنْ فَكَّرَ وَجَدَ الحَلَّ» — ماذا تَعْني؟",
+        q_en: "\"man fakkara wajada l-ḥall\" — what does it mean?",
+        options: [
+          { ar: "القُوَّةُ تَحُلُّ كُلَّ شَيْءٍ", en: "Strength solves everything" },
+          { ar: "مَنْ يُفَكِّرْ يَجِدِ الحَلَّ", en: "Whoever thinks, finds the solution" },
+          { ar: "الماءُ أَهَمُّ شَيْءٍ", en: "Water is the most important thing" }
+        ],
+        correct: 1,
+        why: "مَنْ + verb = whoever does… — thinking beats strength."
+      },
+      {
+        q_ar: "ما عَكْسُ «عَطْشان»؟",
+        q_en: "What is the opposite of \"ʿaṭshān\" (thirsty)?",
+        options: [
+          { ar: "جَوْعان — hungry", en: "Hungry" },
+          { ar: "رَيّان — quenched", en: "Quenched (not thirsty)" },
+          { ar: "تَعْبان — tired", en: "Tired" }
+        ],
+        correct: 1,
+        why: "عَطْشان ↔ رَيّان. Note the ـان pattern: عطشان، جوعان، تعبان — states you feel!"
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 14 — The Kind Neighbor ═══════════ */
+  {
+    id: "kind-neighbor",
+    title_ar: "الجارَةُ الكَريمَةُ",
+    title_en: "The Kind Neighbor",
+    level: "Beginner · A1",
+    cover: "assets/img/kind-neighbor/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/kind-neighbor/s1.jpg",
+        audio: "s1",
+        ar: "اِنْتَقَلَتْ عائِلَةٌ جَديدَةٌ إِلى الحَيِّ. لَمْ يَعْرِفوا أَحَدًا هُناكَ.",
+        tr: "intaqalat ʿāʾilatun jadīdatun ilā l-ḥayyi. lam yaʿrifū aḥadan hunāka.",
+        en: "A new family moved to the neighborhood. They didn't know anyone there.",
+        tense: "Past + لَمْ negation",
+        words: [
+          { ar: "اِنْتَقَلَتْ", tr: "intaqalat", en: "moved (she/it)" },
+          { ar: "عائِلَةٌ", tr: "ʿāʾilatun", en: "a family" },
+          { ar: "جَديدَةٌ", tr: "jadīdatun", en: "new" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "الحَيِّ", tr: "al-ḥayyi", en: "the neighborhood" },
+          { ar: "لَمْ", tr: "lam", en: "did not" },
+          { ar: "يَعْرِفوا", tr: "yaʿrifū", en: "know (they)" },
+          { ar: "أَحَدًا", tr: "aḥadan", en: "anyone" },
+          { ar: "هُناكَ", tr: "hunāka", en: "there" }
+        ]
+      },
+      {
+        img: "assets/img/kind-neighbor/s2.jpg",
+        audio: "s2",
+        ar: "طَرَقَتِ الجارَةُ البابَ وَمَعَها طَبَقٌ مِنَ الطَّعامِ. قالَتْ: أَهْلًا وَسَهْلًا في حَيِّنا!",
+        tr: "ṭaraqati l-jāratu l-bāba wa-maʿahā ṭabaqun mina ṭ-ṭaʿāmi. qālat: ahlan wa-sahlan fī ḥayyinā!",
+        en: "The neighbor knocked on the door with a dish of food. She said: Welcome to our neighborhood!",
+        tense: "Past + greeting",
+        words: [
+          { ar: "طَرَقَتِ", tr: "ṭaraqati", en: "knocked (she)" },
+          { ar: "الجارَةُ", tr: "al-jāratu", en: "the neighbor (f.)" },
+          { ar: "البابَ", tr: "al-bāba", en: "the door" },
+          { ar: "وَمَعَها", tr: "wa-maʿahā", en: "and with her" },
+          { ar: "طَبَقٌ", tr: "ṭabaqun", en: "a dish" },
+          { ar: "مِنَ", tr: "mina", en: "of" },
+          { ar: "الطَّعامِ", tr: "aṭ-ṭaʿāmi", en: "the food" },
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "أَهْلًا", tr: "ahlan", en: "welcome" },
+          { ar: "وَسَهْلًا", tr: "wa-sahlan", en: "(part of welcome)" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "حَيِّنا", tr: "ḥayyinā", en: "our neighborhood" }
+        ]
+      },
+      {
+        img: "assets/img/kind-neighbor/s3.jpg",
+        audio: "s3",
+        ar: "فَرِحَتِ العائِلَةُ كَثيرًا. وَبَعْدَ أُسْبوعٍ، أَعادوا الطَّبَقَ مَليئًا بِالحَلْوى. الجارُ قَبْلَ الدّارِ.",
+        tr: "fariḥati l-ʿāʾilatu kathīran. wa-baʿda usbūʿin, aʿādū ṭ-ṭabaqa malīʾan bi-l-ḥalwā. al-jāru qabla d-dāri.",
+        en: "The family was very happy. And after a week, they returned the dish full of sweets. (Choose) the neighbor before the house.",
+        tense: "Past + famous proverb",
+        words: [
+          { ar: "فَرِحَتِ", tr: "fariḥati", en: "was happy (she/it)" },
+          { ar: "العائِلَةُ", tr: "al-ʿāʾilatu", en: "the family" },
+          { ar: "كَثيرًا", tr: "kathīran", en: "a lot / very much" },
+          { ar: "وَبَعْدَ", tr: "wa-baʿda", en: "and after" },
+          { ar: "أُسْبوعٍ", tr: "usbūʿin", en: "a week" },
+          { ar: "أَعادوا", tr: "aʿādū", en: "they returned (something)" },
+          { ar: "الطَّبَقَ", tr: "aṭ-ṭabaqa", en: "the dish" },
+          { ar: "مَليئًا", tr: "malīʾan", en: "full" },
+          { ar: "بِالحَلْوى", tr: "bi-l-ḥalwā", en: "of sweets" },
+          { ar: "الجارُ", tr: "al-jāru", en: "the neighbor" },
+          { ar: "قَبْلَ", tr: "qabla", en: "before" },
+          { ar: "الدّارِ", tr: "ad-dāri", en: "the house" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "مَنِ اِنْتَقَلَ إِلى الحَيِّ؟",
+        q_en: "Who moved to the neighborhood?",
+        options: [
+          { ar: "عائِلَةٌ جَديدَةٌ", en: "A new family" },
+          { ar: "جارَةٌ عَجوزٌ", en: "An old neighbor" },
+          { ar: "مُعَلِّمَةٌ", en: "A teacher" }
+        ],
+        correct: 0,
+        why: "اِنْتَقَلَتْ عائِلَةٌ جَديدَةٌ إِلى الحَيِّ — a new family."
+      },
+      {
+        q_ar: "ماذا أَحْضَرَتِ الجارَةُ؟",
+        q_en: "What did the neighbor bring?",
+        options: [
+          { ar: "زُهورًا", en: "Flowers" },
+          { ar: "طَبَقًا مِنَ الطَّعامِ", en: "A dish of food" },
+          { ar: "هَدِيَّةً كَبيرَةً", en: "A big gift" }
+        ],
+        correct: 1,
+        why: "مَعَها طَبَقٌ مِنَ الطَّعامِ — the classic welcome dish."
+      },
+      {
+        q_ar: "«أَهْلًا وَسَهْلًا» — مَتى نَقولُها؟",
+        q_en: "\"ahlan wa-sahlan\" — when do we say it?",
+        options: [
+          { ar: "عِنْدَ الوَداعِ", en: "When saying goodbye" },
+          { ar: "لِلتَّرْحيبِ بِالضُّيوفِ", en: "To welcome guests" },
+          { ar: "قَبْلَ النَّوْمِ", en: "Before sleeping" }
+        ],
+        correct: 1,
+        why: "It's THE Arabic welcome — literally 'you've come to family and easy ground'."
+      },
+      {
+        q_ar: "كَيْفَ أَعادَتِ العائِلَةُ الطَّبَقَ؟",
+        q_en: "How did the family return the dish?",
+        options: [
+          { ar: "فارِغًا", en: "Empty" },
+          { ar: "مَكْسورًا", en: "Broken" },
+          { ar: "مَليئًا بِالحَلْوى", en: "Full of sweets" }
+        ],
+        correct: 2,
+        why: "أَعادوا الطَّبَقَ مَليئًا بِالحَلْوى — never return a dish empty; a real custom!"
+      },
+      {
+        q_ar: "«الجارُ قَبْلَ الدّارِ» — ماذا يَعْني هٰذا المَثَلُ؟",
+        q_en: "\"al-jāru qabla d-dāri\" — what does this proverb mean?",
+        options: [
+          { ar: "اِخْتَرْ جارًا طَيِّبًا قَبْلَ أَنْ تَخْتارَ البَيْتَ", en: "Choose a good neighbor before choosing the house" },
+          { ar: "اِبْنِ الدّارَ أَوَّلًا", en: "Build the house first" },
+          { ar: "الجارُ يَسْكُنُ قَريبًا", en: "The neighbor lives nearby" }
+        ],
+        correct: 0,
+        why: "Famous proverb: good neighbors matter more than the house itself."
+      },
+      {
+        q_ar: "«حَيِّنا» — ماذا تَعْني «نا» في الآخِرِ؟",
+        q_en: "\"ḥayyinā\" — what does the ending \"-nā\" mean?",
+        options: [
+          { ar: "«our» — حَيُّنا = our neighborhood", en: "Our — ḥayyunā = our neighborhood" },
+          { ar: "«my» — حَيّي", en: "My" },
+          { ar: "«their» — حَيُّهُمْ", en: "Their" }
+        ],
+        correct: 0,
+        why: "ـنا = our: حَيُّنا our neighborhood, بَيْتُنا our house, قَبْلَنا before us."
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 15 — A Gift for Mother ═══════════ */
+  {
+    id: "mothers-gift",
+    title_ar: "هَدِيَّةٌ لِأُمّي",
+    title_en: "A Gift for Mother",
+    level: "Beginner · A1",
+    cover: "assets/img/mothers-gift/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/mothers-gift/s1.jpg",
+        audio: "s1",
+        ar: "أَرادَ سامي هَدِيَّةً لِعيدِ ميلادِ أُمِّهِ، لٰكِنَّهُ لا يَمْلِكُ نُقودًا كَثيرَةً.",
+        tr: "arāda sāmī hadiyyatan li-ʿīdi mīlādi ummihi, lākinnahu lā yamliku nuqūdan kathīratan.",
+        en: "Sami wanted a gift for his mother's birthday, but he didn't have much money.",
+        tense: "Past + لا يَمْلِكُ (doesn't own)",
+        words: [
+          { ar: "أَرادَ", tr: "arāda", en: "wanted" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "هَدِيَّةً", tr: "hadiyyatan", en: "a gift" },
+          { ar: "لِعيدِ", tr: "li-ʿīdi", en: "for the celebration (of)" },
+          { ar: "ميلادِ", tr: "mīlādi", en: "birth (of)" },
+          { ar: "أُمِّهِ", tr: "ummihi", en: "his mother" },
+          { ar: "لٰكِنَّهُ", tr: "lākinnahu", en: "but he" },
+          { ar: "لا", tr: "lā", en: "not" },
+          { ar: "يَمْلِكُ", tr: "yamliku", en: "owns / has" },
+          { ar: "نُقودًا", tr: "nuqūdan", en: "money" },
+          { ar: "كَثيرَةً", tr: "kathīratan", en: "much / many" }
+        ]
+      },
+      {
+        img: "assets/img/mothers-gift/s2.jpg",
+        audio: "s2",
+        ar: "عَمِلَ سامي في حَديقَةِ الجيرانِ ثَلاثَةَ أَيّامٍ. جَمَعَ النُّقودَ وَاشْتَرى وَرْدَةً جَميلَةً.",
+        tr: "ʿamila sāmī fī ḥadīqati l-jīrāni thalāthata ayyāmin. jamaʿa n-nuqūda wa-shtarā wardatan jamīlatan.",
+        en: "Sami worked in the neighbors' garden for three days. He collected the money and bought a beautiful rose.",
+        tense: "Past + number (ثَلاثَة)",
+        words: [
+          { ar: "عَمِلَ", tr: "ʿamila", en: "worked" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "حَديقَةِ", tr: "ḥadīqati", en: "garden (of)" },
+          { ar: "الجيرانِ", tr: "al-jīrāni", en: "the neighbors" },
+          { ar: "ثَلاثَةَ", tr: "thalāthata", en: "three" },
+          { ar: "أَيّامٍ", tr: "ayyāmin", en: "days" },
+          { ar: "جَمَعَ", tr: "jamaʿa", en: "collected" },
+          { ar: "النُّقودَ", tr: "an-nuqūda", en: "the money" },
+          { ar: "وَاشْتَرى", tr: "wa-shtarā", en: "and bought" },
+          { ar: "وَرْدَةً", tr: "wardatan", en: "a rose" },
+          { ar: "جَميلَةً", tr: "jamīlatan", en: "beautiful" }
+        ]
+      },
+      {
+        img: "assets/img/mothers-gift/s3.jpg",
+        audio: "s3",
+        ar: "كَتَبَ بِطاقَةً صَغيرَةً: أُحِبُّكِ يا أُمّي. بَكَتِ الأُمُّ مِنَ الفَرَحِ وَعانَقَتْ سامي.",
+        tr: "kataba biṭāqatan ṣaghīratan: uḥibbuki yā ummī. bakati l-ummu mina l-faraḥi wa-ʿānaqat sāmī.",
+        en: "He wrote a small card: I love you, mom. The mother cried from joy and hugged Sami.",
+        tense: "Past + أُحِبُّكِ (I love you)",
+        words: [
+          { ar: "كَتَبَ", tr: "kataba", en: "wrote" },
+          { ar: "بِطاقَةً", tr: "biṭāqatan", en: "a card" },
+          { ar: "صَغيرَةً", tr: "ṣaghīratan", en: "small" },
+          { ar: "أُحِبُّكِ", tr: "uḥibbuki", en: "I love you (to a female)" },
+          { ar: "يا", tr: "yā", en: "O" },
+          { ar: "أُمّي", tr: "ummī", en: "my mother" },
+          { ar: "بَكَتِ", tr: "bakati", en: "cried (she)" },
+          { ar: "الأُمُّ", tr: "al-ummu", en: "the mother" },
+          { ar: "مِنَ", tr: "mina", en: "from" },
+          { ar: "الفَرَحِ", tr: "al-faraḥi", en: "the joy" },
+          { ar: "وَعانَقَتْ", tr: "wa-ʿānaqat", en: "and hugged (she)" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا أَرادَ سامي؟",
+        q_en: "What did Sami want?",
+        options: [
+          { ar: "هَدِيَّةً لِعيدِ ميلادِ أُمِّهِ", en: "A gift for his mother's birthday" },
+          { ar: "لُعْبَةً جَديدَةً", en: "A new toy" },
+          { ar: "دَرّاجَةً", en: "A bicycle" }
+        ],
+        correct: 0,
+        why: "أَرادَ هَدِيَّةً لِعيدِ ميلادِ أُمِّهِ — a birthday gift for mom."
+      },
+      {
+        q_ar: "ما كانَتْ مُشْكِلَةُ سامي؟",
+        q_en: "What was Sami's problem?",
+        options: [
+          { ar: "لا يَعْرِفُ ماذا يَشْتَري", en: "He didn't know what to buy" },
+          { ar: "لا يَمْلِكُ نُقودًا كَثيرَةً", en: "He didn't have much money" },
+          { ar: "نَسِيَ العيدَ", en: "He forgot the birthday" }
+        ],
+        correct: 1,
+        why: "لٰكِنَّهُ لا يَمْلِكُ نُقودًا كَثيرَةً — not enough money."
+      },
+      {
+        q_ar: "كَيْفَ جَمَعَ سامي النُّقودَ؟",
+        q_en: "How did Sami collect the money?",
+        options: [
+          { ar: "طَلَبَها مِنْ أَبيهِ", en: "He asked his father" },
+          { ar: "وَجَدَها في الشّارِعِ", en: "He found it in the street" },
+          { ar: "عَمِلَ في حَديقَةِ الجيرانِ", en: "He worked in the neighbors' garden" }
+        ],
+        correct: 2,
+        why: "عَمِلَ ثَلاثَةَ أَيّامٍ — he earned it with honest work. That's the heart of the story!"
+      },
+      {
+        q_ar: "كَمْ يَوْمًا عَمِلَ سامي؟",
+        q_en: "How many days did Sami work?",
+        options: [
+          { ar: "يَوْمًا واحِدًا", en: "One day" },
+          { ar: "ثَلاثَةَ أَيّامٍ", en: "Three days" },
+          { ar: "أُسْبوعًا", en: "A week" }
+        ],
+        correct: 1,
+        why: "ثَلاثَةَ أَيّامٍ — three days. واحِد ١، اِثْنانِ ٢، ثَلاثَة ٣!"
+      },
+      {
+        q_ar: "ماذا كَتَبَ سامي في البِطاقَةِ؟",
+        q_en: "What did Sami write on the card?",
+        options: [
+          { ar: "عيدُ ميلادٍ سَعيدٌ", en: "Happy birthday" },
+          { ar: "أُحِبُّكِ يا أُمّي", en: "I love you, mom" },
+          { ar: "شُكْرًا يا أُمّي", en: "Thank you, mom" }
+        ],
+        correct: 1,
+        why: "أُحِبُّكِ يا أُمّي — I love you, mom. (To a male it would be أُحِبُّكَ.)"
+      },
+      {
+        q_ar: "لِماذا بَكَتِ الأُمُّ؟",
+        q_en: "Why did the mother cry?",
+        options: [
+          { ar: "مِنَ الفَرَحِ", en: "From joy" },
+          { ar: "مِنَ الحُزْنِ", en: "From sadness" },
+          { ar: "لِأَنَّ الوَرْدَةَ غالِيَةٌ", en: "Because the rose was expensive" }
+        ],
+        correct: 0,
+        why: "بَكَتْ مِنَ الفَرَحِ — tears of joy. Sometimes we cry when we're happiest."
+      },
+      {
+        q_ar: "ما الدَّرْسُ مِنَ القِصَّةِ؟",
+        q_en: "What is the lesson of the story?",
+        options: [
+          { ar: "الهَدايا الغالِيَةُ أَفْضَلُ", en: "Expensive gifts are better" },
+          { ar: "الهَدِيَّةُ مِنَ القَلْبِ وَالعَمَلِ أَغْلى هَدِيَّةٍ", en: "A gift from the heart and hard work is the most precious" },
+          { ar: "لا تَشْتَرِ الوُرودَ", en: "Don't buy roses" }
+        ],
+        correct: 1,
+        why: "One rose earned by three days of work meant more than anything money could buy."
+      }
+    ]
   }
 ];
