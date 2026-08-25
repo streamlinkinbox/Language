@@ -2631,5 +2631,229 @@ const STORIES = [
         why: "جِدًّا = very: جَميلَةٌ جِدًّا = very beautiful. (Don't confuse with جَدّ grandpa!)"
       }
     ]
+  },
+
+  /* ═══════════ STORY 10 — The Night Visitor ═══════════ */
+  {
+    id: "night-visitor",
+    title_ar: "الزّائِرُ اللَّيْلِيُّ",
+    title_en: "The Night Visitor",
+    level: "Beginner · A1",
+    cover: "assets/img/night-visitor/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/night-visitor/s1.jpg",
+        audio: "s1",
+        ar: "في اللَّيْلِ، سَمِعَ عُمَرُ صَوْتًا غَريبًا في المَطْبَخِ. جَلَسَ في سَريرِهِ وَأَصْغى جَيِّدًا.",
+        tr: "fī l-layli, samiʿa ʿumaru ṣawtan gharīban fī l-maṭbakhi. jalasa fī sarīrihi wa-aṣghā jayyidan.",
+        en: "At night, Omar heard a strange sound in the kitchen. He sat up in his bed and listened carefully.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "at / in" },
+          { ar: "اللَّيْلِ", tr: "al-layli", en: "the night" },
+          { ar: "سَمِعَ", tr: "samiʿa", en: "heard" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "صَوْتًا", tr: "ṣawtan", en: "a sound" },
+          { ar: "غَريبًا", tr: "gharīban", en: "strange" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَطْبَخِ", tr: "al-maṭbakhi", en: "the kitchen" },
+          { ar: "جَلَسَ", tr: "jalasa", en: "sat (up)" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "سَريرِهِ", tr: "sarīrihi", en: "his bed" },
+          { ar: "وَأَصْغى", tr: "wa-aṣghā", en: "and listened" },
+          { ar: "جَيِّدًا", tr: "jayyidan", en: "carefully / well" }
+        ]
+      },
+      {
+        img: "assets/img/night-visitor/s2.jpg",
+        audio: "s2",
+        ar: "أَخَذَ عُمَرُ مِصْباحَهُ الصَّغيرَ. مَشى بِهُدوءٍ إِلى المَطْبَخِ.",
+        tr: "akhadha ʿumaru miṣbāḥahu ṣ-ṣaghīra. mashā bi-hudūʾin ilā l-maṭbakhi.",
+        en: "Omar took his small flashlight. He walked quietly to the kitchen.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "أَخَذَ", tr: "akhadha", en: "took" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "مِصْباحَهُ", tr: "miṣbāḥahu", en: "his lamp / flashlight" },
+          { ar: "الصَّغيرَ", tr: "aṣ-ṣaghīra", en: "the small" },
+          { ar: "مَشى", tr: "mashā", en: "walked" },
+          { ar: "بِهُدوءٍ", tr: "bi-hudūʾin", en: "quietly" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "المَطْبَخِ", tr: "al-maṭbakhi", en: "the kitchen" }
+        ]
+      },
+      {
+        img: "assets/img/night-visitor/s3.jpg",
+        audio: "s3",
+        ar: "فَتَحَ البابَ بِبُطْءٍ. رَأى قُنْفُذًا صَغيرًا يَأْكُلُ مِنْ صَحْنِ القِطَّةِ!",
+        tr: "fataḥa l-bāba bi-buṭʾin. raʾā qunfudhan ṣaghīran yaʾkulu min ṣaḥni l-qiṭṭati!",
+        en: "He opened the door slowly. He saw a little hedgehog eating from the cat's dish!",
+        tense: "Past + surprise",
+        words: [
+          { ar: "فَتَحَ", tr: "fataḥa", en: "opened" },
+          { ar: "البابَ", tr: "al-bāba", en: "the door" },
+          { ar: "بِبُطْءٍ", tr: "bi-buṭʾin", en: "slowly" },
+          { ar: "رَأى", tr: "raʾā", en: "saw" },
+          { ar: "قُنْفُذًا", tr: "qunfudhan", en: "a hedgehog" },
+          { ar: "صَغيرًا", tr: "ṣaghīran", en: "little" },
+          { ar: "يَأْكُلُ", tr: "yaʾkulu", en: "eating" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "صَحْنِ", tr: "ṣaḥni", en: "dish (of)" },
+          { ar: "القِطَّةِ", tr: "al-qiṭṭati", en: "the cat" }
+        ]
+      },
+      {
+        img: "assets/img/night-visitor/s4.jpg",
+        audio: "s4",
+        ar: "ضَحِكَ عُمَرُ وَقالَ: لا تَخَفْ يا صَغيري. أَعْطاهُ قِطْعَةَ تُفّاحٍ.",
+        tr: "ḍaḥika ʿumaru wa-qāla: lā takhaf yā ṣaghīrī. aʿṭāhu qiṭʿata tuffāḥin.",
+        en: "Omar laughed and said: Don't be afraid, my little one. He gave it a piece of apple.",
+        tense: "Negative command — لا تَخَفْ",
+        words: [
+          { ar: "ضَحِكَ", tr: "ḍaḥika", en: "laughed" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "وَقالَ", tr: "wa-qāla", en: "and said" },
+          { ar: "لا", tr: "lā", en: "don't" },
+          { ar: "تَخَفْ", tr: "takhaf", en: "be afraid" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "صَغيري", tr: "ṣaghīrī", en: "my little one" },
+          { ar: "أَعْطاهُ", tr: "aʿṭāhu", en: "gave it" },
+          { ar: "قِطْعَةَ", tr: "qiṭʿata", en: "a piece (of)" },
+          { ar: "تُفّاحٍ", tr: "tuffāḥin", en: "apple" }
+        ]
+      },
+      {
+        img: "assets/img/night-visitor/s5.jpg",
+        audio: "s5",
+        ar: "الآنَ يَأْتي القُنْفُذُ كُلَّ لَيْلَةٍ. صارَ صَديقَ الحَديقَةِ الصَّغيرَ.",
+        tr: "al-āna yaʾtī l-qunfudhu kulla laylatin. ṣāra ṣadīqa l-ḥadīqati ṣ-ṣaghīra.",
+        en: "Now the hedgehog comes every night. It became the garden's little friend.",
+        tense: "Present habit + صارَ",
+        words: [
+          { ar: "الآنَ", tr: "al-āna", en: "now" },
+          { ar: "يَأْتي", tr: "yaʾtī", en: "comes" },
+          { ar: "القُنْفُذُ", tr: "al-qunfudhu", en: "the hedgehog" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "لَيْلَةٍ", tr: "laylatin", en: "night" },
+          { ar: "صارَ", tr: "ṣāra", en: "became" },
+          { ar: "صَديقَ", tr: "ṣadīqa", en: "friend (of)" },
+          { ar: "الحَديقَةِ", tr: "al-ḥadīqati", en: "the garden" },
+          { ar: "الصَّغيرَ", tr: "aṣ-ṣaghīra", en: "the little" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا سَمِعَ عُمَرُ في اللَّيْلِ؟",
+        q_en: "What did Omar hear at night?",
+        options: [
+          { ar: "صَوْتًا غَريبًا في المَطْبَخِ", en: "A strange sound in the kitchen" },
+          { ar: "المَطَرَ", en: "The rain" },
+          { ar: "أُغْنِيَةً", en: "A song" }
+        ],
+        correct: 0,
+        why: "سَمِعَ صَوْتًا غَريبًا في المَطْبَخِ — a strange sound from the kitchen."
+      },
+      {
+        q_ar: "ماذا أَخَذَ عُمَرُ مَعَهُ؟",
+        q_en: "What did Omar take with him?",
+        options: [
+          { ar: "كِتابًا", en: "A book" },
+          { ar: "مِصْباحَهُ الصَّغيرَ", en: "His small flashlight" },
+          { ar: "حَقيبَتَهُ", en: "His bag" }
+        ],
+        correct: 1,
+        why: "أَخَذَ مِصْباحَهُ الصَّغيرَ — his little flashlight."
+      },
+      {
+        q_ar: "كَيْفَ مَشى عُمَرُ إِلى المَطْبَخِ؟",
+        q_en: "How did Omar walk to the kitchen?",
+        options: [
+          { ar: "بِسُرْعَةٍ", en: "Quickly" },
+          { ar: "وَهُوَ يَغَنّي", en: "While singing" },
+          { ar: "بِهُدوءٍ", en: "Quietly" }
+        ],
+        correct: 2,
+        why: "مَشى بِهُدوءٍ — quietly. بِ + هُدوء (quiet) = quietly, same pattern as بِسُرْعَة."
+      },
+      {
+        q_ar: "مَنْ كانَ الزّائِرُ اللَّيْلِيُّ؟",
+        q_en: "Who was the night visitor?",
+        options: [
+          { ar: "قِطَّةُ الجيرانِ", en: "The neighbors' cat" },
+          { ar: "قُنْفُذٌ صَغيرٌ", en: "A little hedgehog" },
+          { ar: "عُصْفورٌ", en: "A bird" }
+        ],
+        correct: 1,
+        why: "رَأى قُنْفُذًا صَغيرًا — a little hedgehog eating from the cat's dish!"
+      },
+      {
+        q_ar: "مِنْ أَيْنَ كانَ القُنْفُذُ يَأْكُلُ؟",
+        q_en: "Where was the hedgehog eating from?",
+        options: [
+          { ar: "مِنْ صَحْنِ القِطَّةِ", en: "From the cat's dish" },
+          { ar: "مِنَ الثَّلّاجَةِ", en: "From the fridge" },
+          { ar: "مِنَ الحَديقَةِ", en: "From the garden" }
+        ],
+        correct: 0,
+        why: "يَأْكُلُ مِنْ صَحْنِ القِطَّةِ — from the cat's dish. Cheeky visitor!"
+      },
+      {
+        q_ar: "«لا تَخَفْ» — ماذا تَعْني؟",
+        q_en: "\"lā takhaf\" — what does it mean?",
+        options: [
+          { ar: "اِخْرُجْ — get out", en: "Get out" },
+          { ar: "لا تَخَفْ — don't be afraid", en: "Don't be afraid" },
+          { ar: "تَعالَ — come", en: "Come" }
+        ],
+        correct: 1,
+        why: "لا + present verb = negative command: lā takhaf = don't fear! Compare خافَ (he feared)."
+      },
+      {
+        q_ar: "ماذا أَعْطى عُمَرُ لِلْقُنْفُذِ؟",
+        q_en: "What did Omar give the hedgehog?",
+        options: [
+          { ar: "حَليبًا", en: "Milk" },
+          { ar: "خُبْزًا", en: "Bread" },
+          { ar: "قِطْعَةَ تُفّاحٍ", en: "A piece of apple" }
+        ],
+        correct: 2,
+        why: "أَعْطاهُ قِطْعَةَ تُفّاحٍ — a piece of apple. قِطْعَة = piece."
+      },
+      {
+        q_ar: "مَتى يَأْتي القُنْفُذُ الآنَ؟",
+        q_en: "When does the hedgehog come now?",
+        options: [
+          { ar: "كُلَّ لَيْلَةٍ", en: "Every night" },
+          { ar: "كُلَّ صَباحٍ", en: "Every morning" },
+          { ar: "في الشِّتاءِ فَقَطْ", en: "Only in winter" }
+        ],
+        correct: 0,
+        why: "يَأْتي كُلَّ لَيْلَةٍ — every night, present tense = habit."
+      },
+      {
+        q_ar: "«اللَّيْل» وَ«لَيْلَة» — ما الفَرْقُ؟",
+        q_en: "\"al-layl\" vs \"layla\" — what's the difference?",
+        options: [
+          { ar: "اللَّيْل = the night (time), لَيْلَة = one night", en: "Night-time vs a single night" },
+          { ar: "هُما نَفْسُ الشَّيْءِ", en: "They're the same" },
+          { ar: "لَيْلَة = الصَّباح", en: "Layla = morning" }
+        ],
+        correct: 0,
+        why: "اللَّيْل is night as a time; لَيْلَة is one countable night — كُلَّ لَيْلَةٍ every (single) night. And yes, the name لَيْلى comes from the same root!"
+      },
+      {
+        q_ar: "ما عَكْسُ «بِبُطْءٍ»؟",
+        q_en: "What is the opposite of \"bi-buṭʾin\" (slowly)?",
+        options: [
+          { ar: "بِهُدوءٍ — quietly", en: "Quietly" },
+          { ar: "بِسُرْعَةٍ — quickly", en: "Quickly" },
+          { ar: "بِفَرَحٍ — joyfully", en: "Joyfully" }
+        ],
+        correct: 1,
+        why: "بِبُطْءٍ (slowly) ↔ بِسُرْعَةٍ (quickly). You've now seen the whole بِ+noun adverb family!"
+      }
+    ]
   }
 ];
