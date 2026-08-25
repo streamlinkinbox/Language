@@ -1914,5 +1914,491 @@ const STORIES = [
         why: "The ـوْا ending = they (plural). The whole family walked."
       }
     ]
+  },
+
+  /* ═══════════ STORY 7 — A Day at School ═══════════ */
+  {
+    id: "school-day",
+    title_ar: "يَوْمٌ في المَدْرَسَةِ",
+    title_en: "A Day at School",
+    level: "Beginner · A1",
+    cover: "assets/img/school-day/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/school-day/s1.jpg",
+        audio: "s1",
+        ar: "في الصَّباحِ، ذَهَبَ عُمَرُ إِلى المَدْرَسَةِ. كانَتْ حَقيبَتُهُ الحَمْراءُ عَلى ظَهْرِهِ.",
+        tr: "fī ṣ-ṣabāḥi, dhahaba ʿumaru ilā l-madrasati. kānat ḥaqībatuhu l-ḥamrāʾu ʿalā ẓahrihi.",
+        en: "In the morning, Omar went to school. His red bag was on his back.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" },
+          { ar: "ذَهَبَ", tr: "dhahaba", en: "went" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar (name)" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "المَدْرَسَةِ", tr: "al-madrasati", en: "the school" },
+          { ar: "كانَتْ", tr: "kānat", en: "was" },
+          { ar: "حَقيبَتُهُ", tr: "ḥaqībatuhu", en: "his bag" },
+          { ar: "الحَمْراءُ", tr: "al-ḥamrāʾu", en: "the red (f.)" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "ظَهْرِهِ", tr: "ẓahrihi", en: "his back" }
+        ]
+      },
+      {
+        img: "assets/img/school-day/s2.jpg",
+        audio: "s2",
+        ar: "في الصَّفِّ، كَتَبَتِ المُعَلِّمَةُ دَرْسًا جَديدًا. اِسْتَمَعَ عُمَرُ جَيِّدًا.",
+        tr: "fī ṣ-ṣaffi, katabati l-muʿallimatu darsan jadīdan. istamaʿa ʿumaru jayyidan.",
+        en: "In the classroom, the teacher wrote a new lesson. Omar listened well.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّفِّ", tr: "aṣ-ṣaffi", en: "the classroom" },
+          { ar: "كَتَبَتِ", tr: "katabati", en: "wrote (she)" },
+          { ar: "المُعَلِّمَةُ", tr: "al-muʿallimatu", en: "the teacher (f.)" },
+          { ar: "دَرْسًا", tr: "darsan", en: "a lesson" },
+          { ar: "جَديدًا", tr: "jadīdan", en: "new" },
+          { ar: "اِسْتَمَعَ", tr: "istamaʿa", en: "listened" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "جَيِّدًا", tr: "jayyidan", en: "well" }
+        ]
+      },
+      {
+        img: "assets/img/school-day/s3.jpg",
+        audio: "s3",
+        ar: "في الاِسْتِراحَةِ، رَأى عُمَرُ وَلَدًا يَجْلِسُ وَحيدًا. أَعْطاهُ نِصْفَ سَنْدَويشَتِهِ.",
+        tr: "fī l-istirāḥati, raʾā ʿumaru waladan yajlisu waḥīdan. aʿṭāhu niṣfa sandawīshatihi.",
+        en: "At break time, Omar saw a boy sitting alone. He gave him half of his sandwich.",
+        tense: "Past + description",
+        words: [
+          { ar: "في", tr: "fī", en: "at / in" },
+          { ar: "الاِسْتِراحَةِ", tr: "al-istirāḥati", en: "the break" },
+          { ar: "رَأى", tr: "raʾā", en: "saw" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "وَلَدًا", tr: "waladan", en: "a boy" },
+          { ar: "يَجْلِسُ", tr: "yajlisu", en: "sitting" },
+          { ar: "وَحيدًا", tr: "waḥīdan", en: "alone" },
+          { ar: "أَعْطاهُ", tr: "aʿṭāhu", en: "gave him" },
+          { ar: "نِصْفَ", tr: "niṣfa", en: "half (of)" },
+          { ar: "سَنْدَويشَتِهِ", tr: "sandawīshatihi", en: "his sandwich" }
+        ]
+      },
+      {
+        img: "assets/img/school-day/s4.jpg",
+        audio: "s4",
+        ar: "بَعْدَ الاِسْتِراحَةِ، جَلَسا مَعًا في الصَّفِّ. حَلّا التَّمارينَ بِسُهولَةٍ.",
+        tr: "baʿda l-istirāḥati, jalasā maʿan fī ṣ-ṣaffi. ḥallā t-tamārīna bi-suhūlatin.",
+        en: "After the break, they (both) sat together in class. They solved the exercises easily.",
+        tense: "Dual past — جَلَسا / حَلّا",
+        words: [
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "الاِسْتِراحَةِ", tr: "al-istirāḥati", en: "the break" },
+          { ar: "جَلَسا", tr: "jalasā", en: "they two sat" },
+          { ar: "مَعًا", tr: "maʿan", en: "together" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّفِّ", tr: "aṣ-ṣaffi", en: "the classroom" },
+          { ar: "حَلّا", tr: "ḥallā", en: "they two solved" },
+          { ar: "التَّمارينَ", tr: "at-tamārīna", en: "the exercises" },
+          { ar: "بِسُهولَةٍ", tr: "bi-suhūlatin", en: "easily" }
+        ]
+      },
+      {
+        img: "assets/img/school-day/s5.jpg",
+        audio: "s5",
+        ar: "في المَساءِ، رَجَعا إِلى البَيْتِ مَعًا. قالَ عُمَرُ: اليَوْمَ وَجَدْتُ صَديقًا جَديدًا!",
+        tr: "fī l-masāʾi, rajaʿā ilā l-bayti maʿan. qāla ʿumaru: al-yawma wajadtu ṣadīqan jadīdan!",
+        en: "In the evening, they returned home together. Omar said: Today I found a new friend!",
+        tense: "Dual past + I-form وَجَدْتُ",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَساءِ", tr: "al-masāʾi", en: "the evening" },
+          { ar: "رَجَعا", tr: "rajaʿā", en: "they two returned" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "البَيْتِ", tr: "al-bayti", en: "the house" },
+          { ar: "مَعًا", tr: "maʿan", en: "together" },
+          { ar: "قالَ", tr: "qāla", en: "said (he)" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "اليَوْمَ", tr: "al-yawma", en: "today" },
+          { ar: "وَجَدْتُ", tr: "wajadtu", en: "I found" },
+          { ar: "صَديقًا", tr: "ṣadīqan", en: "a friend" },
+          { ar: "جَديدًا", tr: "jadīdan", en: "new" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "إِلى أَيْنَ ذَهَبَ عُمَرُ في الصَّباحِ؟",
+        q_en: "Where did Omar go in the morning?",
+        options: [
+          { ar: "إِلى السُّوقِ", en: "To the market" },
+          { ar: "إِلى المَدْرَسَةِ", en: "To school" },
+          { ar: "إِلى البَحْرِ", en: "To the sea" }
+        ],
+        correct: 1,
+        why: "ذَهَبَ عُمَرُ إِلى المَدْرَسَةِ — he went to school."
+      },
+      {
+        q_ar: "ما لَوْنُ حَقيبَةِ عُمَرَ؟",
+        q_en: "What color is Omar's bag?",
+        options: [
+          { ar: "زَرْقاءُ", en: "Blue" },
+          { ar: "خَضْراءُ", en: "Green" },
+          { ar: "حَمْراءُ", en: "Red" }
+        ],
+        correct: 2,
+        why: "حَقيبَتُهُ الحَمْراءُ — his red bag. (Note: ḥamrāʾ is the feminine of aḥmar.)"
+      },
+      {
+        q_ar: "ماذا فَعَلَتِ المُعَلِّمَةُ في الصَّفِّ؟",
+        q_en: "What did the teacher do in class?",
+        options: [
+          { ar: "كَتَبَتْ دَرْسًا جَديدًا", en: "She wrote a new lesson" },
+          { ar: "قَرَأَتْ قِصَّةً", en: "She read a story" },
+          { ar: "غَنَّتْ أُغْنِيَةً", en: "She sang a song" }
+        ],
+        correct: 0,
+        why: "كَتَبَتِ المُعَلِّمَةُ دَرْسًا جَديدًا — she wrote a new lesson."
+      },
+      {
+        q_ar: "كَيْفَ اِسْتَمَعَ عُمَرُ لِلدَّرْسِ؟",
+        q_en: "How did Omar listen to the lesson?",
+        options: [
+          { ar: "جَيِّدًا", en: "Well / attentively" },
+          { ar: "وَهُوَ نائِمٌ", en: "While sleeping" },
+          { ar: "لَمْ يَسْتَمِعْ", en: "He didn't listen" }
+        ],
+        correct: 0,
+        why: "اِسْتَمَعَ جَيِّدًا — he listened well."
+      },
+      {
+        q_ar: "مَنْ رَأى عُمَرُ في الاِسْتِراحَةِ؟",
+        q_en: "Who did Omar see at break time?",
+        options: [
+          { ar: "مُعَلِّمًا جَديدًا", en: "A new teacher" },
+          { ar: "وَلَدًا يَجْلِسُ وَحيدًا", en: "A boy sitting alone" },
+          { ar: "أُمَّهُ", en: "His mother" }
+        ],
+        correct: 1,
+        why: "رَأى وَلَدًا يَجْلِسُ وَحيدًا — a boy sitting alone."
+      },
+      {
+        q_ar: "ماذا أَعْطى عُمَرُ لِلْوَلَدِ؟",
+        q_en: "What did Omar give the boy?",
+        options: [
+          { ar: "نِصْفَ سَنْدَويشَتِهِ", en: "Half of his sandwich" },
+          { ar: "تُفّاحَةً", en: "An apple" },
+          { ar: "كِتابًا", en: "A book" }
+        ],
+        correct: 0,
+        why: "أَعْطاهُ نِصْفَ سَنْدَويشَتِهِ — he shared half his sandwich. نِصْف = half."
+      },
+      {
+        q_ar: "«جَلَسا» — كَمْ شَخْصًا جَلَسَ؟",
+        q_en: "\"jalasā\" — how many people sat?",
+        options: [
+          { ar: "واحِدٌ", en: "One" },
+          { ar: "اِثْنانِ", en: "Two" },
+          { ar: "ثَلاثَةٌ", en: "Three" }
+        ],
+        correct: 1,
+        why: "The ـا ending on جَلَسا = dual: exactly two people sat. Arabic counts two specially!"
+      },
+      {
+        q_ar: "كَيْفَ حَلّا التَّمارينَ؟",
+        q_en: "How did they solve the exercises?",
+        options: [
+          { ar: "بِصُعوبَةٍ", en: "With difficulty" },
+          { ar: "لَمْ يَحُلّاها", en: "They didn't solve them" },
+          { ar: "بِسُهولَةٍ", en: "Easily" }
+        ],
+        correct: 2,
+        why: "حَلّا التَّمارينَ بِسُهولَةٍ — easily. Friends work better together!"
+      },
+      {
+        q_ar: "ماذا قالَ عُمَرُ في المَساءِ؟",
+        q_en: "What did Omar say in the evening?",
+        options: [
+          { ar: "اليَوْمَ وَجَدْتُ صَديقًا جَديدًا", en: "Today I found a new friend" },
+          { ar: "أَنا جائِعٌ", en: "I am hungry" },
+          { ar: "المَدْرَسَةُ صَعْبَةٌ", en: "School is hard" }
+        ],
+        correct: 0,
+        why: "قالَ: اليَوْمَ وَجَدْتُ صَديقًا جَديدًا! — I found a new friend."
+      },
+      {
+        q_ar: "«وَجَدْتُ» — مَنِ الَّذي وَجَدَ؟",
+        q_en: "\"wajadtu\" — who found?",
+        options: [
+          { ar: "أَنا — I", en: "I (the speaker)" },
+          { ar: "هُوَ — he", en: "He" },
+          { ar: "هُمْ — they", en: "They" }
+        ],
+        correct: 0,
+        why: "The ـتُ ending = I: wajadtu = I found. (wajada = he found)."
+      },
+      {
+        q_ar: "ما عَكْسُ «وَحيد»؟",
+        q_en: "What is the opposite of \"waḥīd\" (alone)?",
+        options: [
+          { ar: "مَعًا — together", en: "Together" },
+          { ar: "سَعيد — happy", en: "Happy" },
+          { ar: "جَديد — new", en: "New" }
+        ],
+        correct: 0,
+        why: "وَحيد (alone) ↔ مَعًا (together). The story moves from alone to together!"
+      },
+      {
+        q_ar: "ما مَعْنى «بِسُهولَةٍ»؟",
+        q_en: "What does \"bi-suhūlatin\" mean?",
+        options: [
+          { ar: "بِصُعوبَةٍ — with difficulty", en: "With difficulty" },
+          { ar: "بِسُهولَةٍ — easily", en: "Easily" },
+          { ar: "بِسُرْعَةٍ — quickly", en: "Quickly" }
+        ],
+        correct: 1,
+        why: "بِ + سُهولَة (ease) = easily. Same pattern as بِسُرْعَةٍ (quickly)."
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 8 — The Loyal Friend ═══════════ */
+  {
+    id: "loyal-friend",
+    title_ar: "الصَّديقُ الوَفِيُّ",
+    title_en: "The Loyal Friend",
+    level: "Beginner · A1",
+    cover: "assets/img/loyal-friend/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/loyal-friend/s1.jpg",
+        audio: "s1",
+        ar: "في الشِّتاءِ، نَزَلَ المَطَرُ عَلى الحَديقَةِ. كانَتِ القِطَّةُ مُبَلَّلَةً وَبَرْدانَةً.",
+        tr: "fī sh-shitāʾi, nazala l-maṭaru ʿalā l-ḥadīqati. kānati l-qiṭṭatu muballalatan wa-bardānatan.",
+        en: "In the winter, rain fell on the garden. The cat was wet and cold.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الشِّتاءِ", tr: "ash-shitāʾi", en: "the winter" },
+          { ar: "نَزَلَ", tr: "nazala", en: "fell / came down" },
+          { ar: "المَطَرُ", tr: "al-maṭaru", en: "the rain" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "الحَديقَةِ", tr: "al-ḥadīqati", en: "the garden" },
+          { ar: "كانَتِ", tr: "kānati", en: "was" },
+          { ar: "القِطَّةُ", tr: "al-qiṭṭatu", en: "the cat" },
+          { ar: "مُبَلَّلَةً", tr: "muballalatan", en: "wet" },
+          { ar: "وَبَرْدانَةً", tr: "wa-bardānatan", en: "and cold (feeling)" }
+        ]
+      },
+      {
+        img: "assets/img/loyal-friend/s2.jpg",
+        audio: "s2",
+        ar: "قالَ الكَلْبُ: تَعالَيْ يا صَديقَتي، بَيْتي دافِئٌ. دَخَلَتِ القِطَّةُ بَيْتَ الكَلْبِ.",
+        tr: "qāla l-kalbu: taʿālay yā ṣadīqatī, baytī dāfiʾun. dakhalati l-qiṭṭatu bayta l-kalbi.",
+        en: "The dog said: Come, my friend, my house is warm. The cat entered the dog's house.",
+        tense: "Command + past",
+        words: [
+          { ar: "قالَ", tr: "qāla", en: "said (he)" },
+          { ar: "الكَلْبُ", tr: "al-kalbu", en: "the dog" },
+          { ar: "تَعالَيْ", tr: "taʿālay", en: "come! (to a female)" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "صَديقَتي", tr: "ṣadīqatī", en: "my friend (f.)" },
+          { ar: "بَيْتي", tr: "baytī", en: "my house" },
+          { ar: "دافِئٌ", tr: "dāfiʾun", en: "warm" },
+          { ar: "دَخَلَتِ", tr: "dakhalati", en: "entered (she)" },
+          { ar: "القِطَّةُ", tr: "al-qiṭṭatu", en: "the cat" },
+          { ar: "بَيْتَ", tr: "bayta", en: "house (of)" },
+          { ar: "الكَلْبِ", tr: "al-kalbi", en: "the dog" }
+        ]
+      },
+      {
+        img: "assets/img/loyal-friend/s3.jpg",
+        audio: "s3",
+        ar: "ناما جَنْبًا إِلى جَنْبٍ طولَ اللَّيْلِ. كانَ المَطَرُ يَنْزِلُ في الخارِجِ.",
+        tr: "nāmā janban ilā janbin ṭūla l-layli. kāna l-maṭaru yanzilu fī l-khāriji.",
+        en: "They (both) slept side by side all night. The rain was falling outside.",
+        tense: "Dual past + past continuous",
+        words: [
+          { ar: "ناما", tr: "nāmā", en: "they two slept" },
+          { ar: "جَنْبًا", tr: "janban", en: "side" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "جَنْبٍ", tr: "janbin", en: "side" },
+          { ar: "طولَ", tr: "ṭūla", en: "throughout" },
+          { ar: "اللَّيْلِ", tr: "al-layli", en: "the night" },
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "المَطَرُ", tr: "al-maṭaru", en: "the rain" },
+          { ar: "يَنْزِلُ", tr: "yanzilu", en: "falling" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الخارِجِ", tr: "al-khāriji", en: "the outside" }
+        ]
+      },
+      {
+        img: "assets/img/loyal-friend/s4.jpg",
+        audio: "s4",
+        ar: "في الصَّباحِ، ظَهَرَتِ الشَّمْسُ. أَحْضَرَتِ القِطَّةُ سَمَكَةً لِلْكَلْبِ وَقالَتْ: شُكْرًا يا صَديقي.",
+        tr: "fī ṣ-ṣabāḥi, ẓaharati sh-shamsu. aḥḍarati l-qiṭṭatu samakatan li-l-kalbi wa-qālat: shukran yā ṣadīqī.",
+        en: "In the morning, the sun appeared. The cat brought a fish for the dog and said: Thank you, my friend.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" },
+          { ar: "ظَهَرَتِ", tr: "ẓaharati", en: "appeared" },
+          { ar: "الشَّمْسُ", tr: "ash-shamsu", en: "the sun" },
+          { ar: "أَحْضَرَتِ", tr: "aḥḍarati", en: "brought (she)" },
+          { ar: "القِطَّةُ", tr: "al-qiṭṭatu", en: "the cat" },
+          { ar: "سَمَكَةً", tr: "samakatan", en: "a fish" },
+          { ar: "لِلْكَلْبِ", tr: "li-l-kalbi", en: "for the dog" },
+          { ar: "وَقالَتْ", tr: "wa-qālat", en: "and said (she)" },
+          { ar: "شُكْرًا", tr: "shukran", en: "thank you" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "صَديقي", tr: "ṣadīqī", en: "my friend (m.)" }
+        ]
+      },
+      {
+        img: "assets/img/loyal-friend/s5.jpg",
+        audio: "s5",
+        ar: "مِنْ ذٰلِكَ اليَوْمِ، يَأْكُلانِ مَعًا كُلَّ مَساءٍ. الصَّديقُ وَقْتَ الضّيقِ.",
+        tr: "min dhālika l-yawmi, yaʾkulāni maʿan kulla masāʾin. aṣ-ṣadīqu waqta ḍ-ḍīqi.",
+        en: "From that day, they (both) eat together every evening. A friend in need (is a friend indeed).",
+        tense: "Present dual — يَأْكُلانِ",
+        words: [
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "ذٰلِكَ", tr: "dhālika", en: "that" },
+          { ar: "اليَوْمِ", tr: "al-yawmi", en: "the day" },
+          { ar: "يَأْكُلانِ", tr: "yaʾkulāni", en: "they two eat" },
+          { ar: "مَعًا", tr: "maʿan", en: "together" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "مَساءٍ", tr: "masāʾin", en: "evening" },
+          { ar: "الصَّديقُ", tr: "aṣ-ṣadīqu", en: "the (true) friend" },
+          { ar: "وَقْتَ", tr: "waqta", en: "at the time (of)" },
+          { ar: "الضّيقِ", tr: "aḍ-ḍīqi", en: "hardship" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "في أَيِّ فَصْلٍ تَحْدُثُ القِصَّةُ؟",
+        q_en: "In which season does the story happen?",
+        options: [
+          { ar: "في الصَّيْفِ", en: "In the summer" },
+          { ar: "في الشِّتاءِ", en: "In the winter" },
+          { ar: "في الرَّبيعِ", en: "In the spring" }
+        ],
+        correct: 1,
+        why: "في الشِّتاءِ نَزَلَ المَطَرُ — winter, with rain."
+      },
+      {
+        q_ar: "كَيْفَ كانَتِ القِطَّةُ في المَطَرِ؟",
+        q_en: "How was the cat in the rain?",
+        options: [
+          { ar: "مُبَلَّلَةً وَبَرْدانَةً", en: "Wet and cold" },
+          { ar: "سَعيدَةً", en: "Happy" },
+          { ar: "نائِمَةً", en: "Asleep" }
+        ],
+        correct: 0,
+        why: "كانَتِ القِطَّةُ مُبَلَّلَةً وَبَرْدانَةً — wet and freezing."
+      },
+      {
+        q_ar: "ماذا قالَ الكَلْبُ لِلْقِطَّةِ؟",
+        q_en: "What did the dog say to the cat?",
+        options: [
+          { ar: "اِذْهَبي مِنْ هُنا", en: "Go away from here" },
+          { ar: "تَعالَيْ، بَيْتي دافِئٌ", en: "Come, my house is warm" },
+          { ar: "أَيْنَ سَمَكَتي؟", en: "Where is my fish?" }
+        ],
+        correct: 1,
+        why: "قالَ: تَعالَيْ يا صَديقَتي، بَيْتي دافِئٌ — he invited her in."
+      },
+      {
+        q_ar: "لِماذا هٰذا مُدْهِشٌ مِنَ الكَلْبِ؟",
+        q_en: "Why is this surprising from the dog?",
+        options: [
+          { ar: "في القِصَّةِ الأولى طارَدَ القِطَّةَ", en: "In story one he chased the cat!" },
+          { ar: "الكَلْبُ لا يُحِبُّ بَيْتَهُ", en: "The dog doesn't like his house" },
+          { ar: "الكَلْبُ يَخافُ مِنَ المَطَرِ", en: "The dog fears rain" }
+        ],
+        correct: 0,
+        why: "Remember story 1? The same dog chased this cat — now they're friends. Kindness wins!"
+      },
+      {
+        q_ar: "كَيْفَ ناما في اللَّيْلِ؟",
+        q_en: "How did they sleep at night?",
+        options: [
+          { ar: "جَنْبًا إِلى جَنْبٍ", en: "Side by side" },
+          { ar: "في غُرْفَتَيْنِ", en: "In two rooms" },
+          { ar: "خارِجَ البَيْتِ", en: "Outside the house" }
+        ],
+        correct: 0,
+        why: "ناما جَنْبًا إِلى جَنْبٍ — side by side, all night."
+      },
+      {
+        q_ar: "ماذا أَحْضَرَتِ القِطَّةُ في الصَّباحِ؟",
+        q_en: "What did the cat bring in the morning?",
+        options: [
+          { ar: "عَظْمَةً", en: "A bone" },
+          { ar: "سَمَكَةً", en: "A fish" },
+          { ar: "خُبْزًا", en: "Bread" }
+        ],
+        correct: 1,
+        why: "أَحْضَرَتِ القِطَّةُ سَمَكَةً لِلْكَلْبِ — a thank-you fish."
+      },
+      {
+        q_ar: "«صَديقَتي» وَ«صَديقي» — ما الفَرْقُ؟",
+        q_en: "\"ṣadīqatī\" vs \"ṣadīqī\" — what's the difference?",
+        options: [
+          { ar: "مُؤَنَّث وَمُذَكَّر — female / male friend", en: "Female friend / male friend" },
+          { ar: "كَبير وَصَغير", en: "Big / small" },
+          { ar: "قَديم وَجَديد", en: "Old / new" }
+        ],
+        correct: 0,
+        why: "صَديقَة (with ة) = female friend; صَديق = male friend. The dog calls the cat ṣadīqatī."
+      },
+      {
+        q_ar: "«يَأْكُلانِ» — مَنْ يَأْكُلُ؟",
+        q_en: "\"yaʾkulāni\" — who eats?",
+        options: [
+          { ar: "واحِدٌ فَقَطْ", en: "Just one" },
+          { ar: "اِثْنانِ مَعًا", en: "The two of them together" },
+          { ar: "ثَلاثَةٌ", en: "Three" }
+        ],
+        correct: 1,
+        why: "The ـانِ ending = dual present: they two eat. Dog + cat together."
+      },
+      {
+        q_ar: "«الصَّديقُ وَقْتَ الضّيقِ» — ما مَعْناها؟",
+        q_en: "\"aṣ-ṣadīqu waqta ḍ-ḍīqi\" — what does this proverb mean?",
+        options: [
+          { ar: "الصَّديقُ الحَقيقِيُّ يُساعِدُ في المَشاكِلِ", en: "A true friend helps in hard times" },
+          { ar: "الأَصْدِقاءُ يَلْعَبونَ مَعًا", en: "Friends play together" },
+          { ar: "الوَقْتُ ضَيِّقٌ", en: "Time is short" }
+        ],
+        correct: 0,
+        why: "A famous Arabic proverb: the (true) friend is (known) in time of hardship — a friend in need is a friend indeed."
+      },
+      {
+        q_ar: "ما عَكْسُ «دافِئ»؟",
+        q_en: "What is the opposite of \"dāfiʾ\" (warm)?",
+        options: [
+          { ar: "بارِد — cold", en: "Cold" },
+          { ar: "ساخِن — hot", en: "Hot" },
+          { ar: "مُبَلَّل — wet", en: "Wet" }
+        ],
+        correct: 0,
+        why: "دافِئ (warm) ↔ بارِد (cold). The warm doghouse vs the cold rain."
+      },
+      {
+        q_ar: "مَتى يَأْكُلانِ مَعًا الآنَ؟",
+        q_en: "When do they eat together now?",
+        options: [
+          { ar: "كُلَّ صَباحٍ", en: "Every morning" },
+          { ar: "كُلَّ مَساءٍ", en: "Every evening" },
+          { ar: "مَرَّةً في الأُسْبوعِ", en: "Once a week" }
+        ],
+        correct: 1,
+        why: "يَأْكُلانِ مَعًا كُلَّ مَساءٍ — every evening, from that day on."
+      }
+    ]
   }
 ];
