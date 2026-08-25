@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.hikaya.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.hikaya.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.11.0'
+}
+
+/* Copy the web app (repo root) into the APK's assets before every build */
+tasks.register('copyWeb', Copy) {
+    def repoRoot = rootDir.parentFile
+    from(repoRoot) {
+        include 'index.html', 'styles.css', 'app.js', 'manifest.json', 'sw.js'
+        include 'data/**'
+        include 'assets/img/**'
+        include 'assets/audio/**'
+        include 'assets/fonts/**'
+        include 'assets/icon-192.png', 'assets/icon-512.png'
+        exclude 'assets/audio/**/wsrc/**'   // raw word-track sources not needed in app
+    }
+    into "$projectDir/src/main/assets/www"
+}
+preBuild.dependsOn copyWeb
