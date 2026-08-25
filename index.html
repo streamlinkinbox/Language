@@ -4,12 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Hikaya · Arabic Stories</title>
-<meta name="theme-color" content="#171412">
+<meta name="theme-color" content="#000000">
 <link rel="manifest" href="manifest.json">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;700&family=Noto+Kufi+Arabic:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-theme="dark">
@@ -70,7 +67,10 @@
       <div id="peek-box" class="peek-box" hidden>
         <div class="peek-head">
           <span id="peek-word" dir="rtl" lang="ar"></span>
-          <button class="icon-btn small" id="peek-close" aria-label="Close"><span class="msr">close</span></button>
+          <span class="peek-actions">
+            <button class="icon-btn small" id="peek-say" aria-label="Pronounce word"><span class="msr">volume_up</span></button>
+            <button class="icon-btn small" id="peek-close" aria-label="Close"><span class="msr">close</span></button>
+          </span>
         </div>
         <p id="peek-tr" class="peek-tr"></p>
         <p id="peek-en" class="peek-en"></p>
@@ -112,7 +112,9 @@
       <span class="reader-title-ar">اِخْتِبار قَصير</span>
       <span id="quiz-progress-label" class="reader-title-sub">Quiz</span>
     </div>
-    <span class="icon-btn" style="visibility:hidden"><span class="msr">settings</span></span>
+    <button class="icon-btn" id="btn-quiz-en" aria-label="Show or hide English helper text">
+      <span class="msr" id="quiz-en-icon">visibility</span>
+    </button>
   </header>
   <div class="progress-track"><div id="quiz-progress-fill" class="progress-fill"></div></div>
 
@@ -133,7 +135,7 @@
       <div class="seg" id="seg-theme">
         <button data-v="light"><span class="msr">light_mode</span> Light</button>
         <button data-v="sepia"><span class="msr">menu_book</span> Sepia</button>
-        <button data-v="dark" class="on"><span class="msr">dark_mode</span> Night</button>
+        <button data-v="dark" class="on"><span class="msr">dark_mode</span> Dark</button>
       </div>
     </div>
 

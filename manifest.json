@@ -4,8 +4,8 @@
   "description": "Learn Arabic through simple illustrated stories with audio and quizzes.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#171412",
-  "theme_color": "#171412",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
     { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },

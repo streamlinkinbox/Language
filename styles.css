@@ -11,17 +11,17 @@
 
 /* Themes */
 body[data-theme="dark"] {
-  --bg: #171412;
-  --bg2: #201c19;
-  --card: #262019;
-  --line: #38302a;
-  --text: #ece5dc;
-  --text2: #a89e92;
+  --bg: #000000;
+  --bg2: #101010;
+  --card: #161616;
+  --line: #262626;
+  --text: #ebebeb;
+  --text2: #9a9a9a;
   --accent: #d4a15e;
-  --accent-ink: #241a0d;
+  --accent-ink: #1c1305;
   --good: #7fb98a;
   --bad: #d98a80;
-  --shadow: 0 8px 30px rgba(0,0,0,.45);
+  --shadow: 0 8px 30px rgba(0,0,0,.6);
 }
 body[data-theme="light"] {
   --bg: #faf7f2;
@@ -61,6 +61,10 @@ body {
 }
 button { font-family: inherit; color: inherit; background: none; border: none; cursor: pointer; }
 img { display: block; }
+
+/* hide scrollbars everywhere but keep scrolling */
+* { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar { width: 0; height: 0; display: none; }
 
 .msr {
   font-family: 'Material Symbols Rounded';
@@ -188,6 +192,8 @@ body.no-translit .translit { display: none; }
 }
 @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.98); } }
 .peek-head { display: flex; align-items: center; justify-content: space-between; }
+.peek-actions { display: inline-flex; gap: 2px; }
+.peek-actions #peek-say { color: var(--accent); }
 .peek-head span:first-child { font-family: var(--font-ar); font-size: calc(24px * var(--scale)); color: var(--accent); }
 .peek-tr { font-style: italic; color: var(--text2); font-size: calc(14px * var(--scale)); margin-top: 2px; }
 .peek-en { font-size: calc(16px * var(--scale)); font-weight: 600; margin-top: 4px; }
@@ -245,6 +251,11 @@ body.no-translit .translit { display: none; }
 .quiz-opt.wrong .o-mark { color: var(--bad); }
 .quiz-opt:disabled { cursor: default; }
 
+/* hide English helper text in quiz when toggled off */
+body.quiz-no-en .quiz-q-en,
+body.quiz-no-en .quiz-opt .o-en,
+body.quiz-no-en .quiz-why { display: none; }
+
 .quiz-why {
   margin-top: 20px; padding: 14px 16px;
   border-radius: 14px; background: var(--bg2);
@@ -283,6 +294,7 @@ body.no-translit .translit { display: none; }
   display: flex; align-items: flex-end; justify-content: center;
   animation: fade .2s ease;
 }
+.overlay[hidden] { display: none; }
 @keyframes fade { from { opacity: 0; } }
 .sheet {
   width: 100%; max-width: var(--maxw);

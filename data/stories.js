@@ -165,6 +165,39 @@ const STORIES = [
     ],
     quiz: [
       {
+        q_ar: "أَيْنَ كانَ الكَلْبُ في بِدايَةِ القِصَّةِ؟",
+        q_en: "Where was the dog at the start of the story?",
+        options: [
+          { ar: "في الحَديقَةِ", en: "In the garden" },
+          { ar: "في السُّوقِ", en: "At the market" },
+          { ar: "فَوْقَ الشَّجَرَةِ", en: "Up the tree" }
+        ],
+        correct: 0,
+        why: "كانَ الكَلْبُ نائِمًا في الحَديقَةِ — the dog was sleeping in the garden."
+      },
+      {
+        q_ar: "ماذا كانَ يَفْعَلُ الكَلْبُ في البِدايَةِ؟",
+        q_en: "What was the dog doing at the beginning?",
+        options: [
+          { ar: "كانَ يَأْكُلُ", en: "He was eating" },
+          { ar: "كانَ نائِمًا", en: "He was sleeping" },
+          { ar: "كانَ يَرْكُضُ", en: "He was running" }
+        ],
+        correct: 1,
+        why: "كانَ نائِمًا — he was sleeping (kāna + active participle = past continuous state)."
+      },
+      {
+        q_ar: "ماذا شَمَّ الكَلْبُ؟",
+        q_en: "What did the dog smell?",
+        options: [
+          { ar: "طَعامًا جَديدًا", en: "New food" },
+          { ar: "زَهْرَةً جَميلَةً", en: "A beautiful flower" },
+          { ar: "رائِحَةً غَريبَةً", en: "A strange smell" }
+        ],
+        correct: 2,
+        why: "شَمَّ الكَلْبُ رائِحَةً غَريبَةً — he smelled a strange smell."
+      },
+      {
         q_ar: "لِماذا نَبَحَ الكَلْبُ؟",
         q_en: "Why did the dog bark?",
         options: [
@@ -185,6 +218,72 @@ const STORIES = [
         ],
         correct: 1,
         why: "She was eating the dog's food — طَعامَ الكَلْبِ."
+      },
+      {
+        q_ar: "كَيْفَ نَبَحَ الكَلْبُ؟",
+        q_en: "How did the dog bark?",
+        options: [
+          { ar: "بِصَوْتٍ عالٍ", en: "With a loud voice" },
+          { ar: "بِصَوْتٍ هادِئٍ", en: "With a quiet voice" },
+          { ar: "لَمْ يَنْبَحْ", en: "He didn't bark" }
+        ],
+        correct: 0,
+        why: "نَبَحَ الكَلْبُ بِصَوْتٍ عالٍ — with a loud (high) voice."
+      },
+      {
+        q_ar: "ماذا فَعَلَتِ القِطَّةُ عِنْدَما سَمِعَتِ النُّباحَ؟",
+        q_en: "What did the cat do when she heard the barking?",
+        options: [
+          { ar: "أَكَلَتْ أَكْثَرَ", en: "She ate more" },
+          { ar: "نامَتْ", en: "She slept" },
+          { ar: "خافَتْ وَرَكَضَتْ", en: "She got scared and ran" }
+        ],
+        correct: 2,
+        why: "خافَتِ القِطَّةُ وَرَكَضَتْ بِسُرْعَةٍ — she was scared and ran quickly."
+      },
+      {
+        q_ar: "مَنْ خافَ في القِصَّةِ؟",
+        q_en: "Who was scared in the story?",
+        options: [
+          { ar: "الكَلْبُ", en: "The dog" },
+          { ar: "القِطَّةُ", en: "The cat" },
+          { ar: "الوَلَدُ", en: "The boy" }
+        ],
+        correct: 1,
+        why: "خافَتِ القِطَّةُ — the cat (feminine verb ending ـَتْ tells you it's she)."
+      },
+      {
+        q_ar: "كَيْفَ رَكَضَتِ القِطَّةُ؟",
+        q_en: "How did the cat run?",
+        options: [
+          { ar: "بِبُطْءٍ", en: "Slowly" },
+          { ar: "بِسُرْعَةٍ", en: "Quickly" },
+          { ar: "بِهُدوءٍ", en: "Quietly" }
+        ],
+        correct: 1,
+        why: "رَكَضَتْ بِسُرْعَةٍ — bi-surʿatin = with speed, quickly."
+      },
+      {
+        q_ar: "مَنْ طارَدَ مَنْ؟",
+        q_en: "Who chased whom?",
+        options: [
+          { ar: "الكَلْبُ طارَدَ القِطَّةَ", en: "The dog chased the cat" },
+          { ar: "القِطَّةُ طارَدَتِ الكَلْبَ", en: "The cat chased the dog" },
+          { ar: "الوَلَدُ طارَدَ الكَلْبَ", en: "The boy chased the dog" }
+        ],
+        correct: 0,
+        why: "طارَدَ الكَلْبُ القِطَّةَ — subject الكَلْبُ (u-ending), object القِطَّةَ (a-ending)."
+      },
+      {
+        q_ar: "أَيْنَ طارَدَ الكَلْبُ القِطَّةَ؟",
+        q_en: "Where did the dog chase the cat?",
+        options: [
+          { ar: "في الشّارِعِ", en: "In the street" },
+          { ar: "في البَيْتِ", en: "In the house" },
+          { ar: "في الحَديقَةِ", en: "In the garden" }
+        ],
+        correct: 2,
+        why: "طارَدَ الكَلْبُ القِطَّةَ في الحَديقَةِ — in the garden."
       },
       {
         q_ar: "أَيْنَ كانَ الكَلْبُ نائِمًا؟",
@@ -209,6 +308,39 @@ const STORIES = [
         why: "She climbed the big tree — صَعِدَتِ القِطَّةُ إِلى الشَّجَرَةِ الكَبيرَةِ."
       },
       {
+        q_ar: "كَيْفَ كانَتِ الشَّجَرَةُ؟",
+        q_en: "What was the tree like?",
+        options: [
+          { ar: "صَغيرَةً", en: "Small" },
+          { ar: "كَبيرَةً", en: "Big" },
+          { ar: "قَصيرَةً", en: "Short" }
+        ],
+        correct: 1,
+        why: "الشَّجَرَةِ الكَبيرَةِ — adjectives follow the noun and agree with it."
+      },
+      {
+        q_ar: "ماذا فَعَلَ الكَلْبُ تَحْتَ الشَّجَرَةِ؟",
+        q_en: "What did the dog do under the tree?",
+        options: [
+          { ar: "جَلَسَ وَانْتَظَرَ", en: "He sat and waited" },
+          { ar: "نامَ", en: "He slept" },
+          { ar: "حَفَرَ حُفْرَةً", en: "He dug a hole" }
+        ],
+        correct: 0,
+        why: "جَلَسَ الكَلْبُ تَحْتَ الشَّجَرَةِ وَانْتَظَرَ — he sat and waited."
+      },
+      {
+        q_ar: "هَلْ صَعِدَ الكَلْبُ الشَّجَرَةَ؟",
+        q_en: "Did the dog climb the tree?",
+        options: [
+          { ar: "نَعَمْ، صَعِدَ", en: "Yes, he climbed" },
+          { ar: "لا، جَلَسَ تَحْتَها", en: "No, he sat under it" },
+          { ar: "نَعَمْ، مَعَ القِطَّةِ", en: "Yes, with the cat" }
+        ],
+        correct: 1,
+        why: "Dogs can't climb! جَلَسَ تَحْتَ الشَّجَرَةِ — he sat under it."
+      },
+      {
         q_ar: "مَنْ أَعْطى الكَلْبَ طَعامًا جَديدًا؟",
         q_en: "Who gave the dog new food?",
         options: [
@@ -220,6 +352,28 @@ const STORIES = [
         why: "The boy came and gave the dog new food — جاءَ الوَلَدُ وَأَعْطى الكَلْبَ طَعامًا جَديدًا."
       },
       {
+        q_ar: "ماذا أَعْطى الوَلَدُ لِلْكَلْبِ؟",
+        q_en: "What did the boy give the dog?",
+        options: [
+          { ar: "ماءً بارِدًا", en: "Cold water" },
+          { ar: "لُعْبَةً", en: "A toy" },
+          { ar: "طَعامًا جَديدًا", en: "New food" }
+        ],
+        correct: 2,
+        why: "أَعْطى الكَلْبَ طَعامًا جَديدًا — new food."
+      },
+      {
+        q_ar: "أَيْنَ القِطَّةُ في نِهايَةِ القِصَّةِ؟",
+        q_en: "Where is the cat at the end of the story?",
+        options: [
+          { ar: "في الشَّجَرَةِ", en: "In the tree" },
+          { ar: "في البَيْتِ", en: "In the house" },
+          { ar: "بِجانِبِ الكَلْبِ", en: "Next to the dog" }
+        ],
+        correct: 0,
+        why: "القِطَّةُ تَنْظُرُ مِنَ الشَّجَرَةِ — she is watching from the tree."
+      },
+      {
         q_ar: "ماذا تَفْعَلُ القِطَّةُ الآنَ؟",
         q_en: "What is the cat doing now?",
         options: [
@@ -229,6 +383,61 @@ const STORIES = [
         ],
         correct: 2,
         why: "Present tense at the end — القِطَّةُ تَنْظُرُ مِنَ الشَّجَرَةِ."
+      },
+      {
+        q_ar: "ماذا يَفْعَلُ الكَلْبُ الآنَ؟",
+        q_en: "What is the dog doing now?",
+        options: [
+          { ar: "يَأْكُلُ", en: "He is eating" },
+          { ar: "يَنامُ", en: "He is sleeping" },
+          { ar: "يَنْبَحُ", en: "He is barking" }
+        ],
+        correct: 0,
+        why: "الآنَ الكَلْبُ يَأْكُلُ — present tense يَأْكُلُ (ya- prefix = he)."
+      },
+      {
+        q_ar: "«نَبَحَ» — ما زَمَنُ هٰذا الفِعْلِ؟",
+        q_en: "\"nabaḥa\" (barked) — what tense is this verb?",
+        options: [
+          { ar: "الماضي", en: "Past" },
+          { ar: "المُضارِع", en: "Present" },
+          { ar: "الأَمْر", en: "Command" }
+        ],
+        correct: 0,
+        why: "نَبَحَ is past tense (al-māḍī). Present would be يَنْبَحُ."
+      },
+      {
+        q_ar: "«تَنْظُرُ» — ما زَمَنُ هٰذا الفِعْلِ؟",
+        q_en: "\"tanẓuru\" (she watches) — what tense is this verb?",
+        options: [
+          { ar: "الماضي", en: "Past" },
+          { ar: "المُضارِع", en: "Present" },
+          { ar: "المُسْتَقْبَل", en: "Future" }
+        ],
+        correct: 1,
+        why: "تَنْظُرُ is present tense (al-muḍāriʿ) — ta- prefix for 'she'. Past would be نَظَرَتْ."
+      },
+      {
+        q_ar: "ما مَعْنى «بِسُرْعَةٍ»؟",
+        q_en: "What does \"bi-surʿatin\" mean?",
+        options: [
+          { ar: "بِبُطْءٍ — slowly", en: "Slowly" },
+          { ar: "بِسُرْعَةٍ — quickly", en: "Quickly" },
+          { ar: "بِحُزْنٍ — sadly", en: "Sadly" }
+        ],
+        correct: 1,
+        why: "بِ + سُرْعَة = with speed → quickly. The بِ prefix makes adverbs."
+      },
+      {
+        q_ar: "ما عَكْسُ «تَحْتَ»؟",
+        q_en: "What is the opposite of \"taḥta\" (under)?",
+        options: [
+          { ar: "فَوْقَ", en: "Above / on top" },
+          { ar: "بِجانِبِ", en: "Beside" },
+          { ar: "أَمامَ", en: "In front of" }
+        ],
+        correct: 0,
+        why: "تَحْتَ (under) ↔ فَوْقَ (above). The dog sat taḥta the tree; the cat was fawqa."
       }
     ]
   }

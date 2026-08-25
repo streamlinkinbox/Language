@@ -1,5 +1,7 @@
-/* Hikaya service worker — cache-first so the app works offline / at night */
-const CACHE = "hikaya-v1";
+/* Hikaya service worker
+   v2 — network-first for app files (so updates show immediately),
+   cache fallback for offline reading. Media stays cache-friendly. */
+const CACHE = "hikaya-v2";
 const CORE = [
   "./",
   "./index.html",
@@ -23,16 +25,30 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
-  e.respondWith(
-    caches.match(e.request).then((hit) => {
-      if (hit) return hit;
-      return fetch(e.request).then((res) => {
-        const copy = res.clone();
-        if (res.ok && (e.request.url.startsWith(self.location.origin) || e.request.url.includes("fonts.g"))) {
+  const url = new URL(e.request.url);
+  const isMedia = /\.(jpg|jpeg|png|mp3|woff2?)$/i.test(url.pathname) || url.hostname.includes("fonts.g");
+
+  if (isMedia) {
+    // cache-first for images/audio/fonts (they never change once generated)
+    e.respondWith(
+      caches.match(e.request).then((hit) => hit || fetch(e.request).then((res) => {
+        if (res.ok) {
+          const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(e.request, copy));
         }
         return res;
-      }).catch(() => hit);
-    })
-  );
+      }))
+    );
+  } else {
+    // network-first for HTML/CSS/JS so updates always arrive
+    e.respondWith(
+      fetch(e.request).then((res) => {
+        if (res.ok && url.origin === self.location.origin) {
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, copy));
+        }
+        return res;
+      }).catch(() => caches.match(e.request))
+    );
+  }
 });

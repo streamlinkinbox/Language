@@ -12,7 +12,8 @@
     speed: 100,       // percent
     voice: "m",       // m | f
     translit: true,
-    autoplay: false
+    autoplay: false,
+    quizEn: true   // show English helper text in quizzes
   };
   const store = {
     load() {
@@ -64,6 +65,9 @@
     $("rng-speed").value = S.speed;
     $("chk-translit").checked = S.translit;
     $("chk-autoplay").checked = S.autoplay;
+    document.body.classList.toggle("quiz-no-en", !S.quizEn);
+    const qi = $("quiz-en-icon");
+    if (qi) qi.textContent = S.quizEn ? "visibility" : "visibility_off";
     segSet("seg-theme", S.theme);
     segSet("seg-font", S.font);
     segSet("seg-voice", S.voice);
@@ -144,7 +148,7 @@
       const span = document.createElement("span");
       span.className = "w";
       span.textContent = w.ar;
-      span.addEventListener("click", () => peek(w, span));
+      span.addEventListener("click", () => peek(w, span, i));
       sent.appendChild(span);
       if (i < p.words.length - 1) sent.appendChild(document.createTextNode(" "));
     });
@@ -161,13 +165,38 @@
     if (S.autoplay) playAudio();
   }
 
-  function peek(w, span) {
+  function peek(w, span, wordIdx) {
     document.querySelectorAll(".ar-sentence .w.hl").forEach(x => x.classList.remove("hl"));
     span.classList.add("hl");
     $("peek-word").textContent = w.ar;
     $("peek-tr").textContent = w.tr;
     $("peek-en").textContent = w.en;
     $("peek-box").hidden = false;
+    lastPeek = { w, wordIdx };
+    playWord(wordIdx, w);
+  }
+
+  // ── per-word audio ──
+  let lastPeek = null;
+  let wordAudio = null;
+  function playWord(wordIdx, w) {
+    stopAudio();
+    if (wordAudio) { wordAudio.pause(); wordAudio = null; }
+    const p = story.pages[pageIdx];
+    const n = String(wordIdx + 1).padStart(2, "0");
+    wordAudio = new Audio(`assets/audio/${story.id}/w/${p.audio}-${n}.mp3`);
+    wordAudio.playbackRate = S.speed / 100;
+    if ("preservesPitch" in wordAudio) wordAudio.preservesPitch = true;
+    wordAudio.play().catch(() => speakFallback(w.ar));
+  }
+  function speakFallback(text) {
+    // browser TTS fallback if a word clip is missing
+    if (!("speechSynthesis" in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "ar-SA";
+    u.rate = 0.8 * (S.speed / 100);
+    speechSynthesis.speak(u);
   }
   function hidePeek() {
     $("peek-box").hidden = true;
@@ -199,6 +228,8 @@
   }
   function stopAudio() {
     if (audio) { audio.pause(); audio = null; }
+    if (typeof wordAudio !== "undefined" && wordAudio) { wordAudio.pause(); wordAudio = null; }
+    if ("speechSynthesis" in window) speechSynthesis.cancel();
     const ic = $("audio-icon");
     if (ic) ic.textContent = "volume_up";
   }
@@ -331,6 +362,10 @@
   // ═══════ reader buttons ═══════
   $("btn-back").addEventListener("click", () => { renderLibrary(); show("library"); });
   $("btn-quiz-back").addEventListener("click", () => { show("reader"); renderPage(); });
+  $("btn-quiz-en").addEventListener("click", () => {
+    S.quizEn = !S.quizEn;
+    applySettings();
+  });
   $("btn-next").addEventListener("click", nextPage);
   $("btn-prev").addEventListener("click", prevPage);
   $("btn-audio").addEventListener("click", () => {
@@ -348,6 +383,9 @@
     }
   });
   $("peek-close").addEventListener("click", hidePeek);
+  $("peek-say").addEventListener("click", () => {
+    if (lastPeek) playWord(lastPeek.wordIdx, lastPeek.w);
+  });
 
   // keyboard nav (desktop)
   document.addEventListener("keydown", (e) => {
@@ -367,9 +405,24 @@
     touchX = null;
   }, { passive: true });
 
-  // PWA service worker
+  // PWA service worker — with a self-healing version check:
+  // if an outdated worker/caches are found, wipe them and reload once.
+  const APP_VERSION = "v2";
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
+    if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
+      // nuke any stale workers + caches from older versions
+      navigator.serviceWorker.getRegistrations()
+        .then(regs => Promise.all(regs.map(r => r.unregister())))
+        .then(() => ("caches" in window) ? caches.keys().then(ks => Promise.all(ks.map(k => caches.delete(k)))) : null)
+        .then(() => {
+          const first = !sessionStorage.getItem("hikaya-reloaded");
+          localStorage.setItem("hikaya-app-version", APP_VERSION);
+          if (first) { sessionStorage.setItem("hikaya-reloaded", "1"); location.reload(); }
+        })
+        .catch(() => {});
+    } else {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    }
   }
 
   // ═══════ boot ═══════
