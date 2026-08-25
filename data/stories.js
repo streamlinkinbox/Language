@@ -2400,5 +2400,236 @@ const STORIES = [
         why: "يَأْكُلانِ مَعًا كُلَّ مَساءٍ — every evening, from that day on."
       }
     ]
+  },
+
+  /* ═══════════ STORY 9 — Grandma's Soup ═══════════ */
+  {
+    id: "grandma-soup",
+    title_ar: "شورَبَةُ الجَدَّةِ",
+    title_en: "Grandma's Soup",
+    level: "Beginner · A1",
+    cover: "assets/img/grandma-soup/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/grandma-soup/s1.jpg",
+        audio: "s1",
+        ar: "في يَوْمٍ بارِدٍ، مَرِضَتْ لَيْلى. بَقِيَتْ في السَّريرِ طولَ اليَوْمِ.",
+        tr: "fī yawmin bāridin, mariḍat laylā. baqiyat fī s-sarīri ṭūla l-yawmi.",
+        en: "On a cold day, Layla got sick. She stayed in bed all day.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "on / in" },
+          { ar: "يَوْمٍ", tr: "yawmin", en: "a day" },
+          { ar: "بارِدٍ", tr: "bāridin", en: "cold" },
+          { ar: "مَرِضَتْ", tr: "mariḍat", en: "got sick (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "بَقِيَتْ", tr: "baqiyat", en: "stayed (she)" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "السَّريرِ", tr: "as-sarīri", en: "the bed" },
+          { ar: "طولَ", tr: "ṭūla", en: "throughout" },
+          { ar: "اليَوْمِ", tr: "al-yawmi", en: "the day" }
+        ]
+      },
+      {
+        img: "assets/img/grandma-soup/s2.jpg",
+        audio: "s2",
+        ar: "ذَهَبَتِ الجَدَّةُ إِلى المَطْبَخِ. قَطَّعَتِ الجَزَرَ وَالبَصَلَ.",
+        tr: "dhahabati l-jaddatu ilā l-maṭbakhi. qaṭṭaʿati l-jazara wa-l-baṣala.",
+        en: "The grandmother went to the kitchen. She chopped the carrots and the onions.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "ذَهَبَتِ", tr: "dhahabati", en: "went (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "المَطْبَخِ", tr: "al-maṭbakhi", en: "the kitchen" },
+          { ar: "قَطَّعَتِ", tr: "qaṭṭaʿati", en: "chopped (she)" },
+          { ar: "الجَزَرَ", tr: "al-jazara", en: "the carrots" },
+          { ar: "وَالبَصَلَ", tr: "wa-l-baṣala", en: "and the onions" }
+        ]
+      },
+      {
+        img: "assets/img/grandma-soup/s3.jpg",
+        audio: "s3",
+        ar: "طَبَخَتِ الجَدَّةُ شورَبَةً ساخِنَةً. كانَتْ رائِحَتُها جَميلَةً جِدًّا.",
+        tr: "ṭabakhati l-jaddatu shūrabatan sākhinatan. kānat rāʾiḥatuhā jamīlatan jiddan.",
+        en: "The grandmother cooked a hot soup. Its smell was very beautiful.",
+        tense: "Past + description",
+        words: [
+          { ar: "طَبَخَتِ", tr: "ṭabakhati", en: "cooked (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "شورَبَةً", tr: "shūrabatan", en: "a soup" },
+          { ar: "ساخِنَةً", tr: "sākhinatan", en: "hot" },
+          { ar: "كانَتْ", tr: "kānat", en: "was" },
+          { ar: "رائِحَتُها", tr: "rāʾiḥatuhā", en: "its smell" },
+          { ar: "جَميلَةً", tr: "jamīlatan", en: "beautiful" },
+          { ar: "جِدًّا", tr: "jiddan", en: "very" }
+        ]
+      },
+      {
+        img: "assets/img/grandma-soup/s4.jpg",
+        audio: "s4",
+        ar: "شَرِبَتْ لَيْلى الشّورَبَةَ كُلَّها. قالَتْ: شُكْرًا يا جَدَّتي، أَنا أَحْسَنُ الآنَ.",
+        tr: "sharibat laylā sh-shūrabata kullahā. qālat: shukran yā jaddatī, anā aḥsanu l-āna.",
+        en: "Layla drank all the soup. She said: Thank you, grandma, I am better now.",
+        tense: "Past + أَنا (I am…)",
+        words: [
+          { ar: "شَرِبَتْ", tr: "sharibat", en: "drank (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "الشّورَبَةَ", tr: "ash-shūrabata", en: "the soup" },
+          { ar: "كُلَّها", tr: "kullahā", en: "all of it" },
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "شُكْرًا", tr: "shukran", en: "thank you" },
+          { ar: "يا", tr: "yā", en: "O / hey" },
+          { ar: "جَدَّتي", tr: "jaddatī", en: "my grandma" },
+          { ar: "أَنا", tr: "anā", en: "I" },
+          { ar: "أَحْسَنُ", tr: "aḥsanu", en: "better" },
+          { ar: "الآنَ", tr: "al-āna", en: "now" }
+        ]
+      },
+      {
+        img: "assets/img/grandma-soup/s5.jpg",
+        audio: "s5",
+        ar: "في اليَوْمِ التّالي، شُفِيَتْ لَيْلى. ساعَدَتْ جَدَّتَها في المَطْبَخِ بِفَرَحٍ.",
+        tr: "fī l-yawmi t-tālī, shufiyat laylā. sāʿadat jaddatahā fī l-maṭbakhi bi-faraḥin.",
+        en: "The next day, Layla was healed. She helped her grandma in the kitchen with joy.",
+        tense: "Past — التّالي = next",
+        words: [
+          { ar: "في", tr: "fī", en: "on / in" },
+          { ar: "اليَوْمِ", tr: "al-yawmi", en: "the day" },
+          { ar: "التّالي", tr: "at-tālī", en: "the next / following" },
+          { ar: "شُفِيَتْ", tr: "shufiyat", en: "was healed (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "ساعَدَتْ", tr: "sāʿadat", en: "helped (she)" },
+          { ar: "جَدَّتَها", tr: "jaddatahā", en: "her grandma" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَطْبَخِ", tr: "al-maṭbakhi", en: "the kitchen" },
+          { ar: "بِفَرَحٍ", tr: "bi-faraḥin", en: "with joy" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا حَدَثَ لِلَيْلى في اليَوْمِ البارِدِ؟",
+        q_en: "What happened to Layla on the cold day?",
+        options: [
+          { ar: "مَرِضَتْ", en: "She got sick" },
+          { ar: "سافَرَتْ", en: "She traveled" },
+          { ar: "لَعِبَتْ في الثَّلْجِ", en: "She played in the snow" }
+        ],
+        correct: 0,
+        why: "مَرِضَتْ لَيْلى — she got sick and stayed in bed all day."
+      },
+      {
+        q_ar: "أَيْنَ بَقِيَتْ لَيْلى طولَ اليَوْمِ؟",
+        q_en: "Where did Layla stay all day?",
+        options: [
+          { ar: "في المَدْرَسَةِ", en: "At school" },
+          { ar: "في السَّريرِ", en: "In bed" },
+          { ar: "في الحَديقَةِ", en: "In the garden" }
+        ],
+        correct: 1,
+        why: "بَقِيَتْ في السَّريرِ طولَ اليَوْمِ — in bed, the whole day."
+      },
+      {
+        q_ar: "ماذا قَطَّعَتِ الجَدَّةُ؟",
+        q_en: "What did the grandmother chop?",
+        options: [
+          { ar: "التُّفّاحَ وَالمَوْزَ", en: "Apples and bananas" },
+          { ar: "الخُبْزَ", en: "Bread" },
+          { ar: "الجَزَرَ وَالبَصَلَ", en: "Carrots and onions" }
+        ],
+        correct: 2,
+        why: "قَطَّعَتِ الجَزَرَ وَالبَصَلَ — carrots and onions for the soup."
+      },
+      {
+        q_ar: "كَيْفَ كانَتِ الشّورَبَةُ؟",
+        q_en: "What was the soup like?",
+        options: [
+          { ar: "بارِدَةً", en: "Cold" },
+          { ar: "ساخِنَةً وَرائِحَتُها جَميلَةٌ", en: "Hot with a beautiful smell" },
+          { ar: "مالِحَةً جِدًّا", en: "Too salty" }
+        ],
+        correct: 1,
+        why: "شورَبَةً ساخِنَةً... رائِحَتُها جَميلَةً جِدًّا — hot, smelling wonderful."
+      },
+      {
+        q_ar: "كَمْ شَرِبَتْ لَيْلى مِنَ الشّورَبَةِ؟",
+        q_en: "How much of the soup did Layla drink?",
+        options: [
+          { ar: "كُلَّها", en: "All of it" },
+          { ar: "نِصْفَها", en: "Half of it" },
+          { ar: "قَليلًا فَقَطْ", en: "Only a little" }
+        ],
+        correct: 0,
+        why: "شَرِبَتِ الشّورَبَةَ كُلَّها — all of it! (كُلَّها = all of it)"
+      },
+      {
+        q_ar: "ماذا قالَتْ لَيْلى لِجَدَّتِها؟",
+        q_en: "What did Layla say to her grandma?",
+        options: [
+          { ar: "أَنا جَوْعانَةُ", en: "I am hungry" },
+          { ar: "شُكْرًا، أَنا أَحْسَنُ الآنَ", en: "Thank you, I am better now" },
+          { ar: "لا أُحِبُّ الشّورَبَةَ", en: "I don't like soup" }
+        ],
+        correct: 1,
+        why: "شُكْرًا يا جَدَّتي، أَنا أَحْسَنُ الآنَ — thanks grandma, I'm better now."
+      },
+      {
+        q_ar: "«جَدَّتي» — ماذا تَعْني الياءُ في الآخِرِ؟",
+        q_en: "\"jaddatī\" — what does the final -ī mean?",
+        options: [
+          { ar: "«my» — جَدَّتي = my grandma", en: "My — jaddatī = my grandma" },
+          { ar: "«your» — جَدَّتُكَ", en: "Your" },
+          { ar: "«her» — جَدَّتُها", en: "Her" }
+        ],
+        correct: 0,
+        why: "The ending ـي = my: بَيْتي my house, جَدَّتي my grandma, صَديقي my friend."
+      },
+      {
+        q_ar: "ماذا حَدَثَ في اليَوْمِ التّالي؟",
+        q_en: "What happened the next day?",
+        options: [
+          { ar: "بَقِيَتْ مَريضَةً", en: "She stayed sick" },
+          { ar: "نَزَلَ الثَّلْجُ", en: "It snowed" },
+          { ar: "شُفِيَتْ لَيْلى", en: "Layla was healed" }
+        ],
+        correct: 2,
+        why: "شُفِيَتْ لَيْلى — she recovered, thanks to grandma's soup."
+      },
+      {
+        q_ar: "ماذا فَعَلَتْ لَيْلى بَعْدَ أَنْ شُفِيَتْ؟",
+        q_en: "What did Layla do after she was healed?",
+        options: [
+          { ar: "ساعَدَتْ جَدَّتَها في المَطْبَخِ", en: "She helped her grandma in the kitchen" },
+          { ar: "ذَهَبَتْ إِلى البَحْرِ", en: "She went to the sea" },
+          { ar: "نامَتْ مَرَّةً أُخْرى", en: "She slept again" }
+        ],
+        correct: 0,
+        why: "ساعَدَتْ جَدَّتَها في المَطْبَخِ بِفَرَحٍ — kindness returned with joy!"
+      },
+      {
+        q_ar: "ما عَكْسُ «مَريض»؟",
+        q_en: "What is the opposite of \"marīḍ\" (sick)?",
+        options: [
+          { ar: "سَعيد — happy", en: "Happy" },
+          { ar: "صَحيح / مُعافى — healthy", en: "Healthy" },
+          { ar: "بارِد — cold", en: "Cold" }
+        ],
+        correct: 1,
+        why: "مَريض (sick) ↔ صَحيح/مُعافى (healthy). شُفِيَ = he was healed."
+      },
+      {
+        q_ar: "ما مَعْنى «جِدًّا»؟",
+        q_en: "What does \"jiddan\" mean?",
+        options: [
+          { ar: "قَليلًا — a little", en: "A little" },
+          { ar: "جِدًّا — very", en: "Very" },
+          { ar: "أَبَدًا — never", en: "Never" }
+        ],
+        correct: 1,
+        why: "جِدًّا = very: جَميلَةٌ جِدًّا = very beautiful. (Don't confuse with جَدّ grandpa!)"
+      }
+    ]
   }
 ];
