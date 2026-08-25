@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Hikaya · Arabic Stories</title>
+<meta name="theme-color" content="#171412">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;700&family=Noto+Kufi+Arabic:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,300..600,0..1,0" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+<!-- ══════════ LIBRARY ══════════ -->
+<section id="screen-library" class="screen active">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-ar">حِكاية</span>
+      <span class="brand-en">Hikaya · Arabic Stories</span>
+    </div>
+    <button class="icon-btn" id="btn-settings" aria-label="Settings">
+      <span class="msr">settings</span>
+    </button>
+  </header>
+
+  <div class="library-body">
+    <p class="section-label">Your library</p>
+    <div id="story-list" class="story-list"></div>
+
+    <p class="section-label">Coming soon</p>
+    <div class="story-card ghost">
+      <div class="ghost-thumb"><span class="msr">auto_stories</span></div>
+      <div class="story-meta">
+        <h3>More stories on the way</h3>
+        <p>The market · The lost key · A rainy day</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ READER ══════════ -->
+<section id="screen-reader" class="screen">
+  <header class="topbar reader-top">
+    <button class="icon-btn" id="btn-back" aria-label="Back to library">
+      <span class="msr">arrow_back</span>
+    </button>
+    <div class="reader-title">
+      <span id="reader-story-title" class="reader-title-ar"></span>
+      <span id="reader-progress-label" class="reader-title-sub"></span>
+    </div>
+    <button class="icon-btn" id="btn-settings-2" aria-label="Settings">
+      <span class="msr">settings</span>
+    </button>
+  </header>
+
+  <div class="progress-track"><div id="progress-fill" class="progress-fill"></div></div>
+
+  <div id="reader-body" class="reader-body">
+    <figure class="page-figure">
+      <img id="page-img" alt="Story illustration" draggable="false">
+    </figure>
+
+    <div class="page-text">
+      <p id="page-ar" class="ar-sentence" dir="rtl" lang="ar"></p>
+      <p id="page-tr" class="translit"></p>
+
+      <div id="peek-box" class="peek-box" hidden>
+        <div class="peek-head">
+          <span id="peek-word" dir="rtl" lang="ar"></span>
+          <button class="icon-btn small" id="peek-close" aria-label="Close"><span class="msr">close</span></button>
+        </div>
+        <p id="peek-tr" class="peek-tr"></p>
+        <p id="peek-en" class="peek-en"></p>
+      </div>
+
+      <div id="translation-box" class="translation-box" hidden>
+        <p id="page-en" class="page-en"></p>
+        <p id="page-tense" class="page-tense"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="reader-controls">
+    <button class="ctrl-btn" id="btn-prev" aria-label="Previous page">
+      <span class="msr">chevron_left</span>
+    </button>
+    <button class="ctrl-btn" id="btn-translate" aria-label="Show translation">
+      <span class="msr">translate</span>
+    </button>
+    <button class="ctrl-btn primary" id="btn-audio" aria-label="Play audio">
+      <span class="msr" id="audio-icon">volume_up</span>
+    </button>
+    <button class="ctrl-btn" id="btn-speed" aria-label="Audio speed">
+      <span id="speed-label" class="speed-label">1×</span>
+    </button>
+    <button class="ctrl-btn accent" id="btn-next" aria-label="Next page">
+      <span class="msr">chevron_right</span>
+    </button>
+  </footer>
+</section>
+
+<!-- ══════════ QUIZ ══════════ -->
+<section id="screen-quiz" class="screen">
+  <header class="topbar reader-top">
+    <button class="icon-btn" id="btn-quiz-back" aria-label="Back to story">
+      <span class="msr">arrow_back</span>
+    </button>
+    <div class="reader-title">
+      <span class="reader-title-ar">اِخْتِبار قَصير</span>
+      <span id="quiz-progress-label" class="reader-title-sub">Quiz</span>
+    </div>
+    <span class="icon-btn" style="visibility:hidden"><span class="msr">settings</span></span>
+  </header>
+  <div class="progress-track"><div id="quiz-progress-fill" class="progress-fill"></div></div>
+
+  <div id="quiz-body" class="quiz-body"></div>
+</section>
+
+<!-- ══════════ SETTINGS SHEET ══════════ -->
+<div id="settings-overlay" class="overlay" hidden>
+  <div class="sheet" role="dialog" aria-label="Settings">
+    <div class="sheet-handle"></div>
+    <div class="sheet-head">
+      <h2>Settings</h2>
+      <button class="icon-btn" id="settings-close" aria-label="Close"><span class="msr">close</span></button>
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Theme</p>
+      <div class="seg" id="seg-theme">
+        <button data-v="light"><span class="msr">light_mode</span> Light</button>
+        <button data-v="sepia"><span class="msr">menu_book</span> Sepia</button>
+        <button data-v="dark" class="on"><span class="msr">dark_mode</span> Night</button>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Arabic font</p>
+      <div class="seg" id="seg-font">
+        <button data-v="naskh" class="on" style="font-family:'Noto Naskh Arabic'">نسخ</button>
+        <button data-v="amiri" style="font-family:'Amiri'">أميري</button>
+        <button data-v="kufi" style="font-family:'Noto Kufi Arabic'">كوفي</button>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Text size <span id="scale-val" class="setting-val">100%</span></p>
+      <input type="range" id="rng-scale" min="80" max="160" step="10" value="100">
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Audio speed <span id="speed-val" class="setting-val">1.0×</span></p>
+      <input type="range" id="rng-speed" min="50" max="100" step="10" value="100">
+      <p class="setting-hint">Slower audio helps you catch every word.</p>
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Narrator voice</p>
+      <div class="seg" id="seg-voice">
+        <button data-v="m" class="on"><span class="msr">record_voice_over</span> Voice A</button>
+        <button data-v="f"><span class="msr">voice_selection</span> Voice B</button>
+      </div>
+    </div>
+
+    <div class="setting-group">
+      <p class="setting-label">Reading aids</p>
+      <label class="toggle-row">
+        <span>Transliteration under sentence</span>
+        <input type="checkbox" id="chk-translit" checked><span class="toggle"></span>
+      </label>
+      <label class="toggle-row">
+        <span>Auto-play audio on each page</span>
+        <input type="checkbox" id="chk-autoplay"><span class="toggle"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<script src="data/stories.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
