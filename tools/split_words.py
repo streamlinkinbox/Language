@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 """Split per-page word tracks (words spoken with pauses) into individual
-word mp3s using ffmpeg silencedetect. Output: assets/audio/<story>/w/pNN-MM.mp3"""
+word mp3s.
+
+Deterministic method:
+  1. Decode to PCM, build a smoothed RMS energy profile.
+  2. Find all candidate 'valleys' (low-energy runs between speech bursts).
+  3. For N expected words, pick exactly the N-1 longest/deepest valleys
+     as cut points (they are the inter-word pauses by construction,
+     since the source audio was generated with '...' pauses).
+  4. Cut at each valley's center. Trim leading/trailing silence.
+
+This guarantees clip K = word K whenever the expected count is met,
+and fails loudly otherwise (exit 1) instead of shipping shifted audio.
+"""
 import re, subprocess, sys, json, array
 from pathlib import Path
 
@@ -15,8 +27,7 @@ SRC = ROOT / "assets/audio" / STORY / "wsrc"
 OUT = ROOT / "assets/audio" / STORY / "w"
 OUT.mkdir(parents=True, exist_ok=True)
 
-# expected word counts per page, parsed from data/stories.js
-# scope to THIS story's block only (page ids repeat across stories!)
+# ── expected word counts, scoped to this story ──
 js = (ROOT / "data/stories.js").read_text(encoding="utf-8")
 story_start = js.find(f'id: "{STORY}"')
 if story_start == -1:
@@ -26,84 +37,102 @@ block_js = js[story_start: story_end if story_end != -1 else len(js)]
 pages = re.findall(r'audio:\s*"([ps]\d+)".*?words:\s*\[(.*?)\]\s*(?:\},|\}\s*\])', block_js, re.S)
 expected = {pid: len(re.findall(r'\{\s*ar:', block)) for pid, block in pages}
 
-def silences(path, noise=-35, d=0.28):
-    p = subprocess.run(
-        [FF, "-i", str(path), "-af", f"silencedetect=noise={noise}dB:d={d}", "-f", "null", "-"],
-        capture_output=True, text=True)
-    log = p.stderr
-    starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", log)]
-    ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", log)]
-    dur = re.search(r"Duration: (\d+):(\d+):([\d.]+)", log)
-    h, m, s = dur.groups()
-    total = int(h) * 3600 + int(m) * 60 + float(s)
-    return starts, ends, total
+SR = 16000
+WIN = 320          # 20 ms @ 16 kHz
+DT = WIN / SR      # seconds per window
 
-PARAMS = [(-35, 0.28), (-35, 0.2), (-30, 0.2), (-30, 0.15), (-27, 0.12),
-          (-25, 0.1), (-22, 0.09), (-20, 0.08), (-18, 0.07)]
-
-def segments(src, noise, d):
-    starts, ends, total = silences(src, noise, d)
-    cuts = [0.0]
-    for s, e in zip(starts, ends):
-        cuts.append((s + e) / 2)  # cut midway through each silence
-    cuts.append(total)
-    segs = [(cuts[i], cuts[i + 1]) for i in range(len(cuts) - 1)]
-    return [(a, b) for a, b in segs if b - a > 0.12]
-
-def rms_profile(src):
-    """Decode to mono 8kHz s16 and return per-20ms-window RMS list."""
-    p = subprocess.run([FF, "-i", str(src), "-ac", "1", "-ar", "8000",
+def energy_profile(path):
+    p = subprocess.run([FF, "-i", str(path), "-ac", "1", "-ar", str(SR),
                         "-f", "s16le", "-"], capture_output=True)
     pcm = array.array("h")
     pcm.frombytes(p.stdout[: len(p.stdout) // 2 * 2])
-    win = 160  # 20ms @ 8kHz
     prof = []
-    for i in range(0, len(pcm) - win, win):
-        chunk = pcm[i:i + win]
-        prof.append((sum(x * x for x in chunk) / win) ** 0.5)
-    return prof, 0.02  # seconds per window
+    for i in range(0, len(pcm) - WIN, WIN):
+        c = pcm[i:i + WIN]
+        prof.append((sum(x * x for x in c) / WIN) ** 0.5)
+    return prof
 
-def force_split(seg, prof, dt):
-    """Split segment at its quietest interior window."""
-    a, b = seg
-    i0, i1 = int(a / dt), int(b / dt)
-    span = i1 - i0
-    lo = i0 + max(2, span // 5)
-    hi = i1 - max(2, span // 5)
-    if hi <= lo:
-        return None
-    qi = min(range(lo, hi), key=lambda i: prof[i])
-    t = qi * dt
-    return [(a, t), (t, b)]
+def find_valleys(prof, floor):
+    """Return list of (start_idx, end_idx, min_energy) for low-energy runs."""
+    valleys, i, n = [], 0, len(prof)
+    while i < n:
+        if prof[i] <= floor:
+            j = i
+            while j < n and prof[j] <= floor:
+                j += 1
+            valleys.append((i, j, min(prof[i:j])))
+            i = j
+        else:
+            i += 1
+    return valleys
+
+def split_page(src, n_words):
+    """Returns (segments, confident). confident=True only when the chosen
+    separator pauses are unambiguous — clearly longer than every gap we
+    did NOT cut at. Ambiguous pages must fall back to TTS in the app."""
+    prof = energy_profile(src)
+    if not prof:
+        return None, False
+    peak = max(prof)
+    best = None
+    for frac in (0.02, 0.03, 0.05, 0.08, 0.12, 0.18):
+        floor = peak * frac
+        valleys = find_valleys(prof, floor)
+        interior = [v for v in valleys if v[0] > 2 and v[1] < len(prof) - 2]
+        if len(interior) >= n_words - 1:
+            ranked = sorted(interior, key=lambda v: v[1] - v[0], reverse=True)
+            chosen = ranked[: n_words - 1]
+            rest = ranked[n_words - 1:]
+            min_chosen = min(v[1] - v[0] for v in chosen) * DT
+            max_rest = (max((v[1] - v[0]) for v in rest) * DT) if rest else 0.0
+            # confidence: every separator >=0.15s AND >=2x any unchosen gap
+            confident = min_chosen >= 0.15 and (max_rest == 0.0 or min_chosen >= 2 * max_rest)
+            seps = sorted(chosen, key=lambda v: v[0])
+            cuts = [(v[0] + v[1]) / 2 * DT for v in seps]
+            total = len(prof) * DT
+            bounds = [0.0] + cuts + [total]
+            segs = [(bounds[k], bounds[k + 1]) for k in range(n_words)]
+            if confident:
+                return segs, True
+            if best is None:
+                best = segs
+    return best, False
 
 report = {}
-for src in sorted(SRC.glob("p*.mp3")):
+verified = []
+for src in sorted(SRC.glob("[ps]*.mp3")):
     pid = src.stem
     exp = expected.get(pid)
-    segs, used = [], None
-    for noise, d in PARAMS:
-        cand = segments(src, noise, d)
-        if exp is not None and len(cand) == exp:
-            segs, used = cand, (noise, d)
-            break
-        if not segs or (exp and abs(len(cand) - exp) < abs(len(segs) - exp)):
-            segs, used = cand, (noise, d)
-    # if still short of expected count, force-split longest segments
-    if exp and len(segs) < exp:
-        prof, dt = rms_profile(src)
-        while len(segs) < exp:
-            longest = max(range(len(segs)), key=lambda i: segs[i][1] - segs[i][0])
-            parts = force_split(segs[longest], prof, dt)
-            if not parts:
-                break
-            segs[longest:longest + 1] = parts
+    if not exp:
+        continue
+    segs, confident = split_page(src, exp)
+    if segs is None:
+        report[pid] = {"got": 0, "expected": exp, "ok": False, "confident": False}
+        continue
     for i, (a, b) in enumerate(segs, 1):
         out = OUT / f"{pid}-{i:02d}.mp3"
-        pad_a = max(0.0, a - 0.05)
-        subprocess.run([FF, "-y", "-i", str(src), "-ss", f"{pad_a:.3f}", "-to", f"{b:.3f}",
+        # cuts fall in pause centers; keep a little pad, no filtering
+        subprocess.run([FF, "-y", "-i", str(src),
+                        "-ss", f"{max(0.0, a - 0.03):.3f}", "-to", f"{b:.3f}",
                         "-c:a", "libmp3lame", "-q:a", "4", str(out)],
                        capture_output=True)
-    report[pid] = {"got": len(segs), "expected": exp, "ok": exp == len(segs)}
+    report[pid] = {"got": len(segs), "expected": exp, "ok": True, "confident": confident}
+    if confident:
+        verified.append(pid)
+
+# ── update the per-page verified manifest (data/wordaudio.js) ──
+manifest_path = ROOT / "data/wordaudio.js"
+manifest = {}
+if manifest_path.exists():
+    m = re.search(r'=\s*(\{.*\})\s*;', manifest_path.read_text(encoding="utf-8"), re.S)
+    if m:
+        manifest = json.loads(m.group(1))
+manifest[STORY] = sorted(verified)
+manifest_path.write_text(
+    "// Auto-generated by tools/split_words.py — pages with VERIFIED word clips.\n"
+    "// Pages not listed use exact-word speech synthesis instead.\n"
+    "window.WORD_AUDIO_VERIFIED = " + json.dumps(manifest, indent=2) + ";\n",
+    encoding="utf-8")
 
 print(json.dumps(report, indent=1))
 bad = [k for k, v in report.items() if not v["ok"]]

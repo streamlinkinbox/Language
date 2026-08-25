@@ -177,29 +177,40 @@
   }
 
   // ── per-word audio ──
-  // Stories with VERIFIED per-word clips (each clip checked to match its word).
-  // Stories not listed use speech synthesis of the exact tapped word instead —
-  // never a clip from the wrong position.
-  const WORD_AUDIO_READY = ["dog-cat", "market"];
+  // Only pages listed in data/wordaudio.js (auto-verified by the splitter)
+  // use narrator clips. Everything else speaks the EXACT tapped word via
+  // the device's Arabic voice — the right word every time, never shifted.
+  const VERIFIED = (typeof window !== "undefined" && window.WORD_AUDIO_VERIFIED) || {};
   let lastPeek = null;
   let wordAudio = null;
   function playWord(wordIdx, w) {
     stopAudio();
     if (wordAudio) { wordAudio.pause(); wordAudio = null; }
-    if (!WORD_AUDIO_READY.includes(story.id)) { speakFallback(w.ar); return; }
     const p = story.pages[pageIdx];
+    const pageVerified = (VERIFIED[story.id] || []).includes(p.audio);
+    if (!pageVerified) { speakFallback(w.ar); return; }
     const n = String(wordIdx + 1).padStart(2, "0");
     wordAudio = new Audio(`assets/audio/${story.id}/w/${p.audio}-${n}.mp3`);
     wordAudio.playbackRate = S.speed / 100;
     if ("preservesPitch" in wordAudio) wordAudio.preservesPitch = true;
     wordAudio.play().catch(() => speakFallback(w.ar));
   }
+  let arVoice = null;
+  function pickArabicVoice() {
+    if (!("speechSynthesis" in window)) return;
+    const vs = speechSynthesis.getVoices();
+    arVoice = vs.find(v => /^ar/i.test(v.lang)) || null;
+  }
+  if ("speechSynthesis" in window) {
+    pickArabicVoice();
+    speechSynthesis.onvoiceschanged = pickArabicVoice;
+  }
   function speakFallback(text) {
-    // browser TTS fallback if a word clip is missing
     if (!("speechSynthesis" in window)) return;
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "ar-SA";
+    if (arVoice) u.voice = arVoice;
     u.rate = 0.8 * (S.speed / 100);
     speechSynthesis.speak(u);
   }
@@ -416,7 +427,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v7";
+  const APP_VERSION = "v8";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
