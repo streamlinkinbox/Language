@@ -181,6 +181,8 @@
   // use narrator clips. Everything else speaks the EXACT tapped word via
   // the device's Arabic voice — the right word every time, never shifted.
   const VERIFIED = (typeof window !== "undefined" && window.WORD_AUDIO_VERIFIED) || {};
+  const BANK = (typeof window !== "undefined" && window.WORD_BANK) || {};
+  const stripTashkeel = (s) => s.replace(/[\u064B-\u0652\u0670\u0640]/g, "");
   let lastPeek = null;
   let wordAudio = null;
   function playWord(wordIdx, w) {
@@ -188,31 +190,73 @@
     if (wordAudio) { wordAudio.pause(); wordAudio = null; }
     const p = story.pages[pageIdx];
     const pageVerified = (VERIFIED[story.id] || []).includes(p.audio);
-    if (!pageVerified) { speakFallback(w.ar); return; }
-    const n = String(wordIdx + 1).padStart(2, "0");
-    wordAudio = new Audio(`assets/audio/${story.id}/w/${p.audio}-${n}.mp3`);
+    if (pageVerified) {
+      const n = String(wordIdx + 1).padStart(2, "0");
+      playClip(`assets/audio/${story.id}/w/${p.audio}-${n}.mp3`, w.ar);
+      return;
+    }
+    // word bank: verified single-word clips shared across stories
+    const key = stripTashkeel(w.ar).replace(/^وَ?|^و/, m => m); // keep as-is first
+    const bare = stripTashkeel(w.ar);
+    const noWaw = bare.startsWith("و") ? bare.slice(1) : null;
+    const id = BANK[bare] || (noWaw && BANK[noWaw]);
+    if (id) { playClip(`assets/audio/bank/${id}.mp3`, w.ar); return; }
+    speakFallback(w.ar);
+  }
+  function playClip(src, fallbackText) {
+    wordAudio = new Audio(src);
     wordAudio.playbackRate = S.speed / 100;
     if ("preservesPitch" in wordAudio) wordAudio.preservesPitch = true;
-    wordAudio.play().catch(() => speakFallback(w.ar));
+    wordAudio.play().catch(() => speakFallback(fallbackText));
   }
-  let arVoice = null;
+  // ── speech synthesis (kept alive against Chrome's quirks) ──
+  let arVoice = null, currentUtterance = null, ttsTimer = null;
   function pickArabicVoice() {
     if (!("speechSynthesis" in window)) return;
     const vs = speechSynthesis.getVoices();
-    arVoice = vs.find(v => /^ar/i.test(v.lang)) || null;
+    // prefer higher-quality voices when several Arabic ones exist
+    arVoice = vs.find(v => /^ar/i.test(v.lang) && /natural|neural|online/i.test(v.name))
+           || vs.find(v => /^ar/i.test(v.lang))
+           || null;
   }
   if ("speechSynthesis" in window) {
     pickArabicVoice();
-    speechSynthesis.onvoiceschanged = pickArabicVoice;
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.addEventListener("voiceschanged", pickArabicVoice);
+    }
   }
   function speakFallback(text) {
-    if (!("speechSynthesis" in window)) return;
+    if (!("speechSynthesis" in window)) { toast("No Arabic voice on this device"); return; }
+    if (!arVoice) pickArabicVoice();
+    clearTimeout(ttsTimer);
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "ar-SA";
-    if (arVoice) u.voice = arVoice;
-    u.rate = 0.8 * (S.speed / 100);
-    speechSynthesis.speak(u);
+    // Chrome bug: speak() right after cancel() is silently dropped.
+    // A short delay makes it reliable.
+    ttsTimer = setTimeout(() => {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = arVoice ? arVoice.lang : "ar-SA";
+      if (arVoice) u.voice = arVoice;
+      u.rate = Math.max(0.5, 0.85 * (S.speed / 100));
+      u.onerror = () => toast("Speech failed — check device Arabic voice");
+      currentUtterance = u;             // hold reference (Chrome GC bug)
+      speechSynthesis.speak(u);
+      // Chrome sometimes starts paused
+      if (speechSynthesis.paused) speechSynthesis.resume();
+      if (!arVoice) toast("Tip: install an Arabic voice for word audio");
+    }, 80);
+  }
+  // small non-blocking notice
+  let toastEl = null, toastTimer = null;
+  function toast(msg) {
+    if (!toastEl) {
+      toastEl = document.createElement("div");
+      toastEl.className = "toast";
+      document.body.appendChild(toastEl);
+    }
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 2600);
   }
   function hidePeek() {
     $("peek-box").hidden = true;
@@ -427,7 +471,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v8";
+  const APP_VERSION = "v9";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions

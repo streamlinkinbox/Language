@@ -2,8 +2,7 @@
 // Pages not listed use exact-word speech synthesis instead.
 window.WORD_AUDIO_VERIFIED = {
   "dog-cat": [
-    "p05",
-    "p07"
+    "p04"
   ],
   "market": [
     "p08"
