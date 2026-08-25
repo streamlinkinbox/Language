@@ -1426,5 +1426,493 @@ const STORIES = [
         why: "فَقَدَ (lost) ↔ وَجَدَ (found)."
       }
     ]
+  },
+
+  /* ═══════════ STORY 5 — The Little Bird ═══════════ */
+  {
+    id: "little-bird",
+    title_ar: "العُصْفورُ الصَّغيرُ",
+    title_en: "The Little Bird",
+    level: "Beginner · A1",
+    cover: "assets/img/little-bird/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/little-bird/s1.jpg",
+        audio: "s1",
+        ar: "في يَوْمٍ جَميلٍ، سَمِعَ سامي صَوْتًا ضَعيفًا في الحَديقَةِ. وَجَدَ عُصْفورًا صَغيرًا تَحْتَ الشَّجَرَةِ.",
+        tr: "fī yawmin jamīlin, samiʿa sāmī ṣawtan ḍaʿīfan fī l-ḥadīqati. wajada ʿuṣfūran ṣaghīran taḥta sh-shajarati.",
+        en: "On a beautiful day, Sami heard a weak sound in the garden. He found a little bird under the tree.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in / on" },
+          { ar: "يَوْمٍ", tr: "yawmin", en: "a day" },
+          { ar: "جَميلٍ", tr: "jamīlin", en: "beautiful" },
+          { ar: "سَمِعَ", tr: "samiʿa", en: "heard" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "صَوْتًا", tr: "ṣawtan", en: "a sound / voice" },
+          { ar: "ضَعيفًا", tr: "ḍaʿīfan", en: "weak" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الحَديقَةِ", tr: "al-ḥadīqati", en: "the garden" },
+          { ar: "وَجَدَ", tr: "wajada", en: "found" },
+          { ar: "عُصْفورًا", tr: "ʿuṣfūran", en: "a bird / sparrow" },
+          { ar: "صَغيرًا", tr: "ṣaghīran", en: "little" },
+          { ar: "تَحْتَ", tr: "taḥta", en: "under" },
+          { ar: "الشَّجَرَةِ", tr: "ash-shajarati", en: "the tree" }
+        ]
+      },
+      {
+        img: "assets/img/little-bird/s2.jpg",
+        audio: "s2",
+        ar: "كانَ جَناحُ العُصْفورِ مَكْسورًا، وَلا يَسْتَطيعُ الطَّيَرانَ. حَمَلَهُ سامي بِيَدَيْهِ بِرِفْقٍ.",
+        tr: "kāna janāḥu l-ʿuṣfūri maksūran, wa-lā yastaṭīʿu ṭ-ṭayarāna. ḥamalahu sāmī bi-yadayhi bi-rifqin.",
+        en: "The bird's wing was broken, and it could not fly. Sami carried it gently with his two hands.",
+        tense: "كانَ + negation لا",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "جَناحُ", tr: "janāḥu", en: "wing (of)" },
+          { ar: "العُصْفورِ", tr: "al-ʿuṣfūri", en: "the bird" },
+          { ar: "مَكْسورًا", tr: "maksūran", en: "broken" },
+          { ar: "وَلا", tr: "wa-lā", en: "and not" },
+          { ar: "يَسْتَطيعُ", tr: "yastaṭīʿu", en: "is able to" },
+          { ar: "الطَّيَرانَ", tr: "aṭ-ṭayarāna", en: "flying" },
+          { ar: "حَمَلَهُ", tr: "ḥamalahu", en: "carried it" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "بِيَدَيْهِ", tr: "bi-yadayhi", en: "with his two hands" },
+          { ar: "بِرِفْقٍ", tr: "bi-rifqin", en: "gently" }
+        ]
+      },
+      {
+        img: "assets/img/little-bird/s3.jpg",
+        audio: "s3",
+        ar: "وَضَعَهُ في صُنْدوقٍ صَغيرٍ وَدافِئٍ. كُلَّ يَوْمٍ، أَعْطاهُ الخُبْزَ وَالماءَ.",
+        tr: "waḍaʿahu fī ṣundūqin ṣaghīrin wa-dāfiʾin. kulla yawmin, aʿṭāhu l-khubza wa-l-māʾa.",
+        en: "He put it in a small, warm box. Every day, he gave it bread and water.",
+        tense: "Past + كُلَّ يَوْمٍ (every day)",
+        words: [
+          { ar: "وَضَعَهُ", tr: "waḍaʿahu", en: "put it" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "صُنْدوقٍ", tr: "ṣundūqin", en: "a box" },
+          { ar: "صَغيرٍ", tr: "ṣaghīrin", en: "small" },
+          { ar: "وَدافِئٍ", tr: "wa-dāfiʾin", en: "and warm" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "يَوْمٍ", tr: "yawmin", en: "day" },
+          { ar: "أَعْطاهُ", tr: "aʿṭāhu", en: "gave it" },
+          { ar: "الخُبْزَ", tr: "al-khubza", en: "the bread" },
+          { ar: "وَالماءَ", tr: "wa-l-māʾa", en: "and the water" }
+        ]
+      },
+      {
+        img: "assets/img/little-bird/s4.jpg",
+        audio: "s4",
+        ar: "بَعْدَ أُسْبوعٍ، صارَ العُصْفورُ قَوِيًّا. وَقَفَ عَلى إِصْبَعِ سامي وَرَفْرَفَ بِجَناحَيْهِ.",
+        tr: "baʿda usbūʿin, ṣāra l-ʿuṣfūru qawiyyan. waqafa ʿalā iṣbaʿi sāmī wa-rafrafa bi-janāḥayhi.",
+        en: "After a week, the bird became strong. It stood on Sami's finger and flapped its wings.",
+        tense: "صارَ = became",
+        words: [
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "أُسْبوعٍ", tr: "usbūʿin", en: "a week" },
+          { ar: "صارَ", tr: "ṣāra", en: "became" },
+          { ar: "العُصْفورُ", tr: "al-ʿuṣfūru", en: "the bird" },
+          { ar: "قَوِيًّا", tr: "qawiyyan", en: "strong" },
+          { ar: "وَقَفَ", tr: "waqafa", en: "stood" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "إِصْبَعِ", tr: "iṣbaʿi", en: "finger (of)" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "وَرَفْرَفَ", tr: "wa-rafrafa", en: "and flapped" },
+          { ar: "بِجَناحَيْهِ", tr: "bi-janāḥayhi", en: "its two wings" }
+        ]
+      },
+      {
+        img: "assets/img/little-bird/s5.jpg",
+        audio: "s5",
+        ar: "فَتَحَ سامي يَدَهُ، فَطارَ العُصْفورُ إِلى السَّماءِ. وَالآنَ يَرْجِعُ كُلَّ صَباحٍ وَيُغَنّي عِنْدَ النّافِذَةِ.",
+        tr: "fataḥa sāmī yadahu, fa-ṭāra l-ʿuṣfūru ilā s-samāʾi. wa-l-āna yarjiʿu kulla ṣabāḥin wa-yughannī ʿinda n-nāfidhati.",
+        en: "Sami opened his hand, and the bird flew to the sky. And now it returns every morning and sings at the window.",
+        tense: "Past → present habit",
+        words: [
+          { ar: "فَتَحَ", tr: "fataḥa", en: "opened" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "يَدَهُ", tr: "yadahu", en: "his hand" },
+          { ar: "فَطارَ", tr: "fa-ṭāra", en: "so (it) flew" },
+          { ar: "العُصْفورُ", tr: "al-ʿuṣfūru", en: "the bird" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "السَّماءِ", tr: "as-samāʾi", en: "the sky" },
+          { ar: "وَالآنَ", tr: "wa-l-āna", en: "and now" },
+          { ar: "يَرْجِعُ", tr: "yarjiʿu", en: "returns" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "صَباحٍ", tr: "ṣabāḥin", en: "morning" },
+          { ar: "وَيُغَنّي", tr: "wa-yughannī", en: "and sings" },
+          { ar: "عِنْدَ", tr: "ʿinda", en: "at / by" },
+          { ar: "النّافِذَةِ", tr: "an-nāfidhati", en: "the window" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا سَمِعَ سامي في الحَديقَةِ؟",
+        q_en: "What did Sami hear in the garden?",
+        options: [
+          { ar: "صَوْتًا ضَعيفًا", en: "A weak sound" },
+          { ar: "موسيقى", en: "Music" },
+          { ar: "نُباحَ كَلْبٍ", en: "A dog barking" }
+        ],
+        correct: 0,
+        why: "سَمِعَ صَوْتًا ضَعيفًا — a weak little sound."
+      },
+      {
+        q_ar: "لِماذا لا يَسْتَطيعُ العُصْفورُ الطَّيَرانَ؟",
+        q_en: "Why couldn't the bird fly?",
+        options: [
+          { ar: "لِأَنَّهُ صَغيرٌ جِدًّا", en: "Because it was too young" },
+          { ar: "لِأَنَّ جَناحَهُ مَكْسورٌ", en: "Because its wing was broken" },
+          { ar: "لِأَنَّهُ نائِمٌ", en: "Because it was asleep" }
+        ],
+        correct: 1,
+        why: "كانَ جَناحُ العُصْفورِ مَكْسورًا — its wing was broken."
+      },
+      {
+        q_ar: "كَيْفَ حَمَلَ سامي العُصْفورَ؟",
+        q_en: "How did Sami carry the bird?",
+        options: [
+          { ar: "بِسُرْعَةٍ", en: "Quickly" },
+          { ar: "في السَّلَّةِ", en: "In the basket" },
+          { ar: "بِرِفْقٍ", en: "Gently" }
+        ],
+        correct: 2,
+        why: "حَمَلَهُ بِيَدَيْهِ بِرِفْقٍ — gently, with both hands."
+      },
+      {
+        q_ar: "ماذا أَعْطى سامي العُصْفورَ كُلَّ يَوْمٍ؟",
+        q_en: "What did Sami give the bird every day?",
+        options: [
+          { ar: "الخُبْزَ وَالماءَ", en: "Bread and water" },
+          { ar: "التُّفّاحَ", en: "Apples" },
+          { ar: "الحَليبَ", en: "Milk" }
+        ],
+        correct: 0,
+        why: "أَعْطاهُ الخُبْزَ وَالماءَ — bread and water, every day."
+      },
+      {
+        q_ar: "«صارَ قَوِيًّا» — ماذا تَعْني؟",
+        q_en: "\"ṣāra qawiyyan\" — what does it mean?",
+        options: [
+          { ar: "كانَ ضَعيفًا", en: "It was weak" },
+          { ar: "أَصْبَحَ قَوِيًّا", en: "It became strong" },
+          { ar: "بَقِيَ مَريضًا", en: "It stayed sick" }
+        ],
+        correct: 1,
+        why: "صارَ = became. The bird changed from weak to strong."
+      },
+      {
+        q_ar: "مَتى صارَ العُصْفورُ قَوِيًّا؟",
+        q_en: "When did the bird become strong?",
+        options: [
+          { ar: "بَعْدَ يَوْمٍ", en: "After one day" },
+          { ar: "بَعْدَ شَهْرٍ", en: "After a month" },
+          { ar: "بَعْدَ أُسْبوعٍ", en: "After a week" }
+        ],
+        correct: 2,
+        why: "بَعْدَ أُسْبوعٍ — after a week."
+      },
+      {
+        q_ar: "ماذا فَعَلَ العُصْفورُ عِنْدَما فَتَحَ سامي يَدَهُ؟",
+        q_en: "What did the bird do when Sami opened his hand?",
+        options: [
+          { ar: "طارَ إِلى السَّماءِ", en: "It flew to the sky" },
+          { ar: "نامَ في الصُّنْدوقِ", en: "It slept in the box" },
+          { ar: "أَكَلَ الخُبْزَ", en: "It ate the bread" }
+        ],
+        correct: 0,
+        why: "فَطارَ العُصْفورُ إِلى السَّماءِ — it flew up to the sky."
+      },
+      {
+        q_ar: "ماذا يَفْعَلُ العُصْفورُ الآنَ كُلَّ صَباحٍ؟",
+        q_en: "What does the bird do now every morning?",
+        options: [
+          { ar: "يَنامُ في الصُّنْدوقِ", en: "Sleeps in the box" },
+          { ar: "يَرْجِعُ وَيُغَنّي عِنْدَ النّافِذَةِ", en: "Returns and sings at the window" },
+          { ar: "يَأْكُلُ مَعَ الكَلْبِ", en: "Eats with the dog" }
+        ],
+        correct: 1,
+        why: "يَرْجِعُ كُلَّ صَباحٍ وَيُغَنّي — present tense: a daily habit now."
+      },
+      {
+        q_ar: "ما عَكْسُ «ضَعيف»؟",
+        q_en: "What is the opposite of \"ḍaʿīf\" (weak)?",
+        options: [
+          { ar: "قَوِيّ — strong", en: "Strong" },
+          { ar: "صَغير — small", en: "Small" },
+          { ar: "سَريع — fast", en: "Fast" }
+        ],
+        correct: 0,
+        why: "ضَعيف (weak) ↔ قَوِيّ (strong)."
+      },
+      {
+        q_ar: "«بِجَناحَيْهِ» — لِماذا «جَناحَيْـ»؟",
+        q_en: "\"bi-janāḥayhi\" — why the form \"janāḥay-\"?",
+        options: [
+          { ar: "لِأَنَّها مُثَنّى — two wings", en: "Because it's dual — two wings" },
+          { ar: "لِأَنَّها جَمْعٌ", en: "Because it's plural" },
+          { ar: "لِأَنَّهُ اسْمُ عَلَمٍ", en: "Because it's a name" }
+        ],
+        correct: 0,
+        why: "جَناحَيْنِ = two wings (dual form) — birds have exactly two!"
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 6 — A Trip to the Sea ═══════════ */
+  {
+    id: "sea-trip",
+    title_ar: "رِحْلَةٌ إِلى البَحْرِ",
+    title_en: "A Trip to the Sea",
+    level: "Beginner · A1",
+    cover: "assets/img/sea-trip/cover.jpg",
+    minutes: 4,
+    pages: [
+      {
+        img: "assets/img/sea-trip/s1.jpg",
+        audio: "s1",
+        ar: "في الصَّيْفِ، سافَرَتْ لَيْلى مَعَ عائِلَتِها إِلى البَحْرِ. كانَتِ السَّيّارَةُ مَليئَةً بِالطَّعامِ وَالمِظَلَّةِ.",
+        tr: "fī ṣ-ṣayfi, sāfarat laylā maʿa ʿāʾilatihā ilā l-baḥri. kānati s-sayyāratu malīʾatan bi-ṭ-ṭaʿāmi wa-l-miẓallati.",
+        en: "In the summer, Layla traveled with her family to the sea. The car was full of food and the umbrella.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّيْفِ", tr: "aṣ-ṣayfi", en: "the summer" },
+          { ar: "سافَرَتْ", tr: "sāfarat", en: "traveled (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "مَعَ", tr: "maʿa", en: "with" },
+          { ar: "عائِلَتِها", tr: "ʿāʾilatihā", en: "her family" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "البَحْرِ", tr: "al-baḥri", en: "the sea" },
+          { ar: "كانَتِ", tr: "kānati", en: "was" },
+          { ar: "السَّيّارَةُ", tr: "as-sayyāratu", en: "the car" },
+          { ar: "مَليئَةً", tr: "malīʾatan", en: "full" },
+          { ar: "بِالطَّعامِ", tr: "bi-ṭ-ṭaʿāmi", en: "of food" },
+          { ar: "وَالمِظَلَّةِ", tr: "wa-l-miẓallati", en: "and the umbrella" }
+        ]
+      },
+      {
+        img: "assets/img/sea-trip/s2.jpg",
+        audio: "s2",
+        ar: "وَصَلوا إِلى الشّاطِئِ في الصَّباحِ. رَكَضَتْ لَيْلى إِلى الماءِ وَهِيَ تَضْحَكُ.",
+        tr: "waṣalū ilā sh-shāṭiʾi fī ṣ-ṣabāḥi. rakaḍat laylā ilā l-māʾi wa-hiya taḍḥaku.",
+        en: "They arrived at the beach in the morning. Layla ran to the water, laughing.",
+        tense: "Past + حال (while laughing)",
+        words: [
+          { ar: "وَصَلوا", tr: "waṣalū", en: "they arrived" },
+          { ar: "إِلى", tr: "ilā", en: "at / to" },
+          { ar: "الشّاطِئِ", tr: "ash-shāṭiʾi", en: "the beach" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" },
+          { ar: "رَكَضَتْ", tr: "rakaḍat", en: "ran (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "الماءِ", tr: "al-māʾi", en: "the water" },
+          { ar: "وَهِيَ", tr: "wa-hiya", en: "while she" },
+          { ar: "تَضْحَكُ", tr: "taḍḥaku", en: "laughs / laughing" }
+        ]
+      },
+      {
+        img: "assets/img/sea-trip/s3.jpg",
+        audio: "s3",
+        ar: "لَعِبَتْ في الماءِ، وَجَمَعَتْ أَصْدافًا جَميلَةً. رَأَتْ سَرَطانًا صَغيرًا يَمْشي عَلى الرَّمْلِ.",
+        tr: "laʿibat fī l-māʾi, wa-jamaʿat aṣdāfan jamīlatan. raʾat saraṭānan ṣaghīran yamshī ʿalā r-ramli.",
+        en: "She played in the water and collected beautiful seashells. She saw a small crab walking on the sand.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "لَعِبَتْ", tr: "laʿibat", en: "played (she)" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الماءِ", tr: "al-māʾi", en: "the water" },
+          { ar: "وَجَمَعَتْ", tr: "wa-jamaʿat", en: "and collected" },
+          { ar: "أَصْدافًا", tr: "aṣdāfan", en: "seashells" },
+          { ar: "جَميلَةً", tr: "jamīlatan", en: "beautiful" },
+          { ar: "رَأَتْ", tr: "raʾat", en: "saw (she)" },
+          { ar: "سَرَطانًا", tr: "saraṭānan", en: "a crab" },
+          { ar: "صَغيرًا", tr: "ṣaghīran", en: "small" },
+          { ar: "يَمْشي", tr: "yamshī", en: "walking" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "الرَّمْلِ", tr: "ar-ramli", en: "the sand" }
+        ]
+      },
+      {
+        img: "assets/img/sea-trip/s4.jpg",
+        audio: "s4",
+        ar: "في الظُّهْرِ، أَكَلَتِ العائِلَةُ تَحْتَ المِظَلَّةِ. كانَ البِطّيخُ بارِدًا وَلَذيذًا.",
+        tr: "fī ẓ-ẓuhri, akalati l-ʿāʾilatu taḥta l-miẓallati. kāna l-biṭṭīkhu bāridan wa-ladhīdhan.",
+        en: "At noon, the family ate under the umbrella. The watermelon was cold and delicious.",
+        tense: "Simple past — الماضي",
+        words: [
+          { ar: "في", tr: "fī", en: "at" },
+          { ar: "الظُّهْرِ", tr: "aẓ-ẓuhri", en: "noon" },
+          { ar: "أَكَلَتِ", tr: "akalati", en: "ate" },
+          { ar: "العائِلَةُ", tr: "al-ʿāʾilatu", en: "the family" },
+          { ar: "تَحْتَ", tr: "taḥta", en: "under" },
+          { ar: "المِظَلَّةِ", tr: "al-miẓallati", en: "the umbrella" },
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "البِطّيخُ", tr: "al-biṭṭīkhu", en: "the watermelon" },
+          { ar: "بارِدًا", tr: "bāridan", en: "cold" },
+          { ar: "وَلَذيذًا", tr: "wa-ladhīdhan", en: "and delicious" }
+        ]
+      },
+      {
+        img: "assets/img/sea-trip/s5.jpg",
+        audio: "s5",
+        ar: "عِنْدَ الغُروبِ، مَشَوْا عَلى الشّاطِئِ. قالَتْ لَيْلى: هٰذا أَجْمَلُ يَوْمٍ في حَياتي!",
+        tr: "ʿinda l-ghurūbi, mashaw ʿalā sh-shāṭiʾi. qālat laylā: hādhā ajmalu yawmin fī ḥayātī!",
+        en: "At sunset, they walked on the beach. Layla said: This is the most beautiful day of my life!",
+        tense: "Past + superlative أَجْمَلُ",
+        words: [
+          { ar: "عِنْدَ", tr: "ʿinda", en: "at" },
+          { ar: "الغُروبِ", tr: "al-ghurūbi", en: "the sunset" },
+          { ar: "مَشَوْا", tr: "mashaw", en: "they walked" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "الشّاطِئِ", tr: "ash-shāṭiʾi", en: "the beach" },
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "هٰذا", tr: "hādhā", en: "this (is)" },
+          { ar: "أَجْمَلُ", tr: "ajmalu", en: "the most beautiful" },
+          { ar: "يَوْمٍ", tr: "yawmin", en: "day" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "حَياتي", tr: "ḥayātī", en: "my life" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "مَتى سافَرَتْ لَيْلى إِلى البَحْرِ؟",
+        q_en: "When did Layla travel to the sea?",
+        options: [
+          { ar: "في الشِّتاءِ", en: "In the winter" },
+          { ar: "في الصَّيْفِ", en: "In the summer" },
+          { ar: "في الرَّبيعِ", en: "In the spring" }
+        ],
+        correct: 1,
+        why: "في الصَّيْفِ سافَرَتْ — in the summer."
+      },
+      {
+        q_ar: "مَعَ مَنْ سافَرَتْ لَيْلى؟",
+        q_en: "With whom did Layla travel?",
+        options: [
+          { ar: "مَعَ عائِلَتِها", en: "With her family" },
+          { ar: "مَعَ جَدَّتِها فَقَطْ", en: "Only with her grandmother" },
+          { ar: "وَحْدَها", en: "Alone" }
+        ],
+        correct: 0,
+        why: "سافَرَتْ مَعَ عائِلَتِها — with her family."
+      },
+      {
+        q_ar: "بِماذا كانَتِ السَّيّارَةُ مَليئَةً؟",
+        q_en: "What was the car full of?",
+        options: [
+          { ar: "بِالكُتُبِ", en: "Books" },
+          { ar: "بِالأَلْعابِ", en: "Toys" },
+          { ar: "بِالطَّعامِ وَالمِظَلَّةِ", en: "Food and the umbrella" }
+        ],
+        correct: 2,
+        why: "مَليئَةً بِالطَّعامِ وَالمِظَلَّةِ — food and the beach umbrella."
+      },
+      {
+        q_ar: "«وَهِيَ تَضْحَكُ» — ماذا تَصِفُ هٰذِهِ الجُمْلَةُ؟",
+        q_en: "\"wa-hiya taḍḥaku\" — what does this phrase describe?",
+        options: [
+          { ar: "ماذا فَعَلَتْ بَعْدَ الرَّكْضِ", en: "What she did after running" },
+          { ar: "حالَها وَهِيَ تَرْكُضُ — she ran WHILE laughing", en: "Her state while running — laughing" },
+          { ar: "سَبَبَ الرَّكْضِ", en: "Why she ran" }
+        ],
+        correct: 1,
+        why: "وَ + هِيَ + present verb describes the state: she ran *while* laughing."
+      },
+      {
+        q_ar: "ماذا جَمَعَتْ لَيْلى؟",
+        q_en: "What did Layla collect?",
+        options: [
+          { ar: "أَصْدافًا جَميلَةً", en: "Beautiful seashells" },
+          { ar: "حِجارَةً", en: "Stones" },
+          { ar: "سَرَطاناتٍ", en: "Crabs" }
+        ],
+        correct: 0,
+        why: "جَمَعَتْ أَصْدافًا جَميلَةً — she collected beautiful shells."
+      },
+      {
+        q_ar: "ماذا رَأَتْ يَمْشي عَلى الرَّمْلِ؟",
+        q_en: "What did she see walking on the sand?",
+        options: [
+          { ar: "سُلَحْفاةً", en: "A turtle" },
+          { ar: "سَرَطانًا صَغيرًا", en: "A small crab" },
+          { ar: "عُصْفورًا", en: "A bird" }
+        ],
+        correct: 1,
+        why: "رَأَتْ سَرَطانًا صَغيرًا يَمْشي عَلى الرَّمْلِ."
+      },
+      {
+        q_ar: "أَيْنَ أَكَلَتِ العائِلَةُ؟",
+        q_en: "Where did the family eat?",
+        options: [
+          { ar: "في مَطْعَمٍ", en: "In a restaurant" },
+          { ar: "في السَّيّارَةِ", en: "In the car" },
+          { ar: "تَحْتَ المِظَلَّةِ", en: "Under the umbrella" }
+        ],
+        correct: 2,
+        why: "أَكَلَتِ العائِلَةُ تَحْتَ المِظَلَّةِ — under the beach umbrella."
+      },
+      {
+        q_ar: "كَيْفَ كانَ البِطّيخُ؟",
+        q_en: "How was the watermelon?",
+        options: [
+          { ar: "بارِدًا وَلَذيذًا", en: "Cold and delicious" },
+          { ar: "ساخِنًا", en: "Hot" },
+          { ar: "حامِضًا", en: "Sour" }
+        ],
+        correct: 0,
+        why: "كانَ البِطّيخُ بارِدًا وَلَذيذًا — cold and delicious."
+      },
+      {
+        q_ar: "ماذا فَعَلوا عِنْدَ الغُروبِ؟",
+        q_en: "What did they do at sunset?",
+        options: [
+          { ar: "سَبَحوا في البَحْرِ", en: "They swam in the sea" },
+          { ar: "مَشَوْا عَلى الشّاطِئِ", en: "They walked on the beach" },
+          { ar: "رَجَعوا إِلى البَيْتِ", en: "They went straight home" }
+        ],
+        correct: 1,
+        why: "عِنْدَ الغُروبِ مَشَوْا عَلى الشّاطِئِ — a sunset walk."
+      },
+      {
+        q_ar: "«أَجْمَلُ يَوْمٍ» — ماذا تَعْني؟",
+        q_en: "\"ajmalu yawmin\" — what does it mean?",
+        options: [
+          { ar: "يَوْمٌ جَميلٌ — a beautiful day", en: "A beautiful day" },
+          { ar: "أَجْمَلُ يَوْمٍ — THE most beautiful day", en: "The MOST beautiful day" },
+          { ar: "يَوْمٌ طَويلٌ — a long day", en: "A long day" }
+        ],
+        correct: 1,
+        why: "أَفْعَل pattern (أَجْمَل from جَميل) = superlative: the most beautiful."
+      },
+      {
+        q_ar: "ما عَكْسُ «بارِد»؟",
+        q_en: "What is the opposite of \"bārid\" (cold)?",
+        options: [
+          { ar: "ساخِن — hot", en: "Hot" },
+          { ar: "لَذيذ — delicious", en: "Delicious" },
+          { ar: "جافّ — dry", en: "Dry" }
+        ],
+        correct: 0,
+        why: "بارِد (cold) ↔ ساخِن (hot)."
+      },
+      {
+        q_ar: "«مَشَوْا» — مَنِ الَّذي مَشى؟",
+        q_en: "\"mashaw\" — who walked?",
+        options: [
+          { ar: "لَيْلى فَقَطْ", en: "Only Layla" },
+          { ar: "هُمْ جَميعًا — العائِلَةُ", en: "They all — the family" },
+          { ar: "الأَبُ فَقَطْ", en: "Only the father" }
+        ],
+        correct: 1,
+        why: "The ـوْا ending = they (plural). The whole family walked."
+      }
+    ]
   }
 ];
