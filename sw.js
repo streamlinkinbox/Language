@@ -1,7 +1,7 @@
 /* Hikaya service worker
    v2 — network-first for app files (so updates show immediately),
    cache fallback for offline reading. Media stays cache-friendly. */
-const CACHE = "hikaya-v69";
+const CACHE = "hikaya-v70";
 const CORE = [
   "./",
   "./index.html",
