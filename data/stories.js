@@ -4315,5 +4315,289 @@ const STORIES = [
         why: "سَأَحْكي لِأَوْلادي — memories pass down generations, like the fig tree!"
       }
     ]
+  },
+
+  /* ═══════════ STORY 20 — The Power Cut (Set 3) ═══════════ */
+  {
+    id: "power-cut",
+    title_ar: "لَيْلَةُ اِنْقِطاعِ الكَهْرَباءِ",
+    title_en: "The Power Cut",
+    level: "Beginner+ · A2",
+    cover: "assets/img/power-cut/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/power-cut/s1.jpg",
+        audio: "s1",
+        ar: "في لَيْلَةٍ عاصِفَةٍ، اِنْقَطَعَتِ الكَهْرَباءُ عَنِ الحَيِّ كُلِّهِ. أَشْعَلَتِ الأُمُّ الشُّموعَ، وَجَلَسَتِ العائِلَةُ حَوْلَ الطّاوِلَةِ.",
+        tr: "fī laylatin ʿāṣifatin, inqaṭaʿati l-kahrabāʾu ʿani l-ḥayyi kullihi. ashʿalati l-ummu sh-shumūʿa, wa-jalasati l-ʿāʾilatu ḥawla ṭ-ṭāwilati.",
+        en: "On a stormy night, the electricity cut off from the whole neighborhood. The mother lit the candles, and the family sat around the table.",
+        tense: "Past + حَوْلَ (around)",
+        words: [
+          { ar: "في", tr: "fī", en: "on/in" },
+          { ar: "لَيْلَةٍ", tr: "laylatin", en: "a night" },
+          { ar: "عاصِفَةٍ", tr: "ʿāṣifatin", en: "stormy" },
+          { ar: "اِنْقَطَعَتِ", tr: "inqaṭaʿati", en: "was cut off" },
+          { ar: "الكَهْرَباءُ", tr: "al-kahrabāʾu", en: "the electricity" },
+          { ar: "عَنِ", tr: "ʿani", en: "from" },
+          { ar: "الحَيِّ", tr: "al-ḥayyi", en: "the neighborhood" },
+          { ar: "كُلِّهِ", tr: "kullihi", en: "all of it" },
+          { ar: "أَشْعَلَتِ", tr: "ashʿalati", en: "lit (she)" },
+          { ar: "الأُمُّ", tr: "al-ummu", en: "the mother" },
+          { ar: "الشُّموعَ", tr: "ash-shumūʿa", en: "the candles" },
+          { ar: "وَجَلَسَتِ", tr: "wa-jalasati", en: "and sat" },
+          { ar: "العائِلَةُ", tr: "al-ʿāʾilatu", en: "the family" },
+          { ar: "حَوْلَ", tr: "ḥawla", en: "around" },
+          { ar: "الطّاوِلَةِ", tr: "aṭ-ṭāwilati", en: "the table" }
+        ]
+      },
+      {
+        img: "assets/img/power-cut/s2.jpg",
+        audio: "s2",
+        ar: "بِدونِ تِلْفازٍ وَلا هَواتِفَ، بَدَأَ الأَبُ يَحْكي قِصَصًا مُضْحِكَةً عَنْ شَبابِهِ. ضَحِكَ الجَميعُ حَتّى دَمَعَتْ عُيونُهُمْ.",
+        tr: "bidūni tilfāzin wa-lā hawātifa, badaʾa l-abu yaḥkī qiṣaṣan muḍḥikatan ʿan shabābihi. ḍaḥika l-jamīʿu ḥattā damaʿat ʿuyūnuhum.",
+        en: "Without TV or phones, the father began telling funny stories about his youth. Everyone laughed until their eyes watered.",
+        tense: "بِدونِ (without) + بَدَأَ يَفْعَلُ + حَتّى",
+        words: [
+          { ar: "بِدونِ", tr: "bidūni", en: "without" },
+          { ar: "تِلْفازٍ", tr: "tilfāzin", en: "TV" },
+          { ar: "وَلا", tr: "wa-lā", en: "nor" },
+          { ar: "هَواتِفَ", tr: "hawātifa", en: "phones (pl.)" },
+          { ar: "بَدَأَ", tr: "badaʾa", en: "began" },
+          { ar: "الأَبُ", tr: "al-abu", en: "the father" },
+          { ar: "يَحْكي", tr: "yaḥkī", en: "telling" },
+          { ar: "قِصَصًا", tr: "qiṣaṣan", en: "stories" },
+          { ar: "مُضْحِكَةً", tr: "muḍḥikatan", en: "funny" },
+          { ar: "عَنْ", tr: "ʿan", en: "about" },
+          { ar: "شَبابِهِ", tr: "shabābihi", en: "his youth" },
+          { ar: "ضَحِكَ", tr: "ḍaḥika", en: "laughed" },
+          { ar: "الجَميعُ", tr: "al-jamīʿu", en: "everyone" },
+          { ar: "حَتّى", tr: "ḥattā", en: "until" },
+          { ar: "دَمَعَتْ", tr: "damaʿat", en: "watered/teared" },
+          { ar: "عُيونُهُمْ", tr: "ʿuyūnuhum", en: "their eyes" }
+        ]
+      },
+      {
+        img: "assets/img/power-cut/s3.jpg",
+        audio: "s3",
+        ar: "عادَتِ الكَهْرَباءُ بَعْدَ ساعَتَيْنِ، لٰكِنَّ أَحَدًا لَمْ يُشَغِّلِ التِّلْفازَ. قالَ عُمَرُ: هٰذِهِ أَجْمَلُ لَيْلَةٍ، فَلْنُطْفِئِ النّورَ كُلَّ أُسْبوعٍ!",
+        tr: "ʿādati l-kahrabāʾu baʿda sāʿatayni, lākinna aḥadan lam yushaghghili t-tilfāza. qāla ʿumaru: hādhihi ajmalu laylatin, fa-l-nuṭfiʾi n-nūra kulla usbūʿin!",
+        en: "The electricity returned after two hours, but nobody turned on the TV. Omar said: This is the most beautiful night — let's turn off the lights every week!",
+        tense: "ساعَتَيْنِ dual + فَلْـ (let's!)",
+        words: [
+          { ar: "عادَتِ", tr: "ʿādati", en: "returned" },
+          { ar: "الكَهْرَباءُ", tr: "al-kahrabāʾu", en: "the electricity" },
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "ساعَتَيْنِ", tr: "sāʿatayni", en: "two hours" },
+          { ar: "لٰكِنَّ", tr: "lākinna", en: "but" },
+          { ar: "أَحَدًا", tr: "aḥadan", en: "anyone" },
+          { ar: "لَمْ", tr: "lam", en: "did not" },
+          { ar: "يُشَغِّلِ", tr: "yushaghghili", en: "turn on" },
+          { ar: "التِّلْفازَ", tr: "at-tilfāza", en: "the TV" },
+          { ar: "قالَ", tr: "qāla", en: "said" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "هٰذِهِ", tr: "hādhihi", en: "this (f.)" },
+          { ar: "أَجْمَلُ", tr: "ajmalu", en: "most beautiful" },
+          { ar: "لَيْلَةٍ", tr: "laylatin", en: "night" },
+          { ar: "فَلْنُطْفِئِ", tr: "fa-l-nuṭfiʾi", en: "so let's turn off" },
+          { ar: "النّورَ", tr: "an-nūra", en: "the light" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "أُسْبوعٍ", tr: "usbūʿin", en: "week" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا حَدَثَ في اللَّيْلَةِ العاصِفَةِ؟",
+        q_en: "What happened on the stormy night?",
+        options: [
+          { ar: "اِنْقَطَعَتِ الكَهْرَباءُ", en: "The electricity cut off" },
+          { ar: "اِنْكَسَرَتِ النّافِذَةُ", en: "The window broke" },
+          { ar: "ضاعَ الهاتِفُ", en: "The phone got lost" }
+        ],
+        correct: 0,
+        why: "اِنْقَطَعَتِ الكَهْرَباءُ — power cut. A word every South African needs 😄"
+      },
+      {
+        q_ar: "ماذا أَشْعَلَتِ الأُمُّ؟",
+        q_en: "What did the mother light?",
+        options: [
+          { ar: "النّارَ", en: "A fire" },
+          { ar: "الشُّموعَ", en: "The candles" },
+          { ar: "المِصْباحَ", en: "The flashlight" }
+        ],
+        correct: 1,
+        why: "أَشْعَلَتِ الشُّموعَ — شُموع plural of شَمْعَة candle."
+      },
+      {
+        q_ar: "ماذا فَعَلَ الأَبُ بِدونِ تِلْفازٍ؟",
+        q_en: "What did the father do without TV?",
+        options: [
+          { ar: "نامَ مُبَكِّرًا", en: "Slept early" },
+          { ar: "حَكى قِصَصًا مُضْحِكَةً عَنْ شَبابِهِ", en: "Told funny stories about his youth" },
+          { ar: "قَرَأَ كِتابًا", en: "Read a book" }
+        ],
+        correct: 1,
+        why: "بَدَأَ يَحْكي قِصَصًا مُضْحِكَةً — بَدَأَ + present = began doing."
+      },
+      {
+        q_ar: "«ضَحِكوا حَتّى دَمَعَتْ عُيونُهُمْ» — ماذا تَعْني؟",
+        q_en: "\"They laughed until their eyes watered\" — what does حَتّى mean?",
+        options: [
+          { ar: "حَتّى = until / to the point that", en: "Until / to the point that" },
+          { ar: "حَتّى = لِأَنَّ", en: "Because" },
+          { ar: "حَتّى = قَبْلَ", en: "Before" }
+        ],
+        correct: 0,
+        why: "حَتّى = until: laughed UNTIL tears. A tiny word you'll meet everywhere."
+      },
+      {
+        q_ar: "ماذا اِقْتَرَحَ عُمَرُ في النِّهايَةِ؟",
+        q_en: "What did Omar suggest at the end?",
+        options: [
+          { ar: "شِراءَ تِلْفازٍ جَديدٍ", en: "Buying a new TV" },
+          { ar: "أَنْ يُطْفِئوا النّورَ كُلَّ أُسْبوعٍ", en: "Turning off the lights every week" },
+          { ar: "النَّوْمَ مُبَكِّرًا", en: "Sleeping early" }
+        ],
+        correct: 1,
+        why: "فَلْنُطْفِئِ النّورَ — fa-l-nuṭfiʾ = 'so let's turn off!' — the let's-form فَلْـ + نَفْعَل."
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 21 — The School Garden (Set 3) ═══════════ */
+  {
+    id: "school-garden",
+    title_ar: "حَديقَةُ المَدْرَسَةِ",
+    title_en: "The School Garden",
+    level: "Beginner+ · A2",
+    cover: "assets/img/school-garden/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/school-garden/s1.jpg",
+        audio: "s1",
+        ar: "زَرَعَتْ لَيْلى بُذورًا في حَديقَةِ المَدْرَسَةِ. سَقَتْها كُلَّ صَباحٍ، وَانْتَظَرَتْ بِصَبْرٍ.",
+        tr: "zaraʿat laylā budhūran fī ḥadīqati l-madrasati. saqathā kulla ṣabāḥin, wa-ntaẓarat bi-ṣabrin.",
+        en: "Layla planted seeds in the school garden. She watered them every morning, and waited with patience.",
+        tense: "Past + بِصَبْرٍ (with patience)",
+        words: [
+          { ar: "زَرَعَتْ", tr: "zaraʿat", en: "planted (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "بُذورًا", tr: "budhūran", en: "seeds" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "حَديقَةِ", tr: "ḥadīqati", en: "garden (of)" },
+          { ar: "المَدْرَسَةِ", tr: "al-madrasati", en: "the school" },
+          { ar: "سَقَتْها", tr: "saqathā", en: "watered them" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "صَباحٍ", tr: "ṣabāḥin", en: "morning" },
+          { ar: "وَانْتَظَرَتْ", tr: "wa-ntaẓarat", en: "and waited" },
+          { ar: "بِصَبْرٍ", tr: "bi-ṣabrin", en: "with patience" }
+        ]
+      },
+      {
+        img: "assets/img/school-garden/s2.jpg",
+        audio: "s2",
+        ar: "جاءَ الأَصْدِقاءُ لِيُساعِدوها. حَفَروا وَزَرَعوا وَسَقَوْا، وَصارَتِ الحَديقَةُ أَجْمَلَ مَكانٍ في المَدْرَسَةِ.",
+        tr: "jāʾa l-aṣdiqāʾu li-yusāʿidūhā. ḥafarū wa-zaraʿū wa-saqaw, wa-ṣārati l-ḥadīqatu ajmala makānin fī l-madrasati.",
+        en: "The friends came to help her. They dug and planted and watered, and the garden became the most beautiful place in the school.",
+        tense: "لِـ + verb (in order to) + plural past ×3",
+        words: [
+          { ar: "جاءَ", tr: "jāʾa", en: "came" },
+          { ar: "الأَصْدِقاءُ", tr: "al-aṣdiqāʾu", en: "the friends" },
+          { ar: "لِيُساعِدوها", tr: "li-yusāʿidūhā", en: "to help her" },
+          { ar: "حَفَروا", tr: "ḥafarū", en: "they dug" },
+          { ar: "وَزَرَعوا", tr: "wa-zaraʿū", en: "and planted" },
+          { ar: "وَسَقَوْا", tr: "wa-saqaw", en: "and watered" },
+          { ar: "وَصارَتِ", tr: "wa-ṣārati", en: "and became" },
+          { ar: "الحَديقَةُ", tr: "al-ḥadīqatu", en: "the garden" },
+          { ar: "أَجْمَلَ", tr: "ajmala", en: "most beautiful" },
+          { ar: "مَكانٍ", tr: "makānin", en: "place" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَدْرَسَةِ", tr: "al-madrasati", en: "the school" }
+        ]
+      },
+      {
+        img: "assets/img/school-garden/s3.jpg",
+        audio: "s3",
+        ar: "في الصَّيْفِ، أَكَلَ التَّلاميذُ طَماطِمَ وَخِيارًا مِنْ حَديقَتِهِمْ. قالَتِ المُعَلِّمَةُ: مَنْ يَزْرَعْ خَيْرًا، يَحْصُدْ خَيْرًا.",
+        tr: "fī ṣ-ṣayfi, akala t-talāmīdhu ṭamāṭima wa-khiyāran min ḥadīqatihim. qālati l-muʿallimatu: man yazraʿ khayran, yaḥṣud khayran.",
+        en: "In the summer, the students ate tomatoes and cucumber from their garden. The teacher said: Whoever plants good, harvests good.",
+        tense: "Past + مَنْ يَفْعَلْ proverb",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّيْفِ", tr: "aṣ-ṣayfi", en: "the summer" },
+          { ar: "أَكَلَ", tr: "akala", en: "ate" },
+          { ar: "التَّلاميذُ", tr: "at-talāmīdhu", en: "the students" },
+          { ar: "طَماطِمَ", tr: "ṭamāṭima", en: "tomatoes" },
+          { ar: "وَخِيارًا", tr: "wa-khiyāran", en: "and cucumber" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "حَديقَتِهِمْ", tr: "ḥadīqatihim", en: "their garden" },
+          { ar: "قالَتِ", tr: "qālati", en: "said" },
+          { ar: "المُعَلِّمَةُ", tr: "al-muʿallimatu", en: "the teacher" },
+          { ar: "مَنْ", tr: "man", en: "whoever" },
+          { ar: "يَزْرَعْ", tr: "yazraʿ", en: "plants" },
+          { ar: "خَيْرًا", tr: "khayran", en: "good" },
+          { ar: "يَحْصُدْ", tr: "yaḥṣud", en: "harvests" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا زَرَعَتْ لَيْلى؟",
+        q_en: "What did Layla plant?",
+        options: [
+          { ar: "بُذورًا", en: "Seeds" },
+          { ar: "شَجَرَةً", en: "A tree" },
+          { ar: "وَرْدَةً", en: "A rose" }
+        ],
+        correct: 0,
+        why: "زَرَعَتْ بُذورًا — بُذور seeds, plural of بَذْرَة."
+      },
+      {
+        q_ar: "لِماذا جاءَ الأَصْدِقاءُ؟",
+        q_en: "Why did the friends come?",
+        options: [
+          { ar: "لِيَلْعَبوا", en: "To play" },
+          { ar: "لِيُساعِدوها", en: "To help her" },
+          { ar: "لِيَأْكُلوا", en: "To eat" }
+        ],
+        correct: 1,
+        why: "لِـ + verb = in order to: li-yusāʿidūhā = TO help her. Purpose in one letter!"
+      },
+      {
+        q_ar: "ماذا أَكَلَ التَّلاميذُ في الصَّيْفِ؟",
+        q_en: "What did the students eat in the summer?",
+        options: [
+          { ar: "طَماطِمَ وَخِيارًا", en: "Tomatoes and cucumber" },
+          { ar: "تُفّاحًا وَمَوْزًا", en: "Apples and bananas" },
+          { ar: "خُبْزًا وَجُبْنًا", en: "Bread and cheese" }
+        ],
+        correct: 0,
+        why: "From the food drill straight into the story — from THEIR own garden!"
+      },
+      {
+        q_ar: "«مَنْ يَزْرَعْ خَيْرًا يَحْصُدْ خَيْرًا» — ماذا يَعْني؟",
+        q_en: "\"Whoever plants good, harvests good\" — what does it mean?",
+        options: [
+          { ar: "أَعْمالُكَ الطَّيِّبَةُ تَرْجِعُ إِلَيْكَ", en: "Your good deeds come back to you" },
+          { ar: "الزِّراعَةُ صَعْبَةٌ", en: "Farming is hard" },
+          { ar: "الخَيْرُ في الصَّيْفِ فَقَطْ", en: "Good comes only in summer" }
+        ],
+        correct: 0,
+        why: "You reap what you sow — the app's 6th proverb! مَنْ يَفْعَلْ..يَفْعَلْ = whoever-does pattern."
+      },
+      {
+        q_ar: "«التَّلاميذ» — ما مُفْرَدُها؟",
+        q_en: "\"at-talāmīdh\" (students) — what is the singular?",
+        options: [
+          { ar: "تِلْميذ", en: "tilmīdh — one student" },
+          { ar: "مُعَلِّم", en: "muʿallim — teacher" },
+          { ar: "وَلَد", en: "walad — boy" }
+        ],
+        correct: 0,
+        why: "تِلْميذ student → تَلاميذ students, another broken plural for your collection."
+      }
+    ]
   }
 ];
