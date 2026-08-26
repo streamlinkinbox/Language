@@ -1106,5 +1106,81 @@ const GRAMMAR = [
       labels: ["المبتدأ · topic", "الخبر · description", "الزمان · season", "عادةً · usually"],
       explain: "No verb needed! Arabic weather sentences are just topic + description: aṭ-ṭaqsu mumṭir (the weather [is] rainy). Add a season and عادَةً (usually) and you sound local."
     }
+  },
+
+  /* ═══════════ DRILL 18 — Animals ═══════════ */
+  {
+    id: "animals",
+    title_ar: "الحَيَوانات",
+    title_en: "Animals — الحيوانات",
+    img: "assets/img/grammar/animals.jpg",
+    base_en: "Farm and wild animals — find each one in the picture.",
+    hint: "You already know كَلْب dog, قِطَّة cat, عُصْفور bird, قُنْفُذ hedgehog, غُراب crow, عَنْزَة goat and سَرَطان crab from the stories — here are the rest!",
+    forms: [
+      { tag: "Farm · المزرعة", q_en: "The horse. The cow. The sheep. The donkey.",
+        ar: "الحِصانُ. البَقَرَةُ. الخَروفُ. الحِمارُ.",
+        tr: "al-ḥiṣānu. al-baqaratu. al-kharūfu. al-ḥimāru.",
+        note: "بَقَرَة cow gives its name to the Quran's longest sura!",
+        audio: "animals-1" },
+      { tag: "Wild · البرية", q_en: "The lion. The elephant. The monkey. The fox.",
+        ar: "الأَسَدُ. الفيلُ. القِرْدُ. الثَّعْلَبُ.",
+        tr: "al-asadu. al-fīlu. al-qirdu. ath-thaʿlabu.",
+        note: "أَسَد lion — a beloved boys' name too. ثَعْلَب fox = the trickster of Arabic fables.",
+        audio: "animals-2" },
+      { tag: "The camel · الجمل", q_en: "The camel is the ship of the desert.",
+        ar: "الجَمَلُ سَفينَةُ الصَّحْراءِ.",
+        tr: "al-jamalu safīnatu ṣ-ṣaḥrāʾi.",
+        note: "The famous phrase! جَمَل camel, سَفينَة ship, صَحْراء desert (the word 'Sahara' itself!).",
+        audio: "animals-3" },
+      { tag: "In action · جملة", q_en: "The birds sing, the fish swim, and the bees make honey.",
+        ar: "الطُّيورُ تُغَرِّدُ، وَالأَسْماكُ تَسْبَحُ، وَالنَّحْلُ يَصْنَعُ العَسَلَ.",
+        tr: "aṭ-ṭuyūru tugharridu, wa-l-asmāku tasbaḥu, wa-n-naḥlu yaṣnaʿu l-ʿasala.",
+        note: "Plurals: طُيور birds, أَسْماك fish. NON-human plurals take SHE-verbs — a key Arabic rule!",
+        audio: "animals-4" }
+    ],
+    roles: {
+      title: "Non-human plurals act feminine! — قاعدة ذهبية",
+      sentence: ["الطُّيورُ", "تُغَرِّدُ", "الأَوْلادُ", "يَلْعَبونَ"],
+      labels: ["birds (non-human pl.)", "SHE-verb تُغَرِّدُ", "boys (human pl.)", "THEY-verb يَلْعَبونَ"],
+      explain: "Golden rule: non-human plurals (birds, fish, trees, cars) take feminine SINGULAR verbs — aṭ-ṭuyūru tugharridu. Only human plurals get plural verbs. This one rule fixes hundreds of sentences!"
+    }
+  },
+
+  /* ═══════════ DRILL 19 — The house ═══════════ */
+  {
+    id: "house",
+    title_ar: "البَيْت",
+    title_en: "The house — البيت",
+    img: "assets/img/grammar/house.jpg",
+    base_en: "Rooms of the house — walk through the cutaway.",
+    hint: "Room names are built with إضافة (of-phrases): غُرْفَةُ النَّوْمِ = room-of-sleep. Learn the pattern, build any room!",
+    forms: [
+      { tag: "The rooms · الغرف", q_en: "The bedroom. The living room. The kitchen. The bathroom.",
+        ar: "غُرْفَةُ النَّوْمِ. غُرْفَةُ الجُلوسِ. المَطْبَخُ. الحَمّامُ.",
+        tr: "ghurfatu n-nawmi. ghurfatu l-julūsi. al-maṭbakhu. al-ḥammāmu.",
+        note: "Room-of-sleeping, room-of-sitting — from verbs you know: نامَ and جَلَسَ!",
+        audio: "house-1" },
+      { tag: "Parts · الأجزاء", q_en: "The door. The window. The ceiling. The wall. The stairs.",
+        ar: "البابُ. النّافِذَةُ. السَّقْفُ. الجِدارُ. الدَّرَجُ.",
+        tr: "al-bābu. an-nāfidhatu. as-saqfu. al-jidāru. ad-daraju.",
+        note: "باب and نافِذَة are old friends from the stories. دَرَج = stairs.",
+        audio: "house-2" },
+      { tag: "Furniture · الأثاث", q_en: "The table and the chair are in the dining room.",
+        ar: "الطّاوِلَةُ وَالكُرْسِيُّ في غُرْفَةِ الطَّعامِ.",
+        tr: "aṭ-ṭāwilatu wa-l-kursiyyu fī ghurfati ṭ-ṭaʿāmi.",
+        note: "غُرْفَة الطَّعام = room-of-food = dining room. The إضافة pattern again!",
+        audio: "house-3" },
+      { tag: "Where are you? · أين أنت", q_en: "Where are you? I am in the living room in front of the TV.",
+        ar: "أَيْنَ أَنْتَ؟ أَنا في غُرْفَةِ الجُلوسِ أَمامَ التِّلْفازِ.",
+        tr: "ayna anta? anā fī ghurfati l-julūsi amāma t-tilfāzi.",
+        note: "أَمامَ = in front of (new position word! joins فَوْقَ، تَحْتَ، بِجانِبِ). تِلْفاز = TV.",
+        audio: "house-4" }
+    ],
+    roles: {
+      title: "Building rooms with إضافة — غرفة + اسم",
+      sentence: ["غُرْفَةُ", "النَّوْمِ", "غُرْفَةُ", "الطَّعامِ"],
+      labels: ["room-of (u-ending)", "sleep (i-ending)", "room-of", "food"],
+      explain: "The إضافة (of-construction): first noun takes -u and NO ال, second takes ال and -i: ghurfatu n-nawmi. Same pattern as صَوْتُ الكَلْبِ (the dog's voice) and كُرَةُ القَدَمِ (football)!"
+    }
   }
 ];
