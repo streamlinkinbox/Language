@@ -637,7 +637,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v30";
+  const APP_VERSION = "v31";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
