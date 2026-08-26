@@ -1539,5 +1539,86 @@ const GRAMMAR = [
       labels: ["١ · greet", "٢ · ask how", "٣ · ask name", "٤ · say bye"],
       explain: "The four-move opening every conversation uses: greet → how are you → names → goodbye. String them together and you've just SPOKEN Arabic with a real person. That was the goal all along!"
     }
+  },
+
+  /* ═══════════ DRILL 29 — Pronouns ═══════════ */
+  {
+    id: "pronouns",
+    title_ar: "الضَّمائِر",
+    title_en: "Pronouns — الضمائر",
+    img: "assets/img/grammar/pronouns.jpg",
+    base_en: "I, you, he, she, we, they — standalone and attached.",
+    hint: "Arabic pronouns come in TWO forms: standalone (أَنا، هُوَ...) and attached endings (ـي، ـهُ...). You've used both all along — now see the full system.",
+    forms: [
+      { tag: "Singular · ١-٥", q_en: "Diagram 1-5: I. You (m). You (f). He. She.",
+        ar: "أَنا. أَنْتَ. أَنْتِ. هُوَ. هِيَ.",
+        tr: "anā · anta · anti · huwa · hiya",
+        note: "anta (m) vs anti (f) — one vowel changes who you're talking to! Get this pair right and people notice.",
+        audio: "pronouns-1" },
+      { tag: "Plural & dual · ٦-٧", q_en: "We. You (pl). They. They-two.",
+        ar: "نَحْنُ. أَنْتُمْ. هُمْ. هُما.",
+        tr: "naḥnu · antum · hum · humā",
+        note: "هُما they-two — the dual pronoun from the night-train story (تَنْتَظِرُهُما!).",
+        audio: "pronouns-2" },
+      { tag: "My, your, his… · الملكية", q_en: "My book. Your book. His book. Her book. Our book. Their book.",
+        ar: "كِتابي. كِتابُكَ. كِتابُهُ. كِتابُها. كِتابُنا. كِتابُهُمْ.",
+        tr: "kitābī · kitābuka · kitābuhu · kitābuhā · kitābunā · kitābuhum",
+        note: "The attached set: ـي my, ـكَ your, ـهُ his, ـها her, ـنا our, ـهُمْ their. One noun, six owners!",
+        audio: "pronouns-3" },
+      { tag: "No 'is' needed · جمل", q_en: "He is a teacher, she is a doctor, and we are friends.",
+        ar: "هُوَ مُعَلِّمٌ، وَهِيَ طَبيبَةٌ، وَنَحْنُ أَصْدِقاءُ.",
+        tr: "huwa muʿallimun, wa-hiya ṭabībatun, wa-naḥnu aṣdiqāʾu.",
+        note: "Pronoun + noun = complete sentence. No 'is'! huwa muʿallim = he [is a] teacher.",
+        audio: "pronouns-4" },
+      { tag: "On verbs · مع الأفعال", q_en: "I saw him, I asked her, and I gave you the book.",
+        ar: "رَأَيْتُهُ، وَسَأَلْتُها، وَأَعْطَيْتُكَ الكِتابَ.",
+        tr: "raʾaytuhu · saʾaltuhā · aʿṭaytuka l-kitāba",
+        note: "Same endings glue onto VERBS as objects: saw-him, asked-her, gave-you. Three stories' worth of grammar in one line!",
+        audio: "pronouns-5" }
+    ],
+    roles: {
+      title: "One ending, three jobs — ـها",
+      sentence: ["كِتابُها", "رَأَيْتُها", "مَعَها", "لِأَنَّها"],
+      labels: ["on a noun · her book", "on a verb · saw her", "on a preposition · with her", "on lianna · because she"],
+      explain: "The attached pronouns work EVERYWHERE: nouns (her book), verbs (saw her), prepositions (with her), and connectors (because she). Learn 8 endings, unlock the whole language!"
+    }
+  },
+
+  /* ═══════════ DRILL 30 — Sentence connectors ═══════════ */
+  {
+    id: "connectors",
+    title_ar: "أَدَواتُ الرَّبْط",
+    title_en: "Connectors — الروابط",
+    img: "assets/img/grammar/connectors.jpg",
+    base_en: "And, so, then, or, but, because, until, if — the words that join ideas.",
+    hint: "These little words are the glue of every story you've read. Master 8 connectors and your sentences turn into paragraphs!",
+    forms: [
+      { tag: "Sequence · ١", q_en: "And. So/then (immediate). Then (later). Or.",
+        ar: "وَ. فَـ. ثُمَّ. أَوْ.",
+        tr: "wa · fa- · thumma · aw",
+        note: "وَ joins, فَـ means 'so/right after' (بَحَثَ فَلَمْ يَجِدْ!), ثُمَّ means 'then, later' (ثُمَّ اِشْتَرى خُبْزًا). أَوْ = or.",
+        audio: "connectors-1" },
+      { tag: "Logic · ٢", q_en: "But. Because. Until. If.",
+        ar: "لٰكِنَّ. لِأَنَّ. حَتّى. إِذا.",
+        tr: "lākinna · li-anna · ḥattā · idhā",
+        note: "All four appeared in your stories: لٰكِنَّ النُّقودَ اِنْتَهَتْ، لِأَنَّها لا تَسْتَطيعُ، ضَحِكوا حَتّى، and now إِذا = if!",
+        audio: "connectors-2" },
+      { tag: "A chained story · ٣", q_en: "He studied hard, so he passed the exam, then he celebrated with his friends.",
+        ar: "دَرَسَ بِجِدٍّ، فَنَجَحَ في الاِمْتِحانِ، ثُمَّ اِحْتَفَلَ مَعَ أَصْدِقائِهِ.",
+        tr: "darasa bi-jiddin, fa-najaḥa fī l-imtiḥāni, thumma ḥtafala maʿa aṣdiqāʾihi.",
+        note: "Three events, two connectors: fa- (immediate result) then thumma (afterwards). New verbs: دَرَسَ studied, نَجَحَ passed, اِحْتَفَلَ celebrated!",
+        audio: "connectors-3" },
+      { tag: "The if-sentence · ٤", q_en: "If you plant today, you harvest tomorrow.",
+        ar: "إِذا زَرَعْتَ اليَوْمَ، حَصَدْتَ غَدًا.",
+        tr: "idhā zaraʿta l-yawma, ḥaṣadta ghadan.",
+        note: "إِذا + past, past: Arabic conditionals use PAST tense in both halves even for future meaning — a famous quirk!",
+        audio: "connectors-4" }
+    ],
+    roles: {
+      title: "Build a paragraph — من جمل إلى فقرة",
+      sentence: ["ذَهَبَ إِلى السّوقِ", "وَاشْتَرى خُبْزًا", "لٰكِنَّهُ نَسِيَ الحَليبَ", "فَرَجَعَ مَرَّةً أُخْرى"],
+      labels: ["جملة ١ · event", "وَ · addition", "لٰكِنَّ · contrast", "فَـ · consequence"],
+      explain: "Watch four sentences become one flowing paragraph: went to the market AND bought bread BUT forgot the milk SO went back again. That's how the stories you've read are built — and now you can build them too. 🎓"
+    }
   }
 ];
