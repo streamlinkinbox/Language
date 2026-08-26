@@ -1263,5 +1263,81 @@ const GRAMMAR = [
       labels: ["أريد · I want", "الطعام · food (-an)", "بـ · with", "please"],
       explain: "The restaurant formula: urīdu (I want) + food + bi- (with) + min faḍlik (please): urīdu urzan bi-d-dajāj — I'd like rice with chicken. Swap ingredients freely!"
     }
+  },
+
+  /* ═══════════ DRILL 22 — Transport ═══════════ */
+  {
+    id: "transport",
+    title_ar: "المُواصَلات",
+    title_en: "Transport — المواصلات",
+    img: "assets/img/grammar/transport.jpg",
+    base_en: "Eight vehicles — match the numbered chart, then compare speeds.",
+    hint: "طائِرَة airplane is literally 'flying thing (f.)' — the same word Layla used for her paper KITE (طائرة ورقية = paper plane)!",
+    forms: [
+      { tag: "Chart ١-٤", q_en: "1-4: The car. The bus. The train. The bicycle.",
+        ar: "السَّيّارَةُ. الحافِلَةُ. القِطارُ. الدَّرّاجَةُ.",
+        tr: "1 as-sayyāratu · 2 al-ḥāfilatu · 3 al-qiṭāru · 4 ad-darrājatu",
+        note: "سَيّارَة from سارَ (to travel) — the فَعّال intensity pattern on wheels!",
+        audio: "transport-1" },
+      { tag: "Chart ٥-٨", q_en: "5-8: The airplane. The ship. The boat. The metro.",
+        ar: "الطّائِرَةُ. السَّفينَةُ. القارِبُ. المِتْرو.",
+        tr: "5 aṭ-ṭāʾiratu · 6 as-safīnatu · 7 al-qāribu · 8 al-mitrū",
+        note: "سَفينَة ship — remember الجَمَلُ سَفينَةُ الصَّحْراءِ! مترو is a friendly loanword.",
+        audio: "transport-2" },
+      { tag: "Riding · أركب", q_en: "I ride the bus to work every day.",
+        ar: "أَرْكَبُ الحافِلَةَ إِلى العَمَلِ كُلَّ يَوْمٍ.",
+        tr: "arkabu l-ḥāfilata ilā l-ʿamali kulla yawmin.",
+        note: "رَكِبَ/يَرْكَبُ to ride — works for bus, horse, bicycle, camel. العَمَل = work (from عَمِلَ!).",
+        audio: "transport-3" },
+      { tag: "Comparing · أسرع من", q_en: "The train is faster than the bus, and the plane is faster than the train.",
+        ar: "القِطارُ أَسْرَعُ مِنَ الحافِلَةِ، وَالطّائِرَةُ أَسْرَعُ مِنَ القِطارِ.",
+        tr: "al-qiṭāru asraʿu mina l-ḥāfilati, wa-ṭ-ṭāʾiratu asraʿu mina l-qiṭāri.",
+        note: "أَسْرَعُ مِنْ = faster than — the أَفْعَل comparison + مِنْ. Same pattern as أَجْمَل يَوْم!",
+        audio: "transport-4" }
+    ],
+    roles: {
+      title: "Comparing things — أفعل من",
+      sentence: ["القِطارُ", "أَسْرَعُ", "مِنَ", "الحافِلَةِ"],
+      labels: ["الموضوع · topic", "أفعل · comparative", "من · than", "المقارن به · compared-to"],
+      explain: "The comparison machine: [X] + af'al + min + [Y]. asraʿ faster, akbar bigger, ajmal more beautiful, aḥsan better — all from adjectives you know: سريع، كبير، جميل، حسن."
+    }
+  },
+
+  /* ═══════════ DRILL 23 — Time ═══════════ */
+  {
+    id: "time",
+    title_ar: "الوَقْت",
+    title_en: "Time — الوقت",
+    img: "assets/img/grammar/time.jpg",
+    base_en: "Telling the time, days and time words.",
+    hint: "Clock hours use ORDINAL numbers (the third hour = 3 o'clock). The week starts Sunday: الأحد = 'the first'!",
+    forms: [
+      { tag: "What time? · كم الساعة", q_en: "What time is it? It is three o'clock.",
+        ar: "كَمِ السّاعَةُ؟ السّاعَةُ الثّالِثَةُ.",
+        tr: "kami s-sāʿatu? as-sāʿatu th-thālithatu.",
+        note: "Literally 'the hour is the third'. ساعَة = hour/clock/watch — you know it from بَعْدَ ساعَةٍ!",
+        audio: "time-1" },
+      { tag: "Half past · والنصف", q_en: "It is half past five.",
+        ar: "السّاعَةُ الخامِسَةُ وَالنِّصْفُ.",
+        tr: "as-sāʿatu l-khāmisatu wa-n-niṣfu.",
+        note: "وَالنِّصْف = and-the-half. Remember نِصْف from Omar's sandwich! Also: وَالرُّبْع quarter past.",
+        audio: "time-2" },
+      { tag: "Time words · ظروف", q_en: "Today. Tomorrow. Yesterday. Now. Later.",
+        ar: "اليَوْمَ. غَدًا. أَمْسِ. الآنَ. لاحِقًا.",
+        tr: "al-yawma · ghadan · amsi · al-āna · lāḥiqan",
+        note: "You know four already from the stories — أَمْسِ (yesterday) and لاحِقًا (later) complete the set.",
+        audio: "time-3" },
+      { tag: "Days · أيام الأسبوع", q_en: "Friday is the day off, and we meet on Saturday.",
+        ar: "يَوْمُ الجُمُعَةِ عُطْلَةٌ، وَنَلْتَقي يَوْمَ السَّبْتِ.",
+        tr: "yawmu l-jumuʿati ʿuṭlatun, wa-naltaqī yawma s-sabti.",
+        note: "الجُمُعَة Friday (gathering day), السَّبْت Saturday. عُطْلَة = holiday/day off. نَلْتَقي = we meet (اِلْتَقى — the goats!).",
+        audio: "time-4" }
+    ],
+    roles: {
+      title: "The appointment sentence — موعد",
+      sentence: ["نَلْتَقي", "يَوْمَ السَّبْتِ", "السّاعَةَ الخامِسَةَ", "أَمامَ المَقْهى"],
+      labels: ["الفعل · we meet", "اليوم · the day", "الساعة · the hour", "المكان · the place"],
+      explain: "Making plans: verb + day + hour + place. naltaqī yawma s-sabti s-sāʿata l-khāmisa amāma l-maqhā — we meet Saturday at five in front of the café. Real life unlocked!"
+    }
   }
 ];
