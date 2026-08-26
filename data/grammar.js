@@ -1620,5 +1620,91 @@ const GRAMMAR = [
       labels: ["جملة ١ · event", "وَ · addition", "لٰكِنَّ · contrast", "فَـ · consequence"],
       explain: "Watch four sentences become one flowing paragraph: went to the market AND bought bread BUT forgot the milk SO went back again. That's how the stories you've read are built — and now you can build them too. 🎓"
     }
+  },
+
+  /* ═══════════ DRILL 31 — Demonstratives ═══════════ */
+  {
+    id: "demo",
+    title_ar: "أَسْماءُ الإِشارَة",
+    title_en: "This & that — الإشارة",
+    img: "assets/img/grammar/demo.jpg",
+    base_en: "This, that, these, those — pointing at near and far.",
+    hint: "The picture shows the rule: NEAR things (sharp, warm) take هٰذا/هٰذِهِ; FAR things (hazy, cool) take ذٰلِكَ/تِلْكَ.",
+    forms: [
+      { tag: "Near · هذا وهذه", q_en: "This is a book (m), and this is a tree (f).",
+        ar: "هٰذا كِتابٌ، وَهٰذِهِ شَجَرَةٌ.",
+        tr: "hādhā kitābun, wa-hādhihi shajaratun.",
+        note: "hādhā for masculine, hādhihi for feminine. You've read both a hundred times!",
+        audio: "demo-1" },
+      { tag: "Far · ذلك وتلك", q_en: "That is a faraway mountain (m), and that is a ship in the sea (f).",
+        ar: "ذٰلِكَ جَبَلٌ بَعيدٌ، وَتِلْكَ سَفينَةٌ في البَحْرِ.",
+        tr: "dhālika jabalun baʿīdun, wa-tilka safīnatun fī l-baḥri.",
+        note: "dhālika (m) / tilka (f) for FAR things — remember مِنْ ذٰلِكَ اليَوْمِ (from that day)?",
+        audio: "demo-2" },
+      { tag: "People · هؤلاء وأولئك", q_en: "These are my friends, and those are our neighbors.",
+        ar: "هٰؤُلاءِ أَصْدِقائي، وَأولٰئِكَ جيرانُنا.",
+        tr: "hāʾulāʾi aṣdiqāʾī, wa-ulāʾika jīrānunā.",
+        note: "Plural pointing (people): hāʾulāʾi these / ulāʾika those. One form for both genders!",
+        audio: "demo-3" },
+      { tag: "With ال · هذا الكتاب", q_en: "THIS book is new, but THAT book is old.",
+        ar: "هٰذا الكِتابُ جَديدٌ، لٰكِنَّ ذٰلِكَ الكِتابَ قَديمٌ.",
+        tr: "hādhā l-kitābu jadīdun, lākinna dhālika l-kitāba qadīmun.",
+        note: "KEY CONTRAST: hādhā kitāb = 'this is a book' but hādhā AL-kitāb = 'THIS book...'. The ال changes everything!",
+        audio: "demo-4" },
+      { tag: "Shopping · في السوق", q_en: "How much is this one? I want that one, please.",
+        ar: "كَمْ ثَمَنُ هٰذِهِ؟ أُريدُ تِلْكَ، مِنْ فَضْلِكَ.",
+        tr: "kam thamanu hādhihi? urīdu tilka, min faḍlika.",
+        note: "Point-and-buy Arabic! ثَمَن = price. Works in any souk on earth — no other words needed.",
+        audio: "demo-5" }
+    ],
+    roles: {
+      title: "The pointing system — قريب وبعيد",
+      sentence: ["هٰذا / هٰذِهِ", "ذٰلِكَ / تِلْكَ", "هٰؤُلاءِ", "أولٰئِكَ"],
+      labels: ["near · m/f", "far · m/f", "these · people", "those · people"],
+      explain: "Four boxes cover all pointing: near-m/near-f, far-m/far-f, plus the people plurals. Match gender with the noun, distance with reality — done!"
+    }
+  },
+
+  /* ═══════════ DRILL 32 — Relative clauses ═══════════ */
+  {
+    id: "relative",
+    title_ar: "الأَسْماءُ المَوْصولَة",
+    title_en: "Who & which — الموصول",
+    img: "assets/img/grammar/relative.jpg",
+    base_en: "The boy WHO plays, the girl WHO reads — describing with clauses.",
+    hint: "The golden-glow figures in the picture are 'the ones who...' — that glow is what الَّذي/الَّتي adds to a noun!",
+    forms: [
+      { tag: "He who · الذي", q_en: "The boy who is playing is my brother.",
+        ar: "الوَلَدُ الَّذي يَلْعَبُ هُوَ أَخي.",
+        tr: "al-waladu lladhī yalʿabu huwa akhī.",
+        note: "alladhī = who/that (masculine). You met it with the singing candy seller — الَّذي كانَ يُغَنّي!",
+        audio: "rel-1" },
+      { tag: "She who · التي", q_en: "The girl who is reading is my friend.",
+        ar: "البِنْتُ الَّتي تَقْرَأُ هِيَ صَديقَتي.",
+        tr: "al-bintu llatī taqraʾu hiya ṣadīqatī.",
+        note: "allatī = feminine 'who'. New verb: قَرَأَ / يَقْرَأُ to read — THE verb of this whole app!",
+        audio: "rel-2" },
+      { tag: "They who · الذين", q_en: "The friends who helped me — I will never forget them.",
+        ar: "الأَصْدِقاءُ الَّذينَ ساعَدوني لَنْ أَنْساهُمْ.",
+        tr: "al-aṣdiqāʾu lladhīna sāʿadūnī lan ansāhum.",
+        note: "alladhīna = plural 'who'. Note لَنْ أَنْسى — I will never forget (نَسِيَ to forget).",
+        audio: "rel-3" },
+      { tag: "Which + in it · فيه", q_en: "This is the house in which I was born.",
+        ar: "هٰذا هُوَ البَيْتُ الَّذي وُلِدْتُ فيهِ.",
+        tr: "hādhā huwa l-baytu lladhī wulidtu fīhi.",
+        note: "Arabic says 'the house which I-was-born IN-IT' — the فيهِ echoes back. وُلِدْتُ = I was born (passive!).",
+        audio: "rel-4" },
+      { tag: "Your sentence · جملتك", q_en: "I love stories that end with a happy ending.",
+        ar: "أُحِبُّ القِصَصَ الَّتي تَنْتَهي نِهايَةً سَعيدَةً.",
+        tr: "uḥibbu l-qiṣaṣa llatī tantahī nihāyatan saʿīdatan.",
+        note: "Non-human plural قِصَص takes الَّتي (feminine singular) — the golden rule from the animals drill striking again!",
+        audio: "rel-5" }
+    ],
+    roles: {
+      title: "Building a relative clause — الموصول",
+      sentence: ["الوَلَدُ", "الَّذي", "يَلْعَبُ بِالكُرَةِ", "هُوَ أَخي"],
+      labels: ["الاسم · the noun", "الموصول · who (matches!)", "الصلة · the clause", "الخبر · the point"],
+      explain: "Formula: noun + alladhī/allatī (matching gender) + clause + the point. It's how you upgrade from 'the boy is my brother' to 'the boy WHO PLAYS FOOTBALL is my brother.' Precision unlocked. 🎓"
+    }
   }
 ];
