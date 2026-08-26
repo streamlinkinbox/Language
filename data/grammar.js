@@ -1463,5 +1463,81 @@ const GRAMMAR = [
       labels: ["الجهاز · device", "doesn't work", "الجهاز ٢ · device", "مكسور · broken"],
       explain: "The repair-shop sentence: [device] + lā yaʿmalu (doesn't work) or maksūr (broken — the bird's wing word!). al-hātifu lā yaʿmalu — my phone doesn't work. Sadly useful."
     }
+  },
+
+  /* ═══════════ DRILL 27 — Feelings ═══════════ */
+  {
+    id: "feelings",
+    title_ar: "المَشاعِر",
+    title_en: "Feelings — المشاعر",
+    img: "assets/img/grammar/feelings.jpg",
+    base_en: "Eight emotions — match the numbered faces, then say how YOU feel.",
+    hint: "You've met سَعيد، حَزين، خائِف، غاضِب scattered through the stories — now the full emotional vocabulary in one place.",
+    forms: [
+      { tag: "Chart ١-٤", q_en: "1-4: Happy. Sad. Angry. Scared.",
+        ar: "سَعيدٌ. حَزينٌ. غاضِبٌ. خائِفٌ.",
+        tr: "1 saʿīdun · 2 ḥazīnun · 3 ghāḍibun · 4 khāʾifun",
+        note: "The big four! Feminine adds ة: سَعيدَة، حَزينَة. Remember the angry-hungry goats: غاضِبَتانِ!",
+        audio: "feelings-1" },
+      { tag: "Chart ٥-٨", q_en: "5-8: Tired. Excited. Shy. Proud.",
+        ar: "مُتْعَبٌ. مُتَحَمِّسٌ. خَجولٌ. فَخورٌ.",
+        tr: "5 mutʿabun · 6 mutaḥammisun · 7 khajūlun · 8 fakhūrun",
+        note: "مُتَحَمِّس excited — from حَماس enthusiasm. فَخور proud — like the falcon's father!",
+        audio: "feelings-2" },
+      { tag: "I feel… · أشعر بـ", q_en: "I feel happiness today. How do YOU feel?",
+        ar: "أَشْعُرُ بِالسَّعادَةِ اليَوْمَ. كَيْفَ تَشْعُرُ أَنْتَ؟",
+        tr: "ashʿuru bi-s-saʿādati l-yawma. kayfa tashʿuru anta?",
+        note: "شَعَرَ بِـ = to feel: ashʿuru bi- + noun (السَّعادَة happiness, الحُزْن sadness, التَّعَب tiredness).",
+        audio: "feelings-3" },
+      { tag: "Comforting · مواساة", q_en: "Don't be sad, everything will be fine.",
+        ar: "لا تَحْزَنْ، كُلُّ شَيْءٍ سَيَكونُ بِخَيْرٍ.",
+        tr: "lā taḥzan, kullu shayʾin sa-yakūnu bi-khayrin.",
+        note: "لا تَحْزَنْ — the negative command again (like لا تَخَفْ!). سَيَكونُ = will be — the future of كان!",
+        audio: "feelings-4" }
+    ],
+    roles: {
+      title: "Why do you feel...? — لماذا",
+      sentence: ["أَنا سَعيدٌ", "لِأَنَّني", "وَجَدْتُ", "صَديقًا جَديدًا"],
+      labels: ["الشعور · the feeling", "لأنني · because I", "الفعل · the reason verb", "السبب · the cause"],
+      explain: "Feeling + reason: anā saʿīd li-annanī... (I'm happy because I...). لِأَنَّ + ني = because-I. Omar's happiest line, now as a template for YOUR feelings!"
+    }
+  },
+
+  /* ═══════════ DRILL 28 — Greetings & introductions ═══════════ */
+  {
+    id: "greetings",
+    title_ar: "التَّحِيّات",
+    title_en: "Greetings — التحيات",
+    img: "assets/img/grammar/greetings.jpg",
+    base_en: "Hello, goodbye, and meeting people — the social toolkit.",
+    hint: "These are the first words you'll actually SPEAK to an Arabic speaker. Practice them out loud until they're automatic!",
+    forms: [
+      { tag: "Times of day · ١", q_en: "Good morning. Good evening. Good night.",
+        ar: "صَباحُ الخَيْرِ. مَساءُ الخَيْرِ. تُصْبِحُ عَلى خَيْرٍ.",
+        tr: "ṣabāḥu l-khayri · masāʾu l-khayri · tuṣbiḥu ʿalā khayrin",
+        note: "Morning-of-goodness! Reply: صَباحُ النّورِ (morning of light). The bedtime one literally: 'may you wake upon goodness'.",
+        audio: "greetings-1" },
+      { tag: "The greeting · السلام", q_en: "Peace be upon you. — And upon you be peace.",
+        ar: "السَّلامُ عَلَيْكُمْ. وَعَلَيْكُمُ السَّلامُ.",
+        tr: "as-salāmu ʿalaykum. wa-ʿalaykumu s-salām.",
+        note: "THE universal Arabic greeting, any time, anywhere. The reply just mirrors it with وَ.",
+        audio: "greetings-2" },
+      { tag: "How are you? · كيف حالك", q_en: "How are you? I'm fine, praise God. And you?",
+        ar: "كَيْفَ حالُكَ؟ أَنا بِخَيْرٍ، الحَمْدُ لِلّٰهِ. وَأَنْتَ؟",
+        tr: "kayfa ḥāluka? anā bi-khayrin, al-ḥamdu lillāh. wa-anta?",
+        note: "To a woman: كَيْفَ حالُكِ (ḥāluki). The reply الحَمْدُ لِلّٰه works for almost everything in life!",
+        audio: "greetings-3" },
+      { tag: "Introductions · التعارف", q_en: "What's your name? My name is Ahmad, honored to meet you. See you later!",
+        ar: "ما اسْمُكَ؟ اِسْمي أَحْمَد، تَشَرَّفْنا. إِلى اللِّقاءِ!",
+        tr: "mā smuka? ismī aḥmad, tasharrafnā. ilā l-liqāʾi!",
+        note: "اِسْمي = my name (there's that ي again!). تَشَرَّفْنا = 'we are honored'. إِلى اللِّقاء = until the meeting = see you!",
+        audio: "greetings-4" }
+    ],
+    roles: {
+      title: "Your first conversation — أول حوار",
+      sentence: ["السَّلامُ عَلَيْكُمْ", "كَيْفَ حالُكَ؟", "ما اسْمُكَ؟", "إِلى اللِّقاءِ"],
+      labels: ["١ · greet", "٢ · ask how", "٣ · ask name", "٤ · say bye"],
+      explain: "The four-move opening every conversation uses: greet → how are you → names → goodbye. String them together and you've just SPOKEN Arabic with a real person. That was the goal all along!"
+    }
   }
 ];
