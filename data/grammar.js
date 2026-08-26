@@ -1187,5 +1187,81 @@ const GRAMMAR = [
       labels: ["room-of (u-ending)", "sleep (i-ending)", "room-of", "food"],
       explain: "The إضافة (of-construction): first noun takes -u and NO ال, second takes ال and -i: ghurfatu n-nawmi. Same pattern as صَوْتُ الكَلْبِ (the dog's voice) and كُرَةُ القَدَمِ (football)!"
     }
+  },
+
+  /* ═══════════ DRILL 20 — Professions ═══════════ */
+  {
+    id: "jobs",
+    title_ar: "المِهَن",
+    title_en: "Professions — المهن",
+    img: "assets/img/grammar/jobs.jpg",
+    base_en: "Eight professions — match the numbered chart.",
+    hint: "Spot the فَعّال pattern for craft jobs: طَبّاخ cook, فَلّاح farmer, نَجّار carpenter, خَبّاز baker — doubling the middle letter = 'does it for a living'!",
+    forms: [
+      { tag: "Chart ١-٤", q_en: "1-4: The doctor. The teacher. The engineer. The police officer.",
+        ar: "الطَّبيبُ. المُعَلِّمُ. المُهَنْدِسُ. الشُّرْطِيُّ.",
+        tr: "1 aṭ-ṭabību · 2 al-muʿallimu · 3 al-muhandisu · 4 ash-shurṭiyyu",
+        note: "You know المُعَلِّمَة (Omar's teacher) — this is the masculine. Feminines: طَبيبَة، مُهَنْدِسَة.",
+        audio: "jobs-1" },
+      { tag: "Chart ٥-٨", q_en: "5-8: The cook. The farmer. The carpenter. The baker.",
+        ar: "الطَّبّاخُ. الفَلّاحُ. النَّجّارُ. الخَبّازُ.",
+        tr: "5 aṭ-ṭabbākhu · 6 al-fallāḥu · 7 an-najjāru · 8 al-khabbāzu",
+        note: "All فَعّال pattern! From طَبَخَ cooked, خُبْز bread (remember الخَبّازَة in the market story!).",
+        audio: "jobs-2" },
+      { tag: "What do you do? · ماذا تعمل", q_en: "What do you do? I am an engineer, and my wife is a doctor.",
+        ar: "ماذا تَعْمَلُ؟ أَنا مُهَنْدِسٌ، وَزَوْجَتي طَبيبَةٌ.",
+        tr: "mādhā taʿmalu? anā muhandisun, wa-zawjatī ṭabībatun.",
+        note: "THE job question. No 'am/is' needed: anā muhandis = I [am an] engineer.",
+        audio: "jobs-3" },
+      { tag: "Workplaces · أماكن العمل", q_en: "The doctor works in the hospital, and the teacher in the school.",
+        ar: "يَعْمَلُ الطَّبيبُ في المُسْتَشْفى، وَالمُعَلِّمُ في المَدْرَسَةِ.",
+        tr: "yaʿmalu ṭ-ṭabību fī l-mustashfā, wa-l-muʿallimu fī l-madrasati.",
+        note: "مُسْتَشْفى hospital — from شُفِيَ (was healed — Layla's soup recovery!). عَمِلَ/يَعْمَلُ to work.",
+        audio: "jobs-4" }
+    ],
+    roles: {
+      title: "The job sentence — أنا + مهنة",
+      sentence: ["أَنا", "طَبيبٌ", "أَعْمَلُ", "في المُسْتَشْفى"],
+      labels: ["أنا · I", "المهنة · job (no 'am'!)", "الفعل · I work", "المكان · where"],
+      explain: "Arabic drops 'am/is/are': anā ṭabīb = I doctor = I am a doctor. Add أَعْمَلُ في… (I work in…) and you've introduced yourself professionally!"
+    }
+  },
+
+  /* ═══════════ DRILL 21 — Food ═══════════ */
+  {
+    id: "food",
+    title_ar: "الطَّعام",
+    title_en: "Food — الطعام",
+    img: "assets/img/grammar/food.jpg",
+    base_en: "Ten foods — match the numbered chart, then talk meals.",
+    hint: "You already own خُبْز، حَليب، تُفّاح، عَسَل، شورَبَة، كَعْك، تين، بِطّيخ from the stories — here's the rest of the kitchen!",
+    forms: [
+      { tag: "Chart ١-٥", q_en: "1-5: Rice. Meat. Chicken. Eggs. Cheese.",
+        ar: "الأُرْزُ. اللَّحْمُ. الدَّجاجُ. البَيْضُ. الجُبْنُ.",
+        tr: "1 al-urzu · 2 al-laḥmu · 3 ad-dajāju · 4 al-bayḍu · 5 al-jubnu",
+        note: "بَيْض eggs — same root as أَبْيَض white! Remember Hanli's army planting الأُرْز.",
+        audio: "food-1" },
+      { tag: "Chart ٦-١٠", q_en: "6-10: Banana. Grapes. Orange. Tomatoes. Cucumber.",
+        ar: "المَوْزُ. العِنَبُ. البُرْتُقالُ. الطَّماطِمُ. الخِيارُ.",
+        tr: "6 al-mawzu · 7 al-ʿinabu · 8 al-burtuqālu · 9 aṭ-ṭamāṭimu · 10 al-khiyāru",
+        note: "بُرْتُقال orange — the color بُرْتُقالِيّ comes from it (colors drill!). خِيار also means 'choice'!",
+        audio: "food-2" },
+      { tag: "The meals · الوجبات", q_en: "Breakfast is in the morning, lunch at noon, and dinner in the evening.",
+        ar: "الفُطورُ في الصَّباحِ، وَالغَداءُ في الظُّهْرِ، وَالعَشاءُ في المَساءِ.",
+        tr: "al-fuṭūru fī ṣ-ṣabāḥi, wa-l-ghadāʾu fī ẓ-ẓuhri, wa-l-ʿashāʾu fī l-masāʾi.",
+        note: "The three meals mapped to the times of day you already know!",
+        audio: "food-3" },
+      { tag: "I'm hungry! · جوعان", q_en: "I am hungry. What are we eating today?",
+        ar: "أَنا جَوْعانُ. ماذا نَأْكُلُ اليَوْمَ؟",
+        tr: "anā jawʿānu. mādhā naʾkulu l-yawma?",
+        note: "جَوْعان hungry — the ـان feelings pattern (عطشان thirsty, تعبان tired). The most useful sentence in any language!",
+        audio: "food-4" }
+    ],
+    roles: {
+      title: "Ordering & asking — في المطعم",
+      sentence: ["أُريدُ", "أُرْزًا", "بِالدَّجاجِ", "مِنْ فَضْلِكَ"],
+      labels: ["أريد · I want", "الطعام · food (-an)", "بـ · with", "please"],
+      explain: "The restaurant formula: urīdu (I want) + food + bi- (with) + min faḍlik (please): urīdu urzan bi-d-dajāj — I'd like rice with chicken. Swap ingredients freely!"
+    }
   }
 ];
