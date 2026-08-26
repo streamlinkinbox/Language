@@ -1415,5 +1415,53 @@ const GRAMMAR = [
       labels: ["من قال · who said", "القول · the quote", "فسأل · so he asked", "السؤال · the question"],
       explain: "Arabic quotes directly with no 'that': qālat il-umm: idhhab! (The mother said: go!). Every story you've read uses this — now you can build your own dialogue!"
     }
+  },
+
+  /* ═══════════ DRILL 26 — Electronics ═══════════ */
+  {
+    id: "electronics",
+    title_ar: "الأَجْهِزَةُ الإِلِكْترونِيَّة",
+    title_en: "Electronics — الأجهزة",
+    img: "assets/img/grammar/electronics.jpg",
+    base_en: "Twelve devices — match the numbered chart, then use them in daily sentences.",
+    hint: "Modern Arabic builds device names beautifully: حاسوب computer (from حَسَبَ compute), ثَلّاجَة fridge (from ثَلْج snow!), مُكَيِّف A/C (the conditioner). And سَمّاعات = 'listeners' — from سَمِعَ!",
+    forms: [
+      { tag: "Chart ١-٤", q_en: "1-4: The phone. The computer. The laptop. The television.",
+        ar: "الهاتِفُ. الحاسوبُ. الحاسوبُ المَحْمولُ. التِّلْفازُ.",
+        tr: "1 al-hātifu · 2 al-ḥāsūbu · 3 al-ḥāsūbu l-maḥmūlu · 4 at-tilfāzu",
+        note: "مَحْمول = 'carried' (from حَمَلَ — Sami carrying the bird!) → laptop = the carried computer. Everyday speech also uses موبايل and كمبيوتر.",
+        audio: "electronics-1" },
+      { tag: "Chart ٥-٨", q_en: "5-8: The fridge. The air conditioner. The washing machine. The iron.",
+        ar: "الثَّلّاجَةُ. المُكَيِّفُ. الغَسّالَةُ. المِكْواةُ.",
+        tr: "5 ath-thallājatu · 6 al-mukayyifu · 7 al-ghassālatu · 8 al-mikwātu",
+        note: "ثَلّاجَة from ثَلْج snow (weather drill!), غَسّالَة = the فَعّالة worker-pattern: the washing-machine 'washes for a living' 😄",
+        audio: "electronics-2" },
+      { tag: "Chart ٩-١٢ · audio gear", q_en: "9-12: The speakers. The earphones. The headphones. The charger.",
+        ar: "السَّمّاعاتُ. سَمّاعاتُ الأُذُنِ. سَمّاعاتُ الرَّأْسِ. الشّاحِنُ.",
+        tr: "9 as-sammāʿātu · 10 sammāʿātu l-udhuni · 11 sammāʿātu r-raʾsi · 12 ash-shāḥinu",
+        note: "All from سَمِعَ (heard)! Earphones = ear-listeners (أُذُن), headphones = head-listeners (رَأْس) — your body drill pays off.",
+        audio: "electronics-3" },
+      { tag: "Daily drama · ١", q_en: "I forgot my phone at home, and its battery is empty.",
+        ar: "نَسيتُ هاتِفي في البَيْتِ، وَبَطّارِيَّتُهُ فارِغَةٌ.",
+        tr: "nasītu hātifī fī l-bayti, wa-baṭṭāriyyatuhu fārighatun.",
+        note: "نَسيتُ I forgot, بَطّارِيَّة battery, فارِغَة empty. The universal modern tragedy!",
+        audio: "electronics-4" },
+      { tag: "Your habit · ٢", q_en: "I listen to stories with headphones at night.",
+        ar: "أَسْتَمِعُ إِلى القِصَصِ بِسَمّاعاتِ الرَّأْسِ في اللَّيْلِ.",
+        tr: "astamiʿu ilā l-qiṣaṣi bi-sammāʿāti r-raʾsi fī l-layli.",
+        note: "This is literally YOU using this app! قِصَص = stories (plural of قِصَّة). أَسْتَمِعُ إِلى = I listen to.",
+        audio: "electronics-5" },
+      { tag: "Command · ٣", q_en: "Turn on the air conditioner please, the weather is hot!",
+        ar: "شَغِّلِ المُكَيِّفَ مِنْ فَضْلِكَ، الجَوُّ حارٌّ!",
+        tr: "shaghghili l-mukayyifa min faḍlika, al-jawwu ḥārrun!",
+        note: "شَغِّلْ = turn on! (opposite: أَطْفِئْ turn off). Essential Gauteng summer vocabulary 🌡",
+        audio: "electronics-6" }
+    ],
+    roles: {
+      title: "Device sentences — الجهاز لا يعمل",
+      sentence: ["الهاتِفُ", "لا يَعْمَلُ", "الشّاحِنُ", "مَكْسورٌ"],
+      labels: ["الجهاز · device", "doesn't work", "الجهاز ٢ · device", "مكسور · broken"],
+      explain: "The repair-shop sentence: [device] + lā yaʿmalu (doesn't work) or maksūr (broken — the bird's wing word!). al-hātifu lā yaʿmalu — my phone doesn't work. Sadly useful."
+    }
   }
 ];
