@@ -44,7 +44,7 @@
   };
 
   const $ = (id) => document.getElementById(id);
-  const screens = { library: $("screen-library"), reader: $("screen-reader"), quiz: $("screen-quiz"), dialogue: $("screen-dialogue") };
+  const screens = { library: $("screen-library"), reader: $("screen-reader"), quiz: $("screen-quiz"), dialogue: $("screen-dialogue"), grammar: $("screen-grammar") };
 
   let story = null;
   let pageIdx = 0;
@@ -125,13 +125,15 @@
   }
 
   // ═══════ library tabs carousel ═══════
+  const TABS = ["stories", "dialogues", "grammar"];
   let curTab = "stories";
   function setTab(name, animate = true) {
     curTab = name;
     document.querySelectorAll("#lib-tabs .tab").forEach(t => t.classList.toggle("on", t.dataset.tab === name));
     const track = $("tab-track");
+    const idx = TABS.indexOf(name);
     if (!animate) track.style.transition = "none";
-    track.style.transform = name === "stories" ? "translateX(0)" : "translateX(-50%)";
+    track.style.transform = `translateX(-${idx * (100 / TABS.length)}%)`;
     if (!animate) requestAnimationFrame(() => { track.style.transition = ""; });
   }
   $("lib-tabs").addEventListener("click", (e) => {
@@ -148,8 +150,9 @@
     const dx = e.changedTouches[0].clientX - tcX;
     const dy = e.changedTouches[0].clientY - tcY;
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-      if (dx < 0 && curTab === "stories") setTab("dialogues");
-      else if (dx > 0 && curTab === "dialogues") setTab("stories");
+      const i = TABS.indexOf(curTab);
+      if (dx < 0 && i < TABS.length - 1) setTab(TABS[i + 1]);
+      else if (dx > 0 && i > 0) setTab(TABS[i - 1]);
     }
     tcX = tcY = null;
   }, { passive: true });
@@ -289,6 +292,105 @@
     $("dlg-en-icon").textContent = document.body.classList.contains("dlg-no-en") ? "visibility_off" : "translate";
   });
   $("btn-settings-3").addEventListener("click", openSettings);
+
+  // ═══════ grammar drills ═══════
+  let gr = null, grIdx = 0, grRevealed = false, grAudio = null;
+  const GR_TOTAL = (g) => g.forms.length + 1; // + roles card
+
+  function renderGrammarLibrary() {
+    const list = $("grammar-list");
+    if (!list || typeof GRAMMAR === "undefined") return;
+    list.innerHTML = "";
+    GRAMMAR.forEach(g => {
+      const pr = progress.get("gr-" + g.id);
+      const card = document.createElement("button");
+      card.className = "story-card";
+      card.innerHTML = `
+        <img class="story-thumb" src="${g.img}" alt="">
+        <div class="story-meta">
+          <div class="t-ar">${g.title_ar}</div>
+          <div class="t-en">${g.title_en}</div>
+          <div class="story-badges">
+            <span class="badge"><span class="msr">school</span>${g.forms.length} forms</span>
+            ${pr.done ? `<span class="badge done"><span class="msr">check_circle</span>Done</span>` : ""}
+          </div>
+        </div>
+        <span class="msr go">arrow_forward</span>`;
+      card.addEventListener("click", () => openGrammar(g));
+      list.appendChild(card);
+    });
+  }
+
+  function openGrammar(g) {
+    gr = g; grIdx = 0; grRevealed = false;
+    $("gr-title").textContent = g.title_ar;
+    $("gr-img").src = g.img;
+    show("grammar");
+    renderGrForm();
+  }
+
+  function renderGrForm() {
+    const total = GR_TOTAL(gr);
+    $("gr-progress-label").textContent = `Card ${grIdx + 1} of ${total}`;
+    $("gr-progress-fill").style.width = ((grIdx + 1) / total * 100) + "%";
+    $("gr-reveal-icon").textContent = grRevealed ? "visibility_off" : "visibility";
+    const card = $("gr-card");
+    if (grIdx < gr.forms.length) {
+      const f = gr.forms[grIdx];
+      card.innerHTML = `
+        <span class="gr-tag"><span class="msr" style="font-size:15px">school</span>${f.tag}</span>
+        <div class="gr-q">${f.q_en}</div>
+        <div class="gr-try">Say it in Arabic, then tap the eye to check…</div>
+        ${grRevealed ? `
+        <div class="gr-answer">
+          <div class="gr-ar">${f.ar}</div>
+          <div class="gr-tr">${f.tr}</div>
+          <div class="gr-note">${f.note}</div>
+        </div>` : ""}`;
+      if (grRevealed) playGrAudio();
+    } else {
+      const r = gr.roles;
+      card.innerHTML = `
+        <span class="gr-tag"><span class="msr" style="font-size:15px">school</span>${r.title}</span>
+        <div class="gr-roles">
+          ${r.sentence.map((w, i) => `
+            <div class="gr-role">
+              <span class="r-ar">${w}</span>
+              <span class="r-label">${r.labels[i]}</span>
+            </div>`).join("")}
+        </div>
+        <div class="gr-note">${r.explain}</div>`;
+      progress.set("gr-" + gr.id, { done: true });
+    }
+  }
+
+  function playGrAudio() {
+    stopAudio();
+    if (grAudio) { grAudio.pause(); grAudio = null; }
+    if (grIdx >= gr.forms.length) return;
+    const f = gr.forms[grIdx];
+    if (f.audio) {
+      grAudio = new Audio(`assets/audio/grammar/${f.audio}.mp3`);
+      grAudio.playbackRate = S.speed / 100;
+      if ("preservesPitch" in grAudio) grAudio.preservesPitch = true;
+      grAudio.play().catch(() => speakFallback(f.ar));
+    } else speakFallback(f.ar);
+  }
+
+  $("btn-gr-back").addEventListener("click", () => {
+    if (grAudio) { grAudio.pause(); grAudio = null; }
+    renderGrammarLibrary(); show("library"); setTab("grammar", false);
+  });
+  $("btn-gr-reveal").addEventListener("click", () => { grRevealed = !grRevealed; renderGrForm(); });
+  $("btn-gr-audio").addEventListener("click", () => { grRevealed = true; renderGrForm(); });
+  $("btn-gr-next").addEventListener("click", () => {
+    if (grIdx < GR_TOTAL(gr) - 1) { grIdx++; grRevealed = false; renderGrForm(); }
+    else { renderGrammarLibrary(); show("library"); setTab("grammar", false); }
+  });
+  $("btn-gr-prev").addEventListener("click", () => {
+    if (grIdx > 0) { grIdx--; grRevealed = false; renderGrForm(); }
+  });
+  $("btn-settings-4").addEventListener("click", openSettings);
 
   function openStory(st) {
     story = st;
@@ -459,6 +561,7 @@
     if (audio) { audio.pause(); audio = null; }
     if (typeof wordAudio !== "undefined" && wordAudio) { wordAudio.pause(); wordAudio = null; }
     if (typeof dlgAudio !== "undefined" && dlgAudio) { dlgAudio.pause(); dlgAudio = null; }
+    if (typeof grAudio !== "undefined" && grAudio) { grAudio.pause(); grAudio = null; }
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     const ic = $("audio-icon");
     if (ic) ic.textContent = "volume_up";
@@ -637,7 +740,7 @@
 
   // PWA service worker — with a self-healing version check:
   // if an outdated worker/caches are found, wipe them and reload once.
-  const APP_VERSION = "v31";
+  const APP_VERSION = "v32";
   if ("serviceWorker" in navigator) {
     if (localStorage.getItem("hikaya-app-version") !== APP_VERSION) {
       // nuke any stale workers + caches from older versions
@@ -659,4 +762,5 @@
   applySettings();
   renderLibrary();
   renderDialogueLibrary();
+  renderGrammarLibrary();
 })();

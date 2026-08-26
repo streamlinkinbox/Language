@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#000000">
 <link rel="manifest" href="manifest.json">
 <link rel="preload" href="assets/fonts/msr-subset.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts/fonts.css?v=18">
-<link rel="stylesheet" href="styles.css?v=18">
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=32">
+<link rel="stylesheet" href="styles.css?v=32">
 </head>
 <body data-theme="dark">
 
@@ -27,6 +27,7 @@
   <nav class="tabs" id="lib-tabs">
     <button class="tab on" data-tab="stories"><span class="msr">auto_stories</span> Stories</button>
     <button class="tab" data-tab="dialogues"><span class="msr">forum</span> Dialogues</button>
+    <button class="tab" data-tab="grammar"><span class="msr">school</span> Grammar</button>
   </nav>
 
   <div class="tab-carousel" id="tab-carousel">
@@ -41,18 +42,63 @@
         <div class="library-body">
           <p class="section-label">Story Set 2 · Dialogues</p>
           <div id="dialogue-list" class="story-list"></div>
+        </div>
+      </div>
+      <div class="tab-page" data-page="grammar">
+        <div class="library-body">
+          <p class="section-label">Set 3 · Grammar drills</p>
+          <div id="grammar-list" class="story-list"></div>
           <p class="section-label">Coming soon</p>
           <div class="story-card ghost">
-            <div class="ghost-thumb"><span class="msr">forum</span></div>
+            <div class="ghost-thumb"><span class="msr">school</span></div>
             <div class="story-meta">
-              <h3>More dialogues on the way</h3>
-              <p>At the tea house · The spirit market · The sand pirates</p>
+              <h3>More drills on the way</h3>
+              <p>To write · To go · To drink · To see</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+<!-- ══════════ GRAMMAR DRILL ══════════ -->
+<section id="screen-grammar" class="screen">
+  <header class="topbar reader-top">
+    <button class="icon-btn" id="btn-gr-back" aria-label="Back to library">
+      <span class="msr">arrow_back</span>
+    </button>
+    <div class="reader-title">
+      <span id="gr-title" class="reader-title-ar"></span>
+      <span id="gr-progress-label" class="reader-title-sub"></span>
+    </div>
+    <button class="icon-btn" id="btn-settings-4" aria-label="Settings">
+      <span class="msr">settings</span>
+    </button>
+  </header>
+  <div class="progress-track"><div id="gr-progress-fill" class="progress-fill"></div></div>
+
+  <div id="gr-body" class="reader-body">
+    <figure class="page-figure">
+      <img id="gr-img" alt="Drill illustration" draggable="false">
+    </figure>
+    <div id="gr-card" class="gr-card"></div>
+  </div>
+
+  <footer class="reader-controls">
+    <button class="ctrl-btn" id="btn-gr-prev" aria-label="Previous form">
+      <span class="msr">chevron_left</span>
+    </button>
+    <button class="ctrl-btn primary" id="btn-gr-reveal" aria-label="Reveal answer">
+      <span class="msr" id="gr-reveal-icon">visibility</span>
+    </button>
+    <button class="ctrl-btn" id="btn-gr-audio" aria-label="Play audio">
+      <span class="msr">volume_up</span>
+    </button>
+    <button class="ctrl-btn accent" id="btn-gr-next" aria-label="Next form">
+      <span class="msr">chevron_right</span>
+    </button>
+  </footer>
 </section>
 
 <!-- ══════════ DIALOGUE READER ══════════ -->
@@ -241,11 +287,12 @@
   </div>
 </div>
 
-<script src="icons.js?v=31"></script>
-<script src="data/wordaudio.js?v=31"></script>
-<script src="data/wordbank.js?v=31"></script>
-<script src="data/stories.js?v=31"></script>
-<script src="data/dialogues.js?v=31"></script>
-<script src="app.js?v=31"></script>
+<script src="icons.js?v=32"></script>
+<script src="data/wordaudio.js?v=32"></script>
+<script src="data/wordbank.js?v=32"></script>
+<script src="data/stories.js?v=32"></script>
+<script src="data/dialogues.js?v=32"></script>
+<script src="data/grammar.js?v=32"></script>
+<script src="app.js?v=32"></script>
 </body>
 </html>
