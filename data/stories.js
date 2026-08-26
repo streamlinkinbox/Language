@@ -4599,5 +4599,282 @@ const STORIES = [
         why: "تِلْميذ student → تَلاميذ students, another broken plural for your collection."
       }
     ]
+  },
+
+  /* ═══════════ STORY 22 — The Falcon of the Desert (Set 3) ═══════════ */
+  {
+    id: "desert-falcon",
+    title_ar: "صَقْرُ الصَّحْراءِ",
+    title_en: "The Falcon of the Desert",
+    level: "Beginner+ · A2",
+    cover: "assets/img/desert-falcon/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/desert-falcon/s1.jpg",
+        audio: "s1",
+        ar: "عاشَ في الصَّحْراءِ صَقْرٌ صَغيرٌ يَخافُ مِنَ الطَّيَرانِ العالي. كانَ يَنْظُرُ إِلى النُّسورِ فَوْقَ الجِبالِ وَيَتَمَنّى.",
+        tr: "ʿāsha fī ṣ-ṣaḥrāʾi ṣaqrun ṣaghīrun yakhāfu mina ṭ-ṭayarāni l-ʿālī. kāna yanẓuru ilā n-nusūri fawqa l-jibāli wa-yatamannā.",
+        en: "There lived in the desert a small falcon who was afraid of flying high. He would watch the eagles above the mountains and wish.",
+        tense: "عاشَ (lived) + كانَ يَفْعَلُ",
+        words: [
+          { ar: "عاشَ", tr: "ʿāsha", en: "lived" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الصَّحْراءِ", tr: "aṣ-ṣaḥrāʾi", en: "the desert" },
+          { ar: "صَقْرٌ", tr: "ṣaqrun", en: "a falcon" },
+          { ar: "صَغيرٌ", tr: "ṣaghīrun", en: "small" },
+          { ar: "يَخافُ", tr: "yakhāfu", en: "fears" },
+          { ar: "مِنَ", tr: "mina", en: "of" },
+          { ar: "الطَّيَرانِ", tr: "aṭ-ṭayarāni", en: "flying" },
+          { ar: "العالي", tr: "al-ʿālī", en: "the high" },
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "يَنْظُرُ", tr: "yanẓuru", en: "watching" },
+          { ar: "إِلى", tr: "ilā", en: "at" },
+          { ar: "النُّسورِ", tr: "an-nusūri", en: "the eagles" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "above" },
+          { ar: "الجِبالِ", tr: "al-jibāli", en: "the mountains" },
+          { ar: "وَيَتَمَنّى", tr: "wa-yatamannā", en: "and wishing" }
+        ]
+      },
+      {
+        img: "assets/img/desert-falcon/s2.jpg",
+        audio: "s2",
+        ar: "قالَ لَهُ أَبوهُ: الرّيحُ لا تَحْمِلُ مَنْ يَبْقى عَلى الأَرْضِ. اِفْتَحْ جَناحَيْكَ وَثِقْ بِهِما.",
+        tr: "qāla lahu abūhu: ar-rīḥu lā taḥmilu man yabqā ʿalā l-arḍi. iftaḥ janāḥayka wa-thiq bihimā.",
+        en: "His father said to him: The wind does not carry those who stay on the ground. Open your wings and trust them.",
+        tense: "Wisdom + commands اِفْتَحْ / ثِقْ",
+        words: [
+          { ar: "قالَ", tr: "qāla", en: "said" },
+          { ar: "لَهُ", tr: "lahu", en: "to him" },
+          { ar: "أَبوهُ", tr: "abūhu", en: "his father" },
+          { ar: "الرّيحُ", tr: "ar-rīḥu", en: "the wind" },
+          { ar: "لا", tr: "lā", en: "not" },
+          { ar: "تَحْمِلُ", tr: "taḥmilu", en: "carries" },
+          { ar: "مَنْ", tr: "man", en: "who(ever)" },
+          { ar: "يَبْقى", tr: "yabqā", en: "stays" },
+          { ar: "عَلى", tr: "ʿalā", en: "on" },
+          { ar: "الأَرْضِ", tr: "al-arḍi", en: "the ground" },
+          { ar: "اِفْتَحْ", tr: "iftaḥ", en: "open!" },
+          { ar: "جَناحَيْكَ", tr: "janāḥayka", en: "your two wings" },
+          { ar: "وَثِقْ", tr: "wa-thiq", en: "and trust!" },
+          { ar: "بِهِما", tr: "bihimā", en: "in them-two" }
+        ]
+      },
+      {
+        img: "assets/img/desert-falcon/s3.jpg",
+        audio: "s3",
+        ar: "في يَوْمٍ عاصِفٍ، قَفَزَ الصَّقْرُ الصَّغيرُ مِنَ الصَّخْرَةِ. حَمَلَتْهُ الرّيحُ عالِيًا فَوْقَ الرِّمالِ الذَّهَبِيَّةِ، وَصارَ أَسْرَعَ صَقْرٍ في الصَّحْراءِ.",
+        tr: "fī yawmin ʿāṣifin, qafaza ṣ-ṣaqru ṣ-ṣaghīru mina ṣ-ṣakhrati. ḥamalathu r-rīḥu ʿāliyan fawqa r-rimāli dh-dhahabiyyati, wa-ṣāra asraʿa ṣaqrin fī ṣ-ṣaḥrāʾi.",
+        en: "On a stormy day, the little falcon jumped from the rock. The wind carried him high above the golden sands, and he became the fastest falcon in the desert.",
+        tense: "Past + superlative أَسْرَع",
+        words: [
+          { ar: "في", tr: "fī", en: "on" },
+          { ar: "يَوْمٍ", tr: "yawmin", en: "a day" },
+          { ar: "عاصِفٍ", tr: "ʿāṣifin", en: "stormy" },
+          { ar: "قَفَزَ", tr: "qafaza", en: "jumped" },
+          { ar: "الصَّقْرُ", tr: "aṣ-ṣaqru", en: "the falcon" },
+          { ar: "الصَّغيرُ", tr: "aṣ-ṣaghīru", en: "the little" },
+          { ar: "مِنَ", tr: "mina", en: "from" },
+          { ar: "الصَّخْرَةِ", tr: "aṣ-ṣakhrati", en: "the rock" },
+          { ar: "حَمَلَتْهُ", tr: "ḥamalathu", en: "carried him" },
+          { ar: "الرّيحُ", tr: "ar-rīḥu", en: "the wind" },
+          { ar: "عالِيًا", tr: "ʿāliyan", en: "high" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "above" },
+          { ar: "الرِّمالِ", tr: "ar-rimāli", en: "the sands" },
+          { ar: "الذَّهَبِيَّةِ", tr: "adh-dhahabiyyati", en: "the golden" },
+          { ar: "وَصارَ", tr: "wa-ṣāra", en: "and became" },
+          { ar: "أَسْرَعَ", tr: "asraʿa", en: "fastest" },
+          { ar: "صَقْرٍ", tr: "ṣaqrin", en: "falcon" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "مِمَّ كانَ يَخافُ الصَّقْرُ الصَّغيرُ؟",
+        q_en: "What was the little falcon afraid of?",
+        options: [
+          { ar: "مِنَ الطَّيَرانِ العالي", en: "Of flying high" },
+          { ar: "مِنَ الماءِ", en: "Of water" },
+          { ar: "مِنَ النُّسورِ", en: "Of the eagles" }
+        ],
+        correct: 0,
+        why: "يَخافُ مِنَ الطَّيَرانِ العالي — خافَ مِنْ = to be afraid OF."
+      },
+      {
+        q_ar: "ماذا قالَ الأَبُ عَنِ الرّيحِ؟",
+        q_en: "What did the father say about the wind?",
+        options: [
+          { ar: "الرّيحُ خَطيرَةٌ", en: "The wind is dangerous" },
+          { ar: "لا تَحْمِلُ مَنْ يَبْقى عَلى الأَرْضِ", en: "It doesn't carry those who stay on the ground" },
+          { ar: "الرّيحُ بارِدَةٌ", en: "The wind is cold" }
+        ],
+        correct: 1,
+        why: "The story's wisdom line — you can't soar without leaving the ground."
+      },
+      {
+        q_ar: "«ثِقْ بِهِما» — ماذا تَعْني؟",
+        q_en: "\"thiq bihimā\" — what does it mean?",
+        options: [
+          { ar: "اِخَفْ مِنْهُما", en: "Fear them" },
+          { ar: "ثِقْ بِجَناحَيْكَ — trust your two wings", en: "Trust your two wings" },
+          { ar: "اِنْظُرْ إِلَيْهِما", en: "Look at them" }
+        ],
+        correct: 1,
+        why: "ثِقْ = trust! (command of وَثِقَ — another و-verb!). بِهِما = in them-two."
+      },
+      {
+        q_ar: "ماذا صارَ الصَّقْرُ في النِّهايَةِ؟",
+        q_en: "What did the falcon become in the end?",
+        options: [
+          { ar: "أَسْرَعَ صَقْرٍ في الصَّحْراءِ", en: "The fastest falcon in the desert" },
+          { ar: "أَكْبَرَ نَسْرٍ", en: "The biggest eagle" },
+          { ar: "طائِرًا خائِفًا", en: "A scared bird" }
+        ],
+        correct: 0,
+        why: "صارَ أَسْرَعَ صَقْرٍ — the superlative أَسْرَع from your transport drill!"
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 23 — The Fisherman's Lantern (Set 3) ═══════════ */
+  {
+    id: "fisherman-lantern",
+    title_ar: "فانوسُ الصَّيّادِ",
+    title_en: "The Fisherman's Lantern",
+    level: "Beginner+ · A2",
+    cover: "assets/img/fisherman-lantern/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/fisherman-lantern/s1.jpg",
+        audio: "s1",
+        ar: "كانَ صَيّادٌ عَجوزٌ يَخْرُجُ كُلَّ لَيْلَةٍ بِقارِبِهِ وَفانوسِهِ القَديمِ. قالَ النّاسُ: البَحْرُ فارِغٌ هُنا، لا سَمَكَ فيهِ.",
+        tr: "kāna ṣayyādun ʿajūzun yakhruju kulla laylatin bi-qāribihi wa-fānūsihi l-qadīmi. qāla n-nāsu: al-baḥru fārighun hunā, lā samaka fīhi.",
+        en: "An old fisherman used to go out every night with his boat and his old lantern. People said: The sea is empty here, there are no fish in it.",
+        tense: "كانَ يَفْعَلُ + لا of absolute negation",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "صَيّادٌ", tr: "ṣayyādun", en: "a fisherman" },
+          { ar: "عَجوزٌ", tr: "ʿajūzun", en: "old" },
+          { ar: "يَخْرُجُ", tr: "yakhruju", en: "goes out" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "لَيْلَةٍ", tr: "laylatin", en: "night" },
+          { ar: "بِقارِبِهِ", tr: "bi-qāribihi", en: "with his boat" },
+          { ar: "وَفانوسِهِ", tr: "wa-fānūsihi", en: "and his lantern" },
+          { ar: "القَديمِ", tr: "al-qadīmi", en: "the old" },
+          { ar: "قالَ", tr: "qāla", en: "said" },
+          { ar: "النّاسُ", tr: "an-nāsu", en: "the people" },
+          { ar: "البَحْرُ", tr: "al-baḥru", en: "the sea" },
+          { ar: "فارِغٌ", tr: "fārighun", en: "empty" },
+          { ar: "هُنا", tr: "hunā", en: "here" },
+          { ar: "لا", tr: "lā", en: "no" },
+          { ar: "سَمَكَ", tr: "samaka", en: "fish" },
+          { ar: "فيهِ", tr: "fīhi", en: "in it" }
+        ]
+      },
+      {
+        img: "assets/img/fisherman-lantern/s2.jpg",
+        audio: "s2",
+        ar: "لٰكِنَّ الصَّيّادَ عَرَفَ سِرًّا: السَّمَكُ يُحِبُّ الضَّوْءَ. رَفَعَ فانوسَهُ فَوْقَ الماءِ وَانْتَظَرَ بِهُدوءٍ.",
+        tr: "lākinna ṣ-ṣayyāda ʿarafa sirran: as-samaku yuḥibbu ḍ-ḍawʾa. rafaʿa fānūsahu fawqa l-māʾi wa-ntaẓara bi-hudūʾin.",
+        en: "But the fisherman knew a secret: fish love the light. He raised his lantern over the water and waited quietly.",
+        tense: "عَرَفَ (knew) + habit present",
+        words: [
+          { ar: "لٰكِنَّ", tr: "lākinna", en: "but" },
+          { ar: "الصَّيّادَ", tr: "aṣ-ṣayyāda", en: "the fisherman" },
+          { ar: "عَرَفَ", tr: "ʿarafa", en: "knew" },
+          { ar: "سِرًّا", tr: "sirran", en: "a secret" },
+          { ar: "السَّمَكُ", tr: "as-samaku", en: "the fish" },
+          { ar: "يُحِبُّ", tr: "yuḥibbu", en: "loves" },
+          { ar: "الضَّوْءَ", tr: "aḍ-ḍawʾa", en: "the light" },
+          { ar: "رَفَعَ", tr: "rafaʿa", en: "raised" },
+          { ar: "فانوسَهُ", tr: "fānūsahu", en: "his lantern" },
+          { ar: "فَوْقَ", tr: "fawqa", en: "over" },
+          { ar: "الماءِ", tr: "al-māʾi", en: "the water" },
+          { ar: "وَانْتَظَرَ", tr: "wa-ntaẓara", en: "and waited" },
+          { ar: "بِهُدوءٍ", tr: "bi-hudūʾin", en: "quietly" }
+        ]
+      },
+      {
+        img: "assets/img/fisherman-lantern/s3.jpg",
+        audio: "s3",
+        ar: "قَبْلَ الفَجْرِ، عادَ إِلى المَيْناءِ وَقارِبُهُ مَليءٌ بِالسَّمَكِ. اِبْتَسَمَ وَقالَ: الصَّبْرُ مِفْتاحُ الرِّزْقِ.",
+        tr: "qabla l-fajri, ʿāda ilā l-mīnāʾi wa-qāribuhu malīʾun bi-s-samaki. ibtasama wa-qāla: aṣ-ṣabru miftāḥu r-rizqi.",
+        en: "Before dawn, he returned to the harbor with his boat full of fish. He smiled and said: Patience is the key to provision.",
+        tense: "Past + حال + proverb",
+        words: [
+          { ar: "قَبْلَ", tr: "qabla", en: "before" },
+          { ar: "الفَجْرِ", tr: "al-fajri", en: "the dawn" },
+          { ar: "عادَ", tr: "ʿāda", en: "returned" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "المَيْناءِ", tr: "al-mīnāʾi", en: "the harbor" },
+          { ar: "وَقارِبُهُ", tr: "wa-qāribuhu", en: "while his boat" },
+          { ar: "مَليءٌ", tr: "malīʾun", en: "full" },
+          { ar: "بِالسَّمَكِ", tr: "bi-s-samaki", en: "of fish" },
+          { ar: "اِبْتَسَمَ", tr: "ibtasama", en: "smiled" },
+          { ar: "وَقالَ", tr: "wa-qāla", en: "and said" },
+          { ar: "الصَّبْرُ", tr: "aṣ-ṣabru", en: "patience" },
+          { ar: "مِفْتاحُ", tr: "miftāḥu", en: "key (of)" },
+          { ar: "الرِّزْقِ", tr: "ar-rizqi", en: "provision/livelihood" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا قالَ النّاسُ عَنِ البَحْرِ؟",
+        q_en: "What did people say about the sea?",
+        options: [
+          { ar: "إِنَّهُ فارِغٌ، لا سَمَكَ فيهِ", en: "That it's empty, no fish in it" },
+          { ar: "إِنَّهُ خَطيرٌ", en: "That it's dangerous" },
+          { ar: "إِنَّهُ بارِدٌ", en: "That it's cold" }
+        ],
+        correct: 0,
+        why: "لا سَمَكَ فيهِ — the 'no X at all' construction (لا النافية للجنس)!"
+      },
+      {
+        q_ar: "ما السِّرُّ الَّذي عَرَفَهُ الصَّيّادُ؟",
+        q_en: "What secret did the fisherman know?",
+        options: [
+          { ar: "السَّمَكُ يُحِبُّ الضَّوْءَ", en: "Fish love the light" },
+          { ar: "السَّمَكُ يَنامُ لَيْلًا", en: "Fish sleep at night" },
+          { ar: "السَّمَكُ يَخافُ مِنَ القارِبِ", en: "Fish fear the boat" }
+        ],
+        correct: 0,
+        why: "عَرَفَ سِرًّا: السَّمَكُ يُحِبُّ الضَّوْءَ — and it's true, night fishing with lanterns is ancient!"
+      },
+      {
+        q_ar: "مَتى عادَ إِلى المَيْناءِ؟",
+        q_en: "When did he return to the harbor?",
+        options: [
+          { ar: "عِنْدَ الظُّهْرِ", en: "At noon" },
+          { ar: "قَبْلَ الفَجْرِ", en: "Before dawn" },
+          { ar: "بَعْدَ الغُروبِ", en: "After sunset" }
+        ],
+        correct: 1,
+        why: "قَبْلَ الفَجْرِ — الفَجْر dawn, a new time-of-day word!"
+      },
+      {
+        q_ar: "«الصَّبْرُ مِفْتاحُ الرِّزْقِ» — ماذا يَعْني هٰذا المَثَلُ؟",
+        q_en: "\"Patience is the key to provision\" — what does it mean?",
+        options: [
+          { ar: "مَنْ يَصْبِرْ يَنَلْ ما يُريدُ", en: "Who is patient gets what they seek" },
+          { ar: "المَفاتيحُ مُهِمَّةٌ", en: "Keys are important" },
+          { ar: "الصَّيْدُ سَهْلٌ", en: "Fishing is easy" }
+        ],
+        correct: 0,
+        why: "Proverb #7! Variant of the famous الصَّبْرُ مِفْتاحُ الفَرَجِ — patience unlocks relief."
+      },
+      {
+        q_ar: "«وَقارِبُهُ مَليءٌ بِالسَّمَكِ» — ماذا تُفيدُ الواوُ هُنا؟",
+        q_en: "\"wa-qāribuhu malīʾun...\" — what does the wa- express here?",
+        options: [
+          { ar: "الحال — WHILE his boat was full", en: "State: WHILE his boat was full" },
+          { ar: "العطف فقط — just 'and'", en: "Just 'and'" },
+          { ar: "السؤال", en: "A question" }
+        ],
+        correct: 0,
+        why: "The حال-wāw again: he returned WHILE his boat was full — same pattern as وَهِيَ تَضْحَكُ!"
+      }
+    ]
   }
 ];
