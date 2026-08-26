@@ -4876,5 +4876,329 @@ const STORIES = [
         why: "The حال-wāw again: he returned WHILE his boat was full — same pattern as وَهِيَ تَضْحَكُ!"
       }
     ]
+  },
+
+  /* ═══════════ STORY 24 — The Beekeeper of the Village ═══════════ */
+  {
+    id: "beekeeper",
+    title_ar: "نَحّالُ القَرْيَةِ",
+    title_en: "The Beekeeper of the Village",
+    level: "Beginner+ · A2",
+    cover: "assets/img/beekeeper/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/beekeeper/s1.jpg",
+        audio: "s1",
+        ar: "كانَ في القَرْيَةِ نَحّالٌ اسْمُهُ سالِمٌ، يَمْلِكُ خَلايا نَحْلٍ كَثيرَةً بَيْنَ أَشْجارِ اللَّوْزِ. كانَ النَّحْلُ يَطيرُ إِلى أَزْهارِ الخُزامى وَيَعودُ مُحَمَّلًا بِالرَّحيقِ، وَالمَلِكَةُ تَبْقى في الخَلِيَّةِ.",
+        tr: "kāna fī l-qaryati naḥḥālun ismuhu sālimun, yamliku khalāyā naḥlin kathīratan bayna ashjāri l-lawzi. kāna n-naḥlu yaṭīru ilā azhāri l-khuzāmā wa-yaʿūdu muḥammalan bi-r-raḥīqi, wa-l-malikatu tabqā fī l-khaliyyati.",
+        en: "In the village there was a beekeeper named Salim, who owned many beehives among the almond trees. The bees would fly to the lavender flowers and return loaded with nectar, while the queen stayed in the hive.",
+        tense: "كانَ يَفْعَلُ (used to) + حال",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "القَرْيَةِ", tr: "al-qaryati", en: "the village" },
+          { ar: "نَحّالٌ", tr: "naḥḥālun", en: "a beekeeper" },
+          { ar: "اسْمُهُ", tr: "ismuhu", en: "his name" },
+          { ar: "سالِمٌ", tr: "sālimun", en: "Salim" },
+          { ar: "يَمْلِكُ", tr: "yamliku", en: "owns" },
+          { ar: "خَلايا", tr: "khalāyā", en: "hives" },
+          { ar: "نَحْلٍ", tr: "naḥlin", en: "of bees" },
+          { ar: "كَثيرَةً", tr: "kathīratan", en: "many" },
+          { ar: "بَيْنَ", tr: "bayna", en: "between" },
+          { ar: "أَشْجارِ", tr: "ashjāri", en: "trees of" },
+          { ar: "اللَّوْزِ", tr: "al-lawzi", en: "the almond" },
+          { ar: "النَّحْلُ", tr: "an-naḥlu", en: "the bees" },
+          { ar: "يَطيرُ", tr: "yaṭīru", en: "fly" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "أَزْهارِ", tr: "azhāri", en: "flowers of" },
+          { ar: "الخُزامى", tr: "al-khuzāmā", en: "the lavender" },
+          { ar: "وَيَعودُ", tr: "wa-yaʿūdu", en: "and return" },
+          { ar: "مُحَمَّلًا", tr: "muḥammalan", en: "loaded" },
+          { ar: "بِالرَّحيقِ", tr: "bi-r-raḥīqi", en: "with nectar" },
+          { ar: "وَالمَلِكَةُ", tr: "wa-l-malikatu", en: "and the queen" },
+          { ar: "تَبْقى", tr: "tabqā", en: "stays" },
+          { ar: "الخَلِيَّةِ", tr: "al-khaliyyati", en: "the hive" }
+        ]
+      },
+      {
+        img: "assets/img/beekeeper/s2.jpg",
+        audio: "s2",
+        ar: "في مَوْسِمِ الحَصادِ، لَبِسَ سالِمٌ قِناعَهُ وَقُفّازَيْهِ، وَفَتَحَ الخَلِيَّةَ بِحَذَرٍ شَديدٍ. أَخَذَ أَقْراصَ الشَّمْعِ الذَّهَبِيَّةَ، وَعَصَرَ مِنْها عَسَلًا صافِيًا في جِرارٍ مِنْ زُجاجٍ.",
+        tr: "fī mawsimi l-ḥaṣādi, labisa sālimun qināʿahu wa-quffāzayhi, wa-fataḥa l-khaliyyata bi-ḥadharin shadīdin. akhadha aqrāṣa sh-shamʿi dh-dhahabiyyata, wa-ʿaṣara minhā ʿasalan ṣāfiyan fī jirārin min zujājin.",
+        en: "In the harvest season, Salim put on his mask and his gloves, and opened the hive very carefully. He took the golden wax combs and pressed pure honey from them into glass jars.",
+        tense: "Past sequence + dual قُفّازَيْه",
+        words: [
+          { ar: "مَوْسِمِ", tr: "mawsimi", en: "season of" },
+          { ar: "الحَصادِ", tr: "al-ḥaṣādi", en: "the harvest" },
+          { ar: "لَبِسَ", tr: "labisa", en: "put on" },
+          { ar: "قِناعَهُ", tr: "qināʿahu", en: "his mask" },
+          { ar: "وَقُفّازَيْهِ", tr: "wa-quffāzayhi", en: "and his gloves" },
+          { ar: "وَفَتَحَ", tr: "wa-fataḥa", en: "and opened" },
+          { ar: "بِحَذَرٍ", tr: "bi-ḥadharin", en: "with caution" },
+          { ar: "شَديدٍ", tr: "shadīdin", en: "great" },
+          { ar: "أَخَذَ", tr: "akhadha", en: "took" },
+          { ar: "أَقْراصَ", tr: "aqrāṣa", en: "combs of" },
+          { ar: "الشَّمْعِ", tr: "ash-shamʿi", en: "the wax" },
+          { ar: "الذَّهَبِيَّةَ", tr: "adh-dhahabiyyata", en: "golden" },
+          { ar: "وَعَصَرَ", tr: "wa-ʿaṣara", en: "and pressed" },
+          { ar: "مِنْها", tr: "minhā", en: "from them" },
+          { ar: "عَسَلًا", tr: "ʿasalan", en: "honey" },
+          { ar: "صافِيًا", tr: "ṣāfiyan", en: "pure" },
+          { ar: "جِرارٍ", tr: "jirārin", en: "jars" },
+          { ar: "زُجاجٍ", tr: "zujājin", en: "glass" }
+        ]
+      },
+      {
+        img: "assets/img/beekeeper/s3.jpg",
+        audio: "s3",
+        ar: "حَمَلَ سالِمٌ الجِرارَ إِلى السّوقِ عَلى ظَهْرِ حِمارِهِ. ذاقَ التُّجّارُ العَسَلَ فَقالوا: هٰذا أَلَذُّ عَسَلٍ في المِنْطَقَةِ! باعَ كُلَّ شَيْءٍ قَبْلَ الظُّهْرِ، وَقالَ مُبْتَسِمًا: مَنْ يَعْمَلْ بِصَبْرٍ يَأْكُلْ عَسَلًا.",
+        tr: "ḥamala sālimun il-jirāra ilā s-sūqi ʿalā ẓahri ḥimārihi. dhāqa t-tujjāru l-ʿasala fa-qālū: hādhā aladhdhu ʿasalin fī l-minṭaqati! bāʿa kulla shayʾin qabla ẓ-ẓuhri, wa-qāla mubtasiman: man yaʿmal bi-ṣabrin yaʾkul ʿasalan.",
+        en: "Salim carried the jars to the market on the back of his donkey. The merchants tasted the honey and said: This is the most delicious honey in the region! He sold everything before noon, and said with a smile: Whoever works with patience eats honey.",
+        tense: "Past + superlative أَلَذّ + مَنْ يَفْعَلْ",
+        words: [
+          { ar: "حَمَلَ", tr: "ḥamala", en: "carried" },
+          { ar: "الجِرارَ", tr: "al-jirāra", en: "the jars" },
+          { ar: "السّوقِ", tr: "as-sūqi", en: "the market" },
+          { ar: "ظَهْرِ", tr: "ẓahri", en: "back of" },
+          { ar: "حِمارِهِ", tr: "ḥimārihi", en: "his donkey" },
+          { ar: "ذاقَ", tr: "dhāqa", en: "tasted" },
+          { ar: "التُّجّارُ", tr: "at-tujjāru", en: "the merchants" },
+          { ar: "العَسَلَ", tr: "al-ʿasala", en: "the honey" },
+          { ar: "فَقالوا", tr: "fa-qālū", en: "so they said" },
+          { ar: "هٰذا", tr: "hādhā", en: "this" },
+          { ar: "أَلَذُّ", tr: "aladhdhu", en: "most delicious" },
+          { ar: "المِنْطَقَةِ", tr: "al-minṭaqati", en: "the region" },
+          { ar: "باعَ", tr: "bāʿa", en: "sold" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "شَيْءٍ", tr: "shayʾin", en: "thing" },
+          { ar: "قَبْلَ", tr: "qabla", en: "before" },
+          { ar: "الظُّهْرِ", tr: "aẓ-ẓuhri", en: "noon" },
+          { ar: "مُبْتَسِمًا", tr: "mubtasiman", en: "smiling" },
+          { ar: "مَنْ", tr: "man", en: "whoever" },
+          { ar: "يَعْمَلْ", tr: "yaʿmal", en: "works" },
+          { ar: "بِصَبْرٍ", tr: "bi-ṣabrin", en: "with patience" },
+          { ar: "يَأْكُلْ", tr: "yaʾkul", en: "eats" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا يَمْلِكُ سالِمٌ؟",
+        q_en: "What does Salim own?",
+        options: [
+          { ar: "خَلايا نَحْلٍ كَثيرَةً", en: "Many beehives" },
+          { ar: "قارِبًا قَديمًا", en: "An old boat" },
+          { ar: "مَكْتَبَةً صَغيرَةً", en: "A small library" }
+        ],
+        correct: 0,
+        why: "خَلِيَّة hive → plural خَلايا. Same word as 'cell' in science!"
+      },
+      {
+        q_ar: "أَيْنَ تَبْقى المَلِكَةُ؟",
+        q_en: "Where does the queen stay?",
+        options: [
+          { ar: "في الخَلِيَّةِ", en: "In the hive" },
+          { ar: "فَوْقَ الأَزْهارِ", en: "On the flowers" },
+          { ar: "في السّوقِ", en: "In the market" }
+        ],
+        correct: 0,
+        why: "المَلِكَةُ تَبْقى في الخَلِيَّةِ — malika = queen (remember malik = king from the mirror-queen!)."
+      },
+      {
+        q_ar: "«لَبِسَ قِناعَهُ وَقُفّازَيْهِ» — لِماذا قُفّازَيْهِ وَلَيْسَ قُفّازاتِهِ؟",
+        q_en: "Why quffāzayhi (not quffāzātihi)?",
+        options: [
+          { ar: "لِأَنَّهُما اثْنانِ — المُثَنّى", en: "Because they are TWO — the dual!" },
+          { ar: "خَطَأٌ في الكِتابَةِ", en: "A spelling mistake" },
+          { ar: "لِأَنَّها كَلِمَةٌ أَجْنَبِيَّةٌ", en: "Because it's a foreign word" }
+        ],
+        correct: 0,
+        why: "Gloves come in pairs → dual -ayn: قُفّازَيْنِ / قُفّازَيْهِ. Arabic loves the dual — remember يَدانِ، عَيْنانِ from the body drill!"
+      },
+      {
+        q_ar: "ماذا قالَ التُّجّارُ عَنِ العَسَلِ؟",
+        q_en: "What did the merchants say about the honey?",
+        options: [
+          { ar: "هٰذا أَلَذُّ عَسَلٍ في المِنْطَقَةِ", en: "The most delicious honey in the region" },
+          { ar: "هٰذا العَسَلُ غالٍ جِدًّا", en: "This honey is too expensive" },
+          { ar: "لا نُريدُ عَسَلًا", en: "We don't want honey" }
+        ],
+        correct: 0,
+        why: "أَلَذّ = superlative of لَذيذ delicious — the أَفْعَل pattern: كَبير→أَكْبَر، جَميل→أَجْمَل، لَذيذ→أَلَذّ!"
+      },
+      {
+        q_ar: "«مَنْ يَعْمَلْ بِصَبْرٍ يَأْكُلْ عَسَلًا» — ما نَمَطُ هٰذِهِ الجُمْلَةِ؟",
+        q_en: "\"Whoever works with patience eats honey\" — what's the pattern?",
+        options: [
+          { ar: "مَنْ يَفْعَلْ.. يَفْعَلْ — جُمْلَةُ الشَّرْطِ", en: "man yafʿal.. yafʿal — the condition sentence" },
+          { ar: "سُؤالٌ", en: "A question" },
+          { ar: "نَفْيٌ", en: "A negation" }
+        ],
+        correct: 0,
+        why: "Same pattern as مَنْ يَزْرَعْ يَحْصُدْ (who sows, reaps) from the school-garden story — proverb #8!"
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 25 — The Baker of the Alley ═══════════ */
+  {
+    id: "baker",
+    title_ar: "خَبّازُ الحارَةِ",
+    title_en: "The Baker of the Alley",
+    level: "Beginner+ · A2",
+    cover: "assets/img/baker/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/baker/s1.jpg",
+        audio: "s1",
+        ar: "كانَ خَبّازٌ عَجوزٌ اسْمُهُ حَسَنٌ يُوقِدُ فُرْنَهُ الطّينِيَّ كُلَّ صَباحٍ قَبْلَ الفَجْرِ. كانَ الجَمْرُ يَتَوَهَّجُ بِاللَّوْنِ الأَحْمَرِ، وَرائِحَةُ الخُبْزِ الطّازَجِ تَمْلَأُ الحارَةَ كُلَّها.",
+        tr: "kāna khabbāzun ʿajūzun ismuhu ḥasanun yūqidu furnahu ṭ-ṭīniyya kulla ṣabāḥin qabla l-fajri. kāna l-jamru yatawahhaju bi-l-lawni l-aḥmari, wa-rāʾiḥatu l-khubzi ṭ-ṭāzaji tamlaʾu l-ḥārata kullahā.",
+        en: "An old baker named Hasan lit his clay oven every morning before dawn. The embers glowed red, and the smell of fresh bread filled the whole alley.",
+        tense: "كانَ يَفْعَلُ + حال",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "خَبّازٌ", tr: "khabbāzun", en: "a baker" },
+          { ar: "عَجوزٌ", tr: "ʿajūzun", en: "old" },
+          { ar: "اسْمُهُ", tr: "ismuhu", en: "his name" },
+          { ar: "حَسَنٌ", tr: "ḥasanun", en: "Hasan" },
+          { ar: "يُوقِدُ", tr: "yūqidu", en: "lights" },
+          { ar: "فُرْنَهُ", tr: "furnahu", en: "his oven" },
+          { ar: "الطّينِيَّ", tr: "aṭ-ṭīniyya", en: "clay (adj)" },
+          { ar: "كُلَّ", tr: "kulla", en: "every" },
+          { ar: "صَباحٍ", tr: "ṣabāḥin", en: "morning" },
+          { ar: "قَبْلَ", tr: "qabla", en: "before" },
+          { ar: "الفَجْرِ", tr: "al-fajri", en: "the dawn" },
+          { ar: "الجَمْرُ", tr: "al-jamru", en: "the embers" },
+          { ar: "يَتَوَهَّجُ", tr: "yatawahhaju", en: "glows" },
+          { ar: "بِاللَّوْنِ", tr: "bi-l-lawni", en: "with the color" },
+          { ar: "الأَحْمَرِ", tr: "al-aḥmari", en: "red" },
+          { ar: "وَرائِحَةُ", tr: "wa-rāʾiḥatu", en: "and the smell of" },
+          { ar: "الخُبْزِ", tr: "al-khubzi", en: "the bread" },
+          { ar: "الطّازَجِ", tr: "aṭ-ṭāzaji", en: "fresh" },
+          { ar: "تَمْلَأُ", tr: "tamlaʾu", en: "fills" },
+          { ar: "الحارَةَ", tr: "al-ḥārata", en: "the alley" },
+          { ar: "كُلَّها", tr: "kullahā", en: "all of it" }
+        ]
+      },
+      {
+        img: "assets/img/baker/s2.jpg",
+        audio: "s2",
+        ar: "كانَ يَعْجِنُ الدَّقيقَ بِالماءِ وَالخَميرَةِ وَالمِلْحِ، ثُمَّ يَتْرُكُ العَجينَ لِيَرْتاحَ ساعَةً. بَعْدَ ذٰلِكَ، يُشَكِّلُ أَرْغِفَةً مُدَوَّرَةً وَيَرُشُّ عَلَيْها السِّمْسِمَ.",
+        tr: "kāna yaʿjinu d-daqīqa bi-l-māʾi wa-l-khamīrati wa-l-milḥi, thumma yatruku l-ʿajīna li-yartāḥa sāʿatan. baʿda dhālika, yushakkilu arghifatan mudawwaratan wa-yarushshu ʿalayhā s-simsima.",
+        en: "He kneaded the flour with water, yeast, and salt, then left the dough to rest for an hour. After that, he shaped round loaves and sprinkled sesame on them.",
+        tense: "كانَ يَفْعَلُ + لِـ of purpose",
+        words: [
+          { ar: "يَعْجِنُ", tr: "yaʿjinu", en: "kneads" },
+          { ar: "الدَّقيقَ", tr: "ad-daqīqa", en: "the flour" },
+          { ar: "بِالماءِ", tr: "bi-l-māʾi", en: "with water" },
+          { ar: "وَالخَميرَةِ", tr: "wa-l-khamīrati", en: "and yeast" },
+          { ar: "وَالمِلْحِ", tr: "wa-l-milḥi", en: "and salt" },
+          { ar: "ثُمَّ", tr: "thumma", en: "then" },
+          { ar: "يَتْرُكُ", tr: "yatruku", en: "leaves" },
+          { ar: "العَجينَ", tr: "al-ʿajīna", en: "the dough" },
+          { ar: "لِيَرْتاحَ", tr: "li-yartāḥa", en: "to rest" },
+          { ar: "ساعَةً", tr: "sāʿatan", en: "an hour" },
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "ذٰلِكَ", tr: "dhālika", en: "that" },
+          { ar: "يُشَكِّلُ", tr: "yushakkilu", en: "shapes" },
+          { ar: "أَرْغِفَةً", tr: "arghifatan", en: "loaves" },
+          { ar: "مُدَوَّرَةً", tr: "mudawwaratan", en: "round" },
+          { ar: "وَيَرُشُّ", tr: "wa-yarushshu", en: "and sprinkles" },
+          { ar: "عَلَيْها", tr: "ʿalayhā", en: "on them" },
+          { ar: "السِّمْسِمَ", tr: "as-simsima", en: "the sesame" }
+        ]
+      },
+      {
+        img: "assets/img/baker/s3.jpg",
+        audio: "s3",
+        ar: "في يَوْمٍ بارِدٍ، جاءَ طِفْلٌ فَقيرٌ يَرْتَجِفُ مِنَ البَرْدِ، وَوَقَفَ في الطّابورِ دونَ نُقودٍ. أَعْطاهُ حَسَنٌ رَغيفًا ساخِنًا مَجّانًا وَقالَ: الخُبْزُ الَّذي نَتَقاسَمُهُ أَطْيَبُ مِنَ الخُبْزِ الَّذي نَأْكُلُهُ وَحْدَنا.",
+        tr: "fī yawmin bāridin, jāʾa ṭiflun faqīrun yartajifu mina l-bardi, wa-waqafa fī ṭ-ṭābūri dūna nuqūdin. aʿṭāhu ḥasanun raghīfan sākhinan majjānan wa-qāla: al-khubzu lladhī nataqāsamuhu aṭyabu mina l-khubzi lladhī naʾkuluhu waḥdanā.",
+        en: "On a cold day, a poor child came shivering from the cold, and stood in the line without money. Hasan gave him a hot loaf for free and said: The bread we share is more delicious than the bread we eat alone.",
+        tense: "Past + الَّذي + comparative أَطْيَب",
+        words: [
+          { ar: "يَوْمٍ", tr: "yawmin", en: "a day" },
+          { ar: "بارِدٍ", tr: "bāridin", en: "cold" },
+          { ar: "جاءَ", tr: "jāʾa", en: "came" },
+          { ar: "طِفْلٌ", tr: "ṭiflun", en: "a child" },
+          { ar: "فَقيرٌ", tr: "faqīrun", en: "poor" },
+          { ar: "يَرْتَجِفُ", tr: "yartajifu", en: "shivering" },
+          { ar: "البَرْدِ", tr: "al-bardi", en: "the cold" },
+          { ar: "وَوَقَفَ", tr: "wa-waqafa", en: "and stood" },
+          { ar: "الطّابورِ", tr: "aṭ-ṭābūri", en: "the line" },
+          { ar: "دونَ", tr: "dūna", en: "without" },
+          { ar: "نُقودٍ", tr: "nuqūdin", en: "money" },
+          { ar: "أَعْطاهُ", tr: "aʿṭāhu", en: "gave him" },
+          { ar: "رَغيفًا", tr: "raghīfan", en: "a loaf" },
+          { ar: "ساخِنًا", tr: "sākhinan", en: "hot" },
+          { ar: "مَجّانًا", tr: "majjānan", en: "for free" },
+          { ar: "وَقالَ", tr: "wa-qāla", en: "and said" },
+          { ar: "الخُبْزُ", tr: "al-khubzu", en: "the bread" },
+          { ar: "الَّذي", tr: "alladhī", en: "which" },
+          { ar: "نَتَقاسَمُهُ", tr: "nataqāsamuhu", en: "we share it" },
+          { ar: "أَطْيَبُ", tr: "aṭyabu", en: "more delicious" },
+          { ar: "نَأْكُلُهُ", tr: "naʾkuluhu", en: "we eat it" },
+          { ar: "وَحْدَنا", tr: "waḥdanā", en: "alone" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "مَتى يُوقِدُ حَسَنٌ فُرْنَهُ؟",
+        q_en: "When does Hasan light his oven?",
+        options: [
+          { ar: "قَبْلَ الفَجْرِ", en: "Before dawn" },
+          { ar: "بَعْدَ الظُّهْرِ", en: "After noon" },
+          { ar: "في المَساءِ", en: "In the evening" }
+        ],
+        correct: 0,
+        why: "قَبْلَ الفَجْرِ — same dawn as the fisherman's return! أَوْقَدَ / يُوقِدُ = to light a fire."
+      },
+      {
+        q_ar: "بِماذا يَعْجِنُ الدَّقيقَ؟",
+        q_en: "What does he knead the flour with?",
+        options: [
+          { ar: "بِالماءِ وَالخَميرَةِ وَالمِلْحِ", en: "Water, yeast, and salt" },
+          { ar: "بِالعَسَلِ وَالسُّكَّرِ", en: "Honey and sugar" },
+          { ar: "بِالحَليبِ فَقَطْ", en: "Only milk" }
+        ],
+        correct: 0,
+        why: "The eternal bread recipe: دَقيق flour + ماء water + خَميرَة yeast + مِلْح salt. Four words, one civilization 🍞"
+      },
+      {
+        q_ar: "«يَتْرُكُ العَجينَ لِيَرْتاحَ» — ماذا تُفيدُ اللّامُ في لِيَرْتاحَ؟",
+        q_en: "\"He leaves the dough li-yartāḥa\" — what does the li- express?",
+        options: [
+          { ar: "الغايَة — IN ORDER TO rest", en: "Purpose: in order to rest" },
+          { ar: "المِلْكِيَّة — belongs to", en: "Possession" },
+          { ar: "النَّفْي", en: "Negation" }
+        ],
+        correct: 0,
+        why: "li- + verb = 'in order to'. And yes, Arabic says dough RESTS (يَرْتاح) just like people do!"
+      },
+      {
+        q_ar: "لِماذا أَعْطى حَسَنٌ الطِّفْلَ رَغيفًا مَجّانًا؟",
+        q_en: "Why did Hasan give the child a free loaf?",
+        options: [
+          { ar: "لِأَنَّهُ فَقيرٌ يَرْتَجِفُ مِنَ البَرْدِ وَلا يَمْلِكُ نُقودًا", en: "He was poor, shivering, with no money" },
+          { ar: "لِأَنَّ الخُبْزَ قَديمٌ", en: "Because the bread was old" },
+          { ar: "لِأَنَّهُ ابْنُهُ", en: "Because he was his son" }
+        ],
+        correct: 0,
+        why: "مَجّانًا = for free — a golden shopping word. اِرْتَجَفَ / يَرْتَجِفُ = to shiver, to tremble."
+      },
+      {
+        q_ar: "«الخُبْزُ الَّذي نَتَقاسَمُهُ أَطْيَبُ» — ما القاعِدَتانِ هُنا؟",
+        q_en: "\"The bread WE SHARE is MORE delicious\" — which two rules meet here?",
+        options: [
+          { ar: "الاِسْمُ المَوْصولُ الَّذي + التَّفْضيلُ أَطْيَب", en: "Relative alladhī + comparative aṭyab" },
+          { ar: "النَّفْيُ وَالسُّؤالُ", en: "Negation and question" },
+          { ar: "المُثَنّى وَالجَمْعُ", en: "Dual and plural" }
+        ],
+        correct: 0,
+        why: "Drill 32 (alladhī) meets the afʿal comparative — طَيِّب → أَطْيَب. The whole app in one sentence, and proverb #9! 🎓"
+      }
+    ]
   }
 ];
