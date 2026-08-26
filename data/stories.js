@@ -3762,5 +3762,279 @@ const STORIES = [
         why: "One rose earned by three days of work meant more than anything money could buy."
       }
     ]
+  },
+
+  /* ═══════════ STORY 16 — The Night Train (Set 3) ═══════════ */
+  {
+    id: "night-train",
+    title_ar: "القِطارُ اللَّيْلِيُّ",
+    title_en: "The Night Train",
+    level: "Beginner+ · A2",
+    cover: "assets/img/night-train/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/night-train/s1.jpg",
+        audio: "s1",
+        ar: "في المَساءِ، ذَهَبَ عُمَرُ وَأَبوهُ إِلى مَحَطَّةِ القِطارِ. اِشْتَرى الأَبُ تَذْكَرَتَيْنِ لِلْقِطارِ اللَّيْلِيِّ.",
+        tr: "fī l-masāʾi, dhahaba ʿumaru wa-abūhu ilā maḥaṭṭati l-qiṭāri. ishtarā l-abu tadhkaratayni li-l-qiṭāri l-layliyyi.",
+        en: "In the evening, Omar and his father went to the train station. The father bought two tickets for the night train.",
+        tense: "Past + dual object (تَذْكَرَتَيْنِ)",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "المَساءِ", tr: "al-masāʾi", en: "the evening" },
+          { ar: "ذَهَبَ", tr: "dhahaba", en: "went" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "وَأَبوهُ", tr: "wa-abūhu", en: "and his father" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "مَحَطَّةِ", tr: "maḥaṭṭati", en: "station (of)" },
+          { ar: "القِطارِ", tr: "al-qiṭāri", en: "the train" },
+          { ar: "اِشْتَرى", tr: "ishtarā", en: "bought" },
+          { ar: "الأَبُ", tr: "al-abu", en: "the father" },
+          { ar: "تَذْكَرَتَيْنِ", tr: "tadhkaratayni", en: "two tickets" },
+          { ar: "لِلْقِطارِ", tr: "li-l-qiṭāri", en: "for the train" },
+          { ar: "اللَّيْلِيِّ", tr: "al-layliyyi", en: "the night (adj.)" }
+        ]
+      },
+      {
+        img: "assets/img/night-train/s2.jpg",
+        audio: "s2",
+        ar: "جَلَسَ عُمَرُ بِجانِبِ النّافِذَةِ وَنَظَرَ إِلى النُّجومِ. كانَ صَوْتُ القِطارِ كَأُغْنِيَةٍ هادِئَةٍ.",
+        tr: "jalasa ʿumaru bi-jānibi n-nāfidhati wa-naẓara ilā n-nujūmi. kāna ṣawtu l-qiṭāri ka-ughniyatin hādiʾatin.",
+        en: "Omar sat next to the window and looked at the stars. The sound of the train was like a quiet song.",
+        tense: "Past + كَـ (like) — simile!",
+        words: [
+          { ar: "جَلَسَ", tr: "jalasa", en: "sat" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "بِجانِبِ", tr: "bi-jānibi", en: "next to" },
+          { ar: "النّافِذَةِ", tr: "an-nāfidhati", en: "the window" },
+          { ar: "وَنَظَرَ", tr: "wa-naẓara", en: "and looked" },
+          { ar: "إِلى", tr: "ilā", en: "at" },
+          { ar: "النُّجومِ", tr: "an-nujūmi", en: "the stars" },
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "صَوْتُ", tr: "ṣawtu", en: "sound (of)" },
+          { ar: "القِطارِ", tr: "al-qiṭāri", en: "the train" },
+          { ar: "كَأُغْنِيَةٍ", tr: "ka-ughniyatin", en: "like a song" },
+          { ar: "هادِئَةٍ", tr: "hādiʾatin", en: "quiet" }
+        ]
+      },
+      {
+        img: "assets/img/night-train/s3.jpg",
+        audio: "s3",
+        ar: "نامَ عُمَرُ، وَفي الصَّباحِ وَصَلَ القِطارُ إِلى المَدينَةِ. كانَتِ الجَدَّةُ تَنْتَظِرُهُما في المَحَطَّةِ بِابْتِسامَةٍ كَبيرَةٍ.",
+        tr: "nāma ʿumaru, wa-fī ṣ-ṣabāḥi waṣala l-qiṭāru ilā l-madīnati. kānati l-jaddatu tantaẓiruhumā fī l-maḥaṭṭati bi-btisāmatin kabīratin.",
+        en: "Omar slept, and in the morning the train arrived at the city. The grandmother was waiting for them at the station with a big smile.",
+        tense: "Past continuous + هُما (them-two)",
+        words: [
+          { ar: "نامَ", tr: "nāma", en: "slept" },
+          { ar: "عُمَرُ", tr: "ʿumaru", en: "Omar" },
+          { ar: "وَفي", tr: "wa-fī", en: "and in" },
+          { ar: "الصَّباحِ", tr: "aṣ-ṣabāḥi", en: "the morning" },
+          { ar: "وَصَلَ", tr: "waṣala", en: "arrived" },
+          { ar: "القِطارُ", tr: "al-qiṭāru", en: "the train" },
+          { ar: "إِلى", tr: "ilā", en: "at/to" },
+          { ar: "المَدينَةِ", tr: "al-madīnati", en: "the city" },
+          { ar: "كانَتِ", tr: "kānati", en: "was" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "تَنْتَظِرُهُما", tr: "tantaẓiruhumā", en: "waiting for them-two" },
+          { ar: "في", tr: "fī", en: "at" },
+          { ar: "المَحَطَّةِ", tr: "al-maḥaṭṭati", en: "the station" },
+          { ar: "بِابْتِسامَةٍ", tr: "bi-btisāmatin", en: "with a smile" },
+          { ar: "كَبيرَةٍ", tr: "kabīratin", en: "big" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "إِلى أَيْنَ ذَهَبَ عُمَرُ وَأَبوهُ؟",
+        q_en: "Where did Omar and his father go?",
+        options: [
+          { ar: "إِلى المَطارِ", en: "To the airport" },
+          { ar: "إِلى مَحَطَّةِ القِطارِ", en: "To the train station" },
+          { ar: "إِلى المَيْناءِ", en: "To the port" }
+        ],
+        correct: 1,
+        why: "ذَهَبا إِلى مَحَطَّةِ القِطارِ — the station from your transport & city drills!"
+      },
+      {
+        q_ar: "كَمْ تَذْكَرَةً اِشْتَرى الأَبُ؟",
+        q_en: "How many tickets did the father buy?",
+        options: [
+          { ar: "تَذْكَرَةً واحِدَةً", en: "One ticket" },
+          { ar: "تَذْكَرَتَيْنِ", en: "Two tickets" },
+          { ar: "ثَلاثَ تَذاكِرَ", en: "Three tickets" }
+        ],
+        correct: 1,
+        why: "تَذْكَرَتَيْنِ — the dual -ayni ending. Two people, two tickets!"
+      },
+      {
+        q_ar: "«كَأُغْنِيَةٍ هادِئَةٍ» — ماذا تَفْعَلُ الكافُ هُنا؟",
+        q_en: "\"ka-ughniya hādiʾa\" — what does the كَـ do?",
+        options: [
+          { ar: "تَعْني «مِثْل» — like", en: "It means 'like' — a comparison" },
+          { ar: "تَعْني «لِأَنَّ»", en: "It means 'because'" },
+          { ar: "لا مَعْنى لَها", en: "It has no meaning" }
+        ],
+        correct: 0,
+        why: "كَـ + noun = like/as: the train's sound was LIKE a quiet song. Your first simile!"
+      },
+      {
+        q_ar: "مَنْ كانَ يَنْتَظِرُهُما في المَحَطَّةِ؟",
+        q_en: "Who was waiting for them at the station?",
+        options: [
+          { ar: "الجَدَّةُ", en: "The grandmother" },
+          { ar: "الأُمُّ", en: "The mother" },
+          { ar: "صَديقُ عُمَرَ", en: "Omar's friend" }
+        ],
+        correct: 0,
+        why: "كانَتِ الجَدَّةُ تَنْتَظِرُهُما — with a big smile (بِابْتِسامَةٍ كَبيرَةٍ)."
+      },
+      {
+        q_ar: "«تَنْتَظِرُهُما» — ماذا يَعْني «هُما»؟",
+        q_en: "\"tantaẓiru-humā\" — what does the ending -humā mean?",
+        options: [
+          { ar: "هُما = them TWO", en: "Them two (dual!)" },
+          { ar: "هُمْ = them all", en: "Them all" },
+          { ar: "هُوَ = him", en: "Him" }
+        ],
+        correct: 0,
+        why: "ـهُما = the dual 'them': waiting for the two of them — Omar AND his father."
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 17 — Trip to the Mountains (Set 3) ═══════════ */
+  {
+    id: "mountain-trip",
+    title_ar: "رِحْلَةٌ إِلى الجَبَلِ",
+    title_en: "Trip to the Mountain",
+    level: "Beginner+ · A2",
+    cover: "assets/img/mountain-trip/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/mountain-trip/s1.jpg",
+        audio: "s1",
+        ar: "في الرَّبيعِ، صَعِدَتْ لَيْلى وَأَبوها الجَبَلَ. حَمَلا حَقيبَةَ الظَّهْرِ وَالماءَ وَالخُبْزَ.",
+        tr: "fī r-rabīʿi, ṣaʿidat laylā wa-abūhā l-jabala. ḥamalā ḥaqībata ẓ-ẓahri wa-l-māʾa wa-l-khubza.",
+        en: "In the spring, Layla and her father climbed the mountain. They carried the backpack, the water and the bread.",
+        tense: "Past + dual حَمَلا",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "الرَّبيعِ", tr: "ar-rabīʿi", en: "the spring" },
+          { ar: "صَعِدَتْ", tr: "ṣaʿidat", en: "climbed (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "وَأَبوها", tr: "wa-abūhā", en: "and her father" },
+          { ar: "الجَبَلَ", tr: "al-jabala", en: "the mountain" },
+          { ar: "حَمَلا", tr: "ḥamalā", en: "they two carried" },
+          { ar: "حَقيبَةَ", tr: "ḥaqībata", en: "bag (of)" },
+          { ar: "الظَّهْرِ", tr: "aẓ-ẓahri", en: "the back" },
+          { ar: "وَالماءَ", tr: "wa-l-māʾa", en: "and the water" },
+          { ar: "وَالخُبْزَ", tr: "wa-l-khubza", en: "and the bread" }
+        ]
+      },
+      {
+        img: "assets/img/mountain-trip/s2.jpg",
+        audio: "s2",
+        ar: "كانَ الطَّريقُ طَويلًا، لٰكِنَّهُما وَجَدا نَبْعَ ماءٍ بارِدٍ. شَرِبا وَاسْتَراحا تَحْتَ صَخْرَةٍ كَبيرَةٍ.",
+        tr: "kāna ṭ-ṭarīqu ṭawīlan, lākinnahumā wajadā nabʿa māʾin bāridin. sharibā wa-starāḥā taḥta ṣakhratin kabīratin.",
+        en: "The road was long, but they found a spring of cold water. They drank and rested under a big rock.",
+        tense: "Dual past ×3 — وَجَدا، شَرِبا، اِسْتَراحا",
+        words: [
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "الطَّريقُ", tr: "aṭ-ṭarīqu", en: "the road" },
+          { ar: "طَويلًا", tr: "ṭawīlan", en: "long" },
+          { ar: "لٰكِنَّهُما", tr: "lākinnahumā", en: "but they two" },
+          { ar: "وَجَدا", tr: "wajadā", en: "they two found" },
+          { ar: "نَبْعَ", tr: "nabʿa", en: "spring (of)" },
+          { ar: "ماءٍ", tr: "māʾin", en: "water" },
+          { ar: "بارِدٍ", tr: "bāridin", en: "cold" },
+          { ar: "شَرِبا", tr: "sharibā", en: "they two drank" },
+          { ar: "وَاسْتَراحا", tr: "wa-starāḥā", en: "and they two rested" },
+          { ar: "تَحْتَ", tr: "taḥta", en: "under" },
+          { ar: "صَخْرَةٍ", tr: "ṣakhratin", en: "a rock" },
+          { ar: "كَبيرَةٍ", tr: "kabīratin", en: "big" }
+        ]
+      },
+      {
+        img: "assets/img/mountain-trip/s3.jpg",
+        audio: "s3",
+        ar: "وَصَلا إِلى القِمَّةِ عِنْدَ الظُّهْرِ. قالَتْ لَيْلى: مِنْ هُنا أَرى العالَمَ كُلَّهُ!",
+        tr: "waṣalā ilā l-qimmati ʿinda ẓ-ẓuhri. qālat laylā: min hunā arā l-ʿālama kullahu!",
+        en: "They reached the summit at noon. Layla said: From here I see the whole world!",
+        tense: "Dual past + أَرى (I see)",
+        words: [
+          { ar: "وَصَلا", tr: "waṣalā", en: "they two arrived" },
+          { ar: "إِلى", tr: "ilā", en: "at/to" },
+          { ar: "القِمَّةِ", tr: "al-qimmati", en: "the summit" },
+          { ar: "عِنْدَ", tr: "ʿinda", en: "at" },
+          { ar: "الظُّهْرِ", tr: "aẓ-ẓuhri", en: "noon" },
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "هُنا", tr: "hunā", en: "here" },
+          { ar: "أَرى", tr: "arā", en: "I see" },
+          { ar: "العالَمَ", tr: "al-ʿālama", en: "the world" },
+          { ar: "كُلَّهُ", tr: "kullahu", en: "all of it" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "في أَيِّ فَصْلٍ صَعِدا الجَبَلَ؟",
+        q_en: "In which season did they climb the mountain?",
+        options: [
+          { ar: "في الرَّبيعِ", en: "In the spring" },
+          { ar: "في الشِّتاءِ", en: "In the winter" },
+          { ar: "في الخَريفِ", en: "In the autumn" }
+        ],
+        correct: 0,
+        why: "في الرَّبيعِ — spring, from your seasons drill!"
+      },
+      {
+        q_ar: "ماذا حَمَلا مَعَهُما؟",
+        q_en: "What did they carry with them?",
+        options: [
+          { ar: "حَقيبَةَ الظَّهْرِ وَالماءَ وَالخُبْزَ", en: "The backpack, water and bread" },
+          { ar: "الكُتُبَ وَالأَقْلامَ", en: "Books and pens" },
+          { ar: "المِظَلَّةَ وَالكُرَةَ", en: "The umbrella and the ball" }
+        ],
+        correct: 0,
+        why: "حَقيبَة الظَّهْر = bag-of-the-back = backpack — the إضافة pattern again!"
+      },
+      {
+        q_ar: "ماذا وَجَدا في الطَّريقِ؟",
+        q_en: "What did they find on the way?",
+        options: [
+          { ar: "كَنْزًا", en: "A treasure" },
+          { ar: "نَبْعَ ماءٍ بارِدٍ", en: "A spring of cold water" },
+          { ar: "قُنْفُذًا", en: "A hedgehog" }
+        ],
+        correct: 1,
+        why: "وَجَدا نَبْعَ ماءٍ بارِدٍ — نَبْع = a natural spring."
+      },
+      {
+        q_ar: "مَتى وَصَلا إِلى القِمَّةِ؟",
+        q_en: "When did they reach the summit?",
+        options: [
+          { ar: "عِنْدَ الغُروبِ", en: "At sunset" },
+          { ar: "في اللَّيْلِ", en: "At night" },
+          { ar: "عِنْدَ الظُّهْرِ", en: "At noon" }
+        ],
+        correct: 2,
+        why: "وَصَلا إِلى القِمَّةِ عِنْدَ الظُّهْرِ — القِمَّة = the peak/summit."
+      },
+      {
+        q_ar: "ماذا قالَتْ لَيْلى عَلى القِمَّةِ؟",
+        q_en: "What did Layla say on the summit?",
+        options: [
+          { ar: "أَنا تَعْبانَةُ", en: "I am tired" },
+          { ar: "مِنْ هُنا أَرى العالَمَ كُلَّهُ", en: "From here I see the whole world" },
+          { ar: "أُريدُ أَنْ أَرْجِعَ", en: "I want to go back" }
+        ],
+        correct: 1,
+        why: "أَرى = I see (the weak verb رأى in I-form!). العالَم كُلَّه = the whole world."
+      }
+    ]
   }
 ];
