@@ -954,5 +954,81 @@ const GRAMMAR = [
       labels: ["الموصوف · the noun", "الصفة ١ · attribute (matches!)", "الخبر · the statement", "التوكيد · very"],
       explain: "Adjectives FOLLOW the noun and copy its gender + definiteness: aš-šūraba as-sākhina (the hot soup) — both with ال, both feminine. Then the sentence adds the news: it's delicious!"
     }
+  },
+
+  /* ═══════════ DRILL 14 — Colors ═══════════ */
+  {
+    id: "colors",
+    title_ar: "الأَلْوان",
+    title_en: "Colors — الألوان",
+    img: "assets/img/grammar/colors.jpg",
+    base_en: "Colors — name them, then match them to nouns.",
+    hint: "Basic colors follow the أَفْعَل pattern with special FEMININE forms: أَحْمَر/حَمْراء red, أَبْيَض/بَيْضاء white — remember the goats!",
+    forms: [
+      { tag: "Warm colors · ١", q_en: "Red. Green. Blue. Yellow.",
+        ar: "أَحْمَرُ. أَخْضَرُ. أَزْرَقُ. أَصْفَرُ.",
+        tr: "aḥmaru. akhḍaru. azraqu. aṣfaru.",
+        note: "The big four, all أَفْعَل pattern. Feminines: حَمْراء، خَضْراء، زَرْقاء، صَفْراء.",
+        audio: "colors-1" },
+      { tag: "Neutrals · ٢", q_en: "White. Black. Brown. Grey.",
+        ar: "أَبْيَضُ. أَسْوَدُ. بُنِّيٌّ. رَمادِيٌّ.",
+        tr: "abyaḍu. aswadu. bunniyyun. ramādiyyun.",
+        note: "White/black follow أَفْعَل; brown (from بُنّ coffee beans!) and grey (from رَماد ash!) use the ـِيّ ending.",
+        audio: "colors-2" },
+      { tag: "More colors · ٣", q_en: "Orange. Pink. Purple. Gold.",
+        ar: "بُرْتُقالِيٌّ. وَرْدِيٌّ. بَنَفْسَجِيٌّ. ذَهَبِيٌّ.",
+        tr: "burtuqāliyyun. wardiyyun. banafsajiyyun. dhahabiyyun.",
+        note: "All from nouns: بُرْتُقال orange-fruit, وَرْدَة rose, بَنَفْسَج violet, ذَهَب gold. Add ـِيّ = color!",
+        audio: "colors-3" },
+      { tag: "In a sentence · جملة", q_en: "The sky is blue and the grass is green.",
+        ar: "السَّماءُ زَرْقاءُ وَالعُشْبُ أَخْضَرُ.",
+        tr: "as-samāʾu zarqāʾu wa-l-ʿushbu akhḍaru.",
+        note: "السَّماء is feminine → زَرْقاء; العُشْب is masculine → أَخْضَر. Agreement in action!",
+        audio: "colors-4" }
+    ],
+    roles: {
+      title: "Color agreement — لون + موصوف",
+      sentence: ["قَميصٌ", "أَحْمَرُ", "حَقيبَةٌ", "حَمْراءُ"],
+      labels: ["masc. noun", "masc. color", "fem. noun", "fem. color"],
+      explain: "Same color, two shapes: qamīṣ AHMAR (m.) but ḥaqība HAMRĀʾ (f.). You met both in the stories: تُفّاحًا أَحْمَرَ and الحَقيبَة الحَمْراء!"
+    }
+  },
+
+  /* ═══════════ DRILL 15 — Numbers ═══════════ */
+  {
+    id: "numbers",
+    title_ar: "الأَرْقام",
+    title_en: "Numbers — الأرقام",
+    img: "assets/img/grammar/numbers.jpg",
+    base_en: "Count 1-10, then use numbers in real sentences.",
+    hint: "Count the fruit groups in the image! Numbers 3-10 famously flip gender against the counted noun — don't worry, start by just knowing the words.",
+    forms: [
+      { tag: "One to five · ١-٥", q_en: "One. Two. Three. Four. Five.",
+        ar: "واحِدٌ. اِثْنانِ. ثَلاثَةٌ. أَرْبَعَةٌ. خَمْسَةٌ.",
+        tr: "wāḥidun. ithnāni. thalāthatun. arbaʿatun. khamsatun.",
+        note: "اِثْنانِ has the dual ending built in — of course it does!",
+        audio: "numbers-1" },
+      { tag: "Six to ten · ٦-١٠", q_en: "Six. Seven. Eight. Nine. Ten.",
+        ar: "سِتَّةٌ. سَبْعَةٌ. ثَمانِيَةٌ. تِسْعَةٌ. عَشَرَةٌ.",
+        tr: "sittatun. sabʿatun. thamāniyatun. tisʿatun. ʿasharatun.",
+        note: "You've seen ثَلاثَة أَيّام (3 days) and أُسْبوع (7 days = week, from سَبْعَة!).",
+        audio: "numbers-2" },
+      { tag: "Counting things · العد", q_en: "I have five apples and three books.",
+        ar: "عِنْدي خَمْسُ تُفّاحاتٍ وَثَلاثَةُ كُتُبٍ.",
+        tr: "ʿindī khamsu tuffāḥātin wa-thalāthatu kutubin.",
+        note: "The famous flip: خَمْس (no ة) with feminine تفاحات, but ثَلاثَة (with ة) with masculine كُتُب!",
+        audio: "numbers-3" },
+      { tag: "How old? · العمر", q_en: "How old are you? I am thirty years old.",
+        ar: "كَمْ عُمْرُكَ؟ عُمْري ثَلاثونَ سَنَةً.",
+        tr: "kam ʿumruka? ʿumrī thalāthūna sanatan.",
+        note: "كَمْ = how many/much — your 7th question word! ثَلاثونَ = thirty (ثلاثة + ون).",
+        audio: "numbers-4" }
+    ],
+    roles: {
+      title: "The number sentence — كم؟",
+      sentence: ["كَمْ", "تُفّاحَةً", "عِنْدَكَ؟", "عِنْدي ثَلاثٌ"],
+      labels: ["كم · how many", "المعدود · counted (singular!)", "عندك · do you have", "الجواب · the answer"],
+      explain: "After كَمْ the noun stays SINGULAR: kam tuffāḥatan? (how many apple?) — a famous Arabic quirk. Answer: ʿindī thalāth — I have three."
+    }
   }
 ];
