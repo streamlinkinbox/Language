@@ -1030,5 +1030,81 @@ const GRAMMAR = [
       labels: ["كم · how many", "المعدود · counted (singular!)", "عندك · do you have", "الجواب · the answer"],
       explain: "After كَمْ the noun stays SINGULAR: kam tuffāḥatan? (how many apple?) — a famous Arabic quirk. Answer: ʿindī thalāth — I have three."
     }
+  },
+
+  /* ═══════════ DRILL 16 — Family ═══════════ */
+  {
+    id: "family",
+    title_ar: "العائِلَة",
+    title_en: "Family — العائلة",
+    img: "assets/img/grammar/family.jpg",
+    base_en: "The family — name everyone in the portrait.",
+    hint: "Arabic splits uncles/aunts by side: عَمّ (father's brother) vs خال (mother's brother) — English can't do that!",
+    forms: [
+      { tag: "Parents & kids · ١", q_en: "The father. The mother. The son. The daughter.",
+        ar: "الأَبُ. الأُمُّ. الاِبْنُ. البِنْتُ.",
+        tr: "al-abu. al-ummu. al-ibnu. al-bintu.",
+        note: "My father = أَبي, my mother = أُمّي (Sami's card!). بِنْت = both girl and daughter.",
+        audio: "family-1" },
+      { tag: "Siblings & grandparents · ٢", q_en: "The brother. The sister. The grandfather. The grandmother.",
+        ar: "الأَخُ. الأُخْتُ. الجَدُّ. الجَدَّةُ.",
+        tr: "al-akhu. al-ukhtu. al-jaddu. al-jaddatu.",
+        note: "You know جَدّ and جَدَّة well from the stories! My brother = أَخي.",
+        audio: "family-2" },
+      { tag: "Uncles & aunts · ٣", q_en: "Paternal uncle/aunt. Maternal uncle/aunt.",
+        ar: "العَمُّ. العَمَّةُ. الخالُ. الخالَةُ.",
+        tr: "al-ʿammu. al-ʿammatu. al-khālu. al-khālatu.",
+        note: "Father's side: عَمّ/عَمَّة. Mother's side: خال/خالَة. Four words where English has two!",
+        audio: "family-3" },
+      { tag: "In a sentence · جملة", q_en: "The husband, the wife and the children are a happy family.",
+        ar: "الزَّوْجُ وَالزَّوْجَةُ وَالأَوْلادُ عائِلَةٌ سَعيدَةٌ.",
+        tr: "az-zawju wa-z-zawjatu wa-l-awlādu ʿāʾilatun saʿīdatun.",
+        note: "زَوْج husband / زَوْجَة wife — the ة gender pair again.",
+        audio: "family-4" }
+    ],
+    roles: {
+      title: "Possessives with family — عائلتي",
+      sentence: ["أَبي", "أُمُّكَ", "أَخوهُ", "جَدَّتُنا"],
+      labels: ["ي · my father", "كَ · your mother", "هُ · his brother", "نا · our grandma"],
+      explain: "Family words + possessive endings = instant sentences: abī my father, ummuka your mother, akhūhu his brother, jaddatunā our grandmother. The endings you know from the stories!"
+    }
+  },
+
+  /* ═══════════ DRILL 17 — Weather & seasons ═══════════ */
+  {
+    id: "weather",
+    title_ar: "الطَّقْسُ وَالفُصول",
+    title_en: "Weather & seasons — الطقس",
+    img: "assets/img/grammar/weather.jpg",
+    base_en: "Four seasons in one landscape — describe the weather in each.",
+    hint: "Weather words are mostly مُفْعِل participles: مُشْمِس sunny (from شَمْس), مُمْطِر rainy (from مَطَر) — you know this from يَوْمٌ مُمْطِرٌ!",
+    forms: [
+      { tag: "Weather words · ١", q_en: "Sunny. Cloudy. Rainy. Stormy.",
+        ar: "مُشْمِسٌ. غائِمٌ. مُمْطِرٌ. عاصِفٌ.",
+        tr: "mushmisun. ghāʾimun. mumṭirun. ʿāṣifun.",
+        note: "From nouns you know: شَمْس sun → مُشْمِس, مَطَر rain → مُمْطِر (Layla's rainy day!).",
+        audio: "weather-1" },
+      { tag: "The seasons · ٢", q_en: "Spring. Summer. Autumn. Winter.",
+        ar: "الرَّبيعُ. الصَّيْفُ. الخَريفُ. الشِّتاءُ.",
+        tr: "ar-rabīʿu. aṣ-ṣayfu. al-kharīfu. ash-shitāʾu.",
+        note: "You've read الصَّيْف (sea trip) and الشِّتاء (loyal friend). Now the full set!",
+        audio: "weather-2" },
+      { tag: "Snow & wind · ٣", q_en: "The snow falls in the mountains, and the wind is strong.",
+        ar: "الثَّلْجُ يَنْزِلُ في الجِبالِ، وَالرّيحُ قَوِيَّةٌ.",
+        tr: "ath-thalju yanzilu fī l-jibāli, wa-r-rīḥu qawiyyatun.",
+        note: "ثَلْج snow, ريح wind (feminine!), جِبال mountains (plural of جَبَل).",
+        audio: "weather-3" },
+      { tag: "Small talk · ٤", q_en: "How is the weather today? The weather is beautiful and sunny.",
+        ar: "كَيْفَ الطَّقْسُ اليَوْمَ؟ الطَّقْسُ جَميلٌ وَمُشْمِسٌ.",
+        tr: "kayfa ṭ-ṭaqsu l-yawma? aṭ-ṭaqsu jamīlun wa-mushmisun.",
+        note: "كَيْفَ = how — your 8th question word! The world's favorite small talk, now in Arabic.",
+        audio: "weather-4" }
+    ],
+    roles: {
+      title: "The weather sentence — كيف الطقس؟",
+      sentence: ["الطَّقْسُ", "مُمْطِرٌ", "في الشِّتاءِ", "عادَةً"],
+      labels: ["المبتدأ · topic", "الخبر · description", "الزمان · season", "عادةً · usually"],
+      explain: "No verb needed! Arabic weather sentences are just topic + description: aṭ-ṭaqsu mumṭir (the weather [is] rainy). Add a season and عادَةً (usually) and you sound local."
+    }
   }
 ];
