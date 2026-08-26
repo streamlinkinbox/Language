@@ -1,7 +1,7 @@
 // Auto-built bank of VERIFIED single-word clips (narrator voice).
 // Key = Arabic word with diacritics stripped.
 window.WORD_BANK = {
-  "نبح": "b001",
+  "نبح": "b116",
   "الكلب": "b002",
   "بصوت": "b003",
   "عال": "b004",
@@ -107,5 +107,13 @@ window.WORD_BANK = {
   "الصغير": "b104",
   "فكر": "b105",
   "الغراب": "b106",
-  "قليلا": "b107"
+  "قليلا": "b107",
+  "نائما": "b108",
+  "شم": "b109",
+  "رائحة": "b110",
+  "غريبة": "b111",
+  "طعام": "b112",
+  "خافت": "b113",
+  "بسرعة": "b114",
+  "الولد": "b115"
 };
