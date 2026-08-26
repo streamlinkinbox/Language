@@ -4036,5 +4036,284 @@ const STORIES = [
         why: "أَرى = I see (the weak verb رأى in I-form!). العالَم كُلَّه = the whole world."
       }
     ]
+  },
+
+  /* ═══════════ STORY 18 — The Street Library (Set 3) ═══════════ */
+  {
+    id: "street-library",
+    title_ar: "مَكْتَبَةُ الشّارِعِ",
+    title_en: "The Street Library",
+    level: "Beginner+ · A2",
+    cover: "assets/img/street-library/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/street-library/s1.jpg",
+        audio: "s1",
+        ar: "فَتَحَ سامي مَكْتَبَةً صَغيرَةً أَمامَ بَيْتِهِ. وَضَعَ فيها كُتُبَهُ القَديمَةَ وَكَتَبَ: خُذْ كِتابًا، وَاتْرُكْ كِتابًا.",
+        tr: "fataḥa sāmī maktabatan ṣaghīratan amāma baytihi. waḍaʿa fīhā kutubahu l-qadīmata wa-kataba: khudh kitāban, wa-truk kitāban.",
+        en: "Sami opened a little library in front of his house. He put his old books in it and wrote: Take a book, and leave a book.",
+        tense: "Past + paired commands خُذْ / اُتْرُكْ",
+        words: [
+          { ar: "فَتَحَ", tr: "fataḥa", en: "opened" },
+          { ar: "سامي", tr: "sāmī", en: "Sami" },
+          { ar: "مَكْتَبَةً", tr: "maktabatan", en: "a library" },
+          { ar: "صَغيرَةً", tr: "ṣaghīratan", en: "little" },
+          { ar: "أَمامَ", tr: "amāma", en: "in front of" },
+          { ar: "بَيْتِهِ", tr: "baytihi", en: "his house" },
+          { ar: "وَضَعَ", tr: "waḍaʿa", en: "put" },
+          { ar: "فيها", tr: "fīhā", en: "in it" },
+          { ar: "كُتُبَهُ", tr: "kutubahu", en: "his books" },
+          { ar: "القَديمَةَ", tr: "al-qadīmata", en: "the old" },
+          { ar: "وَكَتَبَ", tr: "wa-kataba", en: "and wrote" },
+          { ar: "خُذْ", tr: "khudh", en: "take!" },
+          { ar: "كِتابًا", tr: "kitāban", en: "a book" },
+          { ar: "وَاتْرُكْ", tr: "wa-truk", en: "and leave!" }
+        ]
+      },
+      {
+        img: "assets/img/street-library/s2.jpg",
+        audio: "s2",
+        ar: "في البِدايَةِ، لَمْ يَأْتِ أَحَدٌ. ثُمَّ أَخَذَتْ بِنْتٌ قِصَّةً، وَتَرَكَتْ كِتابًا عَنِ النُّجومِ.",
+        tr: "fī l-bidāyati, lam yaʾti aḥadun. thumma akhadhat bintun qiṣṣatan, wa-tarakat kitāban ʿani n-nujūmi.",
+        en: "At the beginning, nobody came. Then a girl took a story, and left a book about the stars.",
+        tense: "لَمْ negation + past",
+        words: [
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "البِدايَةِ", tr: "al-bidāyati", en: "the beginning" },
+          { ar: "لَمْ", tr: "lam", en: "did not" },
+          { ar: "يَأْتِ", tr: "yaʾti", en: "come" },
+          { ar: "أَحَدٌ", tr: "aḥadun", en: "anyone" },
+          { ar: "ثُمَّ", tr: "thumma", en: "then" },
+          { ar: "أَخَذَتْ", tr: "akhadhat", en: "took (she)" },
+          { ar: "بِنْتٌ", tr: "bintun", en: "a girl" },
+          { ar: "قِصَّةً", tr: "qiṣṣatan", en: "a story" },
+          { ar: "وَتَرَكَتْ", tr: "wa-tarakat", en: "and left (she)" },
+          { ar: "كِتابًا", tr: "kitāban", en: "a book" },
+          { ar: "عَنِ", tr: "ʿani", en: "about" },
+          { ar: "النُّجومِ", tr: "an-nujūmi", en: "the stars" }
+        ]
+      },
+      {
+        img: "assets/img/street-library/s3.jpg",
+        audio: "s3",
+        ar: "بَعْدَ شَهْرٍ، صارَتِ المَكْتَبَةُ مَلِيئَةً، وَصارَ الجيرانُ أَصْدِقاءَ. الكِتابُ بابٌ صَغيرٌ إِلى عالَمٍ كَبيرٍ.",
+        tr: "baʿda shahrin, ṣārati l-maktabatu malīʾatan, wa-ṣāra l-jīrānu aṣdiqāʾa. al-kitābu bābun ṣaghīrun ilā ʿālamin kabīrin.",
+        en: "After a month, the library became full, and the neighbors became friends. A book is a small door to a big world.",
+        tense: "صارَ ×2 + closing wisdom",
+        words: [
+          { ar: "بَعْدَ", tr: "baʿda", en: "after" },
+          { ar: "شَهْرٍ", tr: "shahrin", en: "a month" },
+          { ar: "صارَتِ", tr: "ṣārati", en: "became" },
+          { ar: "المَكْتَبَةُ", tr: "al-maktabatu", en: "the library" },
+          { ar: "مَلِيئَةً", tr: "malīʾatan", en: "full" },
+          { ar: "وَصارَ", tr: "wa-ṣāra", en: "and became" },
+          { ar: "الجيرانُ", tr: "al-jīrānu", en: "the neighbors" },
+          { ar: "أَصْدِقاءَ", tr: "aṣdiqāʾa", en: "friends" },
+          { ar: "الكِتابُ", tr: "al-kitābu", en: "the book" },
+          { ar: "بابٌ", tr: "bābun", en: "a door" },
+          { ar: "صَغيرٌ", tr: "ṣaghīrun", en: "small" },
+          { ar: "إِلى", tr: "ilā", en: "to" },
+          { ar: "عالَمٍ", tr: "ʿālamin", en: "a world" },
+          { ar: "كَبيرٍ", tr: "kabīrin", en: "big" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "ماذا فَتَحَ سامي أَمامَ بَيْتِهِ؟",
+        q_en: "What did Sami open in front of his house?",
+        options: [
+          { ar: "دُكّانًا", en: "A shop" },
+          { ar: "مَكْتَبَةً صَغيرَةً", en: "A little library" },
+          { ar: "مَقْهًى", en: "A café" }
+        ],
+        correct: 1,
+        why: "مَكْتَبَة — place-of-books, the مَفْعَل pattern from your city drill!"
+      },
+      {
+        q_ar: "ماذا كَتَبَ سامي عَلى المَكْتَبَةِ؟",
+        q_en: "What did Sami write on the library?",
+        options: [
+          { ar: "خُذْ كِتابًا وَاتْرُكْ كِتابًا", en: "Take a book and leave a book" },
+          { ar: "لِلْبَيْعِ", en: "For sale" },
+          { ar: "مَمْنوعُ اللَّمْسِ", en: "Do not touch" }
+        ],
+        correct: 0,
+        why: "Two commands: خُذْ take! + اُتْرُكْ leave! — the real street-library motto."
+      },
+      {
+        q_ar: "ماذا تَرَكَتِ البِنْتُ؟",
+        q_en: "What did the girl leave?",
+        options: [
+          { ar: "كِتابًا عَنِ النُّجومِ", en: "A book about the stars" },
+          { ar: "قِصَّةً", en: "A story" },
+          { ar: "رِسالَةً", en: "A letter" }
+        ],
+        correct: 0,
+        why: "She TOOK a story and LEFT a book about the stars — the exchange worked!"
+      },
+      {
+        q_ar: "ماذا صارَ الجيرانُ بَعْدَ شَهْرٍ؟",
+        q_en: "What did the neighbors become after a month?",
+        options: [
+          { ar: "أَصْدِقاءَ", en: "Friends" },
+          { ar: "قُرّاءً غاضِبينَ", en: "Angry readers" },
+          { ar: "مُعَلِّمينَ", en: "Teachers" }
+        ],
+        correct: 0,
+        why: "صارَ الجيرانُ أَصْدِقاءَ — أَصْدِقاء = plural of صَديق!"
+      },
+      {
+        q_ar: "«الكِتابُ بابٌ صَغيرٌ إِلى عالَمٍ كَبيرٍ» — ماذا تَعْني؟",
+        q_en: "\"A book is a small door to a big world\" — what does it mean?",
+        options: [
+          { ar: "الكُتُبُ تَفْتَحُ لَنا عَوالِمَ جَديدَةً", en: "Books open new worlds for us" },
+          { ar: "الكُتُبُ صَغيرَةُ الحَجْمِ", en: "Books are small in size" },
+          { ar: "البُيوتُ تَحْتاجُ أَبْوابًا", en: "Houses need doors" }
+        ],
+        correct: 0,
+        why: "A metaphor — exactly what this app hopes to be for your Arabic 🙂"
+      }
+    ]
+  },
+
+  /* ═══════════ STORY 19 — The Old Coin (Set 3) ═══════════ */
+  {
+    id: "old-coin",
+    title_ar: "القِرْشُ القَديمُ",
+    title_en: "The Old Coin",
+    level: "Beginner+ · A2",
+    cover: "assets/img/old-coin/cover.jpg",
+    minutes: 3,
+    pages: [
+      {
+        img: "assets/img/old-coin/s1.jpg",
+        audio: "s1",
+        ar: "وَجَدَتْ لَيْلى قِرْشًا قَديمًا في دُرْجِ جَدَّتِها. قالَتِ الجَدَّةُ: هٰذا مِنْ زَمَنٍ بَعيدٍ، مِنْ أَيّامِ طُفولَتي.",
+        tr: "wajadat laylā qirshan qadīman fī durji jaddatihā. qālati l-jaddatu: hādhā min zamanin baʿīdin, min ayyāmi ṭufūlatī.",
+        en: "Layla found an old coin in her grandmother's drawer. The grandmother said: This is from a faraway time, from the days of my childhood.",
+        tense: "Past + مِنْ زَمَنٍ بَعيدٍ",
+        words: [
+          { ar: "وَجَدَتْ", tr: "wajadat", en: "found (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "قِرْشًا", tr: "qirshan", en: "a coin" },
+          { ar: "قَديمًا", tr: "qadīman", en: "old" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "دُرْجِ", tr: "durji", en: "drawer (of)" },
+          { ar: "جَدَّتِها", tr: "jaddatihā", en: "her grandmother" },
+          { ar: "قالَتِ", tr: "qālati", en: "said" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "هٰذا", tr: "hādhā", en: "this" },
+          { ar: "مِنْ", tr: "min", en: "from" },
+          { ar: "زَمَنٍ", tr: "zamanin", en: "a time" },
+          { ar: "بَعيدٍ", tr: "baʿīdin", en: "faraway" },
+          { ar: "أَيّامِ", tr: "ayyāmi", en: "days (of)" },
+          { ar: "طُفولَتي", tr: "ṭufūlatī", en: "my childhood" }
+        ]
+      },
+      {
+        img: "assets/img/old-coin/s2.jpg",
+        audio: "s2",
+        ar: "حَكَتِ الجَدَّةُ عَنِ السّوقِ القَديمِ، وَعَنْ بائِعِ الحَلْوى الَّذي كانَ يُغَنّي. ضَحِكَتا مَعًا طَويلًا.",
+        tr: "ḥakati l-jaddatu ʿani s-sūqi l-qadīmi, wa-ʿan bāʾiʿi l-ḥalwā lladhī kāna yughannī. ḍaḥikatā maʿan ṭawīlan.",
+        en: "The grandmother told about the old market, and about the candy seller who used to sing. They laughed together for a long time.",
+        tense: "الَّذي + كانَ يَفْعَلُ (used to)",
+        words: [
+          { ar: "حَكَتِ", tr: "ḥakati", en: "told/narrated (she)" },
+          { ar: "الجَدَّةُ", tr: "al-jaddatu", en: "the grandmother" },
+          { ar: "عَنِ", tr: "ʿani", en: "about" },
+          { ar: "السّوقِ", tr: "as-sūqi", en: "the market" },
+          { ar: "القَديمِ", tr: "al-qadīmi", en: "the old" },
+          { ar: "بائِعِ", tr: "bāʾiʿi", en: "seller (of)" },
+          { ar: "الحَلْوى", tr: "al-ḥalwā", en: "the sweets" },
+          { ar: "الَّذي", tr: "alladhī", en: "who/which" },
+          { ar: "كانَ", tr: "kāna", en: "was" },
+          { ar: "يُغَنّي", tr: "yughannī", en: "singing / used to sing" },
+          { ar: "ضَحِكَتا", tr: "ḍaḥikatā", en: "they two laughed (f.)" },
+          { ar: "مَعًا", tr: "maʿan", en: "together" },
+          { ar: "طَويلًا", tr: "ṭawīlan", en: "for a long time" }
+        ]
+      },
+      {
+        img: "assets/img/old-coin/s3.jpg",
+        audio: "s3",
+        ar: "وَضَعَتْ لَيْلى القِرْشَ في عُلْبَةٍ جَميلَةٍ. قالَتْ: سَأَحْكي لِأَوْلادي عَنْهُ يَوْمًا ما.",
+        tr: "waḍaʿat laylā l-qirsha fī ʿulbatin jamīlatin. qālat: sa-aḥkī li-awlādī ʿanhu yawman mā.",
+        en: "Layla put the coin in a beautiful box. She said: I will tell my children about it someday.",
+        tense: "Future سَأَحْكي + يَوْمًا ما",
+        words: [
+          { ar: "وَضَعَتْ", tr: "waḍaʿat", en: "put (she)" },
+          { ar: "لَيْلى", tr: "laylā", en: "Layla" },
+          { ar: "القِرْشَ", tr: "al-qirsha", en: "the coin" },
+          { ar: "في", tr: "fī", en: "in" },
+          { ar: "عُلْبَةٍ", tr: "ʿulbatin", en: "a box/case" },
+          { ar: "جَميلَةٍ", tr: "jamīlatin", en: "beautiful" },
+          { ar: "قالَتْ", tr: "qālat", en: "said (she)" },
+          { ar: "سَأَحْكي", tr: "sa-aḥkī", en: "I will tell" },
+          { ar: "لِأَوْلادي", tr: "li-awlādī", en: "to my children" },
+          { ar: "عَنْهُ", tr: "ʿanhu", en: "about it" },
+          { ar: "يَوْمًا", tr: "yawman", en: "a day" },
+          { ar: "ما", tr: "mā", en: "some(day)" }
+        ]
+      }
+    ],
+    quiz: [
+      {
+        q_ar: "أَيْنَ وَجَدَتْ لَيْلى القِرْشَ؟",
+        q_en: "Where did Layla find the coin?",
+        options: [
+          { ar: "في دُرْجِ جَدَّتِها", en: "In her grandmother's drawer" },
+          { ar: "في الشّارِعِ", en: "In the street" },
+          { ar: "في الحَديقَةِ", en: "In the garden" }
+        ],
+        correct: 0,
+        why: "في دُرْجِ جَدَّتِها — دُرْج = drawer, a new furniture word!"
+      },
+      {
+        q_ar: "مِنْ أَيِّ زَمَنٍ كانَ القِرْشُ؟",
+        q_en: "From what time was the coin?",
+        options: [
+          { ar: "مِنَ السَّنَةِ الماضِيَةِ", en: "From last year" },
+          { ar: "مِنْ أَيّامِ طُفولَةِ الجَدَّةِ", en: "From the grandmother's childhood days" },
+          { ar: "مِنَ المُسْتَقْبَلِ", en: "From the future" }
+        ],
+        correct: 1,
+        why: "مِنْ أَيّامِ طُفولَتي — ṭufūla = childhood, from ṭifl (child)."
+      },
+      {
+        q_ar: "«الَّذي كانَ يُغَنّي» — ماذا تَعْني «كانَ يُغَنّي»؟",
+        q_en: "\"alladhī kāna yughannī\" — what does kāna yughannī mean?",
+        options: [
+          { ar: "غَنّى مَرَّةً واحِدَةً", en: "He sang once" },
+          { ar: "كانَ يُغَنّي دائِمًا — used to sing", en: "He USED TO sing (habit in the past)" },
+          { ar: "سَيُغَنّي غَدًا", en: "He will sing tomorrow" }
+        ],
+        correct: 1,
+        why: "كانَ + present = 'used to' — the past-habit pattern. And الَّذي = who/which (relative pronoun!)."
+      },
+      {
+        q_ar: "أَيْنَ وَضَعَتْ لَيْلى القِرْشَ؟",
+        q_en: "Where did Layla put the coin?",
+        options: [
+          { ar: "في جَيْبِها", en: "In her pocket" },
+          { ar: "في عُلْبَةٍ جَميلَةٍ", en: "In a beautiful box" },
+          { ar: "في الدُّرْجِ مَرَّةً أُخْرى", en: "Back in the drawer" }
+        ],
+        correct: 1,
+        why: "في عُلْبَةٍ جَميلَةٍ — a keepsake box, to treasure the memory."
+      },
+      {
+        q_ar: "ماذا سَتَفْعَلُ لَيْلى يَوْمًا ما؟",
+        q_en: "What will Layla do someday?",
+        options: [
+          { ar: "سَتَبيعُ القِرْشَ", en: "She will sell the coin" },
+          { ar: "سَتَحْكي لِأَوْلادِها عَنْهُ", en: "She will tell her children about it" },
+          { ar: "سَتُعيدُهُ لِلْجَدَّةِ", en: "She will return it to grandma" }
+        ],
+        correct: 1,
+        why: "سَأَحْكي لِأَوْلادي — memories pass down generations, like the fig tree!"
+      }
+    ]
   }
 ];
