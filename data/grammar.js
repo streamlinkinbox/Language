@@ -1706,5 +1706,91 @@ const GRAMMAR = [
       labels: ["الاسم · the noun", "الموصول · who (matches!)", "الصلة · the clause", "الخبر · the point"],
       explain: "Formula: noun + alladhī/allatī (matching gender) + clause + the point. It's how you upgrade from 'the boy is my brother' to 'the boy WHO PLAYS FOOTBALL is my brother.' Precision unlocked. 🎓"
     }
+  },
+
+  /* ═══════════ DRILL 33 — Negation ═══════════ */
+  {
+    id: "negation",
+    title_ar: "النَّفْي",
+    title_en: "Saying no — النفي",
+    img: "assets/img/grammar/negation.jpg",
+    base_en: "Five little words that flip any sentence to NO: لا، ما، لَمْ، لَنْ، لَيْسَ.",
+    hint: "The picture is pure negation — a polite raised hand, a crossed-out cup. Each negator owns exactly one tense; pick the time, pick the word.",
+    forms: [
+      { tag: "Now · لا + مضارع", q_en: "I don't drink coffee at night.",
+        ar: "لا أَشْرَبُ القَهْوَةَ في اللَّيْلِ.",
+        tr: "lā ashrabu l-qahwata fī l-layli.",
+        note: "lā + present = don't. The easiest negator — you've seen لا أَعْرِفُ (I don't know) a hundred times.",
+        audio: "neg-1" },
+      { tag: "Past · ما + ماضي", q_en: "I didn't go to the market yesterday.",
+        ar: "ما ذَهَبْتُ إِلى السّوقِ أَمْسِ.",
+        tr: "mā dhahabtu ilā s-sūqi amsi.",
+        note: "mā + past verb = didn't. Simple, and very common in everyday speech. أَمْسِ = yesterday.",
+        audio: "neg-2" },
+      { tag: "Past (crisp) · لَمْ", q_en: "I didn't understand — please repeat!",
+        ar: "لَمْ أَفْهَمْ، مِنْ فَضْلِكَ كَرِّرْ!",
+        tr: "lam afham, min faḍlika karrir!",
+        note: "lam + PRESENT-shaped verb = didn't (the sharper, formal way). The verb loses its final vowel: أَفْهَمُ → أَفْهَمْ. This sentence is survival gold.",
+        audio: "neg-3" },
+      { tag: "Future · لَنْ", q_en: "I will never forget this day.",
+        ar: "لَنْ أَنْسى هٰذا اليَوْمَ أَبَدًا.",
+        tr: "lan ansā hādhā l-yawma abadan.",
+        note: "lan = will never / won't. You met it in the relative drill: لَنْ أَنْساهُمْ. Add أَبَدًا (ever) to seal it forever.",
+        audio: null }  /* TODO: record neg-4 next turn */,
+      { tag: "Not (is) · لَيْسَ", q_en: "I am not hungry, and the house is not far.",
+        ar: "لَسْتُ جائِعًا، وَالبَيْتُ لَيْسَ بَعيدًا.",
+        tr: "lastu jāʾiʿan, wa-l-baytu laysa baʿīdan.",
+        note: "laysa negates verbless sentences: lastu = I'm not, laysa = he/it isn't. Watch the adjective take -an after it: jāʾiʿan, baʿīdan!",
+        audio: "neg-5" }
+    ],
+    roles: {
+      title: "The negators — أدوات النفي",
+      sentence: ["لا", "ما / لَمْ", "لَنْ", "لَيْسَ"],
+      labels: ["not now · present", "didn't · past", "won't ever · future", "is not · no-verb"],
+      explain: "One negator per timeline: lā kills the present, mā/lam the past, lan the future, and laysa handles 'X is not Y' sentences. Choose the tense, drop in the word — the sentence flips to NO."
+    }
+  },
+
+  /* ═══════════ DRILL 34 — Question words ═══════════ */
+  {
+    id: "questions",
+    title_ar: "الاِسْتِفْهام",
+    title_en: "Asking questions — الاستفهام",
+    img: "assets/img/grammar/questions.jpg",
+    base_en: "Who, what, where, when, why, how, how much — the complete question toolbox.",
+    hint: "The traveler in the picture is running this whole drill: where is it? when does it leave? how much? Every floating question mark is one of these words.",
+    forms: [
+      { tag: "Who & what · مَنْ وَما", q_en: "Who are you? What is your name? What do you want?",
+        ar: "مَنْ أَنْتَ؟ مَا اسْمُكَ؟ ماذا تُريدُ؟",
+        tr: "man anta? mā smuka? mādhā turīdu?",
+        note: "man = who, mā = what (before nouns), mādhā = what (before verbs). Three openers — you already half-know them all.",
+        audio: "ques-1" },
+      { tag: "Where & when · أَيْنَ وَمَتى", q_en: "Where is the station? And when does the train arrive?",
+        ar: "أَيْنَ المَحَطَّةُ؟ وَمَتى يَصِلُ القِطارُ؟",
+        tr: "ayna l-maḥaṭṭatu? wa-matā yaṣilu l-qiṭāru?",
+        note: "ayna = where, matā = when. Straight out of the night-train story — وَصَلَ / يَصِلُ to arrive.",
+        audio: "ques-2" },
+      { tag: "How & why · كَيْفَ وَلِماذا", q_en: "How are you? And why are you laughing?",
+        ar: "كَيْفَ حالُكَ؟ وَلِماذا تَضْحَكُ؟",
+        tr: "kayfa ḥāluka? wa-limādhā taḍḥaku?",
+        note: "kayfa ḥāluk = the most famous question in Arabic. limādhā = why — literally li + mādhā, 'for what'.",
+        audio: null }  /* TODO: record ques-3 next turn */,
+      { tag: "How much & which · كَمْ وَأَيّ", q_en: "How old are you? And which book are you reading?",
+        ar: "كَمْ عُمْرُكَ؟ وَأَيَّ كِتابٍ تَقْرَأُ؟",
+        tr: "kam ʿumruka? wa-ayya kitābin taqraʾu?",
+        note: "kam = how much/many — and its noun stays SINGULAR (kam kitāban, never 'books'!). ayy = which, and it matches gender: أَيُّ / أَيَّة.",
+        audio: "ques-4" },
+      { tag: "Yes or no · هَلْ", q_en: "Do you speak Arabic? — Yes, a little!",
+        ar: "هَلْ تَتَكَلَّمُ العَرَبِيَّةَ؟ نَعَمْ، قَليلًا!",
+        tr: "hal tatakallamu l-ʿarabiyyata? naʿam, qalīlan!",
+        note: "hal turns ANY statement into a yes/no question — nothing moves, just put hal in front. And your honest answer: naʿam, qalīlan 😉",
+        audio: "ques-5" }
+    ],
+    roles: {
+      title: "The question toolbox — أدوات الاستفهام",
+      sentence: ["مَنْ / ماذا", "أَيْنَ / مَتى", "كَيْفَ / لِماذا", "كَمْ / هَلْ"],
+      labels: ["who / what", "where / when", "how / why", "how much / yes-no"],
+      explain: "Eight words unlock every question in Arabic — and they ALL sit at the front of the sentence with nothing else moving. Easier than English! هَلْ is the free bonus: statement + hal = instant question."
+    }
   }
 ];
