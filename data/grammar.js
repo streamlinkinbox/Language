@@ -1339,5 +1339,81 @@ const GRAMMAR = [
       labels: ["الفعل · we meet", "اليوم · the day", "الساعة · the hour", "المكان · the place"],
       explain: "Making plans: verb + day + hour + place. naltaqī yawma s-sabti s-sāʿata l-khāmisa amāma l-maqhā — we meet Saturday at five in front of the café. Real life unlocked!"
     }
+  },
+
+  /* ═══════════ DRILL 24 — City places ═══════════ */
+  {
+    id: "city",
+    title_ar: "أَماكِنُ المَدينَة",
+    title_en: "City places — المدينة",
+    img: "assets/img/grammar/city.jpg",
+    base_en: "Eight places in the city — then ask for directions.",
+    hint: "Spot the مَفْعَل place-pattern: مَطْعَم eating-place, مَلْعَب playing-place, مَكْتَبَة book-place — the مَـ prefix builds places from verbs!",
+    forms: [
+      { tag: "Chart ١-٤", q_en: "1-4: The mosque. The hospital. The library. The restaurant.",
+        ar: "المَسْجِدُ. المُسْتَشْفى. المَكْتَبَةُ. المَطْعَمُ.",
+        tr: "1 al-masjidu · 2 al-mustashfā · 3 al-maktabatu · 4 al-maṭʿamu",
+        note: "مَطْعَم = place-of-eating (from طَعام!), مَكْتَبَة = place-of-books (root ك-ت-ب again).",
+        audio: "city-1" },
+      { tag: "Chart ٥-٨", q_en: "5-8: The bank. The pharmacy. The station. The playing field.",
+        ar: "البَنْكُ. الصَّيْدَلِيَّةُ. المَحَطَّةُ. المَلْعَبُ.",
+        tr: "5 al-banku · 6 aṣ-ṣaydaliyyatu · 7 al-maḥaṭṭatu · 8 al-malʿabu",
+        note: "مَلْعَب = place-of-playing (from لَعِبَ — your play drill!). مَحَطَّة station — bus or train.",
+        audio: "city-2" },
+      { tag: "Directions · الاتجاهات", q_en: "Where is the library? Go right, then left.",
+        ar: "أَيْنَ المَكْتَبَةُ؟ اِذْهَبْ يَمينًا ثُمَّ يَسارًا.",
+        tr: "ayna l-maktabatu? idhhab yamīnan thumma yasāran.",
+        note: "يَمين right, يَسار left — with اِذْهَبْ (go!) and ثُمَّ (then) from the stories. Navigation unlocked!",
+        audio: "city-3" },
+      { tag: "Near & far · قريب وبعيد", q_en: "The pharmacy is near, but the station is far.",
+        ar: "الصَّيْدَلِيَّةُ قَريبَةٌ، لٰكِنَّ المَحَطَّةَ بَعيدَةٌ.",
+        tr: "aṣ-ṣaydaliyyatu qarībatun, lākinna l-maḥaṭṭata baʿīdatan.",
+        note: "قَريب near ↔ بَعيد far — the essential distance pair, with لٰكِنَّ (but).",
+        audio: "city-4" }
+    ],
+    roles: {
+      title: "Asking directions — أين...؟",
+      sentence: ["أَيْنَ", "المَحَطَّةُ؟", "اِذْهَبْ يَمينًا", "ثُمَّ يَسارًا"],
+      labels: ["أين · where", "المكان · the place", "الأمر · go right", "ثم · then left"],
+      explain: "The tourist's lifeline: ayna + place? Answer comes as commands: idhhab yamīnan (go right), thumma yasāran (then left). Add قَريب/بَعيد to understand the answer!"
+    }
+  },
+
+  /* ═══════════ DRILL 25 — Verbs of speech ═══════════ */
+  {
+    id: "speech",
+    title_ar: "أَفْعالُ الكَلام",
+    title_en: "Verbs of speech — الكلام",
+    img: "assets/img/grammar/speech.jpg",
+    base_en: "Said, asked, answered, whispered, shouted — the talking verbs.",
+    hint: "You've read قالَ and سَأَلَ a hundred times in the stories. Now meet the whole family of talking verbs!",
+    forms: [
+      { tag: "The core four · ١", q_en: "He said. He asked. He answered. He called out.",
+        ar: "قالَ. سَأَلَ. أَجابَ. نادى.",
+        tr: "qāla · saʾala · ajāba · nādā",
+        note: "قالَ + يا = the story formula! أَجابَ answered — new. نادى called (like calling a friend across the street).",
+        audio: "speech-1" },
+      { tag: "More ways to talk · ٢", q_en: "He spoke. He told. He explained. He whispered. He shouted.",
+        ar: "تَكَلَّمَ. أَخْبَرَ. شَرَحَ. هَمَسَ. صَرَخَ.",
+        tr: "takallama · akhbara · sharaḥa · hamasa · ṣarakha",
+        note: "هَمَسَ whispered ↔ صَرَخَ shouted — a lovely loud/quiet verb pair. شَرَحَ = explained (teachers do it).",
+        audio: "speech-2" },
+      { tag: "In a story line · جملة", q_en: "The mother asked, and the boy answered quietly.",
+        ar: "سَأَلَتِ الأُمُّ، فَأَجابَ الوَلَدُ بِهُدوءٍ.",
+        tr: "saʾalati l-ummu, fa-ajāba l-waladu bi-hudūʾin.",
+        note: "فَـ = so/then (immediate sequence). بِهُدوءٍ quietly — the بِ-adverbs again!",
+        audio: "speech-3" },
+      { tag: "About yourself · عن نفسك", q_en: "I speak a little Arabic, and I learn every day.",
+        ar: "أَتَكَلَّمُ العَرَبِيَّةَ قَليلًا، وَأَتَعَلَّمُ كُلَّ يَوْمٍ.",
+        tr: "atakallamu l-ʿarabiyyata qalīlan, wa-ataʿallamu kulla yawmin.",
+        note: "YOUR sentence! أَتَكَلَّم I speak, أَتَعَلَّم I learn — say it proudly. العَرَبِيَّة = Arabic.",
+        audio: "speech-4" }
+    ],
+    roles: {
+      title: "Quoting people — قال + الجملة",
+      sentence: ["قالَتِ الأُمُّ", "اِذْهَبْ إِلى السّوقِ", "فَسَأَلَ", "مَتى أَرْجِعُ؟"],
+      labels: ["من قال · who said", "القول · the quote", "فسأل · so he asked", "السؤال · the question"],
+      explain: "Arabic quotes directly with no 'that': qālat il-umm: idhhab! (The mother said: go!). Every story you've read uses this — now you can build your own dialogue!"
+    }
   }
 ];
